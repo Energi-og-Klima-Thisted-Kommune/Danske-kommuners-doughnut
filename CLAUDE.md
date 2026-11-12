@@ -7,7 +7,7 @@
 ## TL;DR (30 sekunder)
 
 - **Projekt:** Doughnut Economics-platform for alle 98 danske kommuner - offentlig platform der viser hver kommunes status i forhold til socialt fundament og økologisk loft.
-- **Ejerskab:** Thisted Kommune. Udviklet i klimateamet under EU-projektet LIFE ACT. Licens er ikke afklaret, se README.
+- **Ejerskab:** Thisted Kommune. Udviklet i klimateamet under EU-projektet LIFE ACT. Licens: MIT, se `LICENSE`.
 - **Stack:** Next.js 16 (`output: "export"`) + Tailwind 4 i `webapp/`, Python-scripts i `scripts/`, CSV-data i `data/`, Netlify-deploy ved push til default-branchen.
 - **Omfang:** 13 sociale kategorier, 7 økologiske dimensioner, 62 scorede indikatorer (47 sociale + 15 økologiske sub-indikatorer) og 11 kontekst-indikatorer.
 - **Sprog i repoet:** dansk i dokumentation, kommentarer og UI. README er på engelsk af hensyn til eksterne læsere. Undgå em-dash, brug enkelt dash.
