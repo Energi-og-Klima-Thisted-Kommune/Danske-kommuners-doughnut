@@ -16,7 +16,7 @@
     "open-data"
   ],
   "author": "Thisted Kommune (klimateamet)",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "devDependencies": {
     "@netlify/functions": "^3.0.0",
     "@types/react-dom": "^19.2.4"

@@ -201,15 +201,15 @@ Copyright belongs to **Thisted Municipality** (Thisted Kommune). The code was
 developed by municipal staff as part of a EU-supportet LIFE ACT
 project.
 
-**No licence has been granted yet.** The terms of reuse are an open decision for
-the municipality, and until it is made, no permission to copy, modify or
-redistribute this code should be inferred from its public visibility. The
-`package.json` `license` field is set to `UNLICENSED` to reflect this and does
-not indicate an intention to withhold a licence permanently.
+The code and documentation in this repository are released under the
+[MIT License](LICENSE). You may use, copy, modify and redistribute them,
+including for commercial purposes, as long as the copyright notice and licence
+text are kept. The licence covers the code and documentation written for this
+project. It does not cover the underlying data, which remains governed by each
+publisher's own terms (see above).
 
-If you want to build on this work, please get in touch rather than assuming a
-licence. Interest from other municipalities and from research projects is
-welcome, and is part of why the decision is being taken deliberately.
+Interest from other municipalities and from research projects is welcome.
+Contributions are accepted as pull requests.
 
 ## Contact
 
