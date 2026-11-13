@@ -113,7 +113,7 @@ BEHOVSSTYRET = {"715"}    # GTFS-rutetype "Demand and Response Bus Service" (fle
 MAKS_AFVIGELSE = 3.0      # procentpoint, gennemsnit mod LABY49 før scriptet stopper
 
 UGEDAGE = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
-USER_AGENT = "doughnut-dk/1.0 (+https://github.com/augustseptimius-beep/doughnut)"
+USER_AGENT = "doughnut-dk/1.0 (+https://github.com/Energi-og-Klima-Thisted-Kommune/Danske-kommuners-doughnut)"
 
 
 # ─── Projektion ────────────────────────────────────────────────────────

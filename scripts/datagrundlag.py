@@ -36,7 +36,7 @@ import re
 import urllib.request
 
 BASE = "https://datagrundlag.s3.eu-west-1.amazonaws.com/filer/dk"
-USER_AGENT = "DoughnutDK/1.0 (+https://github.com/augustseptimius-beep/doughnut)"
+USER_AGENT = "DoughnutDK/1.0 (+https://github.com/Energi-og-Klima-Thisted-Kommune/Danske-kommuners-doughnut)"
 _SNAPSHOT = re.compile(r"_gc2_snapshot_date=(\d{4}-\d{2}-\d{2})")
 _FILNAVN = re.compile(r"[A-Za-z0-9_.-]+\.parquet")
 

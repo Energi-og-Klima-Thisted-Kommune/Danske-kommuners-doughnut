@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import { useBaseline } from "@/lib/baseline-context";
 import {
@@ -715,9 +716,9 @@ export default function DoughnutRing({
             );
           })()}
           <div className="flex items-center justify-between mt-1.5">
-            <a href={`/metode#${active.id}`} className="text-[10px] text-blue-600 hover:underline pointer-events-auto">
+            <Link href={`/metode#${active.id}`} className="text-[10px] text-blue-600 hover:underline pointer-events-auto">
               Se metode →
-            </a>
+            </Link>
             {!pinned && <p className="text-[9px] text-gray-300">Klik for at fastholde</p>}
           </div>
         </div>

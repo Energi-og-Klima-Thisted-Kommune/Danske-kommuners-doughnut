@@ -221,7 +221,7 @@ Ingen (sep. 2026). Alle 13 sociale kategorier og 7 økologiske dimensioner har d
 
 1. Kør relevant `scripts/fetch_*.py` for at opdatere rådata-CSV
 2. Kør `python3 scripts/build_master_csv.py` for at regenerere master-filen
-3. Commit og push - Netlify deployer automatisk
+3. Commit og push - GitHub-workflowen udgiver automatisk
 
 ## Licens og citation
 

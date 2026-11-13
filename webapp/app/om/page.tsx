@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -60,9 +61,9 @@ export default function OmPage() {
           <p className="text-sm text-gray-700 leading-relaxed">
             For en detaljeret gennemgang af beregningsmetoder, grænseværdier, datakilder og begrænsninger
             for hver enkelt dimension, se{" "}
-            <a href="/metode" className="text-blue-600 hover:underline font-medium">
+            <Link href="/metode" className="text-blue-600 hover:underline font-medium">
               Metode & data-siden
-            </a>.
+            </Link>.
           </p>
           <p className="text-sm text-gray-700 leading-relaxed mt-2">
             Kort fortalt: sociale dimensioner scores relativt til andre kommuner (100 = sammenligningsgrundlaget),

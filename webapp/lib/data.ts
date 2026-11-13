@@ -65,10 +65,10 @@ function parseMasterCsv(): MasterRow[] {
 }
 
 // ─── Gate: master skal passe med registret ────────────────────────────
-// Kører ved hvert build (også på Netlify) og i dev. Et master der ikke er
+// Kører ved hvert build (også i GitHub-workflowen) og i dev. Et master der ikke er
 // bygget med det aktuelle register - fx fordi indikatorer.json er rettet uden
 // at build_master_csv.py er kørt bagefter - stopper buildet med en fejl i
-// stedet for at deploye tal der modsiger metoden. Netlify beholder så den
+// stedet for at udgive tal der modsiger metoden. GitHub Pages beholder så den
 // forrige version online. Formlen er en kontrol-kopi af beregn_ratio() i
 // scripts/build_master_csv.py (arkitekturdokumentet R2-R4).
 function kontrolRatio(ind: RegisterIndikator, raw: number | null, ref: number | null): number | null {
