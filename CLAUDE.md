@@ -8,7 +8,7 @@
 
 - **Projekt:** Doughnut Economics-platform for alle 98 danske kommuner - offentlig platform der viser hver kommunes status i forhold til socialt fundament og økologisk loft.
 - **Ejerskab:** Thisted Kommune. Udviklet i klimateamet under EU-projektet LIFE ACT. Licens: MIT, se `LICENSE`.
-- **Stack:** Next.js 16 (`output: "export"`) + Tailwind 4 i `webapp/`, Python-scripts i `scripts/`, CSV-data i `data/`, Netlify-deploy ved push til default-branchen.
+- **Stack:** Next.js 16 (`output: "export"`) + Tailwind 4 i `webapp/`, Python-scripts i `scripts/`, CSV-data i `data/`, GitHub Pages-udgivelse ved push til default-branchen.
 - **Omfang:** 13 sociale kategorier, 7 økologiske dimensioner, 62 scorede indikatorer (47 sociale + 15 økologiske sub-indikatorer) og 11 kontekst-indikatorer.
 - **Sprog i repoet:** dansk i dokumentation, kommentarer og UI. README er på engelsk af hensyn til eksterne læsere. Undgå em-dash, brug enkelt dash.
 
@@ -17,7 +17,7 @@
 ```
 doughnut/
 ├── CLAUDE.md
-├── netlify.toml             ← base = webapp, publish = out
+├── .github/workflows/       ← udgiv-site.yml (byg + GitHub Pages), tjek-data.yml (datatjek på PR)
 ├── data/
 │   ├── indikatorer.json           ← ★ INDIKATORREGISTER: alle indikatorer, kategorier og dimensioner.
 │   │                                Læses af både Python-pipelinen og webappen (punkt 32).
@@ -84,18 +84,17 @@ doughnut/
     │   ├── data.ts              ← loadData(), getKommune(), getAllKommuner()
     │   ├── baseline-context.tsx
     │   └── graf.ts              ← akseværdier og tal til grafen ved pilen (rene funktioner)
-    └── netlify/functions/
-        └── klimaregnskabet.mts  ← proxy for klimaregnskabet.dk API (holder API-nøgle server-side)
 ```
 
 ## Stack og deploy
 
 - **Frontend:** Next.js 16 med `output: "export"` → ren static site i `webapp/out/`. Ingen SSR i prod. Dynamiske routes pre-genereres via `generateStaticParams` for alle 98 kommuner.
-- **Netlify:** `base = "webapp"`, `command = "npm run build"`, `publish = "out"`, functions i `webapp/netlify/functions/`.
-- **Deploy-flow:** Gem ændringer → preview lokalt → commit + push til default-branchen → Netlify deployer automatisk.
-- **Netlify bygger kun ved ændringer i `webapp/`, `data/` eller `netlify.toml`** (`ignore` i `netlify.toml`, fra sep. 2026). Uden den regel sprang Netlify buildet over, når intet under base-mappen `webapp/` var ændret, så en commit der kun opdaterede masterfilen, kom aldrig ud på sitet. Læser webappen en dag filer andre steder fra, skal stien med i `ignore`.
+- **GitHub Pages (fra nov. 2026, afløser Netlify):** `.github/workflows/udgiv-site.yml` bygger `webapp/` og udgiver `webapp/out/` ved push til `main`. Pull requests bygges kun, så `validerMaster()` fanger en forkert masterfil før merge. Engangsopsætning: Settings → Pages → Source: "GitHub Actions". Flyttet fordi repoet nu ejes af kommunens organisation, og hosting skal følge med.
+- **Deploy-flow:** Gem ændringer → preview lokalt → commit + push til default-branchen → workflowen udgiver automatisk.
+- **Workflowen kører kun ved ændringer i `webapp/`, `data/` eller selve workflowen** (`paths`). Webappen bygges af `../data`, derfor skal den med. Læser webappen en dag filer andre steder fra, skal stien med i `paths`. Manuel kørsel: Actions → "Byg og udgiv site" → Run workflow.
+- **Sitet ligger under `/<repo>/`, indtil det får eget domæne.** `next.config.ts` læser `NEXT_BASE_PATH`, som workflowen sætter fra Pages-opsætningen (tom ved eget domæne). Interne links SKAL derfor bruge `next/link` - en `<a href="/metode">` peger uden for sitet. `trailingSlash: true` er nødvendigt: Next lægger både `side.html` og mappen `side/` i output, og Pages svarer 404 på en mappe uden `index.html`.
 - **Lokal preview:** `cd webapp && npm run dev`, eller dobbeltklik på `Start udviklerserver.command` i projektets rodmappe (macOS). Brug `http://127.0.0.1:3000`, ikke `localhost` - sidstnævnte kan resolve til IPv6 og fejle.
-- **Build-output:** `webapp/out/` genereres af `npm run build` og er git-ignoreret. Netlify kører det samme build selv, så outputtet skal ikke committes.
+- **Build-output:** `webapp/out/` genereres af `npm run build` og er git-ignoreret. Workflowen kører det samme build selv, så outputtet skal ikke committes.
 
 ## Datamodel - sådan hænger det sammen
 
@@ -165,7 +164,7 @@ Datapipelinen er manuel og script-baseret. Der er IKKE CI/CD der henter data aut
    ```
 2. Scriptet opdaterer rådata-CSV i `data/` og kalder `auto_build_master()` automatisk.
 3. **Preview lokalt** → `cd webapp && npm run dev`, eller dobbeltklik `Start udviklerserver.command` (macOS).
-4. **Commit + push til default-branchen** → Netlify deployer automatisk.
+4. **Commit + push til default-branchen** → workflowen udgiver automatisk.
 
 **Tjek altid:** Scriptet skal printe "✓ Master-CSV opdateret" til sidst. Hvis ikke: kør `python3 scripts/build_master_csv.py` manuelt.
 
@@ -193,25 +192,25 @@ Scriptet gemmer direkte til `data/doughnut_scores.csv`. Fra `scripts/` havner fi
 ## Designet er MVP - "brilliant basics", ikke innovation
 
 - Ingen database. Alt er statisk CSV + build-time generation.
-- Ingen user accounts, ingen backend bortset fra klimaregnskabet-proxy.
+- Ingen user accounts og ingen backend.
 - TypeScript strict, men mange "any"-undtagelser pga. CSV-parsing.
 - Bevidst enkel CSV-parsing (split(",")) - brækker hvis felt indeholder komma. Acceptabelt fordi data er kontrolleret, og det håndhæves: registret afviser komma i master-felter, og `build_master_csv.py` fejler hvis et felt indeholder komma (sep. 2026: et komma i en enhed fik `income_gender_gap` til at forsvinde fra sitet uden fejl).
 
 ## Vigtigste pitfalls og ting at huske på
 
-1. **Master-CSV SKAL committes** - den er ikke i .gitignore. Netlify læser fra den under build.
+1. **Master-CSV SKAL committes** - den er ikke i .gitignore. Workflowen læser fra den under build.
 2. **Scripts fra rodmappen** - ikke fra `scripts/` (se kritisk driftsregel ovenfor).
 3. **Worst-of (med én undtagelse)** - øko-dimensioner med sub-indikatorer bruger max-ratio (worst-of). UNDTAGELSE: Forurening bruger gennemsnit (`"aggregation": "gennemsnit"` i `data/indikatorer.json`), fordi dens 4 indikatorer er vidt forskellige forureningstyper. Logikken bor i `build_master_csv.py`.
 4. **Ratio regnes KUN i `build_master_csv.py` (fra sep. 2026)** - ud fra råværdien og indikatorens `reference` i registret, med én formel hvor retningen følger `inverse`/`lower_is_better` (arkitekturdokumentet R2-R5). Fetch-scriptets egen ratio-kolonne bruges kun til krydstjek og til at rekonstruere landstallet, så længe scriptet ikke selv skriver det (se punkt 33). De gamle særregler (`10000/inverse` for N, P og affald, `65/pct` for genanvendelse, `raw/3` for forbrugs-CO2, `abs_target`) er væk. Ændrer du en ratio i et fetch-script, ændrer du derfor ikke scoren - kun krydstjekket, som så advarer.
 5. **Alle kilde-CSV'er er nøglet på `kommune_kode` (fra sep. 2026).** `cba_2023_estimate.csv` (håndlavet) og `klimatilpasning_scores.csv` har kun navne fra kilden; de har fået en `kommune_kode`-kolonne, og `fetch_klimatilpasning_data.py` slår koden op med `kode_for_navn()` og stopper ved et ukendt navn. Tidligere blev de slået op på navn i build-trinnet, hvor en stavevariant gav et tavst hul. Christiansø er ikke med.
 6. **Farvelogik er OMVENDT:** sociale vil op (≥100 = grøn), økologiske vil ned (≤85 = grøn).
-7. **`master_indicators.csv`, `noegletal.json`, `trend_indicators.csv`, `trend_history_land.csv`, `trend_land.csv` og `data_years.json` skal committes.** Netlify har ingen adgang til kildernes API'er under build, så sitet bygges udelukkende fra de committede CSV'er.
+7. **`master_indicators.csv`, `noegletal.json`, `trend_indicators.csv`, `trend_history_land.csv`, `trend_land.csv` og `data_years.json` skal committes.** Buildet har ingen adgang til kildernes API'er, så sitet bygges udelukkende fra de committede CSV'er.
 8. **API-nøgler læses KUN fra miljøvariabler. Skriv aldrig en nøgle ind i en fil der ligger i git.** Tre kilder kræver adgang:
-    - `KLIMAREGNSKABET_API_KEY` (bemærk ET) - Klimaregnskabet.dk. Bruges af Netlify-funktionen, `fetch_climate_data.py`, `fetch_trend_history.py` og `probe_api.py`.
+    - `KLIMAREGNSKABET_API_KEY` (bemærk ET) - Klimaregnskabet.dk. Bruges af `fetch_climate_data.py`, `fetch_trend_history.py` og `probe_api.py`.
     - `UVM_API_TOKEN` - Uddannelsesstatistik. Bruges af `fetch_udvidelse_data.py` og `fetch_trend_history.py`. Det er et JWT bundet til den bruger der oprettede det, med flere års levetid.
     - `DATAFORSYNINGEN_TOKEN` - Dataforsyningen (Klimadatastyrelsen). Bruges kun af `fetch_grundvandsdannelse.py` til HIP's WMS (DK-modellens grundvandsdannelse). Tallet er statisk (1991-2020), så scriptet skal kun køres igen ved en ny modelversion. Token'et oprettes gratis under "Min bruger" på dataforsyningen.dk.
 
-    Lokalt: `export` i shell-profilen. I produktion: Netlify → Site configuration → Environment variables. Til webappen lokalt: kopiér `webapp/.env.example` til `webapp/.env` (git-ignoreret).
+    Lokalt: `export` i shell-profilen. Webappen bruger ingen nøgler; Netlify-funktionen, der var proxy for Klimaregnskabet, blev aldrig kaldt af sitet og er fjernet ved flytningen til GitHub Pages (nov. 2026).
 
     Mekanikken bor i `scripts/api_noegler.py`. `hent_noegle()` fejler bevidst ALDRIG ved import, kun `kraev_noegle()` i `main()` afbryder. Årsag: et script der fejler ved import fejler tavst i `tjek_robusthed.py` og andre sammenhænge - se punkt 19.
 
@@ -283,7 +282,7 @@ Scriptet gemmer direkte til `data/doughnut_scores.csv`. Fra `scripts/` havner fi
 
 33. **Referencen bag hver ratio står i registret og i master (fra sep. 2026).** `reference.type` er `maal` (fast mål), `kommunegennemsnit` (uvægtet, beregnet ved build) eller `landstal` (fetch-scriptets tal - `definition` siger hvordan det er fundet). **Landsgennemsnit betyder Danmark som helhed:** de 98 kommuner samlet, vægtet med indikatorens egen nævner, ikke et uvægtet snit og ikke en hele-landet-række med tal uden kommune (kriminalitet: 8,7% uden gerningskommune). Tal pr. indbygger danner landstallet i `dst.pr_indbygger()`. Ingen indikator bruger længere et uvægtet kommunegennemsnit: de fire UVM-indikatorer vægtes fra sep. 2026 med folkeskoleelever efter bopælskommune (DST UDDAKT20, `fetch_udvidelse_data.py --kun-landstal` kræver ingen UVM-nøgle). Typen `kommunegennemsnit` findes stadig i registret til en fremtidig indikator uden nævner. Master har en ny sidste kolonne, `reference`, med den værdi ratioen er målt mod. **Fetch-scripterne skriver landstallet i `reference.col` (`<id>_ref`) fra sep. 2026**, og build bruger det direkte. For en CSV der ikke er hentet siden, rekonstrueres det stadig fra scriptets ratio (median af `raw×100/ratio`, afrundet til færrest decimaler der stadig rammer scriptets ratios); build-outputtet siger så "landstal, rekonstrueret". Et nyt script skal skrive `<id>_ref`. To ting fulgte med omlægningen: (1) 7 rækker for kvælstof/fosfor fra spildevand (Frederiksberg, Fanø, Rødovre, Herlev, Ærø) stod med ratio 66,67 uden råværdi - en artefakt af at 0 udledning blev til topscore 150 på den inverterede skala og derefter 10000/150. De er væk. (2) `scripts/rapport_dataaendringer.py` sammenligner ny master med den committede (rækker, ratios, råværdispring over 25%, farveskift, dataår) og køres automatisk efter hvert build. Læs den før commit - det var her Vejen-fejlen ville være blevet fanget.
 
-34. **Webappen nægter at bygge fra et master der ikke passer med registret (fra sep. 2026).** `validerMaster()` i `webapp/lib/data.ts` kører ved hvert build (også på Netlify) og i dev. Den stopper buildet hvis master indeholder et id registret ikke kender, hvis en scoret indikator mangler i master, eller hvis en ratio ikke passer med `råværdi` og `reference` efter formlen (en kontrol-kopi af `beregn_ratio()`, tolerance 0,011). Typisk årsag: `data/indikatorer.json` er rettet uden at `python3 scripts/build_master_csv.py` er kørt bagefter. Netlify beholder så den forrige version online, i stedet for at deploye tal der modsiger metoden. Første kørsel fandt straks at `income_gender_gap` manglede på sitet (se CHANGELOG 22. sep.). Ændrer du formlen i `build_master_csv.py`, skal kontrol-kopien i `data.ts` følge med - ellers fejler buildet, hvilket er meningen.
+34. **Webappen nægter at bygge fra et master der ikke passer med registret (fra sep. 2026).** `validerMaster()` i `webapp/lib/data.ts` kører ved hvert build (også i workflowen) og i dev. Den stopper buildet hvis master indeholder et id registret ikke kender, hvis en scoret indikator mangler i master, eller hvis en ratio ikke passer med `råværdi` og `reference` efter formlen (en kontrol-kopi af `beregn_ratio()`, tolerance 0,011). Typisk årsag: `data/indikatorer.json` er rettet uden at `python3 scripts/build_master_csv.py` er kørt bagefter. GitHub Pages beholder så den forrige version online, i stedet for at deploye tal der modsiger metoden. Første kørsel fandt straks at `income_gender_gap` manglede på sitet (se CHANGELOG 22. sep.). Ændrer du formlen i `build_master_csv.py`, skal kontrol-kopien i `data.ts` følge med - ellers fejler buildet, hvilket er meningen.
 
 35. **Skriv aldrig et landstal eller en dækning som tal i en tekst - brug en pladsholder (fra sep. 2026).** Registrets tekster (beskrivelser, grænser, begrundelser) og metodesidens `SOCIAL_METHODS`/`ECO_METHODS` skriver fx `{ref:pesticider:1}%`, `{daekning:sport_tilskuer} af {kommuner}`, `{mangler:vandindvinding}` og `{aar:areal_antropiseret}`. `udfyldTal()` i `shared.ts` udfylder dem fra `data/noegletal.json`, som `build_master_csv.py` skriver sammen med master. Håndskrevne tal som "9,2%", "72,9 m³" og "76 af 98" drev tidligere ved hver dataopdatering. En pladsholder der peger på en ukendt indikator, fanges af `tjek_konsistens.py` og stopper webappens build. Tal der ikke findes i master (fx fjernvarmens landsgennemsnit ~13%, som er kontekst uden reference), står stadig som tekst og skal rettes i hånden.
 

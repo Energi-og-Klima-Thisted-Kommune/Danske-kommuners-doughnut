@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   getKommune,
@@ -28,9 +29,9 @@ export default async function KommunePage({ params }: Props) {
     <div>
       {/* Header */}
       <div className="mb-6">
-        <a href="/" className="text-sm text-blue-600 hover:underline">
+        <Link href="/" className="text-sm text-blue-600 hover:underline">
           &larr; Søg kommuner
-        </a>
+        </Link>
         <div className="mt-2 flex items-baseline gap-3">
           <h2 className="text-2xl font-bold text-gray-900">
             {kommune.kommune_navn}

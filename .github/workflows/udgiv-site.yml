@@ -1,0 +1,72 @@
+# Bygger webappen og udgiver den på GitHub Pages.
+#
+# Push til main: byg og udgiv. Pull request: kun byg, så validerMaster() i
+# lib/data.ts stopper en masterfil, der ikke passer med registret, før den
+# merges. Webappen bygges af ../data (masterfil, register, kommuneliste), så
+# ændringer dér skal også udløse et build.
+#
+# Engangsopsætning: Settings > Pages > Build and deployment > Source:
+# "GitHub Actions".
+name: Byg og udgiv site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "webapp/**"
+      - "data/**"
+      - ".github/workflows/udgiv-site.yml"
+  pull_request:
+    paths:
+      - "webapp/**"
+      - "data/**"
+      - ".github/workflows/udgiv-site.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  byg:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: webapp/package-lock.json
+      - name: Find Pages-sti
+        id: pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+      - name: Installer
+        working-directory: webapp
+        run: npm ci
+      - name: Byg
+        working-directory: webapp
+        env:
+          # Tom ved eget domæne, ellers /<repo>.
+          NEXT_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: npm run build
+      - if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: webapp/out
+
+  udgiv:
+    if: github.event_name != 'pull_request'
+    needs: byg
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { SOCIAL_CATEGORIES, INDICATORS, ECOLOGICAL_DIMENSIONS, INDICATOR_RATIONALES, dimensionCsvFiles, udfyldTal } from "@/lib/shared";
 import { getDimensionDataYears } from "@/lib/data";
@@ -358,9 +359,9 @@ export default function MetodePage() {
         </p>
         <p className="text-sm text-gray-700 leading-relaxed mt-2">
           Læs mere om hvordan de planetære grænser ser ud for Danmark, og hvad der bevidst ikke kan måles på kommuneniveau, i{" "}
-          <a href="/artikel/planetaere-graenser" className="text-blue-600 hover:underline font-medium">
+          <Link href="/artikel/planetaere-graenser" className="text-blue-600 hover:underline font-medium">
             artiklen om planetære grænser
-          </a>.
+          </Link>.
         </p>
         <p className="text-sm text-gray-700 leading-relaxed mt-2">
           Hver dimension er mærket efter hvad den måles imod: <strong>mod mål</strong> (en fast absolut grænse - WHO, EU-mål, nitratgrænse, målbelastning, grundvandsressource, 0 % fossil, 95 %-uddannelsesmål) eller <strong>mod landsgennemsnit</strong> (umærket - relativ til de øvrige kommuner). Et par dimensioner er <strong>blandet</strong>. På en &quot;mod mål&quot;-dimension betyder grøn &quot;inden for grænsen&quot;; på en relativ betyder grøn &quot;bedre end de fleste kommuner&quot;.
@@ -562,7 +563,7 @@ export default function MetodePage() {
         <p className="text-sm text-gray-600 leading-relaxed">
           Al databehandling sker via Python-scripts i <code className="bg-gray-200 px-1 py-0.5 rounded text-xs">scripts/</code>-mappen
           i projektets GitHub-repo. CSV-filer i <code className="bg-gray-200 px-1 py-0.5 rounded text-xs">data/</code>-mappen
-          indeholder de beregnede ratioer der vises på platformen. Webappen er bygget med Next.js og deployet på Netlify.
+          indeholder de beregnede ratioer der vises på platformen. Webappen er bygget med Next.js og udgivet med GitHub Pages.
         </p>
         <p className="text-sm text-gray-600 leading-relaxed mt-2">
           Koden ligger offentligt på GitHub, men der er endnu ikke givet en licens til genbrug; den beslutning ligger hos Thisted Kommune. Platformen er under aktiv udvikling, og feedback er velkommen.

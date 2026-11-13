@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import {
@@ -683,9 +684,9 @@ export default function ScoreBars({
                             </div>
                             <div className="flex items-center gap-2 shrink-0">
                               <span className="text-gray-400 text-[10px]">Data: {indicatorDataYears[ind.id] ?? ind.dataYear ?? defaultDataYear}</span>
-                              <a href={`/metode#${cat.categoryId}`} className="text-blue-600 hover:underline">
+                              <Link href={`/metode#${cat.categoryId}`} className="text-blue-600 hover:underline">
                                 {ind.table} ↗
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -887,9 +888,9 @@ export default function ScoreBars({
                                 </span>
                               )}
                             </div>
-                            <a href={`/metode#${dim.id}`} className="text-blue-600 hover:underline">
+                            <Link href={`/metode#${dim.id}`} className="text-blue-600 hover:underline">
                               Se metode ↗
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       );

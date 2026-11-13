@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -156,9 +157,9 @@ export default function PlanetaereGraenserPage() {
           </p>
           <p className="text-sm text-gray-700 leading-relaxed mt-2">
             Brug den som udgangspunkt for dialog om grøn omstilling i din kommune - se også{" "}
-            <a href="/metode" className="text-blue-600 hover:underline font-medium">
+            <Link href="/metode" className="text-blue-600 hover:underline font-medium">
               Metode &amp; data
-            </a>{" "}
+            </Link>{" "}
             for hvordan hver enkelt dimension er beregnet.
           </p>
         </section>

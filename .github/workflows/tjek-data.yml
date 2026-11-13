@@ -1,6 +1,6 @@
 # Tjekker registret, masterfilen og metodesiden ved hver pull request.
 #
-# Netlifys deploy preview bygger allerede webappen (validerMaster i data.ts).
+# Workflowen "Byg og udgiv site" bygger allerede webappen (validerMaster i data.ts).
 # Det her fanger resten: en metodetekst der ikke passer med registret, forkert
 # fortegn i data, en tidsserie registret ikke kender, og en masterfil der ikke
 # er genberegnet efter en ændring i registret eller en rådata-CSV.

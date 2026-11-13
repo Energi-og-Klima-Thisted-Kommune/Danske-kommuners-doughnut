@@ -8,7 +8,8 @@ The project was built by the climate team at Thisted Municipality under the
 EU-funded LIFE ACT programme. It covers all 98 Danish municipalities using
 open public data only.
 
-**Live site:** built and deployed from this repository via Netlify.
+**Live site:** built and published from this repository with GitHub Pages
+(`.github/workflows/udgiv-site.yml`).
 
 ---
 
@@ -78,12 +79,11 @@ scripts/       Python fetchers, one or more per data source, plus the two
                build scripts that consolidate them.
 docs/          Architecture, methodology and data-source mapping.
 webapp/        Next.js 16 static site (App Router, Tailwind 4).
-netlify.toml   Build configuration.
+.github/       Workflows: data checks on pull requests, build and publish.
 ```
 
-There is no database and no backend, apart from one Netlify function that
-proxies the Klimaregnskabet.dk API so its key stays server-side. The site is a
-fully static export; all 98 municipality pages are pre-rendered at build time.
+There is no database and no backend. The site is a fully static export; all
+98 municipality pages are pre-rendered at build time.
 
 ## Running it locally
 
@@ -107,12 +107,12 @@ cd webapp
 npm run build      # static export to webapp/out/
 ```
 
-`webapp/out/` is generated output and is not tracked in git. Netlify runs this
-same build itself on every push.
-
-If you need the Klimaregnskabet proxy function locally, copy
-`webapp/.env.example` to `webapp/.env` and add your own API key. In production
-the key is set as a Netlify environment variable.
+`webapp/out/` is generated output and is not tracked in git. The GitHub
+workflow runs this same build on every push to `main` that touches `webapp/` or
+`data/`, and publishes it to GitHub Pages. Pull requests are built but not
+published. The site is served under `/<repo>/` until it gets its own domain;
+the workflow sets `NEXT_BASE_PATH` accordingly, so internal links must use
+`next/link`, not a plain `<a href="/...">`.
 
 ### Data pipeline
 
