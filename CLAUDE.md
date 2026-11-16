@@ -350,6 +350,7 @@ Scriptet gemmer direkte til `data/doughnut_scores.csv`. Fra `scripts/` havner fi
 - **`docs/concito-analyse-og-roadmap.md`** - hvad vi kan/ikke kan bruge fra CONCITO-rapporten + bevidste fravalg. Læs før øko-ændringer.
 - **`docs/aabne-traade-juni-2026.md`** - prioriterede løse ender og uudnyttede indsigter (scoringsfilosofi, education-badge, REshare, energiforbrug m.m.). Læs før næste større runde.
 - **`docs/oekologisk-gennemgang-sep-2026.md`** - gennemgang af de økologiske dimensioner: fundne svagheder, hvad der er ændret med hvilken kilde, og hvad der ikke kunne løses. Læs før næste ændring i det økologiske loft.
+- **`docs/akademisk-gennemgang-nov-2026.md`** - uafhængig gennemgang af normalisering, vægte, aldersstandardisering, nævnere og usikkerhed, med løsninger og nye datakilder. Beslutningsoplæg, intet er implementeret. Tallene genskabes med `docs/gennemgang-nov-2026/analyse.py`.
 - **`docs/arkitektur-og-beregningsregler.md`** - de normative beregningsregler (R1-R15), retningspilenes regler (T1-T8), kendte fælder og registrerede afvigelser mellem dokumentation og kode. Læs før enhver ændring i scoringen.
 - **`docs/artikler/`** - to metodeartikler (.docx) til offentligheden om den sociale og den økologiske ring, med følsomhedstest og svagheder. Tallene er et øjebliksbillede af data 26. sep. 2026 og genskabes med `analyse_artikler.py`. De er ikke lagt på platformen endnu (afventer godkendelse).
 
