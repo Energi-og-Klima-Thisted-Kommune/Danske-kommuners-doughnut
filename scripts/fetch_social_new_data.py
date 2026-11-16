@@ -120,27 +120,49 @@ def fetch_sports_membership() -> dict[str, float]:
     return result, national
 
 
+def treaarssnit(rate: dict[tuple[str, str], float], aar: list[str],
+                decimaler: int = 2) -> dict[tuple[str, str], float]:
+    """Gennemsnittet af raterne for Y-2, Y-1 og Y for hvert år Y i `aar`,
+    {(kommune_kode, Y): værdi} inkl. hele landet (000). År uden alle tre
+    udelades. Samme regel som serie_traffic_accidents (arkitekturdokumentet T9)."""
+    ud: dict[tuple[str, str], float] = {}
+    for kode in {k for k, _ in rate}:
+        for a in aar:
+            tre = [rate.get((kode, str(int(a) - d))) for d in range(3)]
+            if all(v is not None for v in tre):
+                ud[(kode, a)] = round(sum(tre) / 3, decimaler)
+    return ud
+
+
 def serie_crime_rate(aar: list[str]) -> dict[tuple[str, str], float]:
-    """STRAF11: anmeldte forbrydelser i alt pr. 1.000 indb., {(kommune_kode, år): værdi}
-    inkl. hele landet (000). Årstallet er summen af fire kvartaler, og kun år
-    med alle fire kvartaler tages med - et halvfærdigt år ville give et
-    kunstigt lavt tal. Folketallet er 1. januar samme år. Bruges af både scoren
-    og retningspilen (fetch_trend_history.py)."""
+    """STRAF11: anmeldte forbrydelser i alt pr. 1.000 indb., treårigt gennemsnit,
+    {(kommune_kode, år): værdi} inkl. hele landet (000). Hvert års tal er summen
+    af fire kvartaler, og kun år med alle fire kvartaler tages med - et
+    halvfærdigt år ville give et kunstigt lavt tal. Folketallet er 1. januar
+    samme år. Bruges af både scoren og retningspilen (fetch_trend_history.py).
+
+    TREÅRIGT GENNEMSNIT (indført nov. 2026): værdien for år Y er gennemsnittet
+    af raterne for Y-2, Y-1 og Y. Ét års tal svingede så meget fra år til år, at
+    86 af 98 Tryghedsfarver i standardvisningen lå inden for usikkerheden af en
+    farvegrænse (docs/akademisk-gennemgang-nov-2026.md, afsnit 2.5). Samme greb
+    som trafikulykkerne."""
     findes = set(perioder("STRAF11"))
-    hele = [a for a in aar if all(f"{a}K{k}" in findes for k in range(1, 5))]
+    hele = sorted({str(int(a) - d) for a in aar for d in range(3)
+                   if all(f"{int(a) - d}K{k}" in findes for k in range(1, 5))})
     if not hele:
         return {}
     rows = api_post("STRAF11", [
         {"code": "OMRÅDE", "values": ["*"]},
         {"code": "OVERTRÆD", "values": ["TOT"]},   # I alt
         {"code": "Tid", "values": [f"{a}K{k}" for a in hele for k in range(1, 5)]},
-    ])
-    return pr_indbygger(pr_kommune_aar(rows), 1000, 2)
+    ], timeout=180)
+    return treaarssnit(pr_indbygger(pr_kommune_aar(rows), 1000, 4), aar)
 
 
 def fetch_crime_rate() -> tuple[dict[str, float], float | None]:
-    """Anmeldte forbrydelser pr. 1.000 indb. i nyeste hele år, og landstallet."""
-    print("Henter kriminalitetsdata (STRAF11)...")
+    """Anmeldte forbrydelser pr. 1.000 indb., treårigt gennemsnit med nyeste hele år
+    som slutår, og landstallet."""
+    print("Henter kriminalitetsdata (STRAF11, treårigt gennemsnit)...")
     aar, _ = hele_aar_kvartaler("STRAF11")
     aar, result, national = seneste(serie_crime_rate([aar]), tabel="STRAF11")
     print(f"  {len(result)} kommuner ({aar}), landstal: {national} pr. 1.000")
@@ -459,26 +481,33 @@ def serie_neet(aar: list[str]) -> dict[tuple[str, str], float]:
     (000, de 98 kommuner samlet). Bruges af både scoren og retningspilen
     (fetch_trend_history.py).
 
+    TREÅRIGT GENNEMSNIT (indført nov. 2026): værdien for år Y er gennemsnittet
+    af andelene for Y-2, Y-1 og Y. Aldersgruppen er lille i de mindste kommuner,
+    og støjen fra år til år var over dobbelt så stor i kommuner under 25.000
+    indbyggere som i de store (docs/akademisk-gennemgang-nov-2026.md, afsnit 2.5).
+
     NEET3 afløser NEET1, som DST satte inaktiv i maj 2025 (sidste år 2023).
     NEET3 dækker 16-29 år med aldersgrupperne som variabel; 16-24 år giver
     præcis NEET1's tal (efterprøvet: alle 3.168 kommune-år 2008-2023 ens).
     """
+    findes = set(perioder("NEET3"))
     rows = api_post("NEET3", [
         {"code": "STATUSNEET", "values": ["00", "10"]},   # alle / ikke-aktive (NEET)
         {"code": "KØN", "values": ["00"]},
         {"code": "BOPOMR", "values": ["*"]},
         {"code": "SOCIO", "values": ["TOT"]},
         {"code": "ALDER", "values": ["1624"]},
-        {"code": "Tid", "values": aar},
+        {"code": "Tid", "values": sorted({str(int(a) - d) for a in aar for d in range(3)} & findes)},
     ])
     neet = pr_kommune_aar([r for r in rows if r.get("STATUSNEET") == "10"], "BOPOMR")
     alle = pr_kommune_aar([r for r in rows if r.get("STATUSNEET") == "00"], "BOPOMR")
-    return andel(neet, alle, 2)
+    return treaarssnit(andel(neet, alle, 4), aar)
 
 
 def fetch_neet() -> tuple[dict[str, float], float | None]:
-    """NEET-andel af de 16-24-årige i nyeste år med data, og landstallet."""
-    print("Henter NEET-unge (NEET3, 16-24 år)...")
+    """NEET-andel af de 16-24-årige, treårigt gennemsnit med nyeste år som slutår,
+    og landstallet."""
+    print("Henter NEET-unge (NEET3, 16-24 år, treårigt gennemsnit)...")
     aar, result, national = seneste(serie_neet(
         seneste_aar_liste("NEET3", 2, fallback=["2024", "2023"])), tabel="NEET3")
     print(f"  {len(result)} kommuner ({aar}), landsgennemsnit NEET-andel: {national}%")

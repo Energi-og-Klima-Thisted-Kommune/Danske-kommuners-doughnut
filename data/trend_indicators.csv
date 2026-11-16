@@ -1004,104 +1004,104 @@ kommune_kode,indicator_id,periode_start,periode_slut,vaerdi_start,vaerdi_slut,pc
 849,_dim_sundhed,2014-2016,2025,,,1.76,tempo,12,Danmarks Statistik,gennemsnit af 8 indikatorer
 851,_dim_sundhed,2014-2016,2025,,,3.29,rigtig,12,Danmarks Statistik,gennemsnit af 8 indikatorer
 860,_dim_sundhed,2014-2016,2025,,,2.15,tempo,12,Danmarks Statistik,gennemsnit af 8 indikatorer
-101,_dim_tryghed,2010-2012,2023-2025,,,31.45,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-147,_dim_tryghed,2010-2012,2023-2025,,,17.7,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-151,_dim_tryghed,2010-2012,2023-2025,,,32.34,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-153,_dim_tryghed,2010-2012,2023-2025,,,34.15,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-155,_dim_tryghed,2010-2012,2023-2025,,,14.33,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-157,_dim_tryghed,2010-2012,2023-2025,,,25.0,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-159,_dim_tryghed,2010-2012,2023-2025,,,25.29,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-161,_dim_tryghed,2010-2012,2023-2025,,,29.63,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-163,_dim_tryghed,2010-2012,2023-2025,,,34.23,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-165,_dim_tryghed,2010-2012,2023-2025,,,28.56,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-167,_dim_tryghed,2010-2012,2023-2025,,,37.34,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-169,_dim_tryghed,2010-2012,2023-2025,,,38.59,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-173,_dim_tryghed,2010-2012,2023-2025,,,37.96,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-175,_dim_tryghed,2010-2012,2023-2025,,,43.13,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-183,_dim_tryghed,2010-2012,2023-2025,,,46.89,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-185,_dim_tryghed,2010-2012,2023-2025,,,17.36,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-187,_dim_tryghed,2010-2012,2023-2025,,,17.33,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-190,_dim_tryghed,2010-2012,2023-2025,,,31.17,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-201,_dim_tryghed,2010-2012,2023-2025,,,39.44,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-210,_dim_tryghed,2010-2012,2023-2025,,,41.04,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-217,_dim_tryghed,2010-2012,2023-2025,,,32.83,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-219,_dim_tryghed,2010-2012,2023-2025,,,28.52,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-223,_dim_tryghed,2010-2012,2023-2025,,,28.37,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-230,_dim_tryghed,2010-2012,2023-2025,,,30.3,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-240,_dim_tryghed,2010-2012,2023-2025,,,17.52,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-250,_dim_tryghed,2010-2012,2023-2025,,,28.91,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-253,_dim_tryghed,2010-2012,2023-2025,,,47.24,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-259,_dim_tryghed,2010-2012,2023-2025,,,42.98,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-260,_dim_tryghed,2010-2012,2023-2025,,,33.81,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-265,_dim_tryghed,2010-2012,2023-2025,,,33.09,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-269,_dim_tryghed,2010-2012,2023-2025,,,48.14,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-270,_dim_tryghed,2010-2012,2023-2025,,,23.47,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-306,_dim_tryghed,2010-2012,2023-2025,,,36.06,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-316,_dim_tryghed,2010-2012,2023-2025,,,24.24,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-320,_dim_tryghed,2010-2012,2023-2025,,,38.47,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-326,_dim_tryghed,2010-2012,2023-2025,,,34.86,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-329,_dim_tryghed,2010-2012,2023-2025,,,44.33,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-330,_dim_tryghed,2010-2012,2023-2025,,,26.96,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-336,_dim_tryghed,2010-2012,2023-2025,,,16.12,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-340,_dim_tryghed,2010-2012,2023-2025,,,33.64,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-350,_dim_tryghed,2010-2012,2023-2025,,,29.48,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-360,_dim_tryghed,2010-2012,2023-2025,,,28.62,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-370,_dim_tryghed,2010-2012,2023-2025,,,12.97,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-376,_dim_tryghed,2010-2012,2023-2025,,,32.3,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-390,_dim_tryghed,2010-2012,2023-2025,,,36.55,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-400,_dim_tryghed,2010-2012,2023-2025,,,31.12,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-410,_dim_tryghed,2010-2012,2023-2025,,,45.9,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-420,_dim_tryghed,2010-2012,2023-2025,,,44.3,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-430,_dim_tryghed,2010-2012,2023-2025,,,39.98,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-440,_dim_tryghed,2010-2012,2023-2025,,,39.21,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-450,_dim_tryghed,2010-2012,2023-2025,,,48.55,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-461,_dim_tryghed,2010-2012,2023-2025,,,48.25,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-479,_dim_tryghed,2010-2012,2023-2025,,,36.83,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-480,_dim_tryghed,2010-2012,2023-2025,,,39.52,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-482,_dim_tryghed,2010-2012,2023-2025,,,43.92,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-492,_dim_tryghed,2010-2012,2023-2025,,,15.07,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-510,_dim_tryghed,2010-2012,2023-2025,,,42.39,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-530,_dim_tryghed,2010-2012,2023-2025,,,28.02,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-540,_dim_tryghed,2010-2012,2023-2025,,,49.04,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-550,_dim_tryghed,2010-2012,2023-2025,,,43.66,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-561,_dim_tryghed,2010-2012,2023-2025,,,45.4,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-563,_dim_tryghed,2010-2012,2023-2025,,,-59.01,forkert,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-573,_dim_tryghed,2010-2012,2023-2025,,,48.27,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-575,_dim_tryghed,2010-2012,2023-2025,,,53.13,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-580,_dim_tryghed,2010-2012,2023-2025,,,46.22,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-607,_dim_tryghed,2010-2012,2023-2025,,,30.18,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-615,_dim_tryghed,2010-2012,2023-2025,,,48.62,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-621,_dim_tryghed,2010-2012,2023-2025,,,42.44,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-630,_dim_tryghed,2010-2012,2023-2025,,,45.57,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-657,_dim_tryghed,2010-2012,2023-2025,,,44.17,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-661,_dim_tryghed,2010-2012,2023-2025,,,32.28,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-665,_dim_tryghed,2010-2012,2023-2025,,,19.55,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-671,_dim_tryghed,2010-2012,2023-2025,,,40.48,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-706,_dim_tryghed,2010-2012,2023-2025,,,45.12,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-707,_dim_tryghed,2010-2012,2023-2025,,,40.83,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-710,_dim_tryghed,2010-2012,2023-2025,,,43.63,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-727,_dim_tryghed,2010-2012,2023-2025,,,46.11,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-730,_dim_tryghed,2010-2012,2023-2025,,,43.03,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-740,_dim_tryghed,2010-2012,2023-2025,,,48.42,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-741,_dim_tryghed,2010-2012,2023-2025,,,1.2,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-746,_dim_tryghed,2010-2012,2023-2025,,,52.57,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-751,_dim_tryghed,2010-2012,2023-2025,,,25.61,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-756,_dim_tryghed,2010-2012,2023-2025,,,31.07,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-760,_dim_tryghed,2010-2012,2023-2025,,,34.5,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-766,_dim_tryghed,2010-2012,2023-2025,,,40.28,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-773,_dim_tryghed,2010-2012,2023-2025,,,41.79,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-779,_dim_tryghed,2010-2012,2023-2025,,,37.98,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-787,_dim_tryghed,2010-2012,2023-2025,,,50.64,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-791,_dim_tryghed,2010-2012,2023-2025,,,26.83,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-810,_dim_tryghed,2010-2012,2023-2025,,,50.36,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-813,_dim_tryghed,2010-2012,2023-2025,,,39.2,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-820,_dim_tryghed,2010-2012,2023-2025,,,30.24,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-825,_dim_tryghed,2010-2012,2023-2025,,,-10.16,forkert,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-840,_dim_tryghed,2010-2012,2023-2025,,,45.49,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-846,_dim_tryghed,2010-2012,2023-2025,,,49.61,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-849,_dim_tryghed,2010-2012,2023-2025,,,48.76,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-851,_dim_tryghed,2010-2012,2023-2025,,,43.47,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
-860,_dim_tryghed,2010-2012,2023-2025,,,39.71,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+101,_dim_tryghed,2010-2012,2023-2025,,,31.59,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+147,_dim_tryghed,2010-2012,2023-2025,,,16.55,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+151,_dim_tryghed,2010-2012,2023-2025,,,34.81,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+153,_dim_tryghed,2010-2012,2023-2025,,,34.49,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+155,_dim_tryghed,2010-2012,2023-2025,,,15.28,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+157,_dim_tryghed,2010-2012,2023-2025,,,26.48,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+159,_dim_tryghed,2010-2012,2023-2025,,,28.24,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+161,_dim_tryghed,2010-2012,2023-2025,,,36.24,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+163,_dim_tryghed,2010-2012,2023-2025,,,34.88,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+165,_dim_tryghed,2010-2012,2023-2025,,,30.95,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+167,_dim_tryghed,2010-2012,2023-2025,,,40.17,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+169,_dim_tryghed,2010-2012,2023-2025,,,39.52,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+173,_dim_tryghed,2010-2012,2023-2025,,,38.48,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+175,_dim_tryghed,2010-2012,2023-2025,,,44.02,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+183,_dim_tryghed,2010-2012,2023-2025,,,50.72,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+185,_dim_tryghed,2010-2012,2023-2025,,,19.05,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+187,_dim_tryghed,2010-2012,2023-2025,,,22.09,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+190,_dim_tryghed,2010-2012,2023-2025,,,33.23,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+201,_dim_tryghed,2010-2012,2023-2025,,,33.54,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+210,_dim_tryghed,2010-2012,2023-2025,,,42.98,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+217,_dim_tryghed,2010-2012,2023-2025,,,33.62,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+219,_dim_tryghed,2010-2012,2023-2025,,,26.26,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+223,_dim_tryghed,2010-2012,2023-2025,,,23.02,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+230,_dim_tryghed,2010-2012,2023-2025,,,30.32,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+240,_dim_tryghed,2010-2012,2023-2025,,,20.27,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+250,_dim_tryghed,2010-2012,2023-2025,,,30.54,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+253,_dim_tryghed,2010-2012,2023-2025,,,49.09,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+259,_dim_tryghed,2010-2012,2023-2025,,,45.08,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+260,_dim_tryghed,2010-2012,2023-2025,,,31.77,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+265,_dim_tryghed,2010-2012,2023-2025,,,34.02,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+269,_dim_tryghed,2010-2012,2023-2025,,,49.45,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+270,_dim_tryghed,2010-2012,2023-2025,,,23.42,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+306,_dim_tryghed,2010-2012,2023-2025,,,36.14,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+316,_dim_tryghed,2010-2012,2023-2025,,,26.62,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+320,_dim_tryghed,2010-2012,2023-2025,,,39.71,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+326,_dim_tryghed,2010-2012,2023-2025,,,36.56,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+329,_dim_tryghed,2010-2012,2023-2025,,,45.47,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+330,_dim_tryghed,2010-2012,2023-2025,,,28.59,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+336,_dim_tryghed,2010-2012,2023-2025,,,16.8,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+340,_dim_tryghed,2010-2012,2023-2025,,,35.2,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+350,_dim_tryghed,2010-2012,2023-2025,,,30.37,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+360,_dim_tryghed,2010-2012,2023-2025,,,27.84,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+370,_dim_tryghed,2010-2012,2023-2025,,,16.77,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+376,_dim_tryghed,2010-2012,2023-2025,,,34.44,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+390,_dim_tryghed,2010-2012,2023-2025,,,35.22,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+400,_dim_tryghed,2010-2012,2023-2025,,,33.36,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+410,_dim_tryghed,2010-2012,2023-2025,,,48.5,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+420,_dim_tryghed,2010-2012,2023-2025,,,48.53,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+430,_dim_tryghed,2010-2012,2023-2025,,,41.28,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+440,_dim_tryghed,2010-2012,2023-2025,,,42.89,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+450,_dim_tryghed,2010-2012,2023-2025,,,48.59,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+461,_dim_tryghed,2010-2012,2023-2025,,,50.45,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+479,_dim_tryghed,2010-2012,2023-2025,,,37.25,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+480,_dim_tryghed,2010-2012,2023-2025,,,44.31,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+482,_dim_tryghed,2010-2012,2023-2025,,,41.87,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+492,_dim_tryghed,2010-2012,2023-2025,,,19.79,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+510,_dim_tryghed,2010-2012,2023-2025,,,45.36,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+530,_dim_tryghed,2010-2012,2023-2025,,,27.51,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+540,_dim_tryghed,2010-2012,2023-2025,,,49.62,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+550,_dim_tryghed,2010-2012,2023-2025,,,42.7,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+561,_dim_tryghed,2010-2012,2023-2025,,,45.26,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+563,_dim_tryghed,2010-2012,2023-2025,,,-60.03,forkert,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+573,_dim_tryghed,2010-2012,2023-2025,,,48.62,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+575,_dim_tryghed,2010-2012,2023-2025,,,52.06,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+580,_dim_tryghed,2010-2012,2023-2025,,,46.96,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+607,_dim_tryghed,2010-2012,2023-2025,,,30.54,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+615,_dim_tryghed,2010-2012,2023-2025,,,49.08,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+621,_dim_tryghed,2010-2012,2023-2025,,,44.12,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+630,_dim_tryghed,2010-2012,2023-2025,,,47.39,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+657,_dim_tryghed,2010-2012,2023-2025,,,44.06,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+661,_dim_tryghed,2010-2012,2023-2025,,,33.64,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+665,_dim_tryghed,2010-2012,2023-2025,,,17.55,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+671,_dim_tryghed,2010-2012,2023-2025,,,40.55,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+706,_dim_tryghed,2010-2012,2023-2025,,,46.66,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+707,_dim_tryghed,2010-2012,2023-2025,,,44.57,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+710,_dim_tryghed,2010-2012,2023-2025,,,42.78,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+727,_dim_tryghed,2010-2012,2023-2025,,,45.81,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+730,_dim_tryghed,2010-2012,2023-2025,,,43.38,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+740,_dim_tryghed,2010-2012,2023-2025,,,49.99,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+741,_dim_tryghed,2010-2012,2023-2025,,,4.36,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+746,_dim_tryghed,2010-2012,2023-2025,,,51.86,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+751,_dim_tryghed,2010-2012,2023-2025,,,24.83,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+756,_dim_tryghed,2010-2012,2023-2025,,,28.43,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+760,_dim_tryghed,2010-2012,2023-2025,,,35.0,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+766,_dim_tryghed,2010-2012,2023-2025,,,41.88,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+773,_dim_tryghed,2010-2012,2023-2025,,,42.3,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+779,_dim_tryghed,2010-2012,2023-2025,,,39.66,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+787,_dim_tryghed,2010-2012,2023-2025,,,50.2,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+791,_dim_tryghed,2010-2012,2023-2025,,,28.16,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+810,_dim_tryghed,2010-2012,2023-2025,,,48.61,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+813,_dim_tryghed,2010-2012,2023-2025,,,42.09,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+820,_dim_tryghed,2010-2012,2023-2025,,,30.47,tempo,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+825,_dim_tryghed,2010-2012,2023-2025,,,-5.78,forkert,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+840,_dim_tryghed,2010-2012,2023-2025,,,44.78,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+846,_dim_tryghed,2010-2012,2023-2025,,,50.95,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+849,_dim_tryghed,2010-2012,2023-2025,,,49.25,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+851,_dim_tryghed,2010-2012,2023-2025,,,43.58,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
+860,_dim_tryghed,2010-2012,2023-2025,,,40.7,rigtig,16,Danmarks Statistik,gennemsnit af 2 indikatorer
 101,_dim_uddannelse,2010-2012,2024-2026,,,6.85,rigtig,16,Danmarks Statistik,gennemsnit af 6 indikatorer
 147,_dim_uddannelse,2010-2012,2024-2026,,,-4.1,forkert,16,Danmarks Statistik,gennemsnit af 7 indikatorer
 151,_dim_uddannelse,2010-2012,2024-2026,,,-1.59,forkert,16,Danmarks Statistik,gennemsnit af 7 indikatorer
@@ -1296,104 +1296,104 @@ kommune_kode,indicator_id,periode_start,periode_slut,vaerdi_start,vaerdi_slut,pc
 849,_dim_vand,2010-2012,2022-2024,,,18.5,rigtig,15,Danmarks Statistik,vandindvinding
 851,_dim_vand,2010-2012,2022-2024,,,-3.26,forkert,15,Danmarks Statistik,vandindvinding
 860,_dim_vand,2010-2012,2022-2024,,,3.13,rigtig,15,Danmarks Statistik,vandindvinding
-101,_dim_velfaerd,2010-2012,2023-2025,,,6.43,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-147,_dim_velfaerd,2010-2012,2023-2025,,,-8.36,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-151,_dim_velfaerd,2010-2012,2023-2025,,,-24.21,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-153,_dim_velfaerd,2010-2012,2023-2025,,,-17.39,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-155,_dim_velfaerd,2010-2012,2023-2025,,,-7.92,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-157,_dim_velfaerd,2010-2012,2023-2025,,,-14.89,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-159,_dim_velfaerd,2010-2012,2023-2025,,,-11.76,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-161,_dim_velfaerd,2010-2012,2023-2025,,,-14.43,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-163,_dim_velfaerd,2010-2012,2023-2025,,,-5.92,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-165,_dim_velfaerd,2010-2012,2023-2025,,,0.67,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-167,_dim_velfaerd,2010-2012,2023-2025,,,1.27,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-169,_dim_velfaerd,2010-2012,2023-2025,,,-18.74,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-173,_dim_velfaerd,2010-2012,2023-2025,,,-12.05,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-175,_dim_velfaerd,2010-2012,2023-2025,,,-10.88,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-183,_dim_velfaerd,2010-2012,2023-2025,,,5.57,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-185,_dim_velfaerd,2010-2012,2023-2025,,,-7.77,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-187,_dim_velfaerd,2010-2012,2023-2025,,,-32.5,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-190,_dim_velfaerd,2010-2012,2023-2025,,,-15.63,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-201,_dim_velfaerd,2010-2012,2023-2025,,,-17.92,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-210,_dim_velfaerd,2010-2012,2023-2025,,,-17.51,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-217,_dim_velfaerd,2010-2012,2023-2025,,,-4.35,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-219,_dim_velfaerd,2010-2012,2023-2025,,,-12.62,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-223,_dim_velfaerd,2010-2012,2023-2025,,,-27.73,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-230,_dim_velfaerd,2010-2012,2023-2025,,,-11.03,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-240,_dim_velfaerd,2010-2012,2023-2025,,,-13.18,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-250,_dim_velfaerd,2010-2012,2023-2025,,,-18.7,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-253,_dim_velfaerd,2010-2012,2023-2025,,,-16.55,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-259,_dim_velfaerd,2010-2012,2023-2025,,,-16.65,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-260,_dim_velfaerd,2010-2012,2023-2025,,,-4.86,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-265,_dim_velfaerd,2010-2012,2023-2025,,,-8.57,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-269,_dim_velfaerd,2010-2012,2023-2025,,,-16.85,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-270,_dim_velfaerd,2010-2012,2023-2025,,,-12.06,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-306,_dim_velfaerd,2010-2012,2023-2025,,,2.54,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-316,_dim_velfaerd,2010-2012,2023-2025,,,-0.76,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-320,_dim_velfaerd,2010-2012,2023-2025,,,-11.58,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-326,_dim_velfaerd,2010-2012,2023-2025,,,-8.86,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-329,_dim_velfaerd,2010-2012,2023-2025,,,1.09,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-330,_dim_velfaerd,2010-2012,2023-2025,,,-20.39,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-336,_dim_velfaerd,2010-2012,2023-2025,,,-0.53,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-340,_dim_velfaerd,2010-2012,2023-2025,,,-20.95,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-350,_dim_velfaerd,2010-2012,2023-2025,,,-15.54,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-360,_dim_velfaerd,2010-2012,2023-2025,,,-8.92,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-370,_dim_velfaerd,2010-2012,2023-2025,,,-17.54,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-376,_dim_velfaerd,2010-2012,2023-2025,,,-23.76,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-390,_dim_velfaerd,2010-2012,2023-2025,,,-19.45,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-400,_dim_velfaerd,2010-2012,2023-2025,,,-20.46,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-410,_dim_velfaerd,2010-2012,2023-2025,,,-22.4,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-420,_dim_velfaerd,2010-2012,2023-2025,,,-15.19,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-430,_dim_velfaerd,2010-2012,2023-2025,,,-9.36,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-440,_dim_velfaerd,2010-2012,2023-2025,,,-32.63,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-450,_dim_velfaerd,2010-2012,2023-2025,,,-24.25,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-461,_dim_velfaerd,2010-2012,2023-2025,,,-10.57,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-479,_dim_velfaerd,2010-2012,2023-2025,,,1.38,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-480,_dim_velfaerd,2010-2012,2023-2025,,,-29.05,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-482,_dim_velfaerd,2010-2012,2023-2025,,,-15.66,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-492,_dim_velfaerd,2010-2012,2023-2025,,,-16.1,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-510,_dim_velfaerd,2010-2012,2023-2025,,,-20.41,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-530,_dim_velfaerd,2010-2012,2023-2025,,,3.9,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-540,_dim_velfaerd,2010-2012,2023-2025,,,-14.28,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-550,_dim_velfaerd,2010-2012,2023-2025,,,-8.86,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-561,_dim_velfaerd,2010-2012,2023-2025,,,8.03,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-563,_dim_velfaerd,2010-2012,2023-2025,,,9.84,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-573,_dim_velfaerd,2010-2012,2023-2025,,,3.13,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-575,_dim_velfaerd,2010-2012,2023-2025,,,-9.73,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-580,_dim_velfaerd,2010-2012,2023-2025,,,-10.65,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-607,_dim_velfaerd,2010-2012,2023-2025,,,-16.91,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-615,_dim_velfaerd,2010-2012,2023-2025,,,-4.16,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-621,_dim_velfaerd,2010-2012,2023-2025,,,-5.34,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-630,_dim_velfaerd,2010-2012,2023-2025,,,-7.25,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-657,_dim_velfaerd,2010-2012,2023-2025,,,2.44,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-661,_dim_velfaerd,2010-2012,2023-2025,,,-5.71,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-665,_dim_velfaerd,2010-2012,2023-2025,,,-11.39,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-671,_dim_velfaerd,2010-2012,2023-2025,,,-7.94,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-706,_dim_velfaerd,2010-2012,2023-2025,,,-0.89,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-707,_dim_velfaerd,2010-2012,2023-2025,,,0.89,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-710,_dim_velfaerd,2010-2012,2023-2025,,,0.52,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-727,_dim_velfaerd,2010-2012,2023-2025,,,-4.08,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-730,_dim_velfaerd,2010-2012,2023-2025,,,-7.76,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-740,_dim_velfaerd,2010-2012,2023-2025,,,-2.63,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-741,_dim_velfaerd,2010-2012,2023-2025,,,-19.07,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-746,_dim_velfaerd,2010-2012,2023-2025,,,-4.83,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-751,_dim_velfaerd,2010-2012,2023-2025,,,0.62,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-756,_dim_velfaerd,2010-2012,2023-2025,,,-19.4,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-760,_dim_velfaerd,2010-2012,2023-2025,,,0.12,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-766,_dim_velfaerd,2010-2012,2023-2025,,,-13.91,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-773,_dim_velfaerd,2010-2012,2023-2025,,,-1.64,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-779,_dim_velfaerd,2010-2012,2023-2025,,,-16.45,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-787,_dim_velfaerd,2010-2012,2023-2025,,,-4.35,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-791,_dim_velfaerd,2010-2012,2023-2025,,,-2.32,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-810,_dim_velfaerd,2010-2012,2023-2025,,,-8.94,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-813,_dim_velfaerd,2010-2012,2023-2025,,,-15.21,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-820,_dim_velfaerd,2010-2012,2023-2025,,,4.76,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-825,_dim_velfaerd,2010-2012,2023-2025,,,-92.29,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-840,_dim_velfaerd,2010-2012,2023-2025,,,-3.83,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-846,_dim_velfaerd,2010-2012,2023-2025,,,-4.95,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-849,_dim_velfaerd,2010-2012,2023-2025,,,-10.41,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-851,_dim_velfaerd,2010-2012,2023-2025,,,-8.68,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
-860,_dim_velfaerd,2010-2012,2023-2025,,,-14.44,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+101,_dim_velfaerd,2010-2012,2023-2025,,,6.91,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+147,_dim_velfaerd,2010-2012,2023-2025,,,-8.08,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+151,_dim_velfaerd,2010-2012,2023-2025,,,-23.95,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+153,_dim_velfaerd,2010-2012,2023-2025,,,-17.49,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+155,_dim_velfaerd,2010-2012,2023-2025,,,-8.73,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+157,_dim_velfaerd,2010-2012,2023-2025,,,-14.54,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+159,_dim_velfaerd,2010-2012,2023-2025,,,-11.71,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+161,_dim_velfaerd,2010-2012,2023-2025,,,-15.04,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+163,_dim_velfaerd,2010-2012,2023-2025,,,-5.38,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+165,_dim_velfaerd,2010-2012,2023-2025,,,0.31,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+167,_dim_velfaerd,2010-2012,2023-2025,,,0.93,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+169,_dim_velfaerd,2010-2012,2023-2025,,,-19.09,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+173,_dim_velfaerd,2010-2012,2023-2025,,,-11.57,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+175,_dim_velfaerd,2010-2012,2023-2025,,,-10.73,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+183,_dim_velfaerd,2010-2012,2023-2025,,,5.63,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+185,_dim_velfaerd,2010-2012,2023-2025,,,-8.19,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+187,_dim_velfaerd,2010-2012,2023-2025,,,-32.79,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+190,_dim_velfaerd,2010-2012,2023-2025,,,-15.25,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+201,_dim_velfaerd,2010-2012,2023-2025,,,-18.17,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+210,_dim_velfaerd,2010-2012,2023-2025,,,-16.78,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+217,_dim_velfaerd,2010-2012,2023-2025,,,-3.87,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+219,_dim_velfaerd,2010-2012,2023-2025,,,-11.55,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+223,_dim_velfaerd,2010-2012,2023-2025,,,-27.95,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+230,_dim_velfaerd,2010-2012,2023-2025,,,-10.77,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+240,_dim_velfaerd,2010-2012,2023-2025,,,-11.72,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+250,_dim_velfaerd,2010-2012,2023-2025,,,-17.78,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+253,_dim_velfaerd,2010-2012,2023-2025,,,-15.9,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+259,_dim_velfaerd,2010-2012,2023-2025,,,-16.16,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+260,_dim_velfaerd,2010-2012,2023-2025,,,-5.11,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+265,_dim_velfaerd,2010-2012,2023-2025,,,-8.39,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+269,_dim_velfaerd,2010-2012,2023-2025,,,-16.92,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+270,_dim_velfaerd,2010-2012,2023-2025,,,-11.74,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+306,_dim_velfaerd,2010-2012,2023-2025,,,2.85,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+316,_dim_velfaerd,2010-2012,2023-2025,,,-0.82,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+320,_dim_velfaerd,2010-2012,2023-2025,,,-10.66,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+326,_dim_velfaerd,2010-2012,2023-2025,,,-8.97,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+329,_dim_velfaerd,2010-2012,2023-2025,,,1.17,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+330,_dim_velfaerd,2010-2012,2023-2025,,,-20.45,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+336,_dim_velfaerd,2010-2012,2023-2025,,,0.34,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+340,_dim_velfaerd,2010-2012,2023-2025,,,-20.03,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+350,_dim_velfaerd,2010-2012,2023-2025,,,-15.17,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+360,_dim_velfaerd,2010-2012,2023-2025,,,-8.16,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+370,_dim_velfaerd,2010-2012,2023-2025,,,-17.6,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+376,_dim_velfaerd,2010-2012,2023-2025,,,-23.34,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+390,_dim_velfaerd,2010-2012,2023-2025,,,-18.47,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+400,_dim_velfaerd,2010-2012,2023-2025,,,-20.25,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+410,_dim_velfaerd,2010-2012,2023-2025,,,-21.74,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+420,_dim_velfaerd,2010-2012,2023-2025,,,-14.11,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+430,_dim_velfaerd,2010-2012,2023-2025,,,-8.76,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+440,_dim_velfaerd,2010-2012,2023-2025,,,-33.37,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+450,_dim_velfaerd,2010-2012,2023-2025,,,-23.83,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+461,_dim_velfaerd,2010-2012,2023-2025,,,-9.78,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+479,_dim_velfaerd,2010-2012,2023-2025,,,1.04,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+480,_dim_velfaerd,2010-2012,2023-2025,,,-28.26,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+482,_dim_velfaerd,2010-2012,2023-2025,,,-14.38,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+492,_dim_velfaerd,2010-2012,2023-2025,,,-18.56,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+510,_dim_velfaerd,2010-2012,2023-2025,,,-20.01,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+530,_dim_velfaerd,2010-2012,2023-2025,,,3.52,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+540,_dim_velfaerd,2010-2012,2023-2025,,,-14.07,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+550,_dim_velfaerd,2010-2012,2023-2025,,,-9.17,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+561,_dim_velfaerd,2010-2012,2023-2025,,,8.13,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+563,_dim_velfaerd,2010-2012,2023-2025,,,9.2,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+573,_dim_velfaerd,2010-2012,2023-2025,,,3.23,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+575,_dim_velfaerd,2010-2012,2023-2025,,,-8.95,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+580,_dim_velfaerd,2010-2012,2023-2025,,,-9.96,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+607,_dim_velfaerd,2010-2012,2023-2025,,,-15.64,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+615,_dim_velfaerd,2010-2012,2023-2025,,,-3.64,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+621,_dim_velfaerd,2010-2012,2023-2025,,,-4.62,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+630,_dim_velfaerd,2010-2012,2023-2025,,,-7.14,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+657,_dim_velfaerd,2010-2012,2023-2025,,,2.71,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+661,_dim_velfaerd,2010-2012,2023-2025,,,-5.62,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+665,_dim_velfaerd,2010-2012,2023-2025,,,-11.33,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+671,_dim_velfaerd,2010-2012,2023-2025,,,-7.89,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+706,_dim_velfaerd,2010-2012,2023-2025,,,0.01,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+707,_dim_velfaerd,2010-2012,2023-2025,,,1.59,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+710,_dim_velfaerd,2010-2012,2023-2025,,,1.05,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+727,_dim_velfaerd,2010-2012,2023-2025,,,-4.37,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+730,_dim_velfaerd,2010-2012,2023-2025,,,-7.35,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+740,_dim_velfaerd,2010-2012,2023-2025,,,-2.31,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+741,_dim_velfaerd,2010-2012,2023-2025,,,-20.46,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+746,_dim_velfaerd,2010-2012,2023-2025,,,-4.7,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+751,_dim_velfaerd,2010-2012,2023-2025,,,0.44,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+756,_dim_velfaerd,2010-2012,2023-2025,,,-18.5,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+760,_dim_velfaerd,2010-2012,2023-2025,,,0.05,stagneret,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+766,_dim_velfaerd,2010-2012,2023-2025,,,-12.99,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+773,_dim_velfaerd,2010-2012,2023-2025,,,-1.35,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+779,_dim_velfaerd,2010-2012,2023-2025,,,-15.74,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+787,_dim_velfaerd,2010-2012,2023-2025,,,-4.06,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+791,_dim_velfaerd,2010-2012,2023-2025,,,-2.48,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+810,_dim_velfaerd,2010-2012,2023-2025,,,-8.08,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+813,_dim_velfaerd,2010-2012,2023-2025,,,-14.8,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+820,_dim_velfaerd,2010-2012,2023-2025,,,4.17,rigtig,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+825,_dim_velfaerd,2010-2012,2023-2025,,,-90.67,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+840,_dim_velfaerd,2010-2012,2023-2025,,,-4.21,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+846,_dim_velfaerd,2010-2012,2023-2025,,,-4.73,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+849,_dim_velfaerd,2010-2012,2023-2025,,,-10.51,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+851,_dim_velfaerd,2010-2012,2023-2025,,,-8.18,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
+860,_dim_velfaerd,2010-2012,2023-2025,,,-14.25,forkert,15,Danmarks Statistik,gennemsnit af 7 indikatorer
 101,alkohol,2017,2025,23.5,17.7,-24.68,rigtig,2,Danmarks Statistik,
 147,alkohol,2017,2025,24.1,18.2,-24.48,rigtig,2,Danmarks Statistik,
 151,alkohol,2017,2025,18.2,12.6,-30.77,rigtig,2,Danmarks Statistik,
@@ -2276,104 +2276,104 @@ kommune_kode,indicator_id,periode_start,periode_slut,vaerdi_start,vaerdi_slut,pc
 849,commute_distance,2010-2012,2022-2024,25.1667,29.6667,17.88,forkert,15,Danmarks Statistik,
 851,commute_distance,2010-2012,2022-2024,21.3667,25.9333,21.37,forkert,15,Danmarks Statistik,
 860,commute_distance,2010-2012,2022-2024,22.5667,26.5,17.43,forkert,15,Danmarks Statistik,
-101,crime_rate,2010-2012,2023-2025,183.4767,127.35,-30.59,rigtig,16,Danmarks Statistik,
-147,crime_rate,2010-2012,2023-2025,96.5033,75.5,-21.76,tempo,16,Danmarks Statistik,
-151,crime_rate,2010-2012,2023-2025,95.4767,75.09,-21.35,tempo,16,Danmarks Statistik,
-153,crime_rate,2010-2012,2023-2025,99.0967,80.8467,-18.42,tempo,16,Danmarks Statistik,
-155,crime_rate,2010-2012,2023-2025,50.7667,38.4367,-24.29,tempo,16,Danmarks Statistik,
-157,crime_rate,2010-2012,2023-2025,83.8267,64.3267,-23.26,tempo,16,Danmarks Statistik,
-159,crime_rate,2010-2012,2023-2025,76.0633,66.6633,-12.36,tempo,16,Danmarks Statistik,
-161,crime_rate,2010-2012,2023-2025,118.4867,112.6033,-4.97,tempo,16,Danmarks Statistik,
-163,crime_rate,2010-2012,2023-2025,106.1,78.3933,-26.11,tempo,16,Danmarks Statistik,
-165,crime_rate,2010-2012,2023-2025,107.2733,86.5367,-19.33,tempo,16,Danmarks Statistik,
-167,crime_rate,2010-2012,2023-2025,101.1833,71.9333,-28.91,tempo,16,Danmarks Statistik,
-169,crime_rate,2010-2012,2023-2025,90.8767,67.8867,-25.3,tempo,16,Danmarks Statistik,
-173,crime_rate,2010-2012,2023-2025,97.3167,68.1567,-29.96,tempo,16,Danmarks Statistik,
-175,crime_rate,2010-2012,2023-2025,111.4633,75.27,-32.47,rigtig,16,Danmarks Statistik,
-183,crime_rate,2010-2012,2023-2025,109.56,74.79,-31.74,rigtig,16,Danmarks Statistik,
-185,crime_rate,2010-2012,2023-2025,162.22,150.8467,-7.01,tempo,16,Danmarks Statistik,
-187,crime_rate,2010-2012,2023-2025,75.8867,49.6567,-34.56,rigtig,16,Danmarks Statistik,
-190,crime_rate,2010-2012,2023-2025,74.3567,50.7333,-31.77,rigtig,16,Danmarks Statistik,
-201,crime_rate,2010-2012,2023-2025,128.7233,49.82,-61.3,rigtig,16,Danmarks Statistik,
-210,crime_rate,2010-2012,2023-2025,67.2467,49.27,-26.73,tempo,16,Danmarks Statistik,
-217,crime_rate,2010-2012,2023-2025,104.4333,70.11,-32.87,rigtig,16,Danmarks Statistik,
-219,crime_rate,2010-2012,2023-2025,95.9367,66.46,-30.73,rigtig,16,Danmarks Statistik,
-223,crime_rate,2010-2012,2023-2025,68.77,60.46,-12.08,tempo,16,Danmarks Statistik,
-230,crime_rate,2010-2012,2023-2025,71.6367,53.2967,-25.6,tempo,16,Danmarks Statistik,
-240,crime_rate,2010-2012,2023-2025,54.95,39.27,-28.54,tempo,16,Danmarks Statistik,
-250,crime_rate,2010-2012,2023-2025,65.1667,49.9767,-23.31,tempo,16,Danmarks Statistik,
-253,crime_rate,2010-2012,2023-2025,100.6133,56.75,-43.6,rigtig,16,Danmarks Statistik,
-259,crime_rate,2010-2012,2023-2025,99.8,59.9967,-39.88,rigtig,16,Danmarks Statistik,
-260,crime_rate,2010-2012,2023-2025,84.59,47.73,-43.57,rigtig,16,Danmarks Statistik,
-265,crime_rate,2010-2012,2023-2025,109.0067,66.6033,-38.9,rigtig,16,Danmarks Statistik,
-269,crime_rate,2010-2012,2023-2025,77.2367,42.89,-44.47,rigtig,16,Danmarks Statistik,
-270,crime_rate,2010-2012,2023-2025,66.8767,54.55,-18.43,tempo,16,Danmarks Statistik,
-306,crime_rate,2010-2012,2023-2025,85.4133,61.6467,-27.83,tempo,16,Danmarks Statistik,
-316,crime_rate,2010-2012,2023-2025,75.85,51.5733,-32.01,rigtig,16,Danmarks Statistik,
-320,crime_rate,2010-2012,2023-2025,70.5667,42.4833,-39.8,rigtig,16,Danmarks Statistik,
-326,crime_rate,2010-2012,2023-2025,74.9067,50.99,-31.93,rigtig,16,Danmarks Statistik,
-329,crime_rate,2010-2012,2023-2025,85.12,55.4833,-34.82,rigtig,16,Danmarks Statistik,
-330,crime_rate,2010-2012,2023-2025,96.58,68.7867,-28.78,tempo,16,Danmarks Statistik,
-336,crime_rate,2010-2012,2023-2025,45.83,37.1233,-19.0,tempo,16,Danmarks Statistik,
-340,crime_rate,2010-2012,2023-2025,70.9967,49.0967,-30.85,rigtig,16,Danmarks Statistik,
-350,crime_rate,2010-2012,2023-2025,53.1033,35.77,-32.64,rigtig,16,Danmarks Statistik,
-360,crime_rate,2010-2012,2023-2025,91.3267,74.8667,-18.02,tempo,16,Danmarks Statistik,
-370,crime_rate,2010-2012,2023-2025,74.57,60.1667,-19.32,tempo,16,Danmarks Statistik,
-376,crime_rate,2010-2012,2023-2025,77.92,60.7333,-22.06,tempo,16,Danmarks Statistik,
-390,crime_rate,2010-2012,2023-2025,75.1633,47.59,-36.68,rigtig,16,Danmarks Statistik,
-400,crime_rate,2010-2012,2023-2025,43.3267,40.0,-7.68,tempo,16,Danmarks Statistik,
-410,crime_rate,2010-2012,2023-2025,77.9867,55.05,-29.41,tempo,16,Danmarks Statistik,
-420,crime_rate,2010-2012,2023-2025,59.79,44.1367,-26.18,tempo,16,Danmarks Statistik,
-430,crime_rate,2010-2012,2023-2025,59.3367,42.3333,-28.66,tempo,16,Danmarks Statistik,
-440,crime_rate,2010-2012,2023-2025,57.1767,44.34,-22.45,tempo,16,Danmarks Statistik,
-450,crime_rate,2010-2012,2023-2025,86.8733,51.34,-40.9,rigtig,16,Danmarks Statistik,
-461,crime_rate,2010-2012,2023-2025,115.6,76.71,-33.64,rigtig,16,Danmarks Statistik,
-479,crime_rate,2010-2012,2023-2025,69.7333,50.8167,-27.13,tempo,16,Danmarks Statistik,
-480,crime_rate,2010-2012,2023-2025,62.92,44.7233,-28.92,tempo,16,Danmarks Statistik,
-482,crime_rate,2010-2012,2023-2025,55.9133,39.8367,-28.75,tempo,16,Danmarks Statistik,
-492,crime_rate,2010-2012,2023-2025,24.93,25.6433,2.86,stagneret,16,Danmarks Statistik,
-510,crime_rate,2010-2012,2023-2025,77.5433,53.7767,-30.65,rigtig,16,Danmarks Statistik,
-530,crime_rate,2010-2012,2023-2025,98.2267,69.5633,-29.18,tempo,16,Danmarks Statistik,
-540,crime_rate,2010-2012,2023-2025,73.84,44.71,-39.45,rigtig,16,Danmarks Statistik,
-550,crime_rate,2010-2012,2023-2025,76.3333,53.7267,-29.62,tempo,16,Danmarks Statistik,
-561,crime_rate,2010-2012,2023-2025,94.6267,65.78,-30.48,tempo,16,Danmarks Statistik,
-563,crime_rate,2010-2012,2023-2025,51.31,48.46,-5.55,tempo,16,Danmarks Statistik,
-573,crime_rate,2010-2012,2023-2025,70.3733,43.6,-38.04,rigtig,16,Danmarks Statistik,
-575,crime_rate,2010-2012,2023-2025,74.37,41.2867,-44.48,rigtig,16,Danmarks Statistik,
-580,crime_rate,2010-2012,2023-2025,101.39,66.6067,-34.31,rigtig,16,Danmarks Statistik,
-607,crime_rate,2010-2012,2023-2025,113.02,77.4567,-31.47,rigtig,16,Danmarks Statistik,
-615,crime_rate,2010-2012,2023-2025,90.4667,55.4,-38.76,rigtig,16,Danmarks Statistik,
-621,crime_rate,2010-2012,2023-2025,92.4933,61.35,-33.67,rigtig,16,Danmarks Statistik,
-630,crime_rate,2010-2012,2023-2025,89.98,57.62,-35.96,rigtig,16,Danmarks Statistik,
-657,crime_rate,2010-2012,2023-2025,69.4533,53.9433,-22.33,tempo,16,Danmarks Statistik,
-661,crime_rate,2010-2012,2023-2025,69.1433,54.3967,-21.33,tempo,16,Danmarks Statistik,
-665,crime_rate,2010-2012,2023-2025,39.7833,30.0867,-24.37,tempo,16,Danmarks Statistik,
-671,crime_rate,2010-2012,2023-2025,49.6033,36.4467,-26.52,tempo,16,Danmarks Statistik,
-706,crime_rate,2010-2012,2023-2025,67.39,38.65,-42.65,rigtig,16,Danmarks Statistik,
-707,crime_rate,2010-2012,2023-2025,71.48,51.6167,-27.79,tempo,16,Danmarks Statistik,
-710,crime_rate,2010-2012,2023-2025,54.66,31.5267,-42.32,rigtig,16,Danmarks Statistik,
-727,crime_rate,2010-2012,2023-2025,57.3367,31.2533,-45.49,rigtig,16,Danmarks Statistik,
-730,crime_rate,2010-2012,2023-2025,90.1367,58.1833,-35.45,rigtig,16,Danmarks Statistik,
-740,crime_rate,2010-2012,2023-2025,69.91,44.8533,-35.84,rigtig,16,Danmarks Statistik,
-741,crime_rate,2010-2012,2023-2025,42.9967,51.9533,20.83,forkert,16,Danmarks Statistik,
-746,crime_rate,2010-2012,2023-2025,67.7767,33.28,-50.9,rigtig,16,Danmarks Statistik,
-751,crime_rate,2010-2012,2023-2025,123.06,80.6267,-34.48,rigtig,16,Danmarks Statistik,
-756,crime_rate,2010-2012,2023-2025,71.6633,72.9967,1.86,forkert,16,Danmarks Statistik,
-760,crime_rate,2010-2012,2023-2025,56.76,35.08,-38.2,rigtig,16,Danmarks Statistik,
-766,crime_rate,2010-2012,2023-2025,57.2867,40.7967,-28.79,tempo,16,Danmarks Statistik,
-773,crime_rate,2010-2012,2023-2025,56.05,34.6933,-38.1,rigtig,16,Danmarks Statistik,
-779,crime_rate,2010-2012,2023-2025,63.72,44.14,-30.73,rigtig,16,Danmarks Statistik,
-787,crime_rate,2010-2012,2023-2025,57.5967,37.9633,-34.09,rigtig,16,Danmarks Statistik,
-791,crime_rate,2010-2012,2023-2025,61.2567,49.1033,-19.84,tempo,16,Danmarks Statistik,
-810,crime_rate,2010-2012,2023-2025,60.85,34.61,-43.12,rigtig,16,Danmarks Statistik,
-813,crime_rate,2010-2012,2023-2025,78.06,50.03,-35.91,rigtig,16,Danmarks Statistik,
-820,crime_rate,2010-2012,2023-2025,69.8267,50.7933,-27.26,tempo,16,Danmarks Statistik,
-825,crime_rate,2010-2012,2023-2025,28.8867,31.4067,8.72,forkert,16,Danmarks Statistik,
-840,crime_rate,2010-2012,2023-2025,54.16,31.34,-42.13,rigtig,16,Danmarks Statistik,
-846,crime_rate,2010-2012,2023-2025,73.3433,42.9633,-41.42,rigtig,16,Danmarks Statistik,
-849,crime_rate,2010-2012,2023-2025,66.2,35.7367,-46.02,rigtig,16,Danmarks Statistik,
-851,crime_rate,2010-2012,2023-2025,98.84,62.5533,-36.71,rigtig,16,Danmarks Statistik,
-860,crime_rate,2010-2012,2023-2025,68.34,44.6367,-34.68,rigtig,16,Danmarks Statistik,
+101,crime_rate,2010-2012,2023-2025,183.87,127.0833,-30.88,tempo,16,Danmarks Statistik,
+147,crime_rate,2010-2012,2023-2025,92.1033,74.1933,-19.45,tempo,16,Danmarks Statistik,
+151,crime_rate,2010-2012,2023-2025,100.7733,74.27,-26.3,tempo,16,Danmarks Statistik,
+153,crime_rate,2010-2012,2023-2025,101.8033,82.3567,-19.1,tempo,16,Danmarks Statistik,
+155,crime_rate,2010-2012,2023-2025,50.27,37.11,-26.18,tempo,16,Danmarks Statistik,
+157,crime_rate,2010-2012,2023-2025,86.0133,63.4433,-26.24,tempo,16,Danmarks Statistik,
+159,crime_rate,2010-2012,2023-2025,80.29,65.6233,-18.27,tempo,16,Danmarks Statistik,
+161,crime_rate,2010-2012,2023-2025,125.9767,103.06,-18.19,tempo,16,Danmarks Statistik,
+163,crime_rate,2010-2012,2023-2025,108.7933,78.9667,-27.42,tempo,16,Danmarks Statistik,
+165,crime_rate,2010-2012,2023-2025,113.8,86.3733,-24.1,tempo,16,Danmarks Statistik,
+167,crime_rate,2010-2012,2023-2025,106.68,69.81,-34.56,rigtig,16,Danmarks Statistik,
+169,crime_rate,2010-2012,2023-2025,98.35,71.6367,-27.16,tempo,16,Danmarks Statistik,
+173,crime_rate,2010-2012,2023-2025,98.4567,67.94,-31.0,tempo,16,Danmarks Statistik,
+175,crime_rate,2010-2012,2023-2025,116.1233,76.3533,-34.25,rigtig,16,Danmarks Statistik,
+183,crime_rate,2010-2012,2023-2025,124.5033,75.4433,-39.4,rigtig,16,Danmarks Statistik,
+185,crime_rate,2010-2012,2023-2025,158.84,142.36,-10.38,tempo,16,Danmarks Statistik,
+187,crime_rate,2010-2012,2023-2025,84.4033,47.2067,-44.07,rigtig,16,Danmarks Statistik,
+190,crime_rate,2010-2012,2023-2025,78.0933,50.0633,-35.89,rigtig,16,Danmarks Statistik,
+201,crime_rate,2010-2012,2023-2025,105.5533,53.2967,-49.51,rigtig,16,Danmarks Statistik,
+210,crime_rate,2010-2012,2023-2025,69.0567,47.9067,-30.63,tempo,16,Danmarks Statistik,
+217,crime_rate,2010-2012,2023-2025,110.3667,72.3367,-34.46,rigtig,16,Danmarks Statistik,
+219,crime_rate,2010-2012,2023-2025,90.54,66.8,-26.22,tempo,16,Danmarks Statistik,
+223,crime_rate,2010-2012,2023-2025,70.28,69.31,-1.38,stagneret,16,Danmarks Statistik,
+230,crime_rate,2010-2012,2023-2025,71.31,53.0233,-25.64,tempo,16,Danmarks Statistik,
+240,crime_rate,2010-2012,2023-2025,58.9567,38.9,-34.02,rigtig,16,Danmarks Statistik,
+250,crime_rate,2010-2012,2023-2025,70.19,51.54,-26.57,tempo,16,Danmarks Statistik,
+253,crime_rate,2010-2012,2023-2025,107.6933,56.7633,-47.29,rigtig,16,Danmarks Statistik,
+259,crime_rate,2010-2012,2023-2025,104.69,58.5533,-44.07,rigtig,16,Danmarks Statistik,
+260,crime_rate,2010-2012,2023-2025,84.0267,50.85,-39.48,rigtig,16,Danmarks Statistik,
+265,crime_rate,2010-2012,2023-2025,110.1933,65.2867,-40.75,rigtig,16,Danmarks Statistik,
+269,crime_rate,2010-2012,2023-2025,82.42,43.6,-47.1,rigtig,16,Danmarks Statistik,
+270,crime_rate,2010-2012,2023-2025,69.96,57.1333,-18.33,tempo,16,Danmarks Statistik,
+306,crime_rate,2010-2012,2023-2025,85.8367,61.8167,-27.98,tempo,16,Danmarks Statistik,
+316,crime_rate,2010-2012,2023-2025,79.8,50.4767,-36.75,rigtig,16,Danmarks Statistik,
+320,crime_rate,2010-2012,2023-2025,74.5633,43.04,-42.28,rigtig,16,Danmarks Statistik,
+326,crime_rate,2010-2012,2023-2025,81.0167,52.3833,-35.34,rigtig,16,Danmarks Statistik,
+329,crime_rate,2010-2012,2023-2025,89.3367,56.1967,-37.1,rigtig,16,Danmarks Statistik,
+330,crime_rate,2010-2012,2023-2025,96.8667,65.8333,-32.04,tempo,16,Danmarks Statistik,
+336,crime_rate,2010-2012,2023-2025,46.71,37.1967,-20.37,tempo,16,Danmarks Statistik,
+340,crime_rate,2010-2012,2023-2025,71.4233,47.1633,-33.97,tempo,16,Danmarks Statistik,
+350,crime_rate,2010-2012,2023-2025,56.51,37.0567,-34.42,rigtig,16,Danmarks Statistik,
+360,crime_rate,2010-2012,2023-2025,97.89,81.7567,-16.48,tempo,16,Danmarks Statistik,
+370,crime_rate,2010-2012,2023-2025,77.6033,56.7167,-26.91,tempo,16,Danmarks Statistik,
+376,crime_rate,2010-2012,2023-2025,82.1867,60.55,-26.33,tempo,16,Danmarks Statistik,
+390,crime_rate,2010-2012,2023-2025,78.66,51.9033,-34.02,rigtig,16,Danmarks Statistik,
+400,crime_rate,2010-2012,2023-2025,47.0233,41.3033,-12.16,tempo,16,Danmarks Statistik,
+410,crime_rate,2010-2012,2023-2025,80.6667,52.74,-34.62,rigtig,16,Danmarks Statistik,
+420,crime_rate,2010-2012,2023-2025,63.7,41.64,-34.63,rigtig,16,Danmarks Statistik,
+430,crime_rate,2010-2012,2023-2025,59.81,41.1133,-31.26,tempo,16,Danmarks Statistik,
+440,crime_rate,2010-2012,2023-2025,59.4733,41.74,-29.82,tempo,16,Danmarks Statistik,
+450,crime_rate,2010-2012,2023-2025,89.1933,52.65,-40.97,rigtig,16,Danmarks Statistik,
+461,crime_rate,2010-2012,2023-2025,120.6467,74.7533,-38.04,rigtig,16,Danmarks Statistik,
+479,crime_rate,2010-2012,2023-2025,72.2467,52.05,-27.96,tempo,16,Danmarks Statistik,
+480,crime_rate,2010-2012,2023-2025,67.91,41.76,-38.51,rigtig,16,Danmarks Statistik,
+482,crime_rate,2010-2012,2023-2025,59.0267,44.4767,-24.65,tempo,16,Danmarks Statistik,
+492,crime_rate,2010-2012,2023-2025,26.5767,24.8267,-6.58,tempo,16,Danmarks Statistik,
+510,crime_rate,2010-2012,2023-2025,83.83,53.1667,-36.58,rigtig,16,Danmarks Statistik,
+530,crime_rate,2010-2012,2023-2025,97.3233,69.93,-28.15,tempo,16,Danmarks Statistik,
+540,crime_rate,2010-2012,2023-2025,78.19,46.43,-40.62,rigtig,16,Danmarks Statistik,
+550,crime_rate,2010-2012,2023-2025,77.5,56.04,-27.69,tempo,16,Danmarks Statistik,
+561,crime_rate,2010-2012,2023-2025,96.5,67.3567,-30.2,tempo,16,Danmarks Statistik,
+563,crime_rate,2010-2012,2023-2025,50.89,49.1067,-3.5,tempo,16,Danmarks Statistik,
+573,crime_rate,2010-2012,2023-2025,71.9133,44.0367,-38.76,rigtig,16,Danmarks Statistik,
+575,crime_rate,2010-2012,2023-2025,76.6633,44.1967,-42.35,rigtig,16,Danmarks Statistik,
+580,crime_rate,2010-2012,2023-2025,108.8867,69.92,-35.79,rigtig,16,Danmarks Statistik,
+607,crime_rate,2010-2012,2023-2025,116.6733,79.12,-32.19,tempo,16,Danmarks Statistik,
+615,crime_rate,2010-2012,2023-2025,93.4767,56.4067,-39.66,rigtig,16,Danmarks Statistik,
+621,crime_rate,2010-2012,2023-2025,99.4367,62.6133,-37.03,rigtig,16,Danmarks Statistik,
+630,crime_rate,2010-2012,2023-2025,93.3767,56.3933,-39.61,rigtig,16,Danmarks Statistik,
+657,crime_rate,2010-2012,2023-2025,72.3467,56.3567,-22.1,tempo,16,Danmarks Statistik,
+661,crime_rate,2010-2012,2023-2025,71.21,54.0767,-24.06,tempo,16,Danmarks Statistik,
+665,crime_rate,2010-2012,2023-2025,39.0933,31.1333,-20.36,tempo,16,Danmarks Statistik,
+671,crime_rate,2010-2012,2023-2025,53.3967,39.1667,-26.65,tempo,16,Danmarks Statistik,
+706,crime_rate,2010-2012,2023-2025,71.0133,38.54,-45.73,rigtig,16,Danmarks Statistik,
+707,crime_rate,2010-2012,2023-2025,77.7533,50.3233,-35.28,rigtig,16,Danmarks Statistik,
+710,crime_rate,2010-2012,2023-2025,54.58,32.4033,-40.63,rigtig,16,Danmarks Statistik,
+727,crime_rate,2010-2012,2023-2025,58.31,32.1233,-44.91,rigtig,16,Danmarks Statistik,
+730,crime_rate,2010-2012,2023-2025,94.7833,60.5133,-36.16,rigtig,16,Danmarks Statistik,
+740,crime_rate,2010-2012,2023-2025,71.5867,43.6833,-38.98,rigtig,16,Danmarks Statistik,
+741,crime_rate,2010-2012,2023-2025,41.4733,47.4833,14.49,forkert,16,Danmarks Statistik,
+746,crime_rate,2010-2012,2023-2025,66.8167,33.7567,-49.48,rigtig,16,Danmarks Statistik,
+751,crime_rate,2010-2012,2023-2025,121.88,81.7733,-32.91,tempo,16,Danmarks Statistik,
+756,crime_rate,2010-2012,2023-2025,71.4967,76.5967,7.13,forkert,16,Danmarks Statistik,
+760,crime_rate,2010-2012,2023-2025,58.4533,35.5333,-39.21,rigtig,16,Danmarks Statistik,
+766,crime_rate,2010-2012,2023-2025,58.51,39.79,-31.99,tempo,16,Danmarks Statistik,
+773,crime_rate,2010-2012,2023-2025,58.9067,35.8567,-39.13,rigtig,16,Danmarks Statistik,
+779,crime_rate,2010-2012,2023-2025,67.3533,44.4067,-34.07,rigtig,16,Danmarks Statistik,
+787,crime_rate,2010-2012,2023-2025,59.6167,39.8167,-33.21,tempo,16,Danmarks Statistik,
+791,crime_rate,2010-2012,2023-2025,64.9067,50.2933,-22.51,tempo,16,Danmarks Statistik,
+810,crime_rate,2010-2012,2023-2025,60.4133,36.4767,-39.62,rigtig,16,Danmarks Statistik,
+813,crime_rate,2010-2012,2023-2025,83.3733,48.6267,-41.68,rigtig,16,Danmarks Statistik,
+820,crime_rate,2010-2012,2023-2025,72.5833,52.4667,-27.72,tempo,16,Danmarks Statistik,
+825,crime_rate,2010-2012,2023-2025,26.11,26.1,-0.04,stagneret,16,Danmarks Statistik,
+840,crime_rate,2010-2012,2023-2025,52.6033,31.1933,-40.7,rigtig,16,Danmarks Statistik,
+846,crime_rate,2010-2012,2023-2025,75.6033,42.2667,-44.09,rigtig,16,Danmarks Statistik,
+849,crime_rate,2010-2012,2023-2025,67.34,35.6833,-47.01,rigtig,16,Danmarks Statistik,
+851,crime_rate,2010-2012,2023-2025,98.0333,61.84,-36.92,rigtig,16,Danmarks Statistik,
+860,crime_rate,2010-2012,2023-2025,70.4133,44.59,-36.67,rigtig,16,Danmarks Statistik,
 101,disposable_income,2010-2012,2022-2024,168702.3333,236498.6667,40.19,rigtig,15,Danmarks Statistik,
 147,disposable_income,2010-2012,2022-2024,195882.3333,263547.0,34.54,rigtig,15,Danmarks Statistik,
 151,disposable_income,2010-2012,2022-2024,189243.3333,246485.0,30.25,rigtig,15,Danmarks Statistik,
@@ -4421,104 +4421,104 @@ kommune_kode,indicator_id,periode_start,periode_slut,vaerdi_start,vaerdi_slut,pc
 849,n_deposition,2016-2018,2022-2024,11.5667,10.2567,-11.33,rigtig,9,DCE (DEHM-modellen),
 851,n_deposition,2016-2018,2022-2024,11.89,10.8567,-8.69,tempo,9,DCE (DEHM-modellen),
 860,n_deposition,2016-2018,2022-2024,12.21,11.2133,-8.16,stagneret,9,DCE (DEHM-modellen),
-101,neet,2010-2012,2022-2024,10.6467,8.13,-23.64,rigtig,15,Danmarks Statistik,
-147,neet,2010-2012,2022-2024,10.2867,6.5967,-35.87,rigtig,15,Danmarks Statistik,
-151,neet,2010-2012,2022-2024,11.98,8.8867,-25.82,rigtig,15,Danmarks Statistik,
-153,neet,2010-2012,2022-2024,13.14,10.06,-23.44,rigtig,15,Danmarks Statistik,
-155,neet,2010-2012,2022-2024,11.34,7.3567,-35.13,rigtig,15,Danmarks Statistik,
-157,neet,2010-2012,2022-2024,10.6533,9.7467,-8.51,stagneret,15,Danmarks Statistik,
-159,neet,2010-2012,2022-2024,10.69,8.0133,-25.04,rigtig,15,Danmarks Statistik,
-161,neet,2010-2012,2022-2024,10.97,8.9567,-18.35,rigtig,15,Danmarks Statistik,
-163,neet,2010-2012,2022-2024,11.0467,8.77,-20.61,rigtig,15,Danmarks Statistik,
-165,neet,2010-2012,2022-2024,13.1133,9.2867,-29.18,rigtig,15,Danmarks Statistik,
-167,neet,2010-2012,2022-2024,11.2933,8.25,-26.95,rigtig,15,Danmarks Statistik,
-169,neet,2010-2012,2022-2024,12.33,9.69,-21.41,rigtig,15,Danmarks Statistik,
-173,neet,2010-2012,2022-2024,8.7967,7.1633,-18.57,rigtig,15,Danmarks Statistik,
-175,neet,2010-2012,2022-2024,11.4133,9.2333,-19.1,rigtig,15,Danmarks Statistik,
-183,neet,2010-2012,2022-2024,13.44,10.1467,-24.5,rigtig,15,Danmarks Statistik,
-185,neet,2010-2012,2022-2024,12.3633,9.54,-22.84,rigtig,15,Danmarks Statistik,
-187,neet,2010-2012,2022-2024,9.8967,8.1967,-17.18,rigtig,15,Danmarks Statistik,
-190,neet,2010-2012,2022-2024,10.0433,8.59,-14.47,rigtig,15,Danmarks Statistik,
-201,neet,2010-2012,2022-2024,8.2633,7.8433,-5.08,tempo,15,Danmarks Statistik,
-210,neet,2010-2012,2022-2024,10.95,9.5233,-13.03,rigtig,15,Danmarks Statistik,
-217,neet,2010-2012,2022-2024,10.8967,9.3267,-14.41,rigtig,15,Danmarks Statistik,
-219,neet,2010-2012,2022-2024,9.47,9.2633,-2.18,tempo,15,Danmarks Statistik,
-223,neet,2010-2012,2022-2024,10.6,9.3333,-11.95,rigtig,15,Danmarks Statistik,
-230,neet,2010-2012,2022-2024,9.2133,8.4033,-8.79,rigtig,15,Danmarks Statistik,
-240,neet,2010-2012,2022-2024,8.1267,8.08,-0.57,stagneret,15,Danmarks Statistik,
-250,neet,2010-2012,2022-2024,10.8433,10.0167,-7.62,stagneret,15,Danmarks Statistik,
-253,neet,2010-2012,2022-2024,9.46,8.91,-5.81,tempo,15,Danmarks Statistik,
-259,neet,2010-2012,2022-2024,10.96,9.8567,-10.07,rigtig,15,Danmarks Statistik,
-260,neet,2010-2012,2022-2024,13.6233,11.6767,-14.29,rigtig,15,Danmarks Statistik,
-265,neet,2010-2012,2022-2024,10.65,7.57,-28.92,rigtig,15,Danmarks Statistik,
-269,neet,2010-2012,2022-2024,9.0,7.2,-20.0,rigtig,15,Danmarks Statistik,
-270,neet,2010-2012,2022-2024,11.24,10.0267,-10.79,rigtig,15,Danmarks Statistik,
-306,neet,2010-2012,2022-2024,17.08,13.4867,-21.04,rigtig,15,Danmarks Statistik,
-316,neet,2010-2012,2022-2024,12.28,10.48,-14.66,rigtig,15,Danmarks Statistik,
-320,neet,2010-2012,2022-2024,12.1667,11.66,-4.16,stagneret,15,Danmarks Statistik,
-326,neet,2010-2012,2022-2024,13.6833,11.22,-18.0,rigtig,15,Danmarks Statistik,
-329,neet,2010-2012,2022-2024,12.1233,9.63,-20.57,rigtig,15,Danmarks Statistik,
-330,neet,2010-2012,2022-2024,12.5633,10.61,-15.55,rigtig,15,Danmarks Statistik,
-336,neet,2010-2012,2022-2024,12.1033,11.3933,-5.87,stagneret,15,Danmarks Statistik,
-340,neet,2010-2012,2022-2024,11.7533,11.2333,-4.42,stagneret,15,Danmarks Statistik,
-350,neet,2010-2012,2022-2024,10.7067,9.49,-11.36,rigtig,15,Danmarks Statistik,
-360,neet,2010-2012,2022-2024,13.98,16.1933,15.83,forkert,15,Danmarks Statistik,
-370,neet,2010-2012,2022-2024,11.4833,10.6133,-7.58,stagneret,15,Danmarks Statistik,
-376,neet,2010-2012,2022-2024,13.3233,12.7167,-4.55,stagneret,15,Danmarks Statistik,
-390,neet,2010-2012,2022-2024,13.2467,13.7167,3.55,stagneret,15,Danmarks Statistik,
-400,neet,2010-2012,2022-2024,12.8567,12.1467,-5.52,stagneret,15,Danmarks Statistik,
-410,neet,2010-2012,2022-2024,9.1967,10.6167,15.44,forkert,15,Danmarks Statistik,
-420,neet,2010-2012,2022-2024,11.7667,13.2633,12.72,forkert,15,Danmarks Statistik,
-430,neet,2010-2012,2022-2024,11.54,10.8467,-6.01,stagneret,15,Danmarks Statistik,
-440,neet,2010-2012,2022-2024,13.1133,9.8633,-24.78,rigtig,15,Danmarks Statistik,
-450,neet,2010-2012,2022-2024,11.1167,10.53,-5.28,stagneret,15,Danmarks Statistik,
-461,neet,2010-2012,2022-2024,9.2167,8.1533,-11.54,rigtig,15,Danmarks Statistik,
-479,neet,2010-2012,2022-2024,11.7133,11.2,-4.38,stagneret,15,Danmarks Statistik,
-480,neet,2010-2012,2022-2024,12.22,13.2,8.02,stagneret,15,Danmarks Statistik,
-482,neet,2010-2012,2022-2024,12.2633,13.8733,13.13,forkert,15,Danmarks Statistik,
-492,neet,2010-2012,2022-2024,11.6233,9.8767,-15.03,rigtig,15,Danmarks Statistik,
-510,neet,2010-2012,2022-2024,11.13,11.03,-0.9,stagneret,15,Danmarks Statistik,
-530,neet,2010-2012,2022-2024,11.6533,9.5333,-18.19,rigtig,15,Danmarks Statistik,
-540,neet,2010-2012,2022-2024,11.4067,11.1033,-2.66,stagneret,15,Danmarks Statistik,
-550,neet,2010-2012,2022-2024,11.8733,11.3767,-4.18,stagneret,15,Danmarks Statistik,
-561,neet,2010-2012,2022-2024,11.21,9.3967,-16.18,rigtig,15,Danmarks Statistik,
-563,neet,2010-2012,2022-2024,10.8267,10.45,-3.48,stagneret,15,Danmarks Statistik,
-573,neet,2010-2012,2022-2024,10.5067,9.9,-5.77,stagneret,15,Danmarks Statistik,
-575,neet,2010-2012,2022-2024,10.8,10.82,0.19,stagneret,15,Danmarks Statistik,
-580,neet,2010-2012,2022-2024,11.3733,11.1567,-1.91,stagneret,15,Danmarks Statistik,
-607,neet,2010-2012,2022-2024,11.7733,11.29,-4.11,stagneret,15,Danmarks Statistik,
-615,neet,2010-2012,2022-2024,10.7867,10.7467,-0.37,stagneret,15,Danmarks Statistik,
-621,neet,2010-2012,2022-2024,10.1933,9.3333,-8.44,stagneret,15,Danmarks Statistik,
-630,neet,2010-2012,2022-2024,11.0,10.0633,-8.52,stagneret,15,Danmarks Statistik,
-657,neet,2010-2012,2022-2024,10.6267,9.6733,-8.97,stagneret,15,Danmarks Statistik,
-661,neet,2010-2012,2022-2024,9.94,8.58,-13.68,rigtig,15,Danmarks Statistik,
-665,neet,2010-2012,2022-2024,10.02,9.69,-3.29,stagneret,15,Danmarks Statistik,
-671,neet,2010-2012,2022-2024,11.8433,11.3333,-4.31,stagneret,15,Danmarks Statistik,
-706,neet,2010-2012,2022-2024,12.58,12.9867,3.23,stagneret,15,Danmarks Statistik,
-707,neet,2010-2012,2022-2024,12.1967,12.0733,-1.01,stagneret,15,Danmarks Statistik,
-710,neet,2010-2012,2022-2024,9.7133,9.8733,1.65,forkert,15,Danmarks Statistik,
-727,neet,2010-2012,2022-2024,10.43,10.83,3.84,stagneret,15,Danmarks Statistik,
-730,neet,2010-2012,2022-2024,11.4267,11.48,0.47,stagneret,15,Danmarks Statistik,
-740,neet,2010-2012,2022-2024,10.5767,9.7967,-7.37,stagneret,15,Danmarks Statistik,
-741,neet,2010-2012,2022-2024,13.2133,11.65,-11.83,rigtig,15,Danmarks Statistik,
-746,neet,2010-2012,2022-2024,9.5567,9.4,-1.64,tempo,15,Danmarks Statistik,
-751,neet,2010-2012,2022-2024,8.8133,7.8267,-11.2,rigtig,15,Danmarks Statistik,
-756,neet,2010-2012,2022-2024,10.4667,12.8733,22.99,forkert,15,Danmarks Statistik,
-760,neet,2010-2012,2022-2024,9.6467,9.17,-4.94,tempo,15,Danmarks Statistik,
-766,neet,2010-2012,2022-2024,10.09,11.9567,18.5,forkert,15,Danmarks Statistik,
-773,neet,2010-2012,2022-2024,11.4033,10.53,-7.66,stagneret,15,Danmarks Statistik,
-779,neet,2010-2012,2022-2024,11.09,11.35,2.34,stagneret,15,Danmarks Statistik,
-787,neet,2010-2012,2022-2024,11.4633,10.7067,-6.6,stagneret,15,Danmarks Statistik,
-791,neet,2010-2012,2022-2024,11.1967,9.91,-11.49,rigtig,15,Danmarks Statistik,
-810,neet,2010-2012,2022-2024,13.0867,11.4367,-12.61,rigtig,15,Danmarks Statistik,
-813,neet,2010-2012,2022-2024,11.61,11.5133,-0.83,stagneret,15,Danmarks Statistik,
-820,neet,2010-2012,2022-2024,12.84,12.2567,-4.54,stagneret,15,Danmarks Statistik,
-825,neet,2010-2012,2022-2024,10.31,13.7467,33.33,forkert,15,Danmarks Statistik,
-840,neet,2010-2012,2022-2024,9.29,8.0067,-13.81,rigtig,15,Danmarks Statistik,
-846,neet,2010-2012,2022-2024,11.7833,12.0533,2.29,stagneret,15,Danmarks Statistik,
-849,neet,2010-2012,2022-2024,12.18,13.08,7.39,stagneret,15,Danmarks Statistik,
-851,neet,2010-2012,2022-2024,9.6533,7.42,-23.14,rigtig,15,Danmarks Statistik,
-860,neet,2010-2012,2022-2024,10.68,11.5633,8.27,stagneret,15,Danmarks Statistik,
+101,neet,2010-2012,2022-2024,11.03,8.0533,-26.99,rigtig,15,Danmarks Statistik,
+147,neet,2010-2012,2022-2024,10.4333,6.4867,-37.83,rigtig,15,Danmarks Statistik,
+151,neet,2010-2012,2022-2024,12.2767,8.8833,-27.64,rigtig,15,Danmarks Statistik,
+153,neet,2010-2012,2022-2024,13.3433,10.31,-22.73,rigtig,15,Danmarks Statistik,
+155,neet,2010-2012,2022-2024,10.7167,7.5633,-29.42,rigtig,15,Danmarks Statistik,
+157,neet,2010-2012,2022-2024,10.7467,9.57,-10.95,rigtig,15,Danmarks Statistik,
+159,neet,2010-2012,2022-2024,10.5967,7.9067,-25.39,rigtig,15,Danmarks Statistik,
+161,neet,2010-2012,2022-2024,10.6233,9.13,-14.06,rigtig,15,Danmarks Statistik,
+163,neet,2010-2012,2022-2024,11.1133,8.4,-24.42,rigtig,15,Danmarks Statistik,
+165,neet,2010-2012,2022-2024,12.7233,9.3333,-26.64,rigtig,15,Danmarks Statistik,
+167,neet,2010-2012,2022-2024,11.1133,8.38,-24.6,rigtig,15,Danmarks Statistik,
+169,neet,2010-2012,2022-2024,12.09,9.8,-18.94,rigtig,15,Danmarks Statistik,
+173,neet,2010-2012,2022-2024,8.7633,6.84,-21.95,rigtig,15,Danmarks Statistik,
+175,neet,2010-2012,2022-2024,11.3633,9.0767,-20.12,rigtig,15,Danmarks Statistik,
+183,neet,2010-2012,2022-2024,13.8533,10.4033,-24.9,rigtig,15,Danmarks Statistik,
+185,neet,2010-2012,2022-2024,12.4767,10.0,-19.85,rigtig,15,Danmarks Statistik,
+187,neet,2010-2012,2022-2024,9.3567,7.9433,-15.11,rigtig,15,Danmarks Statistik,
+190,neet,2010-2012,2022-2024,10.4567,8.66,-17.18,rigtig,15,Danmarks Statistik,
+201,neet,2010-2012,2022-2024,8.14,7.8667,-3.36,tempo,15,Danmarks Statistik,
+210,neet,2010-2012,2022-2024,11.25,9.21,-18.13,rigtig,15,Danmarks Statistik,
+217,neet,2010-2012,2022-2024,11.08,9.1067,-17.81,rigtig,15,Danmarks Statistik,
+219,neet,2010-2012,2022-2024,9.7533,8.8067,-9.71,tempo,15,Danmarks Statistik,
+223,neet,2010-2012,2022-2024,10.34,9.2633,-10.41,rigtig,15,Danmarks Statistik,
+230,neet,2010-2012,2022-2024,9.2233,8.2467,-10.59,rigtig,15,Danmarks Statistik,
+240,neet,2010-2012,2022-2024,8.3533,7.4567,-10.73,rigtig,15,Danmarks Statistik,
+250,neet,2010-2012,2022-2024,11.0433,9.4933,-14.04,rigtig,15,Danmarks Statistik,
+253,neet,2010-2012,2022-2024,9.86,8.8367,-10.38,tempo,15,Danmarks Statistik,
+259,neet,2010-2012,2022-2024,11.1067,9.6033,-13.54,rigtig,15,Danmarks Statistik,
+260,neet,2010-2012,2022-2024,13.2933,11.6333,-12.49,rigtig,15,Danmarks Statistik,
+265,neet,2010-2012,2022-2024,10.62,7.4167,-30.16,rigtig,15,Danmarks Statistik,
+269,neet,2010-2012,2022-2024,8.89,7.16,-19.46,rigtig,15,Danmarks Statistik,
+270,neet,2010-2012,2022-2024,11.72,10.1933,-13.03,rigtig,15,Danmarks Statistik,
+306,neet,2010-2012,2022-2024,16.9,12.9767,-23.21,rigtig,15,Danmarks Statistik,
+316,neet,2010-2012,2022-2024,11.96,10.26,-14.21,rigtig,15,Danmarks Statistik,
+320,neet,2010-2012,2022-2024,12.6367,11.2933,-10.63,rigtig,15,Danmarks Statistik,
+326,neet,2010-2012,2022-2024,13.29,11.0033,-17.21,rigtig,15,Danmarks Statistik,
+329,neet,2010-2012,2022-2024,11.7267,9.2467,-21.15,rigtig,15,Danmarks Statistik,
+330,neet,2010-2012,2022-2024,12.2933,10.43,-15.16,rigtig,15,Danmarks Statistik,
+336,neet,2010-2012,2022-2024,12.0267,10.59,-11.95,rigtig,15,Danmarks Statistik,
+340,neet,2010-2012,2022-2024,12.1867,10.8633,-10.86,rigtig,15,Danmarks Statistik,
+350,neet,2010-2012,2022-2024,10.8833,9.36,-14.0,rigtig,15,Danmarks Statistik,
+360,neet,2010-2012,2022-2024,14.3767,15.8867,10.5,forkert,15,Danmarks Statistik,
+370,neet,2010-2012,2022-2024,11.3533,10.54,-7.16,stagneret,15,Danmarks Statistik,
+376,neet,2010-2012,2022-2024,13.55,12.5267,-7.55,tempo,15,Danmarks Statistik,
+390,neet,2010-2012,2022-2024,13.97,13.5,-3.36,stagneret,15,Danmarks Statistik,
+400,neet,2010-2012,2022-2024,13.0,12.0967,-6.95,stagneret,15,Danmarks Statistik,
+410,neet,2010-2012,2022-2024,9.4267,10.4433,10.79,forkert,15,Danmarks Statistik,
+420,neet,2010-2012,2022-2024,12.16,12.79,5.18,stagneret,15,Danmarks Statistik,
+430,neet,2010-2012,2022-2024,11.64,10.4533,-10.19,tempo,15,Danmarks Statistik,
+440,neet,2010-2012,2022-2024,12.5567,10.09,-19.64,rigtig,15,Danmarks Statistik,
+450,neet,2010-2012,2022-2024,11.0133,10.1033,-8.26,stagneret,15,Danmarks Statistik,
+461,neet,2010-2012,2022-2024,9.4467,7.83,-17.11,rigtig,15,Danmarks Statistik,
+479,neet,2010-2012,2022-2024,11.1867,10.9633,-2.0,stagneret,15,Danmarks Statistik,
+480,neet,2010-2012,2022-2024,12.6267,12.9367,2.46,stagneret,15,Danmarks Statistik,
+482,neet,2010-2012,2022-2024,13.08,13.62,4.13,stagneret,15,Danmarks Statistik,
+492,neet,2010-2012,2022-2024,9.88,10.09,2.13,stagneret,15,Danmarks Statistik,
+510,neet,2010-2012,2022-2024,11.11,10.7,-3.69,stagneret,15,Danmarks Statistik,
+530,neet,2010-2012,2022-2024,11.4967,9.71,-15.54,rigtig,15,Danmarks Statistik,
+540,neet,2010-2012,2022-2024,11.3733,10.9,-4.16,stagneret,15,Danmarks Statistik,
+550,neet,2010-2012,2022-2024,11.8067,11.5733,-1.98,stagneret,15,Danmarks Statistik,
+561,neet,2010-2012,2022-2024,11.2767,9.37,-16.91,rigtig,15,Danmarks Statistik,
+563,neet,2010-2012,2022-2024,10.1867,10.2933,1.05,stagneret,15,Danmarks Statistik,
+573,neet,2010-2012,2022-2024,10.5433,9.86,-6.48,stagneret,15,Danmarks Statistik,
+575,neet,2010-2012,2022-2024,11.05,10.4633,-5.31,stagneret,15,Danmarks Statistik,
+580,neet,2010-2012,2022-2024,11.68,10.8933,-6.74,stagneret,15,Danmarks Statistik,
+607,neet,2010-2012,2022-2024,12.1767,10.5967,-12.98,rigtig,15,Danmarks Statistik,
+615,neet,2010-2012,2022-2024,11.01,10.5667,-4.03,stagneret,15,Danmarks Statistik,
+621,neet,2010-2012,2022-2024,10.3833,8.98,-13.52,rigtig,15,Danmarks Statistik,
+630,neet,2010-2012,2022-2024,10.9667,9.95,-9.27,tempo,15,Danmarks Statistik,
+657,neet,2010-2012,2022-2024,10.26,9.1467,-10.85,rigtig,15,Danmarks Statistik,
+661,neet,2010-2012,2022-2024,9.66,8.28,-14.29,rigtig,15,Danmarks Statistik,
+665,neet,2010-2012,2022-2024,9.5167,9.1633,-3.71,tempo,15,Danmarks Statistik,
+671,neet,2010-2012,2022-2024,11.6967,11.1467,-4.7,stagneret,15,Danmarks Statistik,
+706,neet,2010-2012,2022-2024,12.66,12.2733,-3.05,stagneret,15,Danmarks Statistik,
+707,neet,2010-2012,2022-2024,12.5733,11.8333,-5.89,stagneret,15,Danmarks Statistik,
+710,neet,2010-2012,2022-2024,9.5967,9.4033,-2.01,tempo,15,Danmarks Statistik,
+727,neet,2010-2012,2022-2024,10.0233,10.6067,5.82,stagneret,15,Danmarks Statistik,
+730,neet,2010-2012,2022-2024,11.3467,11.08,-2.35,stagneret,15,Danmarks Statistik,
+740,neet,2010-2012,2022-2024,10.5567,9.5433,-9.6,tempo,15,Danmarks Statistik,
+741,neet,2010-2012,2022-2024,12.82,12.5467,-2.13,stagneret,15,Danmarks Statistik,
+746,neet,2010-2012,2022-2024,9.3233,9.0867,-2.54,tempo,15,Danmarks Statistik,
+751,neet,2010-2012,2022-2024,8.57,7.7167,-9.96,tempo,15,Danmarks Statistik,
+756,neet,2010-2012,2022-2024,10.7667,12.5633,16.69,forkert,15,Danmarks Statistik,
+760,neet,2010-2012,2022-2024,9.66,9.23,-4.45,tempo,15,Danmarks Statistik,
+766,neet,2010-2012,2022-2024,10.4367,11.7,12.1,forkert,15,Danmarks Statistik,
+773,neet,2010-2012,2022-2024,12.2,11.0133,-9.73,tempo,15,Danmarks Statistik,
+779,neet,2010-2012,2022-2024,11.4567,11.1567,-2.62,stagneret,15,Danmarks Statistik,
+787,neet,2010-2012,2022-2024,11.4833,10.4933,-8.62,stagneret,15,Danmarks Statistik,
+791,neet,2010-2012,2022-2024,11.0533,9.91,-10.34,tempo,15,Danmarks Statistik,
+810,neet,2010-2012,2022-2024,13.4467,10.9433,-18.62,rigtig,15,Danmarks Statistik,
+813,neet,2010-2012,2022-2024,11.8033,11.3667,-3.7,stagneret,15,Danmarks Statistik,
+820,neet,2010-2012,2022-2024,12.4067,12.35,-0.46,stagneret,15,Danmarks Statistik,
+825,neet,2010-2012,2022-2024,11.1633,13.6167,21.98,forkert,15,Danmarks Statistik,
+840,neet,2010-2012,2022-2024,9.6033,8.5367,-11.11,rigtig,15,Danmarks Statistik,
+846,neet,2010-2012,2022-2024,12.1433,12.24,0.8,stagneret,15,Danmarks Statistik,
+849,neet,2010-2012,2022-2024,12.3667,13.3733,8.14,forkert,15,Danmarks Statistik,
+851,neet,2010-2012,2022-2024,9.9,7.2633,-26.63,rigtig,15,Danmarks Statistik,
+860,neet,2010-2012,2022-2024,10.8067,11.56,6.97,stagneret,15,Danmarks Statistik,
 101,poverty_relative,2010-2012,2022-2024,23.6667,21.5333,-9.01,rigtig,15,Danmarks Statistik,
 147,poverty_relative,2010-2012,2022-2024,16.5333,15.3667,-7.06,rigtig,15,Danmarks Statistik,
 151,poverty_relative,2010-2012,2022-2024,9.6667,11.3333,17.24,forkert,15,Danmarks Statistik,

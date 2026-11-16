@@ -2,6 +2,12 @@
 
 Log over større ændringer i datapipeline og master-fil.
 
+## 2026-11-16 (trin 2 efter gennemgangen: treårsgennemsnit)
+
+- **`crime_rate` og `neet` er treårige gennemsnit.** Værdien for år Y er gennemsnittet af Y-2, Y-1 og Y, som for trafikulykkerne. Ét års kriminalitetstal svingede så meget, at 86 af 98 Tryghedsfarver i standardvisningen lå inden for usikkerheden af en farvegrænse (`docs/akademisk-gennemgang-nov-2026.md` afsnit 2.5). Kriminalitet dækker nu 2023-2025 (landstal 66,4 pr. 1.000 mod 63,2 for 2025 alene, fordi niveauet falder), NEET 2022-2024 (9,41 % mod 9,14 %). Pilene er genberegnet med samme funktioner.
+- **Ikke med: `high_absence`.** Fravær burde have samme behandling, men hentes fra UVM's API, som kræver en nøgle, der ikke var til rådighed. Det står som åbent punkt.
+- **BU43 (`vulnerable_children`) har en nyere udgave hos DST,** som scriptet hentede med. Den er rullet tilbage til de committede tal, fordi pilen for indikatoren kun kan genberegnes med en fuld kørsel af `fetch_trend_history.py`. Den hører til næste almindelige dataopdatering.
+
 ## 2026-11-16 (rettelser efter den akademiske gennemgang, trin 1)
 
 Baggrund og beregninger: `docs/akademisk-gennemgang-nov-2026.md`. Ingen beregningsregel er ændret; rettelserne gælder råværdier, nævnere, mål og hvilke indikatorer der er med. Antallet af scorede indikatorer går fra 62 til 60.

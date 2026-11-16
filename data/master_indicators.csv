@@ -1756,104 +1756,104 @@ kommune_kode,kommune_navn,indicator_id,ratio,raw_value,unit,data_year,source,cat
 360,Lolland,vulnerable_children,46.05,7.6,%,2025,DST BU43,social,velfaerd,3.5
 741,Samsø,vulnerable_children,50.72,6.9,%,2025,DST BU43,social,velfaerd,3.5
 482,Langeland,vulnerable_children,46.67,7.5,%,2025,DST BU43,social,velfaerd,3.5
-201,Allerød,neet,118.39,7.72,%,2024,DST NEET3,social,velfaerd,9.14
-153,Brøndby,neet,98.7,9.26,%,2024,DST NEET3,social,velfaerd,9.14
-175,Rødovre,neet,107.15,8.53,%,2024,DST NEET3,social,velfaerd,9.14
-155,Dragør,neet,117.33,7.79,%,2024,DST NEET3,social,velfaerd,9.14
-190,Furesø,neet,120.26,7.6,%,2024,DST NEET3,social,velfaerd,9.14
-167,Hvidovre,neet,113.12,8.08,%,2024,DST NEET3,social,velfaerd,9.14
-230,Rudersdal,neet,108.55,8.42,%,2024,DST NEET3,social,velfaerd,9.14
-746,Skanderborg,neet,97.96,9.33,%,2024,DST NEET3,social,velfaerd,9.14
-269,Solrød,neet,131.13,6.97,%,2024,DST NEET3,social,velfaerd,9.14
-265,Roskilde,neet,117.03,7.81,%,2024,DST NEET3,social,velfaerd,9.14
-240,Egedal,neet,110.25,8.29,%,2024,DST NEET3,social,velfaerd,9.14
-151,Ballerup,neet,98.6,9.27,%,2024,DST NEET3,social,velfaerd,9.14
-223,Hørsholm,neet,107.4,8.51,%,2024,DST NEET3,social,velfaerd,9.14
-185,Tårnby,neet,102.24,8.94,%,2024,DST NEET3,social,velfaerd,9.14
-157,Gentofte,neet,95.01,9.62,%,2024,DST NEET3,social,velfaerd,9.14
-350,Lejre,neet,100.99,9.05,%,2024,DST NEET3,social,velfaerd,9.14
-163,Herlev,neet,103.51,8.83,%,2024,DST NEET3,social,velfaerd,9.14
-173,Lyngby-Taarbæk,neet,133.04,6.87,%,2024,DST NEET3,social,velfaerd,9.14
-210,Fredensborg,neet,92.04,9.93,%,2024,DST NEET3,social,velfaerd,9.14
-183,Ishøj,neet,99.89,9.15,%,2024,DST NEET3,social,velfaerd,9.14
-710,Favrskov,neet,92.6,9.87,%,2024,DST NEET3,social,velfaerd,9.14
-530,Billund,neet,104.82,8.72,%,2024,DST NEET3,social,velfaerd,9.14
-840,Rebild,neet,132.85,6.88,%,2024,DST NEET3,social,velfaerd,9.14
-187,Vallensbæk,neet,117.33,7.79,%,2024,DST NEET3,social,velfaerd,9.14
-253,Greve,neet,106.16,8.61,%,2024,DST NEET3,social,velfaerd,9.14
-147,Frederiksberg,neet,147.66,6.19,%,2024,DST NEET3,social,velfaerd,9.14
-259,Køge,neet,93.55,9.77,%,2024,DST NEET3,social,velfaerd,9.14
-159,Gladsaxe,neet,116.73,7.83,%,2024,DST NEET3,social,velfaerd,9.14
-217,Helsingør,neet,103.28,8.85,%,2024,DST NEET3,social,velfaerd,9.14
-250,Frederikssund,neet,88.14,10.37,%,2024,DST NEET3,social,velfaerd,9.14
-661,Holstebro,neet,107.15,8.53,%,2024,DST NEET3,social,velfaerd,9.14
-825,Læsø,neet,86.31,10.59,%,2024,DST NEET3,social,velfaerd,9.14
-657,Herning,neet,92.98,9.83,%,2024,DST NEET3,social,velfaerd,9.14
-260,Halsnæs,neet,80.81,11.31,%,2024,DST NEET3,social,velfaerd,9.14
-773,Morsø,neet,97.13,9.41,%,2024,DST NEET3,social,velfaerd,9.14
-219,Hillerød,neet,100.22,9.12,%,2024,DST NEET3,social,velfaerd,9.14
-340,Sorø,neet,79.97,11.43,%,2024,DST NEET3,social,velfaerd,9.14
-492,Ærø,neet,92.04,9.93,%,2024,DST NEET3,social,velfaerd,9.14
-561,Esbjerg,neet,99.89,9.15,%,2024,DST NEET3,social,velfaerd,9.14
-740,Silkeborg,neet,92.89,9.84,%,2024,DST NEET3,social,velfaerd,9.14
-615,Horsens,neet,87.55,10.44,%,2024,DST NEET3,social,velfaerd,9.14
-563,Fanø,neet,108.55,8.42,%,2024,DST NEET3,social,velfaerd,9.14
-316,Holbæk,neet,88.05,10.38,%,2024,DST NEET3,social,velfaerd,9.14
-766,Hedensted,neet,79.48,11.5,%,2024,DST NEET3,social,velfaerd,9.14
-607,Fredericia,neet,80.25,11.39,%,2024,DST NEET3,social,velfaerd,9.14
-410,Middelfart,neet,88.22,10.36,%,2024,DST NEET3,social,velfaerd,9.14
-329,Ringsted,neet,91.22,10.02,%,2024,DST NEET3,social,velfaerd,9.14
-370,Næstved,neet,87.97,10.39,%,2024,DST NEET3,social,velfaerd,9.14
-851,Aalborg,neet,129.1,7.08,%,2024,DST NEET3,social,velfaerd,9.14
-810,Brønderslev,neet,82.05,11.14,%,2024,DST NEET3,social,velfaerd,9.14
-727,Odder,neet,86.72,10.54,%,2024,DST NEET3,social,velfaerd,9.14
-336,Stevns,neet,75.66,12.08,%,2024,DST NEET3,social,velfaerd,9.14
-751,Aarhus,neet,121.7,7.51,%,2024,DST NEET3,social,velfaerd,9.14
-813,Frederikshavn,neet,84.01,10.88,%,2024,DST NEET3,social,velfaerd,9.14
-161,Glostrup,neet,111.06,8.23,%,2024,DST NEET3,social,velfaerd,9.14
-270,Gribskov,neet,94.72,9.65,%,2024,DST NEET3,social,velfaerd,9.14
-860,Hjørring,neet,83.78,10.91,%,2024,DST NEET3,social,velfaerd,9.14
-165,Albertslund,neet,105.06,8.7,%,2024,DST NEET3,social,velfaerd,9.14
-479,Svendborg,neet,86.64,10.55,%,2024,DST NEET3,social,velfaerd,9.14
-791,Viborg,neet,97.86,9.34,%,2024,DST NEET3,social,velfaerd,9.14
-480,Nordfyns,neet,69.14,13.22,%,2024,DST NEET3,social,velfaerd,9.14
-706,Syddjurs,neet,70.69,12.93,%,2024,DST NEET3,social,velfaerd,9.14
-440,Kerteminde,neet,113.54,8.05,%,2024,DST NEET3,social,velfaerd,9.14
-630,Vejle,neet,101.56,9.0,%,2024,DST NEET3,social,velfaerd,9.14
-101,København,neet,113.54,8.05,%,2024,DST NEET3,social,velfaerd,9.14
-730,Randers,neet,78.86,11.59,%,2024,DST NEET3,social,velfaerd,9.14
-760,Ringkøbing-Skjern,neet,105.79,8.64,%,2024,DST NEET3,social,velfaerd,9.14
-430,Faaborg-Midtfyn,neet,82.79,11.04,%,2024,DST NEET3,social,velfaerd,9.14
-320,Faxe,neet,74.55,12.26,%,2024,DST NEET3,social,velfaerd,9.14
-169,Høje-Taastrup,neet,103.63,8.82,%,2024,DST NEET3,social,velfaerd,9.14
-573,Varde,neet,97.13,9.41,%,2024,DST NEET3,social,velfaerd,9.14
-621,Kolding,neet,102.24,8.94,%,2024,DST NEET3,social,velfaerd,9.14
-420,Assens,neet,68.83,13.28,%,2024,DST NEET3,social,velfaerd,9.14
-580,Aabenraa,neet,86.8,10.53,%,2024,DST NEET3,social,velfaerd,9.14
-787,Thisted,neet,97.34,9.39,%,2024,DST NEET3,social,velfaerd,9.14
-756,Ikast-Brande,neet,77.72,11.76,%,2024,DST NEET3,social,velfaerd,9.14
-461,Odense,neet,114.68,7.97,%,2024,DST NEET3,social,velfaerd,9.14
-779,Skive,neet,84.55,10.81,%,2024,DST NEET3,social,velfaerd,9.14
-450,Nyborg,neet,88.31,10.35,%,2024,DST NEET3,social,velfaerd,9.14
-846,Mariagerfjord,neet,80.25,11.39,%,2024,DST NEET3,social,velfaerd,9.14
-820,Vesthimmerlands,neet,80.81,11.31,%,2024,DST NEET3,social,velfaerd,9.14
-540,Sønderborg,neet,84.01,10.88,%,2024,DST NEET3,social,velfaerd,9.14
-400,Bornholm,neet,76.17,12.0,%,2024,DST NEET3,social,velfaerd,9.14
-510,Haderslev,neet,88.14,10.37,%,2024,DST NEET3,social,velfaerd,9.14
-671,Struer,neet,84.87,10.77,%,2024,DST NEET3,social,velfaerd,9.14
-665,Lemvig,neet,94.52,9.67,%,2024,DST NEET3,social,velfaerd,9.14
-707,Norddjurs,neet,83.55,10.94,%,2024,DST NEET3,social,velfaerd,9.14
-330,Slagelse,neet,87.88,10.4,%,2024,DST NEET3,social,velfaerd,9.14
-306,Odsherred,neet,65.47,13.96,%,2024,DST NEET3,social,velfaerd,9.14
-575,Vejen,neet,85.34,10.71,%,2024,DST NEET3,social,velfaerd,9.14
-376,Guldborgsund,neet,71.24,12.83,%,2024,DST NEET3,social,velfaerd,9.14
-849,Jammerbugt,neet,72.42,12.62,%,2024,DST NEET3,social,velfaerd,9.14
-326,Kalundborg,neet,80.18,11.4,%,2024,DST NEET3,social,velfaerd,9.14
-390,Vordingborg,neet,67.45,13.55,%,2024,DST NEET3,social,velfaerd,9.14
-550,Tønder,neet,89.96,10.16,%,2024,DST NEET3,social,velfaerd,9.14
-360,Lolland,neet,54.73,16.7,%,2024,DST NEET3,social,velfaerd,9.14
-741,Samsø,neet,95.21,9.6,%,2024,DST NEET3,social,velfaerd,9.14
-482,Langeland,neet,70.31,13.0,%,2024,DST NEET3,social,velfaerd,9.14
+201,Allerød,neet,120.03,7.84,%,2022-2024,DST NEET3,social,velfaerd,9.41
+153,Brøndby,neet,93.54,10.06,%,2022-2024,DST NEET3,social,velfaerd,9.41
+175,Rødovre,neet,101.95,9.23,%,2022-2024,DST NEET3,social,velfaerd,9.41
+155,Dragør,neet,128.03,7.35,%,2022-2024,DST NEET3,social,velfaerd,9.41
+190,Furesø,neet,109.55,8.59,%,2022-2024,DST NEET3,social,velfaerd,9.41
+167,Hvidovre,neet,114.06,8.25,%,2022-2024,DST NEET3,social,velfaerd,9.41
+230,Rudersdal,neet,112.02,8.4,%,2022-2024,DST NEET3,social,velfaerd,9.41
+746,Skanderborg,neet,100.11,9.4,%,2022-2024,DST NEET3,social,velfaerd,9.41
+269,Solrød,neet,130.69,7.2,%,2022-2024,DST NEET3,social,velfaerd,9.41
+265,Roskilde,neet,124.31,7.57,%,2022-2024,DST NEET3,social,velfaerd,9.41
+240,Egedal,neet,116.46,8.08,%,2022-2024,DST NEET3,social,velfaerd,9.41
+151,Ballerup,neet,105.85,8.89,%,2022-2024,DST NEET3,social,velfaerd,9.41
+223,Hørsholm,neet,100.86,9.33,%,2022-2024,DST NEET3,social,velfaerd,9.41
+185,Tårnby,neet,98.64,9.54,%,2022-2024,DST NEET3,social,velfaerd,9.41
+157,Gentofte,neet,96.51,9.75,%,2022-2024,DST NEET3,social,velfaerd,9.41
+350,Lejre,neet,99.16,9.49,%,2022-2024,DST NEET3,social,velfaerd,9.41
+163,Herlev,neet,107.3,8.77,%,2022-2024,DST NEET3,social,velfaerd,9.41
+173,Lyngby-Taarbæk,neet,131.42,7.16,%,2022-2024,DST NEET3,social,velfaerd,9.41
+210,Fredensborg,neet,98.84,9.52,%,2022-2024,DST NEET3,social,velfaerd,9.41
+183,Ishøj,neet,92.8,10.14,%,2022-2024,DST NEET3,social,velfaerd,9.41
+710,Favrskov,neet,95.34,9.87,%,2022-2024,DST NEET3,social,velfaerd,9.41
+530,Billund,neet,98.74,9.53,%,2022-2024,DST NEET3,social,velfaerd,9.41
+840,Rebild,neet,117.48,8.01,%,2022-2024,DST NEET3,social,velfaerd,9.41
+187,Vallensbæk,neet,114.76,8.2,%,2022-2024,DST NEET3,social,velfaerd,9.41
+253,Greve,neet,105.61,8.91,%,2022-2024,DST NEET3,social,velfaerd,9.41
+147,Frederiksberg,neet,142.79,6.59,%,2022-2024,DST NEET3,social,velfaerd,9.41
+259,Køge,neet,95.44,9.86,%,2022-2024,DST NEET3,social,velfaerd,9.41
+159,Gladsaxe,neet,117.48,8.01,%,2022-2024,DST NEET3,social,velfaerd,9.41
+217,Helsingør,neet,100.97,9.32,%,2022-2024,DST NEET3,social,velfaerd,9.41
+250,Frederikssund,neet,93.91,10.02,%,2022-2024,DST NEET3,social,velfaerd,9.41
+661,Holstebro,neet,109.67,8.58,%,2022-2024,DST NEET3,social,velfaerd,9.41
+825,Læsø,neet,68.49,13.74,%,2022-2024,DST NEET3,social,velfaerd,9.41
+657,Herning,neet,97.31,9.67,%,2022-2024,DST NEET3,social,velfaerd,9.41
+260,Halsnæs,neet,80.57,11.68,%,2022-2024,DST NEET3,social,velfaerd,9.41
+773,Morsø,neet,89.36,10.53,%,2022-2024,DST NEET3,social,velfaerd,9.41
+219,Hillerød,neet,101.51,9.27,%,2022-2024,DST NEET3,social,velfaerd,9.41
+340,Sorø,neet,83.79,11.23,%,2022-2024,DST NEET3,social,velfaerd,9.41
+492,Ærø,neet,95.34,9.87,%,2022-2024,DST NEET3,social,velfaerd,9.41
+561,Esbjerg,neet,100.11,9.4,%,2022-2024,DST NEET3,social,velfaerd,9.41
+740,Silkeborg,neet,96.02,9.8,%,2022-2024,DST NEET3,social,velfaerd,9.41
+615,Horsens,neet,87.53,10.75,%,2022-2024,DST NEET3,social,velfaerd,9.41
+563,Fanø,neet,90.05,10.45,%,2022-2024,DST NEET3,social,velfaerd,9.41
+316,Holbæk,neet,89.79,10.48,%,2022-2024,DST NEET3,social,velfaerd,9.41
+766,Hedensted,neet,78.74,11.95,%,2022-2024,DST NEET3,social,velfaerd,9.41
+607,Fredericia,neet,83.35,11.29,%,2022-2024,DST NEET3,social,velfaerd,9.41
+410,Middelfart,neet,88.69,10.61,%,2022-2024,DST NEET3,social,velfaerd,9.41
+329,Ringsted,neet,97.72,9.63,%,2022-2024,DST NEET3,social,velfaerd,9.41
+370,Næstved,neet,88.69,10.61,%,2022-2024,DST NEET3,social,velfaerd,9.41
+851,Aalborg,neet,126.82,7.42,%,2022-2024,DST NEET3,social,velfaerd,9.41
+810,Brønderslev,neet,82.26,11.44,%,2022-2024,DST NEET3,social,velfaerd,9.41
+727,Odder,neet,86.89,10.83,%,2022-2024,DST NEET3,social,velfaerd,9.41
+336,Stevns,neet,82.62,11.39,%,2022-2024,DST NEET3,social,velfaerd,9.41
+751,Aarhus,neet,120.18,7.83,%,2022-2024,DST NEET3,social,velfaerd,9.41
+813,Frederikshavn,neet,81.75,11.51,%,2022-2024,DST NEET3,social,velfaerd,9.41
+161,Glostrup,neet,105.02,8.96,%,2022-2024,DST NEET3,social,velfaerd,9.41
+270,Gribskov,neet,93.82,10.03,%,2022-2024,DST NEET3,social,velfaerd,9.41
+860,Hjørring,neet,81.33,11.57,%,2022-2024,DST NEET3,social,velfaerd,9.41
+165,Albertslund,neet,101.29,9.29,%,2022-2024,DST NEET3,social,velfaerd,9.41
+479,Svendborg,neet,84.02,11.2,%,2022-2024,DST NEET3,social,velfaerd,9.41
+791,Viborg,neet,94.95,9.91,%,2022-2024,DST NEET3,social,velfaerd,9.41
+480,Nordfyns,neet,71.29,13.2,%,2022-2024,DST NEET3,social,velfaerd,9.41
+706,Syddjurs,neet,72.44,12.99,%,2022-2024,DST NEET3,social,velfaerd,9.41
+440,Kerteminde,neet,95.44,9.86,%,2022-2024,DST NEET3,social,velfaerd,9.41
+630,Vejle,neet,93.54,10.06,%,2022-2024,DST NEET3,social,velfaerd,9.41
+101,København,neet,115.74,8.13,%,2022-2024,DST NEET3,social,velfaerd,9.41
+730,Randers,neet,81.97,11.48,%,2022-2024,DST NEET3,social,velfaerd,9.41
+760,Ringkøbing-Skjern,neet,102.62,9.17,%,2022-2024,DST NEET3,social,velfaerd,9.41
+430,Faaborg-Midtfyn,neet,86.73,10.85,%,2022-2024,DST NEET3,social,velfaerd,9.41
+320,Faxe,neet,80.7,11.66,%,2022-2024,DST NEET3,social,velfaerd,9.41
+169,Høje-Taastrup,neet,97.11,9.69,%,2022-2024,DST NEET3,social,velfaerd,9.41
+573,Varde,neet,95.05,9.9,%,2022-2024,DST NEET3,social,velfaerd,9.41
+621,Kolding,neet,100.86,9.33,%,2022-2024,DST NEET3,social,velfaerd,9.41
+420,Assens,neet,70.97,13.26,%,2022-2024,DST NEET3,social,velfaerd,9.41
+580,Aabenraa,neet,84.32,11.16,%,2022-2024,DST NEET3,social,velfaerd,9.41
+787,Thisted,neet,87.94,10.7,%,2022-2024,DST NEET3,social,velfaerd,9.41
+756,Ikast-Brande,neet,73.12,12.87,%,2022-2024,DST NEET3,social,velfaerd,9.41
+461,Odense,neet,115.46,8.15,%,2022-2024,DST NEET3,social,velfaerd,9.41
+779,Skive,neet,82.91,11.35,%,2022-2024,DST NEET3,social,velfaerd,9.41
+450,Nyborg,neet,89.36,10.53,%,2022-2024,DST NEET3,social,velfaerd,9.41
+846,Mariagerfjord,neet,78.09,12.05,%,2022-2024,DST NEET3,social,velfaerd,9.41
+820,Vesthimmerlands,neet,76.82,12.25,%,2022-2024,DST NEET3,social,velfaerd,9.41
+540,Sønderborg,neet,84.77,11.1,%,2022-2024,DST NEET3,social,velfaerd,9.41
+400,Bornholm,neet,77.45,12.15,%,2022-2024,DST NEET3,social,velfaerd,9.41
+510,Haderslev,neet,85.31,11.03,%,2022-2024,DST NEET3,social,velfaerd,9.41
+671,Struer,neet,83.05,11.33,%,2022-2024,DST NEET3,social,velfaerd,9.41
+665,Lemvig,neet,97.11,9.69,%,2022-2024,DST NEET3,social,velfaerd,9.41
+707,Norddjurs,neet,77.96,12.07,%,2022-2024,DST NEET3,social,velfaerd,9.41
+330,Slagelse,neet,88.69,10.61,%,2022-2024,DST NEET3,social,velfaerd,9.41
+306,Odsherred,neet,69.76,13.49,%,2022-2024,DST NEET3,social,velfaerd,9.41
+575,Vejen,neet,86.97,10.82,%,2022-2024,DST NEET3,social,velfaerd,9.41
+376,Guldborgsund,neet,73.98,12.72,%,2022-2024,DST NEET3,social,velfaerd,9.41
+849,Jammerbugt,neet,71.94,13.08,%,2022-2024,DST NEET3,social,velfaerd,9.41
+326,Kalundborg,neet,83.87,11.22,%,2022-2024,DST NEET3,social,velfaerd,9.41
+390,Vordingborg,neet,68.59,13.72,%,2022-2024,DST NEET3,social,velfaerd,9.41
+550,Tønder,neet,82.69,11.38,%,2022-2024,DST NEET3,social,velfaerd,9.41
+360,Lolland,neet,58.12,16.19,%,2022-2024,DST NEET3,social,velfaerd,9.41
+741,Samsø,neet,80.77,11.65,%,2022-2024,DST NEET3,social,velfaerd,9.41
+482,Langeland,neet,67.84,13.87,%,2022-2024,DST NEET3,social,velfaerd,9.41
 201,Allerød,poverty_relative,150.0,5.4,%,2024,DST IFOR12P,social,velfaerd,13.3
 153,Brøndby,poverty_relative,76.44,17.4,%,2024,DST IFOR12P,social,velfaerd,13.3
 175,Rødovre,poverty_relative,103.91,12.8,%,2024,DST IFOR12P,social,velfaerd,13.3
@@ -3120,104 +3120,104 @@ kommune_kode,kommune_navn,indicator_id,ratio,raw_value,unit,data_year,source,cat
 360,Lolland,kultur_spending,81.98,414.0,kr./indb.,2025,DST REGK31,social,kultur_fritid,505.0
 741,Samsø,kultur_spending,40.59,205.0,kr./indb.,2025,DST REGK31,social,kultur_fritid,505.0
 482,Langeland,kultur_spending,69.7,352.0,kr./indb.,2025,DST REGK31,social,kultur_fritid,505.0
-201,Allerød,crime_rate,146.44,43.17,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-153,Brøndby,crime_rate,82.31,76.81,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-175,Rødovre,crime_rate,89.98,70.26,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-155,Dragør,crime_rate,150.0,38.06,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-190,Furesø,crime_rate,136.72,46.24,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-167,Hvidovre,crime_rate,78.95,80.08,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-230,Rudersdal,crime_rate,132.45,47.73,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-746,Skanderborg,crime_rate,150.0,33.0,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-269,Solrød,crime_rate,150.0,41.73,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-265,Roskilde,crime_rate,98.8,63.99,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-240,Egedal,crime_rate,150.0,40.14,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-151,Ballerup,crime_rate,87.73,72.06,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-223,Hørsholm,crime_rate,130.84,48.32,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-185,Tårnby,crime_rate,44.32,142.64,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-157,Gentofte,crime_rate,100.96,62.62,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-350,Lejre,crime_rate,150.0,34.6,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-163,Herlev,crime_rate,89.39,70.72,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-173,Lyngby-Taarbæk,crime_rate,103.25,61.23,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-210,Fredensborg,crime_rate,139.13,45.44,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-183,Ishøj,crime_rate,89.19,70.88,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-710,Favrskov,crime_rate,150.0,27.63,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-530,Billund,crime_rate,96.39,65.59,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-840,Rebild,crime_rate,150.0,31.87,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-187,Vallensbæk,crime_rate,113.34,55.78,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-253,Greve,crime_rate,101.57,62.24,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-147,Frederiksberg,crime_rate,84.98,74.39,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-259,Køge,crime_rate,105.9,59.7,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-159,Gladsaxe,crime_rate,107.3,58.92,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-217,Helsingør,crime_rate,96.15,65.75,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-250,Frederikssund,crime_rate,129.34,48.88,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-661,Holstebro,crime_rate,117.88,53.63,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-825,Læsø,crime_rate,150.0,31.41,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-657,Herning,crime_rate,126.95,49.8,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-260,Halsnæs,crime_rate,144.17,43.85,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-773,Morsø,crime_rate,150.0,34.32,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-219,Hillerød,crime_rate,91.12,69.38,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-340,Sorø,crime_rate,133.4,47.39,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-492,Ærø,crime_rate,150.0,22.62,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-561,Esbjerg,crime_rate,105.45,59.95,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-740,Silkeborg,crime_rate,143.81,43.96,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-615,Horsens,crime_rate,126.9,49.82,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-563,Fanø,crime_rate,147.68,42.81,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-316,Holbæk,crime_rate,124.03,50.97,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-766,Hedensted,crime_rate,150.0,39.74,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-607,Fredericia,crime_rate,90.99,69.48,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-410,Middelfart,crime_rate,117.07,54.0,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-329,Ringsted,crime_rate,120.05,52.66,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-370,Næstved,crime_rate,92.2,68.57,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-851,Aalborg,crime_rate,109.32,57.83,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-810,Brønderslev,crime_rate,150.0,33.13,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-727,Odder,crime_rate,150.0,27.95,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-336,Stevns,crime_rate,150.0,37.02,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-751,Aarhus,crime_rate,86.05,73.47,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-813,Frederikshavn,crime_rate,123.74,51.09,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-161,Glostrup,crime_rate,49.72,127.15,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-270,Gribskov,crime_rate,136.22,46.41,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-860,Hjørring,crime_rate,142.84,44.26,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-165,Albertslund,crime_rate,75.87,83.33,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-479,Svendborg,crime_rate,131.85,47.95,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-791,Viborg,crime_rate,141.34,44.73,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-480,Nordfyns,crime_rate,133.07,47.51,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-706,Syddjurs,crime_rate,150.0,37.05,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-440,Kerteminde,crime_rate,143.39,44.09,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-630,Vejle,crime_rate,108.76,58.13,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-101,København,crime_rate,54.05,116.96,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-730,Randers,crime_rate,114.18,55.37,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-760,Ringkøbing-Skjern,crime_rate,150.0,33.0,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-430,Faaborg-Midtfyn,crime_rate,144.34,43.8,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-320,Faxe,crime_rate,143.0,44.21,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-169,Høje-Taastrup,crime_rate,100.09,63.16,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-573,Varde,crime_rate,150.0,40.9,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-621,Kolding,crime_rate,117.82,53.66,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-420,Assens,crime_rate,141.65,44.63,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-580,Aabenraa,crime_rate,95.4,66.27,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-787,Thisted,crime_rate,150.0,32.77,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-756,Ikast-Brande,crime_rate,90.96,69.5,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-461,Odense,crime_rate,83.58,75.64,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-779,Skive,crime_rate,140.55,44.98,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-450,Nyborg,crime_rate,121.16,52.18,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-846,Mariagerfjord,crime_rate,144.37,43.79,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-820,Vesthimmerlands,crime_rate,149.56,42.27,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-540,Sønderborg,crime_rate,150.0,41.73,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-400,Bornholm,crime_rate,150.0,38.42,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-510,Haderslev,crime_rate,116.38,54.32,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-671,Struer,crime_rate,150.0,35.3,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-665,Lemvig,crime_rate,150.0,32.71,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-707,Norddjurs,crime_rate,133.49,47.36,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-330,Slagelse,crime_rate,91.33,69.22,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-306,Odsherred,crime_rate,103.84,60.88,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-575,Vejen,crime_rate,150.0,40.28,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-376,Guldborgsund,crime_rate,103.12,61.31,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-849,Jammerbugt,crime_rate,150.0,36.81,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-326,Kalundborg,crime_rate,133.91,47.21,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-390,Vordingborg,crime_rate,133.29,47.43,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-550,Tønder,crime_rate,127.77,49.48,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-360,Lolland,crime_rate,83.16,76.02,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-741,Samsø,crime_rate,119.76,52.79,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
-482,Langeland,crime_rate,150.0,37.25,pr. 1.000 indb.,2025,DST STRAF11,social,tryghed,63.22
+201,Allerød,crime_rate,133.24,49.82,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+153,Brøndby,crime_rate,82.1,80.85,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+175,Rødovre,crime_rate,88.19,75.27,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+155,Dragør,crime_rate,150.0,38.44,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+190,Furesø,crime_rate,130.85,50.73,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+167,Hvidovre,crime_rate,92.27,71.94,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+230,Rudersdal,crime_rate,124.54,53.3,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+746,Skanderborg,crime_rate,150.0,33.28,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+269,Solrød,crime_rate,150.0,42.89,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+265,Roskilde,crime_rate,99.67,66.6,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+240,Egedal,crime_rate,150.0,39.27,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+151,Ballerup,crime_rate,88.4,75.09,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+223,Hørsholm,crime_rate,109.79,60.46,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+185,Tårnby,crime_rate,44.0,150.85,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+157,Gentofte,crime_rate,103.19,64.33,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+350,Lejre,crime_rate,150.0,35.77,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+163,Herlev,crime_rate,84.68,78.39,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+173,Lyngby-Taarbæk,crime_rate,97.39,68.16,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+210,Fredensborg,crime_rate,134.73,49.27,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+183,Ishøj,crime_rate,88.76,74.79,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+710,Favrskov,crime_rate,150.0,31.53,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+530,Billund,crime_rate,95.41,69.57,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+840,Rebild,crime_rate,150.0,31.34,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+187,Vallensbæk,crime_rate,133.67,49.66,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+253,Greve,crime_rate,116.97,56.75,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+147,Frederiksberg,crime_rate,87.92,75.5,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+259,Køge,crime_rate,110.65,59.99,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+159,Gladsaxe,crime_rate,99.57,66.67,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+217,Helsingør,crime_rate,94.68,70.11,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+250,Frederikssund,crime_rate,132.81,49.98,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+661,Holstebro,crime_rate,122.04,54.39,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+825,Læsø,crime_rate,150.0,31.41,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+657,Herning,crime_rate,123.06,53.94,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+260,Halsnæs,crime_rate,139.07,47.73,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+773,Morsø,crime_rate,150.0,34.69,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+219,Hillerød,crime_rate,99.88,66.46,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+340,Sorø,crime_rate,135.19,49.1,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+492,Ærø,crime_rate,150.0,25.64,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+561,Esbjerg,crime_rate,100.91,65.78,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+740,Silkeborg,crime_rate,148.0,44.85,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+615,Horsens,crime_rate,119.82,55.4,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+563,Fanø,crime_rate,136.98,48.46,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+316,Holbæk,crime_rate,128.69,51.58,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+766,Hedensted,crime_rate,150.0,40.79,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+607,Fredericia,crime_rate,85.7,77.46,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+410,Middelfart,crime_rate,120.58,55.05,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+329,Ringsted,crime_rate,119.63,55.49,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+370,Næstved,crime_rate,110.32,60.17,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+851,Aalborg,crime_rate,106.12,62.55,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+810,Brønderslev,crime_rate,150.0,34.61,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+727,Odder,crime_rate,150.0,31.25,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+336,Stevns,crime_rate,150.0,37.12,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+751,Aarhus,crime_rate,82.33,80.63,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+813,Frederikshavn,crime_rate,132.68,50.03,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+161,Glostrup,crime_rate,58.95,112.6,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+270,Gribskov,crime_rate,121.69,54.55,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+860,Hjørring,crime_rate,148.7,44.64,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+165,Albertslund,crime_rate,76.7,86.54,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+479,Svendborg,crime_rate,130.62,50.82,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+791,Viborg,crime_rate,135.19,49.1,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+480,Nordfyns,crime_rate,148.43,44.72,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+706,Syddjurs,crime_rate,150.0,38.65,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+440,Kerteminde,crime_rate,149.71,44.34,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+630,Vejle,crime_rate,115.2,57.62,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+101,København,crime_rate,52.12,127.35,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+730,Randers,crime_rate,114.09,58.18,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+760,Ringkøbing-Skjern,crime_rate,150.0,35.08,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+430,Faaborg-Midtfyn,crime_rate,150.0,42.33,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+320,Faxe,crime_rate,150.0,42.48,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+169,Høje-Taastrup,crime_rate,97.79,67.88,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+573,Varde,crime_rate,150.0,43.6,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+621,Kolding,crime_rate,108.2,61.35,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+420,Assens,crime_rate,150.0,44.13,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+580,Aabenraa,crime_rate,99.65,66.61,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+787,Thisted,crime_rate,150.0,37.96,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+756,Ikast-Brande,crime_rate,90.94,72.99,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+461,Odense,crime_rate,86.53,76.71,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+779,Skive,crime_rate,150.0,44.14,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+450,Nyborg,crime_rate,129.29,51.34,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+846,Mariagerfjord,crime_rate,150.0,42.96,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+820,Vesthimmerlands,crime_rate,130.7,50.79,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+540,Sønderborg,crime_rate,148.47,44.71,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+400,Bornholm,crime_rate,150.0,40.0,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+510,Haderslev,crime_rate,123.43,53.78,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+671,Struer,crime_rate,150.0,36.45,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+665,Lemvig,crime_rate,150.0,30.09,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+707,Norddjurs,crime_rate,128.59,51.62,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+330,Slagelse,crime_rate,96.5,68.79,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+306,Odsherred,crime_rate,107.67,61.65,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+575,Vejen,crime_rate,150.0,41.29,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+376,Guldborgsund,crime_rate,109.29,60.74,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+849,Jammerbugt,crime_rate,150.0,35.74,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+326,Kalundborg,crime_rate,130.18,50.99,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+390,Vordingborg,crime_rate,139.48,47.59,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+550,Tønder,crime_rate,123.57,53.72,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+360,Lolland,crime_rate,88.66,74.87,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+741,Samsø,crime_rate,127.78,51.95,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
+482,Langeland,crime_rate,150.0,39.84,pr. 1.000 indb.,2023-2025,DST STRAF11,social,tryghed,66.38
 201,Allerød,traffic_accidents,148.09,30.69,pr. 100.000 indb.,2023-2025,DST UHELDK1,social,tryghed,45.45
 153,Brøndby,traffic_accidents,150.0,28.22,pr. 100.000 indb.,2023-2025,DST UHELDK1,social,tryghed,45.45
 175,Rødovre,traffic_accidents,150.0,20.6,pr. 100.000 indb.,2023-2025,DST UHELDK1,social,tryghed,45.45

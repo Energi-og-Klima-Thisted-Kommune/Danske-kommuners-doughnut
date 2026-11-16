@@ -553,11 +553,12 @@
       "csv": "velfaerd_extra_scores.csv",
       "ratio_col": "neet_ratio",
       "raw_col": "neet_pct",
-      "reference": {"type": "landstal", "col": "neet_ref", "definition": "de 98 kommuner samlet (16-24 år); fetch_social_new_data.py"},
+      "reference": {"type": "landstal", "col": "neet_ref", "definition": "de 98 kommuner samlet (16-24 år), treårigt gennemsnit; fetch_social_new_data.py"},
+      "period_years": 3,
       "inverse": true,
       "baseline_level": 3,
       "rationale": "Andel unge (16-24 år) uden for uddannelse og beskæftigelse (NEET) signalerer risiko for langsigtet social eksklusion og er et anerkendt EU-måleparameter.",
-      "note": "NEET3 (16-24 år) afløser NEET1, som DST satte inaktiv i maj 2025 med 2023 som sidste år. Tallene er identiske 2008-2023."
+      "note": "NEET3 (16-24 år) afløser NEET1, som DST satte inaktiv i maj 2025 med 2023 som sidste år. Tallene er identiske 2008-2023. Treårigt gennemsnit fra nov. 2026 (serie_neet), fordi aldersgruppen er lille i de mindste kommuner; se docs/akademisk-gennemgang-nov-2026.md afsnit 2.5."
     },
     {
       "id": "poverty_relative",
@@ -821,11 +822,13 @@
       "csv": "faellesskaber_scores.csv",
       "ratio_col": "crime_ratio",
       "raw_col": "crime_per_1k",
-      "reference": {"type": "landstal", "col": "crime_rate_ref", "definition": "de 98 kommuner samlet pr. 1.000 indb.; anmeldelser uden kendt gerningskommune (8,7% i 2025) er ikke med; fetch_social_new_data.py"},
-      "smaa_tal": {"pr": 1000, "aar": 1},
+      "reference": {"type": "landstal", "col": "crime_rate_ref", "definition": "de 98 kommuner samlet pr. 1.000 indb., treårigt gennemsnit; anmeldelser uden kendt gerningskommune (8,7% i 2025) er ikke med; fetch_social_new_data.py"},
+      "smaa_tal": {"pr": 1000, "aar": 3},
+      "period_years": 3,
       "inverse": true,
       "baseline_level": 3,
-      "rationale": "Anmeldte forbrydelser pr. 1.000 indb. er den bedst tilgængelige kvantitative indikator for tryghed på kommuneniveau. Lav kriminalitet er en forudsætning for social tillid og aktivt deltagelse i det offentlige rum."
+      "rationale": "Anmeldte forbrydelser pr. 1.000 indb., gennemsnit af de tre seneste år, er den bedst tilgængelige kvantitative indikator for tryghed på kommuneniveau. Lav kriminalitet er en forudsætning for social tillid og aktivt deltagelse i det offentlige rum. Tre år bruges, fordi ét års tal svinger meget i små kommuner.",
+      "note": "Treårigt gennemsnit fra nov. 2026 (serie_crime_rate), samme greb som trafikulykkerne. Se docs/akademisk-gennemgang-nov-2026.md afsnit 2.5."
     },
     {
       "id": "traffic_accidents",

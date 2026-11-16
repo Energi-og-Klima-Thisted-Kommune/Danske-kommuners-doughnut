@@ -329,6 +329,8 @@ Scriptet gemmer direkte til `data/doughnut_scores.csv`. Fra `scripts/` havner fi
     - **`music_school` er elever på 0-24 år pr. 1.000 indbyggere på 0-24 år,** ikke pr. 1.000 af alle indbyggere.
     - **`vejr_skader` er skader pr. 1.000 boliger og fritidshuse (DST BOL105),** ikke pr. 1.000 indbyggere. Antallet regnes tilbage af F&P's afrundede rate og folketallet 1. januar 2025. Tre nævnere er afprøvet: pr. indbygger følger fritidshusandelen (+0,63), pr. bygning følger etageandelen (+0,55), pr. bolig og fritidshus følger bygningstyperne mindst (+0,29 og -0,22). Skift ikke nævner uden at gentage den sammenligning.
     - **`forbrug_co2` har Energistyrelsens niveau.** `fetch_forbrug_co2.py` skalerer 2011-mønsteret, så kommunerne vægtet med folketallet giver ENS' tal for året (kræver FOLK1A for estimatåret). Forskellene mellem kommunerne er stadig fra 2011.
+    - **`crime_rate` og `neet` er treårige gennemsnit** (`treaarssnit()` i `fetch_social_new_data.py`, samme regel som trafikulykkerne, punkt 26). Fravær (`high_absence`) burde følge med, men kræver `UVM_API_TOKEN`.
+    - **Et fetch-script henter alt, det kender, også det du ikke ville røre.** `fetch_social_new_data.py` hentede 16. nov. også en nyere udgave af BU43 (`vulnerable_children`). Scoren ville så løbe fra pilen, som hentes af den fulde `fetch_trend_history.py` med nøgler. Kolonnerne blev rullet tilbage i hånden. Læs `rapport_dataaendringer` efter hver kørsel, og rul uvedkommende ændringer tilbage, hvis pilene ikke kan følge med.
     - **Byg master og trendfil på Python 3.9** (CHANGELOG 6. okt.). Findes 3.9 ikke på maskinen: `uv python install 3.9` og kør `build_master_csv.py` og `build_trends_csv.py` med den.
 
 ## Arbejdsprincipper for ændringer
