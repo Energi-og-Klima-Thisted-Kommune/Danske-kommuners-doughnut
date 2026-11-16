@@ -43,13 +43,13 @@ Dette er den **konsoliderede master-fil** som webapp'en læser fra. Genereres af
 ### Scoringskonventioner
 
 **Sociale indikatorer:**
-- `ratio = 100` = landsgennemsnit (undtagen `education` og `bolig_fossil`, der scores mod et fast mål). Masteren gemmer altid ratio mod landsgennemsnittet; webappens baseline-toggle (kommunegruppe/top 10) omskalerer ved visning, med samme loft på 150
+- `ratio = 100` = landsgennemsnit (undtagen `low_education` og `bolig_fossil`, der scores mod et fast mål). Masteren gemmer altid ratio mod landsgennemsnittet; webappens baseline-toggle (kommunegruppe/top 10) omskalerer ved visning, med samme loft på 150
 - `ratio > 100` = bedre end gennemsnit
 - `ratio < 100` = dårligere end gennemsnit
 - Inverterede indikatorer (kriminalitet, fattigdom mv.) vendes af `build_master_csv.py` (`ratio = reference / raw × 100`) - høj ratio = god performance. Alle ratios beregnes dér ud fra `raw_value` og `reference`, ikke i fetch-scripterne
 
 **Økologiske indikatorer:**
-- `ratio = 100` = på grænsen: en absolut grænse (WHO, EU-mål, 2,5 ton CO₂e pr. person, 6 mg/L nitrat, kystvandenes målbelastning for kvælstof, tålegrænsen for kvælstofnedfald, kommunens andel af den bæredygtige grundvandsressource) eller landsgennemsnittet for de relative sub-indikatorer (arealanvendelse, vandområdernes tilstand, affald, pesticider)
+- `ratio = 100` = på grænsen: en absolut grænse (WHO, EU-mål, 3 ton CO₂e pr. person, 6 mg/L nitrat, kystvandenes målbelastning for kvælstof, tålegrænsen for kvælstofnedfald, kommunens andel af den bæredygtige grundvandsressource) eller landsgennemsnittet for de relative sub-indikatorer (arealanvendelse, vandområdernes tilstand, affald, pesticider)
 - Andele hvor højere er bedre (natur, genanvendelse, vandområder i god tilstand) regnes som den manglende andel mod det målet tillader: `ratio = (100 - raw) / (100 - reference) × 100` (`formula: "komplement"` i registret, arkitekturdokumentet R2a). Ingen økologisk ratio har et loft
 - `ratio < 100` = inden for grænsen (godt)
 - `ratio > 100` = overshoot (rødt)
@@ -109,7 +109,7 @@ Viser hvilken **vej** en kommune bevæger sig, ikke kun hvor den ligger. Én ræ
 - **Retningen beregnes på råværdier, aldrig på ratio.** Ratio er relativ til en baseline, og platformen har en baseline-toggle (avg/top10/gruppe). En ratio-baseret pil ville skifte retning når brugeren skifter baseline.
 - **Øko-dimensioner bruger worst-of:** pilen følger den sub-indikator der bestemmer dimensionens score (højeste ratio). Undtagelse: Forurening bruger gennemsnit, ligesom i scoren.
 - **Ingen fallback.** Har den score-afgørende sub-indikator ingen tidsserie, får dimensionen ingen pil. Ellers ville pilen beskrive noget andet end tallet ved siden af.
-- **48 af de 62 scorede indikatorer har historik** (sep. 2026). De 14 uden vises med et skraveret felt (`ingen`): DCE-luftkort, bioscore, vandområdeplanerne (kystvandenes kvælstof og vandområdernes tilstand), Jupiter-analyser, forbrugsbaseret CO₂, forsikringsskader, kystrisikoen og fossil opvarmning findes ikke som årlige tidsserier pr. kommune, `public_transport` beregnes fra køreplaner, og Rejseplanens arkiv går kun tilbage til december 2025, og `sport_tilskuer` bruger begge tilgængelige år i selve målet.
+- **46 af de 60 scorede indikatorer har historik** (nov. 2026). De 14 uden vises med et skraveret felt (`ingen`): DCE-luftkort, bioscore, vandområdeplanerne (kystvandenes kvælstof og vandområdernes tilstand), Jupiter-analyser, forbrugsbaseret CO₂, forsikringsskader, kystrisikoen og fossil opvarmning findes ikke som årlige tidsserier pr. kommune, `public_transport` beregnes fra køreplaner, og Rejseplanens arkiv går kun tilbage til december 2025, og `sport_tilskuer` bruger begge tilgængelige år i selve målet.
 
 Genereres af `scripts/fetch_trend_history.py` → `scripts/build_trends_csv.py`. **Skal genberegnes sammen med `master_indicators.csv`**, ellers kan pil og tal komme til at høre til forskellige årgange.
 

@@ -7,7 +7,7 @@
 
 ## Implementeret indikator
 
-### vejr_skader - Vejrrelaterede forsikringsskader pr. 1.000 indb.
+### vejr_skader - Vejrrelaterede forsikringsskader pr. 1.000 boliger og fritidshuse
 
 | Felt | Værdi |
 |------|-------|
@@ -17,8 +17,19 @@
 | Tidsperiode | Q1 2023 - Q4 2025 (2,5 år akkumuleret) |
 | Dækning | ~90% af forsikringsmarkedet |
 | Nøgle | Kommunenavn (ikke kommunekode) |
-| Landsgennemsnit | befolkningsvægtet, ca. 22 skader pr. 1.000 indb. (sep. 2026; indtil da uvægtet, ca. 26) |
-| Ratio-type | Invers social: (landsgennemsnit / kommune_val) × 100 |
+| Nævner | Boliger og fritidshuse (DST BOL105, 2025), fra nov. 2026. Indtil da indbyggere |
+| Landstal | ca. 40 skader pr. 1.000 boliger og fritidshuse (kommunernes skader samlet delt med deres boligenheder samlet) |
+| Ratio-type | Invers social: (landstal / kommune_val) × 100 |
+
+**Nævneren (nov. 2026).** F&P oplyser skaderne som et afrundet tal pr. 1.000 indbyggere. Skaderne sker på bygninger, også fritidshuse, så delt med de fastboende fik kommuner med mange fritidshuse meget høje tal (Fanø 66 mod landets 22). Antallet af skader regnes nu tilbage af raten og folketallet 1. januar 2025 og deles med boliger og fritidshuse. Tre nævnere er sammenlignet på, hvor meget resultatet følger kommunens bygningstyper (rangkorrelation):
+
+| Nævner | med andelen af fritidshuse | med andelen af etagebyggeri |
+|---|---|---|
+| Indbyggere (før) | +0,63 | -0,41 |
+| Boliger og fritidshuse (nu) | +0,29 | -0,22 |
+| Bygninger til beboelse og fritid (DST BYGB12) | -0,41 | +0,55 |
+
+Pr. bygning vender skævheden: København og Frederiksberg får tre til fire gange landstallet, fordi mange husstande med hver sin forsikring deler få bygninger. Pr. bolig og fritidshus er den mest neutrale af de tre, men ikke neutral: lejligheder har færre vejrskader pr. bolig end huse. Rangkorrelationen mellem den gamle og den nye indikator er 0,85. Erhvervsbygninger er ikke i nævneren.
 
 **Inkluderer:** Storm, skybrud, hagl, sne/frost, stormvand.
 **Ekskluderer:** Stormflodsskader (håndteres af Naturskaderådet separat).

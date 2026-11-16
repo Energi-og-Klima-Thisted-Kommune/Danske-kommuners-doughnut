@@ -448,12 +448,9 @@ def serie(spec, kun_land=False):
 
 SIMPLE = [
     # --- Sundhed ---
-    dict(id="hospital_short_taeller", navn="Sygehusophold, alle varigheder", tabel="SBR01",
-         soeg=["alle varigheder"]),
-    dict(id="hospital_short_naevner", navn="Sygehusophold, personer i alt", tabel="SBR01",
-         soeg=["=personer i alt"]),
-    dict(id="hospital_long_taeller", navn="Sygehusophold 12+ timer", tabel="SBR01",
-         soeg=["12 timer eller derover"]),
+    # hospital_long hentes af scorens egen serie_hospital_long (SAMME_SOM_SCOREN
+    # nedenfor): fra nov. 2026 er andelen aldersstandardiseret, og det kan den
+    # generiske hentning ikke.
 
     # --- Uddannelse ---
     # HFUDD er hierarkisk (H20 "Gymnasiale uddannelser" har underkoder som
@@ -464,13 +461,8 @@ SIMPLE = [
          soeg_kode=["H10"], soeg_var="HFUDD", ekstra=[{"soeg": ["25-29"]}], pin_ialt=True),
     dict(id="low_education_naevner", navn="25-29-årige i alt", tabel="HFUDD11",
          soeg=["=i alt"], ekstra=[{"soeg": ["25-29"]}], pin_ialt=True),
-    # HFUDD11, ikke HFUDD10: sidstnævnte er inaktiv hos DST og stopper ved 2019.
-    dict(id="education_taeller", navn="30-34-årige med kompetencegivende uddannelse",
-         tabel="HFUDD11",
-         soeg_kode=["H20", "H30", "H35", "H40", "H50", "H60", "H70", "H80"],
-         soeg_var="HFUDD", ekstra=[{"soeg": ["30-34"]}], pin_ialt=True),
-    dict(id="education_naevner", navn="30-34-årige i alt", tabel="HFUDD11",
-         soeg=["=i alt"], ekstra=[{"soeg": ["30-34"]}], pin_ialt=True),
+    # education (30-34-årige med mere end grundskole) udgik nov. 2026: den var
+    # komplementet til low_education i nabo-aldersgruppen (r = -0,85).
 
     # --- Velfærd ---
     dict(id="vulnerable_children", navn="Udsatte børn og unge", tabel="BU43",
@@ -547,15 +539,10 @@ SIMPLE = [
 
 # Forhold: id_taeller / id_naevner slås sammen til platform-id, ratio = tæller/nævner*100
 FORHOLD = {
-    # hospital_short udgik som indikator sep. 2026 (r = 0,60 med hospital_long).
-    # Tælleren hentes stadig, fordi hospital_short_naevner er FÆLLES nævner for
-    # hospital_long - fjerner man hentningen, mister hospital_long sin pil.
     "low_education": ("low_education_taeller", "low_education_naevner"),
-    "education": ("education_taeller", "education_naevner"),
     "gender_leadership": ("gender_leadership_taeller", "gender_leadership_naevner"),
     "income_gender_gap": ("income_gender_gap_taeller", "income_gender_gap_naevner"),
     "employment": ("employment_taeller", None),  # nævner er konstant 100 (allerede en frekvens)
-    "hospital_long": ("hospital_long_taeller", "hospital_short_naevner"),
 }
 
 # Forskel (ikke forhold): kvinder minus mænd, ikke divideret
@@ -588,7 +575,7 @@ SAMME_SOM_SCOREN = {
     "traffic_accidents": ("fetch_social_new_data", "serie_traffic_accidents", "UHELDK1", "aar"),
     "library_use": ("fetch_social_new_data", "serie_library_use", "BIB3A", "perioder"),
     "neet": ("fetch_social_new_data", "serie_neet", "NEET3", "perioder"),
-    "hjemsyg": ("fetch_sundhed_extra", "serie_hjemsyg", "HJEMSYG", "perioder"),
+    "hospital_long": ("fetch_social_extra_data", "serie_hospital_long", "SBR01", "aar"),
     "child_notifications": ("fetch_udvidelse_data", "serie_child_notifications", "UND2", "perioder"),
     "trangboethed": ("fetch_trangboethed", "serie_trangboethed", "BOL103", "perioder"),
     "employment_origin_gap": ("fetch_ligestilling_data", "serie_employment_origin_gap", "RAS200", "perioder"),

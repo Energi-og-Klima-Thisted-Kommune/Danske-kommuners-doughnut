@@ -1,6 +1,6 @@
 # Analysen bag den akademiske gennemgang (november 2026)
 
-Tallene i `docs/akademisk-gennemgang-nov-2026.md` kommer fra `analyse.py`. Scriptet læser de committede datafiler, skriver en tekstrapport og ændrer intet. Det er ikke en del af datapipelinen.
+Tallene i `docs/akademisk-gennemgang-nov-2026.md` kommer fra `analyse.py`. Scriptet læser datafilerne fra git, skriver en tekstrapport og ændrer intet. Det er ikke en del af datapipelinen.
 
 ```bash
 python3 -m pip install numpy pandas scipy
@@ -14,4 +14,4 @@ python3 docs/gennemgang-nov-2026/analyse.py
   - `dst_folk1a_2025k1_aldersbaand.csv`: DST FOLK1A 2025K1 lagt sammen i aldersbånd.
   - `boliger_fritidshuse_2026.csv`: boliger og ubeboede fritidshuse pr. kommune (DST BOL105), taget fra søsterprojektet forbrugsudledninger.
 
-Tallene er et øjebliksbillede af masterfilen ved commit `7ee9884`. Opdateres data, flytter de sig.
+Tallene er et øjebliksbillede af masterfilen ved commit `7ee9884`, altså før rettelserne i november 2026. Scriptet læser datafilerne fra git ved det commit (`SNAPSHOT` i `faelles.py`), så tallene i notatet kan genskabes, selv om platformens data har ændret sig. Det kræver, at commit'et findes i det lokale git-historik.

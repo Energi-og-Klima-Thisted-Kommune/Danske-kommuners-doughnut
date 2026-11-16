@@ -1,7 +1,8 @@
 """Tallene bag docs/akademisk-gennemgang-nov-2026.md.
 
-Ren diagnose: læser de committede datafiler og skriver en tekstrapport til
-stdout. Ændrer ingen filer. Køres fra rodmappen:
+Ren diagnose: læser datafilerne, som de så ud før rettelserne i november 2026
+(git-commit SNAPSHOT i faelles.py), og skriver en tekstrapport til stdout.
+Ændrer ingen filer. Køres fra rodmappen:
 
     python3 docs/gennemgang-nov-2026/analyse.py
 
@@ -27,7 +28,7 @@ from scipy import stats
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from faelles import (CATS, D, DIMS, FOLK, GRP, GRPNAVN, IND, KAT_AF, NAVN, R, RAW, REF, SOC,  # noqa: E402
                      absolut, ecofarve, farver, gar, gruppevisning, inv, kategorier, loft,
-                     overskrift, socfarve, sti)
+                     overskrift, snapshot, socfarve, sti)
 
 DATA = sti("docs", "gennemgang-nov-2026", "data")
 G = gruppevisning()
@@ -96,7 +97,7 @@ def uddannelse_overlap():
 def stoej():
     """År-til-år-støj: residualer om kommunens egen lineære udvikling, efter at årets
     fælles niveau (medianen over kommunerne) er trukket fra. Seneste 8 år."""
-    H = pd.read_csv(sti("data", "trend_history_raw.csv"), dtype={"kommune_kode": str})
+    H = pd.read_csv(snapshot("data/trend_history_raw.csv"), dtype={"kommune_kode": str})
     ud = {}
     for i, h in H.groupby("indicator_id"):
         if i not in IND:
@@ -158,8 +159,8 @@ def reliabilitet(ST):
 # ------------------------------------------------------------------ 5
 def pile():
     overskrift("5. Retningspile: er udviklingen en monoton tendens? (Mann-Kendall, p < 0,10, serier på 8+ år)")
-    H = pd.read_csv(sti("data", "trend_history_raw.csv"), dtype={"kommune_kode": str})
-    T = pd.read_csv(sti("data", "trend_indicators.csv"), dtype={"kommune_kode": str})
+    H = pd.read_csv(snapshot("data/trend_history_raw.csv"), dtype={"kommune_kode": str})
+    T = pd.read_csv(snapshot("data/trend_indicators.csv"), dtype={"kommune_kode": str})
     out = []
     for i, h in H.groupby("indicator_id"):
         if i not in IND:

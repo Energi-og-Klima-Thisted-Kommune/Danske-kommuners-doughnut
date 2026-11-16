@@ -34,20 +34,22 @@
     "naer_nitrogen": "Fjernet sep. 2026: kvælstof fra spildevand indgår allerede i statusbelastningen, som naer_kystvand måler mod målbelastningen. Pr. indbygger i renseanlæggets kommune gav tallet et skævt billede (Frederiksbergs spildevand renses i København), og som relativ worst-of-indikator kunne en mindre kilde (ca. 5% af kvælstoffet) afgøre dimensionen. Rådata ligger stadig i naeringsstoffer_scores.csv. Besluttet 25. sep. 2026 (docs/oekologisk-gennemgang-sep-2026.md afsnit 6): heller ikke som kontekst. Kontekst er kun til opdelinger af et scoret tal (CLAUDE.md pkt. 9), og kommunens spildevand er ikke en opdeling af kystvandets samlede belastning. Kommunens handlerum vises bedst med en kildeopdeling af belastningen pr. opland, hvis en sådan findes.",
     "naer_phosphorus": "Fjernet sep. 2026: som naer_nitrogen. Fosfor har ingen målbelastning for kystvandene (sat lig baseline i vandområdeplanerne), så der findes ingen grænse at måle det mod. Søernes fosformålbelastning er en kandidat til en senere indikator.",
     "areal_intensiv": "Slået sammen sep. 2026 med areal_bebygget til areal_antropiseret (Dao m.fl. 2015). De to andele er hinandens spejlbillede (by mod land), så worst-of af to relative andele gjorde 82 af 98 kommuner røde af konstruktionsmæssige grunde. Andelene står stadig i arealanvendelse_scores.csv.",
-    "areal_bebygget": "Slået sammen sep. 2026 med areal_intensiv til areal_antropiseret, se dér."
+    "areal_bebygget": "Slået sammen sep. 2026 med areal_intensiv til areal_antropiseret, se dér.",
+    "education": "Fjernet nov. 2026: andelen af 30-34-årige med mere end grundskole var komplementet til low_education i nabo-aldersgruppen (korrelation -0,85, summen af de to andele 104,6 med spredning 3,0), så uddannelsesniveauet talte to gange. Navnet 'kompetencegivende' passede heller ikke: gymnasial uddannelse var talt med. Målet på 95 % blev i 2017 afløst af 90 % af de 25-årige, som low_education nu måles mod. Se docs/akademisk-gennemgang-nov-2026.md afsnit 2.2. Rådata ligger stadig i doughnut_scores.csv.",
+    "hjemsyg": "Fjernet nov. 2026: antal modtagere af hjemmesygepleje pr. 1.000 indbyggere målte mest kommunens alder (aldersfordelingen forklarede 74 % af forskellene). Aldersstandardiseret er det, der står tilbage, en blanding af sygelighed og kommunens visitationspraksis, og det er ikke klart, at færre modtagere er bedre. Samme tvivl om fortegnet som fik medicin fjernet. Se docs/akademisk-gennemgang-nov-2026.md afsnit 2.3. Rådata ligger stadig i hjemsyg_scores.csv."
   },
   "sociale_kategorier": [
     {
       "id": "sundhed",
       "name": "Sundhed",
-      "description": "Borgernes helbredstilstand og de levevaner der former den. De fem første indikatorer måler tilstanden: hvordan borgerne selv vurderer deres fysiske og mentale helbred, hvor længe de lever, og hvor meget sygdom og pleje der er i kommunen. De fire sidste måler de påvirkelige risikofaktorer, hvor kommunal forebyggelse kan flytte mest.",
-      "indicators": ["selvvurderet_helbred", "mentalt_helbred", "life_expectancy", "hospital_long", "hjemsyg", "rygning", "alkohol", "kost", "svaer_overvaegt"]
+      "description": "Borgernes helbredstilstand og de levevaner der former den. De fire første indikatorer måler tilstanden: hvordan borgerne selv vurderer deres fysiske og mentale helbred, hvor længe de lever, og hvor mange der har været indlagt, når der er taget højde for alderen. De fire sidste måler de påvirkelige risikofaktorer, hvor kommunal forebyggelse kan flytte mest.",
+      "indicators": ["selvvurderet_helbred", "mentalt_helbred", "life_expectancy", "hospital_long", "rygning", "alkohol", "kost", "svaer_overvaegt"]
     },
     {
       "id": "uddannelse",
       "name": "Uddannelse",
       "description": "Adgang til og gennemførelse af uddannelse for alle aldersgrupper - grundlag for personlig udvikling og samfundsdeltagelse.",
-      "indicators": ["education", "low_education", "exam_grade", "high_absence", "youth_education", "wellbeing", "class_size", "educated_staff"]
+      "indicators": ["low_education", "exam_grade", "high_absence", "youth_education", "wellbeing", "class_size", "educated_staff"]
     },
     {
       "id": "velfaerd",
@@ -262,7 +264,7 @@
       "id": "hospital_long",
       "category": "social",
       "dimension": "sundhed",
-      "name": "Sygehusophold 12+ timer (andel)",
+      "name": "Sygehusophold 12+ timer (aldersstandardiseret)",
       "table": "SBR01",
       "source": "DST SBR01",
       "source_url": "https://www.statistikbanken.dk/SBR01",
@@ -271,28 +273,11 @@
       "csv": "sundhed_extra_scores.csv",
       "ratio_col": "hospital_long_ratio",
       "raw_col": "hospital_long_pct",
-      "reference": {"type": "landstal", "col": "hospital_long_ref", "definition": "DST's landstal (hele landet); fetch_social_extra_data.py"},
+      "reference": {"type": "landstal", "col": "hospital_long_ref", "definition": "landets aldersgrupper vejet med standardbefolkningen (landets aldersfordeling 2025), i 2025 lig DST's landstal; fetch_social_extra_data.py"},
       "inverse": true,
       "baseline_level": 3,
-      "rationale": "Andel af befolkningen med indlæggelse på 12 timer eller derover (SBR01). Længere ophold indikerer alvorligere sygdomsforløb og er et stærkere signal om befolkningens helbredstilstand end kortere ophold. Inverteret: lavere andel er bedre."
-    },
-    {
-      "id": "hjemsyg",
-      "category": "social",
-      "dimension": "sundhed",
-      "name": "Hjemmesygepleje-modtagere",
-      "table": "HJEMSYG",
-      "source": "DST HJEMSYG",
-      "source_url": "https://www.statistikbanken.dk/HJEMSYG",
-      "unit": "pr. 1.000 indb.",
-      "data_year": "2025",
-      "csv": "hjemsyg_scores.csv",
-      "ratio_col": "hjemsyg_ratio",
-      "raw_col": "hjemsyg_raw",
-      "reference": {"type": "landstal", "col": "hjemsyg_ref", "definition": "de 98 kommuner samlet pr. 1.000 indb.; fetch_sundhed_extra.py"},
-      "inverse": true,
-      "baseline_level": 3,
-      "rationale": "Antal modtagere af hjemmesygepleje pr. 1.000 indbyggere (DST HJEMSYG). Proxy for sygelighed og plejebyrde, særligt blandt ældre. Inverteret: lavere antal er bedre. Begrænsning: 2025-tallene er foreløbige (baseret på første halvår) og kan ændre sig."
+      "rationale": "Andel af befolkningen med sygehusophold på 12 timer eller derover (SBR01), aldersstandardiseret: kommunens andel i hver aldersgruppe er vejet med landets aldersfordeling, så tallet viser, hvor stor andelen ville være, hvis kommunen havde samme alderssammensætning som landet. Uden standardiseringen måler tallet i høj grad, hvor mange ældre der bor i kommunen. Længere ophold indikerer alvorligere sygdomsforløb. Inverteret: lavere andel er bedre.",
+      "note": "Aldersstandardiseret fra nov. 2026 (direkte standardisering, 19 aldersgrupper, standardbefolkning: landet 2025, se serie_hospital_long). Den rå andel fulgte andelen af ældre (aldersfordelingen forklarede 45% af forskellene), og standardiseringen skiftede farve for 24 kommuner. Se docs/akademisk-gennemgang-nov-2026.md afsnit 2.3."
     },
     {
       "id": "wellbeing",
@@ -386,31 +371,10 @@
       "rationale": "Andel med svær overvægt, BMI 30 eller derover (Den Nationale Sundhedsprofil 2025). Afløser overvægt blandt 6-7-årige, som byggede på 2018-tal. Spænder fra 7,5 % i Gentofte til 27,6 % i Brøndby og er dermed en af modellens skarpest differentierende indikatorer. Inverteret: lavere andel er bedre."
     },
     {
-      "id": "education",
-      "category": "social",
-      "dimension": "uddannelse",
-      "name": "Kompetencegivende uddannelse (30-34 år)",
-      "table": "HFUDD11",
-      "source": "DST HFUDD11",
-      "source_url": "https://www.statistikbanken.dk/HFUDD11",
-      "unit": "%",
-      "data_year": "2025",
-      "csv": "doughnut_scores.csv",
-      "ratio_col": "education_ratio",
-      "raw_col": "education_raw",
-      "reference": {"type": "maal", "value": 95, "label": "95% med kompetencegivende uddannelse (nationalt mål)"},
-      "inverse": false,
-      "baseline_level": 2,
-      "absolute_score": true,
-      "target_label": "95% (nationalt uddannelsesmål)",
-      "rationale": "Andel af 30-34-årige med erhvervskompetencegivende uddannelse er det primære politiske måleparameter for uddannelsesniveau. Absolut baseline: nationalt mål på 95% (Børne- og Undervisningsministeriet). Scoren beregnes nu mod dette mål (100 = 95% nået), ikke mod landsgennemsnittet.",
-      "note": "HFUDD11 afløser HFUDD10, som DST gjorde inaktiv i 2019. Scores absolut mod 95%-målet (abs_target), ikke mod landsgennemsnittet."
-    },
-    {
       "id": "low_education",
       "category": "social",
       "dimension": "uddannelse",
-      "name": "Unge 25-29 med kun grundskole",
+      "name": "25-29-årige uden ungdomsuddannelse",
       "table": "HFUDD11",
       "source": "DST HFUDD11",
       "source_url": "https://www.statistikbanken.dk/HFUDD11",
@@ -419,10 +383,13 @@
       "csv": "uddannelse_extra_scores.csv",
       "ratio_col": "low_education_ratio",
       "raw_col": "low_education_pct",
-      "reference": {"type": "landstal", "col": "low_education_ref", "definition": "DST's landstal (hele landet); fetch_social_extra_data.py"},
+      "reference": {"type": "maal", "value": 10, "label": "Højst 10% uden ungdomsuddannelse (nationalt mål: 90% af de 25-årige i 2030)"},
       "inverse": true,
-      "baseline_level": 3,
-      "rationale": "Andel af 25-29-årige med kun grundskole som højeste uddannelse. Fanger den sårbare ende af uddannelsesspektret og er særligt vigtig som indikator i landdistrikter og socialt belastede områder."
+      "baseline_level": 2,
+      "absolute_score": true,
+      "target_label": "Højst 10% (90%-målet for ungdomsuddannelse, 2030)",
+      "rationale": "Andel af 25-29-årige med grundskolen som højeste fuldførte uddannelse, altså uden en ungdomsuddannelse. Måles mod det nationale mål fra aftalen om bedre veje til uddannelse og job (2017): mindst 90% af de 25-årige skal have gennemført en ungdomsuddannelse i 2030, altså højst 10% uden. Målet gælder 25-årige; indikatoren dækker de 25-29-årige, fordi Danmarks Statistik opgør uddannelsesniveau i femårsgrupper, og er derfor lidt mildere end målet. Inverteret: lavere andel er bedre.",
+      "note": "Fra nov. 2026 scoret mod 90%-målet (højst 10% uden ungdomsuddannelse) i stedet for landstallet, og eneste niveauindikator i Uddannelse: education (30-34-årige med mere end grundskole) var komplementet i nabo-aldersgruppen og er fjernet, se _fjernet. 95%-målsætningen blev afløst af 90%-målet i 2017 (Rigsrevisionen, notat august 2019). Landstallet står stadig i low_education_ref i CSV'en og bruges af grafen ved pilen (tjek_konsistens.py LAND_ANDEN_KILDE)."
     },
     {
       "id": "exam_grade",
@@ -789,19 +756,20 @@
       "id": "music_school",
       "category": "social",
       "dimension": "kultur_fritid",
-      "name": "Musikskoleelever pr. 1.000 indb.",
+      "name": "Musikskoleelever pr. 1.000 børn og unge",
       "table": "SKOLM02B",
       "source": "DST SKOLM02B",
       "source_url": "https://www.statistikbanken.dk/SKOLM02B",
-      "unit": "pr. 1.000 indb.",
+      "unit": "pr. 1.000 indb. 0-24 år",
       "data_year": "2025",
       "csv": "samskabelse_extra_scores.csv",
       "ratio_col": "music_school_ratio",
       "raw_col": "music_school_per_1k",
-      "reference": {"type": "landstal", "col": "music_school_ref", "definition": "de 98 kommuner samlet pr. 1.000 indb.; fetch_social_extra_data.py"},
+      "reference": {"type": "landstal", "col": "music_school_ref", "definition": "de 98 kommuner samlet: elever 0-24 år pr. 1.000 indb. 0-24 år; fetch_social_extra_data.py"},
       "inverse": false,
       "baseline_level": 3,
-      "rationale": "Musikskoleelever pr. 1.000 indb. måler kulturel deltagelse og adgang til musikuddannelse for børn og unge. Et unikt dansk måleparameter for kommunal kultursatsning."
+      "rationale": "Musikskoleelever på 0-24 år pr. 1.000 indbyggere i samme aldersgruppe måler kulturel deltagelse og adgang til musikuddannelse for børn og unge. Et unikt dansk måleparameter for kommunal kultursatsning.",
+      "note": "Fra nov. 2026 deles eleverne med kommunens børn og unge (0-24 år), ikke med hele befolkningen. Med alle indbyggere i nævneren fik en kommune med få børn et lavt tal uanset deltagelsen; 17 kommuner skiftede farve på indikatoren. Se docs/akademisk-gennemgang-nov-2026.md afsnit 2.4."
     },
     {
       "id": "library_use",
@@ -1048,21 +1016,20 @@
       "id": "vejr_skader",
       "category": "social",
       "dimension": "klimatilpasning",
-      "name": "Vejrrelaterede forsikringsskader pr. 1.000 indb.",
+      "name": "Vejrrelaterede forsikringsskader pr. 1.000 boliger og fritidshuse",
       "table": "F&P skadesstatistik",
       "source": "F&P skadesstatistik",
       "source_url": "https://fogp.dk/tal-og-analyser/saadan-er-danmark-blevet-ramt-af-vejrrelaterede-skader-de-seneste-aar/",
-      "unit": "skader pr. 1.000 indb.",
+      "unit": "skader pr. 1.000 boliger og fritidshuse",
       "data_year": "2023-2025",
       "csv": "klimatilpasning_scores.csv",
       "ratio_col": "vejr_skader_ratio",
       "raw_col": "vejr_skader_raw",
-      "reference": {"type": "landstal", "col": "vejr_skader_ref", "definition": "befolkningsvægtet gennemsnit af de 98 kommuner (folketal 1. jan. 2025), dvs. landet som helhed; fetch_klimatilpasning_data.py"},
-      "smaa_tal": {"pr": 1000, "aar": 1},
+      "reference": {"type": "landstal", "col": "vejr_skader_ref", "definition": "de 98 kommuners skader samlet pr. 1.000 boliger og fritidshuse (DST BOL105, 2025); fetch_klimatilpasning_data.py"},
       "inverse": true,
       "baseline_level": 3,
-      "note": "Proxy: vejrrelaterede forsikringsskader pr. 1.000 indb. (F&P, 2023-2025). Kilden har kun kommunenavne; fetch-scriptet slår koden op i data/kommuner.json. Se data/klimatilpasning.md.",
-      "rationale": "Vejrrelaterede forsikringsskader (storm, skybrud, hagl og frost) pr. 1.000 indbyggere, akkumuleret fra Q1 2023 til Q4 2025 (Forsikring & Pension). Tallet viser faktiske skader og reagerer derfor på tiltag, men det afspejler også geografisk udsathed og bygningsmasse. Stormflod er ikke med. Inverteret: færre skader er bedre."
+      "note": "Proxy: vejrrelaterede forsikringsskader (F&P, 2023-2025). Fra nov. 2026 pr. 1.000 boliger og fritidshuse (DST BOL105) i stedet for pr. 1.000 indbyggere: skaderne sker på bygninger, og tallet pr. indbygger fulgte andelen af fritidshuse (rangkorrelation 0,59). Antallet af skader regnes tilbage af F&P's afrundede rate og folketallet 1. jan. 2025. smaa_tal er taget af, fordi den regner antallet af en rate pr. indbygger; alle kommuner har over 20 skader. Kilden har kun kommunenavne; fetch-scriptet slår koden op i data/kommuner.json. Se data/klimatilpasning.md og docs/akademisk-gennemgang-nov-2026.md afsnit 2.4.",
+      "rationale": "Vejrrelaterede forsikringsskader (storm, skybrud, hagl og frost) pr. 1.000 boliger og fritidshuse, akkumuleret fra Q1 2023 til Q4 2025 (Forsikring & Pension; boligtal fra Danmarks Statistik). Skaderne sker på bygninger, også fritidshuse, og deles derfor med antallet af boligenheder og ikke med de fastboende. Tallet viser faktiske skader og reagerer derfor på tiltag, men det afspejler også geografisk udsathed. Erhvervsbygninger er ikke med i nævneren, og stormflod er ikke med i skaderne. Inverteret: færre skader er bedre."
     },
     {
       "id": "kystrisiko",
@@ -1095,13 +1062,13 @@
       "csv": "climate_scores.csv",
       "ratio_col": "climate_territorial_ratio",
       "raw_col": "co2e_per_capita",
-      "reference": {"type": "maal", "value": 2.5, "label": "2,5 ton CO₂e pr. person (1,5-graders-niveau 2030)"},
+      "reference": {"type": "maal", "value": 3, "label": "3 ton CO₂e pr. person (1,5-graders-niveau 2030 for det samlede forbrugsaftryk)"},
       "lower_is_better": true,
       "baseline_type": "absolut",
-      "boundary": "Mål: 2,5 ton CO₂e/person/år (territorial)",
+      "boundary": "Mål: 3 ton CO₂e/person/år (territorial)",
       "raw_key": "eco_klima_raw",
       "ratio_key": "klimapaavirkning_self",
-      "note": "Ratio = CO2e pr. indbygger / 2,5 ton × 100. Besluttet 25. sep. 2026 (docs/oekologisk-gennemgang-sep-2026.md afsnit 6): 2,5 ton frem for 3, fordi 2,5 har en kilde (Hot or Cool Institute 2021: 1,5-graders-niveau i 2030) og 3 ton ikke har. Valget flytter ingen farver (alle 98 er røde med begge). Forbehold: målet er udledt for husholdningernes forbrug og bruges her også på det territoriale tal; det står på metodesiden."
+      "note": "Ratio = CO2e pr. indbygger / 3 ton × 100. Grænsen er 3 ton fra nov. 2026 (docs/akademisk-gennemgang-nov-2026.md afsnit 3.1): CONCITO (2023, Danmarks globale forbrugsudledninger) angiver med henvisning til IPCC's 1,5-graders-scenarier, at forbrugsudledningen pr. verdensborger bør under 3 ton CO2e i 2030; Klimarådets baggrundsnotat om forbrugsaftrykket (nov. 2023) gengiver samme niveau som Klima- og Omstillingsrådets lavrisikomål. Tallet gælder det samlede forbrugsaftryk, som er det platformen måler. De 2,5 ton (25. sep. 2026, Hot or Cool Institute 2021) gælder kun husholdningernes forbrug, ca. 60 % af det danske aftryk. Septembernotatet åbnede for 3 ton, hvis tallet fik en kilde. Valget flytter ingen farver (alle 98 er røde med begge). Forbehold: det territoriale tal har en anden afgrænsning end målet (produktion til eksport er med); det står på metodesiden."
     },
     {
       "id": "luftkvalitet_no2",
@@ -1295,13 +1262,13 @@
       "csv": "cba_2023_estimate.csv",
       "ratio_col": null,
       "raw_col": "cba_estimate",
-      "reference": {"type": "maal", "value": 2.5, "label": "2,5 ton CO₂e pr. person (1,5-graders-niveau 2030)"},
+      "reference": {"type": "maal", "value": 3, "label": "3 ton CO₂e pr. person (1,5-graders-niveau 2030 for det samlede forbrugsaftryk)"},
       "lower_is_better": true,
       "baseline_type": "absolut",
-      "boundary": "Mål: 2,5 ton CO₂e/person/år (forbrugsbaseret)",
+      "boundary": "Mål: 3 ton CO₂e/person/år (forbrugsbaseret)",
       "raw_key": "forbrug_co2",
       "ratio_key": "forbrug_co2_self",
-      "note": "Tier 1-estimat: Osei-Owusu et al. (2020) for 2011, ganget med Energistyrelsens nationale udvikling pr. indbygger fra 2011 til seneste år (fetch_forbrug_co2.py henter tidsserien). Ratio = estimat / 2,5 ton × 100. Se data/methodology_note.md. Besluttet 25. sep. 2026 (docs/oekologisk-gennemgang-sep-2026.md afsnit 6): grænsen 2,5 ton, se klimapaavirkning.",
+      "note": "Tier 1-estimat: forskellene mellem kommunerne er Osei-Owusu et al. (2020) for 2011; niveauet er Energistyrelsens for seneste år. Fra nov. 2026 skaleres 2011-mønsteret, så de 98 kommuner samlet giver ENS' tal pr. indbygger (fetch_forbrug_co2.py). Indtil da lå kommunerne samlet 16 % over ENS, fordi Osei-Owusus niveau blev bevaret. Ratio = estimat / 3 ton × 100. Se data/methodology_note.md og klimapaavirkning for grænsen.",
       "table": "ENS Global Afrapportering"
     },
     {

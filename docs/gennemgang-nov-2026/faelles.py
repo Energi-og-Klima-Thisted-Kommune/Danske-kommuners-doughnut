@@ -2,9 +2,16 @@
 
 Replikerer shared.ts' beregning af kategoriscorer og kommunegruppe-visningen
 (samme kode som docs/artikler/analyse_artikler.py).
+
+Notatet beskriver platformen, som den så ud FØR rettelserne i november 2026.
+Datafilerne læses derfor fra git ved commit SNAPSHOT og ikke fra arbejdsmappen,
+hvor de fjernede indikatorer (education, hjemsyg) ikke længere findes. Kræver
+at commit'et er i det lokale git-historik.
 """
+import io
 import json
 import os
+import subprocess
 
 import numpy as np
 import pandas as pd
@@ -16,9 +23,22 @@ def sti(*dele):
     return os.path.join(ROOT, *dele)
 
 
-reg = json.load(open(sti("data", "indikatorer.json")))
-kom = json.load(open(sti("data", "kommuner.json")))
-m = pd.read_csv(sti("data", "master_indicators.csv"), dtype={"kommune_kode": str})
+SNAPSHOT = "7ee9884"   # masterfilen notatet er skrevet på (main, 6. okt. 2026)
+
+
+def snapshot(relsti):
+    """Filens indhold ved commit SNAPSHOT, som tekststrøm."""
+    try:
+        ud = subprocess.run(["git", "show", f"{SNAPSHOT}:{relsti}"], cwd=ROOT, capture_output=True,
+                            text=True, check=True).stdout
+    except (subprocess.CalledProcessError, FileNotFoundError) as e:
+        raise SystemExit(f"Kan ikke læse {relsti} ved commit {SNAPSHOT} (kræver git og fuld historik): {e}")
+    return io.StringIO(ud)
+
+
+reg = json.load(snapshot("data/indikatorer.json"))
+kom = json.load(snapshot("data/kommuner.json"))
+m = pd.read_csv(snapshot("data/master_indicators.csv"), dtype={"kommune_kode": str})
 
 IND = {i["id"]: i for i in reg["indikatorer"]}
 CATS = reg["sociale_kategorier"]
@@ -35,7 +55,7 @@ REF = m.pivot(index="kommune_kode", columns="indicator_id", values="reference")
 NAVN = m.drop_duplicates("kommune_kode").set_index("kommune_kode")["kommune_navn"]
 GRP = pd.Series({k["kode"]: k["gruppe"] for k in kom["kommuner"]}).loc[R.index]
 GRPNAVN = {int(k): v for k, v in kom["grupper"].items()}
-FOLK = pd.read_csv(sti("data", "folketal.csv"), dtype={"kommune_kode": str}).set_index("kommune_kode")["folketal"].loc[R.index]
+FOLK = pd.read_csv(snapshot("data/folketal.csv"), dtype={"kommune_kode": str}).set_index("kommune_kode")["folketal"].loc[R.index]
 D = pd.DataFrame({d["id"]: R["_dim_" + d["id"]] for d in DIMS})
 
 

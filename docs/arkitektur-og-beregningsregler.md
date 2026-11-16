@@ -108,8 +108,9 @@ andet end økologiske indikatorer med `lower_is_better: false`.
 
 **R3 - Referencen.** Feltet `reference` i registret har tre typer:
 
-- `maal`: et fast mål (`value`). Uddannelse 95 procent, WHO's
-  luftkvalitetsgrænser, 2,5 ton CO2e (indtil sep. 2026 3 ton, uden kilde), EU's
+- `maal`: et fast mål (`value`). Højst 10 procent uden ungdomsuddannelse
+  (90-procentmålet, fra nov. 2026; før 95 procent, som blev afløst i 2017), WHO's
+  luftkvalitetsgrænser, 3 ton CO2e (fra nov. 2026, se afsnit 5), EU's
   65 procent genanvendelse og 30/10 procent natur, 6 mg/L nitrat, 0 procent
   fossil varme, kystvandenes målbelastning for kvælstof (100 procent),
   tålegrænsen for kvælstofnedfald (10 kg N/ha/år) og kommunens andel af den
@@ -441,7 +442,7 @@ seneste ti.
 - **Serien ender i scorens landstal.** `tjek_konsistens.py` kræver, at landsserien
   for scorens år er `master.reference` (tolerance 0,5 %), og melder en fejl
   ellers. Indikatorer, der måles mod et fast mål, har ingen landsreference i
-  master. `education` og `vandindvinding` kontrolleres mod landstallet i deres
+  master. `low_education` og `vandindvinding` kontrolleres mod landstallet i deres
   egen CSV (`LAND_ANDEN_KILDE`), og `cirkularitet_recycling` står uden kontrol.
   En indikator, der ikke kan gengive sit landstal, får ingen landsserie, og
   grafen viser så kun kommunen.
@@ -491,12 +492,21 @@ Reglen bag R12: **scor mod målet, hvor der findes en meningsfuld grænse pr.
 kommune.** Det gælder både biofysiske og juridiske grænser (WHO's
 luftkvalitetsretningslinjer, ekspertgruppens 6 mg/L for nitrat) og vedtagne
 politiske mål (EU's 30/10-procentmål for natur, EU's 65 procent genanvendelse,
-det nationale 95-procentmål for uddannelse, 0 procent fossil varme, 2,5 ton
-CO2e pr. person). Fra sep. 2026 også tre nedskalerede biofysiske grænser:
+det nationale mål om at 90 procent af de 25-årige har en ungdomsuddannelse i
+2030, 0 procent fossil varme, 3 ton CO2e pr. person). Fra sep. 2026 også tre nedskalerede biofysiske grænser:
 kystvandenes målbelastning for kvælstof fra vandområdeplanerne, tålegrænsen for
 kvælstofnedfald på følsom natur og Danmarks bæredygtige grundvandsressource
 (GEUS 2023), fordelt på kommunerne efter grundvandsdannelsen i DK-modellen.
 Findes ingen sådan grænse, bruges landsgennemsnittet.
+
+Klimagrænsen er 3 ton CO2e pr. person (fra nov. 2026). CONCITO (2023) angiver
+med henvisning til IPCC's 1,5-graders-scenarier, at forbrugsudledningen pr.
+verdensborger bør under 3 ton i 2030, og Klimarådet (2023) gengiver samme
+niveau som Klima- og Omstillingsrådets lavrisikomål. Tallet gælder det samlede
+forbrugsaftryk, som er det platformen måler. Fra 25. sep. til nov. 2026 var
+grænsen 2,5 ton (Hot or Cool Institute 2021), som kun gælder husholdningernes
+forbrug, ca. 60 procent af det danske aftryk. Det territoriale tal måles mod
+samme grænse, selv om afgrænsningen er en anden (produktion til eksport er med).
 
 Pesticider er scoret mod landsgennemsnittet. Indikatoren er andelen af aktive
 vandværker med fund, og målet ville være nul fund, som ikke kan bruges som
@@ -545,7 +555,7 @@ omskaleres på deres allerede vendte ratio, hvilket er en bevidst forenkling.
    (`kommuner.kode_for_navn()`), ikke i build-trinnet. Et ukendt navn stopper
    scriptet (R5). Christiansø er ikke blandt de 98.
 4. **`absoluteScore`-indikatorer må aldrig omskaleres af baseline-toggle**
-   (R9, R10, R15). I dag `education` og `bolig_fossil`.
+   (R9, R10, R15). I dag `low_education` og `bolig_fossil`.
 5. **`bolig_fossil` afhænger af fjernvarmedata, og rækkefølgen er bindende:**
    `fetch_fjernvarme_mix.py` skal køre før `fetch_bolig_fossil.py`, som læser
    fjernvarmens fossilandel fra førstnævntes CSV.

@@ -207,7 +207,7 @@ LAND_MIN_TOLERANCE = 0.006
 # skriver landstallet i sin egen CSV: landsserien kontrolleres mod den kolonne i stedet.
 # cirkularitet_recycling har ingen sådan kolonne og står uden kontrol.
 LAND_ANDEN_KILDE = {
-    "education": ("doughnut_scores.csv", "education_ref"),
+    "low_education": ("uddannelse_extra_scores.csv", "low_education_ref"),
     "vandindvinding": ("vandindvinding_scores.csv", "udnyttelse_dk_pct"),
 }
 
