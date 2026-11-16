@@ -580,7 +580,7 @@ SAMME_SOM_SCOREN = {
     "trangboethed": ("fetch_trangboethed", "serie_trangboethed", "BOL103", "perioder"),
     "employment_origin_gap": ("fetch_ligestilling_data", "serie_employment_origin_gap", "RAS200", "perioder"),
     "vandindvinding": ("fetch_vandindvinding_data", "serie_vandindvinding", "VANDIND", "aar"),
-    "areal_antropiseret": ("fetch_dst_arealanvendelse", "serie_areal_antropiseret", "AREALDK2", "perioder"),
+    "areal_landbrug": ("fetch_dst_arealanvendelse", "serie_areal_landbrug", "AREALDK2", "perioder"),
     "cirkularitet_waste": ("fetch_eco_new_data", "serie_cirkularitet_waste", "LABY25", "aar"),
     "cirkularitet_recycling": ("fetch_eco_new_data", "serie_cirkularitet_recycling", "LABY25", "aar"),
     # Ikke en DST-tabel: årene kommer fra modulets egen trend_perioder().
