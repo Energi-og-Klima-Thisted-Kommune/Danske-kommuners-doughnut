@@ -322,6 +322,7 @@ og sidste `N_ENDEPUNKT` år, så et enkelt afvigende år ikke definerer retninge
 | `stagneret` | ændringen er ubetydelig, se T4 |
 | `kontekst` | indikatoren har ingen retning i registret (kontekst-indikator eller ukendt id), så retning kan ikke vurderes |
 | `forkert` | den målrettede ændring er nul eller negativ |
+| `usikker` | ville være `rigtig`, `tempo` eller `forkert`, men serien har ingen statistisk sikker tendens, se T11 |
 | `rigtig` | målrettet ændring mindst lige så god som medianen af alle 98 kommuner |
 | `tempo` | rigtig vej, men langsommere end medianen |
 
@@ -461,6 +462,29 @@ seneste ti.
 - **Landsserierne kan hentes uden API-nøgler** med
   `python3 scripts/fetch_trend_history.py --kun-land`. Kommunernes serier og
   pilene røres ikke.
+
+---
+
+**T11 - En vurdering kræver en sikker tendens (fra nov. 2026).** Har serien
+mindst 8 år (`MK_MIN_AAR`), testes den med Mann-Kendalls test for en monoton
+tendens (Mann 1945; normalapproksimation med korrektion for ens værdier og
+kontinuitetskorrektion, `mann_kendall_p()` i `build_trends_csv.py`). Er
+p-værdien 0,10 eller højere, bliver `rigtig`, `tempo` og `forkert` til
+`usikker`. UI'et viser en bølgelinje og teksten "ingen klar tendens". Reglen kom
+til, fordi 18 procent af pilene med en vurdering ikke havde en påviselig tendens
+(for børnefattigdom fire ud af fem), mest i små kommuner.
+
+- Kortere serier (Sundhedsprofilens to bølger, fire-fem valg) kan ikke testes og
+  beholder vurderingen af forskellen mellem endepunkterne.
+- `stagneret` (T4) går forud: en ubetydelig ændring er ikke usikker.
+- Medianen bag "rigtig mod tempo" (T3) beregnes stadig over alle kommuner, også
+  dem der ender som `usikker`.
+- En worst-of-dimension arver klassen fra den afgørende sub-indikator (T6). Et
+  gennemsnit (Forurening og de sociale kategorier) bliver `usikker`, når ingen af
+  dets indikatorer har en vurdering, og mindst én er `usikker`; ellers vurderes
+  gennemsnittet som før.
+- Efter reglen er 496 af ca. 4.500 indikatorpile `usikker`, og 79 pile på
+  kategori- og dimensionsniveau.
 
 ---
 

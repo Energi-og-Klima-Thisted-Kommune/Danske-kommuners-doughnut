@@ -11,6 +11,7 @@ import {
   computeCategoryScores,
   kommunegruppeNavn,
   TREND_LABEL,
+  TREND_BOELGE,
   trendPilOpad,
   type TrendPost,
   type TrendKontekst,
@@ -545,6 +546,13 @@ export default function DoughnutRing({
   // underliggende råværdi gør. Reglen bor i lib/shared.ts.
   const TrendIkon = ({ trend, kontekst }: { trend: TrendPost; kontekst: TrendKontekst }) => {
     const farve = trendFarve(trend.retning);
+    if (trend.retning === "usikker") {
+      return (
+        <svg width="10" height="10" viewBox="0 0 12 12" className={`${farve} shrink-0`}>
+          <path d={TREND_BOELGE} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+        </svg>
+      );
+    }
     if (trend.retning === "stagneret" || trend.retning === "ingen") {
       return (
         <svg width="10" height="10" viewBox="0 0 12 12" className={`${farve} shrink-0`}>
@@ -666,7 +674,7 @@ export default function DoughnutRing({
             // pct er målrettet på dimensionsniveau (positiv = positiv retning),
             // så et negativt tal ville læses som "faldt" i stedet for "gik den
             // forkerte vej". Vis derfor størrelsen uden fortegn.
-            const pctTxt = trend.pct !== null && trend.retning !== "stagneret"
+            const pctTxt = trend.pct !== null && trend.retning !== "stagneret" && trend.retning !== "usikker"
               ? `${Math.abs(trend.pct).toFixed(1)}%` : "";
             const kontekst: TrendKontekst = active.group === "social" ? "social" : "ecological";
             return (

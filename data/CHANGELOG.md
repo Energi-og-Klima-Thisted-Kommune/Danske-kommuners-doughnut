@@ -2,9 +2,10 @@
 
 Log over større ændringer i datapipeline og master-fil.
 
-## 2026-11-16 (trin 2 efter gennemgangen: treårsgennemsnit)
+## 2026-11-16 (trin 2 efter gennemgangen: treårsgennemsnit og sikre pile)
 
 - **`crime_rate` og `neet` er treårige gennemsnit.** Værdien for år Y er gennemsnittet af Y-2, Y-1 og Y, som for trafikulykkerne. Ét års kriminalitetstal svingede så meget, at 86 af 98 Tryghedsfarver i standardvisningen lå inden for usikkerheden af en farvegrænse (`docs/akademisk-gennemgang-nov-2026.md` afsnit 2.5). Kriminalitet dækker nu 2023-2025 (landstal 66,4 pr. 1.000 mod 63,2 for 2025 alene, fordi niveauet falder), NEET 2022-2024 (9,41 % mod 9,14 %). Pilene er genberegnet med samme funktioner.
+- **Pilene kræver en sikker tendens (arkitekturdokumentet T11).** Serier på mindst otte år testes med Mann-Kendalls test. Uden en påviselig tendens (p ≥ 0,10) bliver vurderingen "ingen klar tendens" og vises som en bølgelinje. Det rammer 496 af ca. 4.500 indikatorpile, flest for børnefattigdom (75 kommuner), husholdningsaffald (50), kønsgab i middellevetid (43), udsatte børn (34) og grundvandsindvinding (33). På kategoriniveau: Bolig 20 kommuner, Forurening 19, Vand 33. Ingen score er ændret.
 - **Ikke med: `high_absence`.** Fravær burde have samme behandling, men hentes fra UVM's API, som kræver en nøgle, der ikke var til rådighed. Det står som åbent punkt.
 - **BU43 (`vulnerable_children`) har en nyere udgave hos DST,** som scriptet hentede med. Den er rullet tilbage til de committede tal, fordi pilen for indikatoren kun kan genberegnes med en fuld kørsel af `fetch_trend_history.py`. Den hører til næste almindelige dataopdatering.
 

@@ -16,6 +16,7 @@ import {
   dimensionBaselineType,
   kommunegruppeNavn,
   TREND_LABEL,
+  TREND_BOELGE,
   trendBeskrivelse,
   trendPilOpad,
   faaTilfaelde,
@@ -184,6 +185,9 @@ function TrendMarker({ trend, kontekst = "indikator" }: { trend?: TrendPost; kon
   } else if (trend.retning === "stagneret") {
     farve = "text-gray-400";
     inner = <line x1="1.5" y1="6" x2="10.5" y2="6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />;
+  } else if (trend.retning === "usikker") {
+    farve = "text-gray-400";
+    inner = <path d={TREND_BOELGE} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />;
   } else {
     farve =
       trend.retning === "rigtig" ? "text-emerald-600" :

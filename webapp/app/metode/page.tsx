@@ -334,6 +334,12 @@ export default function MetodePage() {
           <strong>Økologisk loft:</strong> Score 100 = grænseværdi. 85 eller derunder er grønt, 85-100 gult (tæt på grænsen), og over 100 er &quot;overshoot&quot; (rødt).
           Røde segmenter i den ydre ring viser overskridelse af grænsen. Det økologiske loft påvirkes ikke af valget af sammenligningsgrundlag.
         </p>
+        <p className="text-sm text-gray-700 leading-relaxed mt-2">
+          <strong>Retningspile:</strong> Pilen ved en indikator viser udviklingen i selve tallet over de år, kilden dækker, og om den går i positiv
+          eller forkert retning. For serier på mindst otte år kræver en vurdering, at der er en statistisk sikker tendens (Mann-Kendalls test, 10 %-niveau).
+          Svinger tallet for meget fra år til år til det, vises en bølgelinje og teksten &quot;ingen klar tendens&quot;. Det gælder især små kommuner og tal
+          med få tilfælde. Kortere serier, fx Sundhedsprofilens to målinger, kan ikke testes og vurderes på forskellen mellem første og sidste måling.
+        </p>
         <p className="text-sm text-gray-700 leading-relaxed mt-4">
           <strong>Vægtning:</strong> Hver kategori (f.eks. Sundhed, Velfærd, Bolig) beregnes som et simpelt gennemsnit af sine indikatorer.
           Det samlede sociale gennemsnit er et gennemsnit af kategorierne - ikke af de individuelle indikatorer.

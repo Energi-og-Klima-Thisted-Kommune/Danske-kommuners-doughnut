@@ -166,19 +166,21 @@ export default function KommuneClient({ kommune, indicatorDataYears, defaultData
               ...SOCIAL_CATEGORIES.map((c) => c.id),
               ...ECOLOGICAL_DIMENSIONS.map((d) => d.id),
             ];
-            let positiv = 0, forkert = 0, uaendret = 0, ingen = 0;
+            let positiv = 0, forkert = 0, uaendret = 0, usikker = 0, ingen = 0;
             for (const id of alleIds) {
               const t = kommune.trends?.[`_dim_${id}`];
               if (!t || t.retning === "ingen") { ingen++; continue; }
               if (t.retning === "rigtig" || t.retning === "tempo") positiv++;
               else if (t.retning === "forkert") forkert++;
+              else if (t.retning === "usikker") usikker++;
               else uaendret++;
             }
-            if (positiv + forkert + uaendret === 0) return null;
+            if (positiv + forkert + uaendret + usikker === 0) return null;
             const dele: string[] = [];
             if (positiv) dele.push(`${positiv} bevæger sig i positiv retning`);
             if (forkert) dele.push(`${forkert} i forkert retning`);
             if (uaendret) dele.push(`${uaendret} stort set uændret`);
+            if (usikker) dele.push(`${usikker} uden klar tendens`);
             return (
               <p>
                 <span className="font-medium">Retning:</span>{" "}

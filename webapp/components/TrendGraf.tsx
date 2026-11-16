@@ -13,6 +13,7 @@
 
 import {
   TREND_LABEL,
+  TREND_BOELGE,
   formatTal,
   trendPilOpad,
   type TrendEndepunkter,
@@ -184,6 +185,7 @@ const VURDERING: Record<TrendPost["retning"], { ikon: string; tekst: string }> =
   tempo: { ikon: "text-amber-500", tekst: "text-amber-800" },
   forkert: { ikon: "text-red-500", tekst: "text-red-700" },
   stagneret: { ikon: "text-gray-400", tekst: "text-gray-600" },
+  usikker: { ikon: "text-gray-400", tekst: "text-gray-600" },
   kontekst: { ikon: "text-gray-400", tekst: "text-gray-600" },
   ingen: { ikon: "text-gray-300", tekst: "text-gray-500" },
 };
@@ -193,6 +195,8 @@ function VurderingsIkon({ trend, kontekst }: { trend: TrendPost; kontekst: Trend
     <svg width={12} height={12} viewBox="0 0 12 12" aria-hidden="true" className={`shrink-0 ${VURDERING[trend.retning].ikon}`}>
       {trend.retning === "stagneret" ? (
         <line x1={1.5} y1={6} x2={10.5} y2={6} stroke="currentColor" strokeWidth={2} strokeLinecap="round" />
+      ) : trend.retning === "usikker" ? (
+        <path d={TREND_BOELGE} fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" />
       ) : (
         <path d={trendPilOpad(trend, kontekst) ? "M6 1.5 L10.5 9 L1.5 9 Z" : "M6 10.5 L1.5 3 L10.5 3 Z"} fill="currentColor" />
       )}

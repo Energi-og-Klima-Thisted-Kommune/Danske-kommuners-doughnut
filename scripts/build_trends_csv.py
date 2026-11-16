@@ -56,6 +56,7 @@ for master_indicators.csv. De to filer opdateres altid sammen.
 from __future__ import annotations
 
 import csv
+import math
 import statistics
 import sys
 from collections import defaultdict
@@ -159,6 +160,50 @@ def klassificer(pct: float | None, op_er_godt: bool | None, ref_pct: float | Non
     return "tempo"
 
 
+# En pil med vurdering (rigtig, tempo, forkert) kræver en statistisk sikker
+# tendens, når serien er lang nok til at teste (T11). Kortere serier (to
+# bølger af Sundhedsprofilen, fire-fem valg) kan ikke testes og beholder
+# vurderingen af forskellen mellem endepunkterne.
+MK_MIN_AAR = 8
+MK_P_GRAENSE = 0.10
+
+
+def mann_kendall_p(vaerdier: list[float]) -> float:
+    """Tosidet p-værdi for Mann-Kendalls test for en monoton tendens (Mann 1945):
+    normalapproksimation med korrektion for ens værdier og kontinuitetskorrektion.
+    vaerdier er serien i tidsrækkefølge."""
+    n = len(vaerdier)
+    s = 0
+    for i in range(n - 1):
+        for j in range(i + 1, n):
+            d = vaerdier[j] - vaerdier[i]
+            s += (d > 0) - (d < 0)
+    ens = defaultdict(int)
+    for v in vaerdier:
+        ens[v] += 1
+    var = (n * (n - 1) * (2 * n + 5) - sum(t * (t - 1) * (2 * t + 5) for t in ens.values())) / 18
+    if var <= 0 or s == 0:
+        return 1.0
+    z = (s - 1) / math.sqrt(var) if s > 0 else (s + 1) / math.sqrt(var)
+    return math.erfc(abs(z) / math.sqrt(2))
+
+
+def uden_sikker_tendens(serie: dict) -> bool:
+    """Sandt når serien er lang nok til at teste og testen ikke finder en tendens."""
+    if len(serie) < MK_MIN_AAR:
+        return False
+    return mann_kendall_p([serie[a] for a in sorted(serie)]) >= MK_P_GRAENSE
+
+
+VURDERET = ("rigtig", "tempo", "forkert")
+
+
+def samlet_usikker(retninger: list[str]) -> bool:
+    """Et gennemsnit af indikatorer er uden klar tendens, når ingen af dem har en
+    vurdering, og mindst én er 'usikker' (resten er 'stagneret')."""
+    return "usikker" in retninger and not any(r in VURDERET for r in retninger)
+
+
 def laes_master_struktur():
     """Læser master_indicators.csv og returnerer to strukturer:
 
@@ -224,6 +269,7 @@ def aggreger_dimensioner(poster, eco_struktur, social_struktur):
                 # Økologiske indikatorer vil ned, undtagen genanvendelse.
                 maal = []
                 perioder = []
+                bidrag = []
                 for iid, _ratio in subs:
                     p = per_indikator.get((kode, iid))
                     if not p or p["pct"] == "":
@@ -231,10 +277,12 @@ def aggreger_dimensioner(poster, eco_struktur, social_struktur):
                     m = maalrettet(float(p["pct"]), op_er_godt.get(iid))
                     if m is not None:
                         maal.append(m)
+                        bidrag.append(p["retning"])
                         perioder.append((p["periode_start"], p["periode_slut"], p["n_aar"]))
                 if not maal:
                     continue
                 eco_kandidater[dim][kode] = {
+                    "usikker": samlet_usikker(bidrag),
                     "maalrettet": sum(maal) / len(maal),
                     "periode_start": min(p[0] for p in perioder),
                     "periode_slut": max(p[1] for p in perioder),
@@ -280,7 +328,7 @@ def aggreger_dimensioner(poster, eco_struktur, social_struktur):
                 "vaerdi_start": "",
                 "vaerdi_slut": "",
                 "pct": round(m, 2),
-                "retning": klassificer(m, True, ref, False),
+                "retning": "usikker" if v["usikker"] else klassificer(m, True, ref, False),
                 "n_aar": v["n_aar"],
                 "kilde": KILDE.get(v["noegle"], KILDE_DEFAULT),
                 "noegle_indikator": v["noegle"],
@@ -291,7 +339,7 @@ def aggreger_dimensioner(poster, eco_struktur, social_struktur):
     kommuner = {p["kommune_kode"] for p in poster}
     for dim, ids in social_struktur.items():
         for kode in kommuner:
-            maal, perioder = [], []
+            maal, perioder, bidrag = [], [], []
             for iid in ids:
                 p = per_indikator.get((kode, iid))
                 if not p or p["pct"] == "":
@@ -299,10 +347,12 @@ def aggreger_dimensioner(poster, eco_struktur, social_struktur):
                 m = maalrettet(float(p["pct"]), op_er_godt.get(iid))
                 if m is not None:
                     maal.append(m)
+                    bidrag.append(p["retning"])
                     perioder.append((p["periode_start"], p["periode_slut"], p["n_aar"]))
             if not maal:
                 continue
             social_kandidater[dim][kode] = {
+                "usikker": samlet_usikker(bidrag),
                 "maalrettet": sum(maal) / len(maal),
                 "periode_start": min(p[0] for p in perioder),
                 "periode_slut": max(p[1] for p in perioder),
@@ -322,7 +372,7 @@ def aggreger_dimensioner(poster, eco_struktur, social_struktur):
                 "vaerdi_start": "",
                 "vaerdi_slut": "",
                 "pct": round(m, 2),
-                "retning": klassificer(m, True, ref, False),
+                "retning": "usikker" if v["usikker"] else klassificer(m, True, ref, False),
                 "n_aar": v["n_aar"],
                 "kilde": KILDE_DEFAULT,
                 "noegle_indikator": f"gennemsnit af {v['antal']} indikatorer",
@@ -411,11 +461,14 @@ def build_trends():
             continue
         ref_pct = statistics.median(pr_kommune_pct.values())
 
-        n_rigtig = n_tempo = n_stagneret = n_forkert = 0
+        n_rigtig = n_tempo = n_stagneret = n_forkert = n_usikker = 0
         for kode, (f_lab, s_lab, start, slut, n_aar, pct) in pr_kommune_data.items():
             er_ubetydelig = ubetydelig(start, slut)
             retning = klassificer(pct, op_er_godt, ref_pct, er_ubetydelig)
-            if retning == "rigtig":
+            if retning in VURDERET and uden_sikker_tendens(per_kommune[kode]):
+                retning = "usikker"
+                n_usikker += 1
+            elif retning == "rigtig":
                 n_rigtig += 1
             elif retning == "tempo":
                 n_tempo += 1
@@ -438,7 +491,8 @@ def build_trends():
             })
 
         print(f"  {iid:28} {len(pr_kommune_data):3}/98 kommuner  "
-              f"(rigtig={n_rigtig} tempo={n_tempo} stagneret={n_stagneret} forkert={n_forkert})  "
+              f"(rigtig={n_rigtig} tempo={n_tempo} stagneret={n_stagneret} forkert={n_forkert} "
+              f"usikker={n_usikker})  "
               f"ref={ref_pct:+.1f}%")
 
     # ─── Dimensions- og kategori-aggregater (_dim_*) ─────────────────
@@ -451,12 +505,12 @@ def build_trends():
         pr_dim[r["indicator_id"]].append(r["retning"])
     for dim_id in sorted(pr_dim):
         retninger = pr_dim[dim_id]
-        t = {k: retninger.count(k) for k in ("rigtig", "tempo", "stagneret", "forkert")}
+        t = {k: retninger.count(k) for k in ("rigtig", "tempo", "stagneret", "forkert", "usikker")}
         metode = "gennemsnit" if (dim_id[5:] in ir.gennemsnits_dimensioner()
                                    or dim_id[5:] in social_struktur) else "worst-of"
         print(f"  {dim_id:28} {len(retninger):3}/98 kommuner  "
               f"(rigtig={t['rigtig']} tempo={t['tempo']} stagneret={t['stagneret']} "
-              f"forkert={t['forkert']})  [{metode}]")
+              f"forkert={t['forkert']} usikker={t['usikker']})  [{metode}]")
     output_rows.extend(dim_rows)
 
     DATA_DIR.mkdir(exist_ok=True)

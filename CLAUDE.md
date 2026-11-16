@@ -331,6 +331,7 @@ Scriptet gemmer direkte til `data/doughnut_scores.csv`. Fra `scripts/` havner fi
     - **`forbrug_co2` har Energistyrelsens niveau.** `fetch_forbrug_co2.py` skalerer 2011-mønsteret, så kommunerne vægtet med folketallet giver ENS' tal for året (kræver FOLK1A for estimatåret). Forskellene mellem kommunerne er stadig fra 2011.
     - **`crime_rate` og `neet` er treårige gennemsnit** (`treaarssnit()` i `fetch_social_new_data.py`, samme regel som trafikulykkerne, punkt 26). Fravær (`high_absence`) burde følge med, men kræver `UVM_API_TOKEN`.
     - **Et fetch-script henter alt, det kender, også det du ikke ville røre.** `fetch_social_new_data.py` hentede 16. nov. også en nyere udgave af BU43 (`vulnerable_children`). Scoren ville så løbe fra pilen, som hentes af den fulde `fetch_trend_history.py` med nøgler. Kolonnerne blev rullet tilbage i hånden. Læs `rapport_dataaendringer` efter hver kørsel, og rul uvedkommende ændringer tilbage, hvis pilene ikke kan følge med.
+    - **Pilen har en syvende klasse, `usikker` (arkitekturdokumentet T11).** Serier på 8+ år testes med Mann-Kendall i `build_trends_csv.py`; uden en sikker tendens (p ≥ 0,10) bliver rigtig/tempo/forkert til `usikker`, som UI'et viser som en bølgelinje (`TREND_BOELGE` i `shared.ts`). En ny visning af pile skal håndtere klassen.
     - **Byg master og trendfil på Python 3.9** (CHANGELOG 6. okt.). Findes 3.9 ikke på maskinen: `uv python install 3.9` og kør `build_master_csv.py` og `build_trends_csv.py` med den.
 
 ## Arbejdsprincipper for ændringer

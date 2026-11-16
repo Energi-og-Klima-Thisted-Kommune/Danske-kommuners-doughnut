@@ -341,7 +341,12 @@ export function dimensionBaselineType(dim: EcologicalDimension): DimBaselineType
 // Data kommer fra data/trend_indicators.csv (scripts/build_trends_csv.py).
 // Dækker kun de indikatorer der har en efterprøvet historisk kilde - resten
 // får retning "ingen" (ikke fejl, bare ingen tidsserie endnu).
-export type TrendDirection = "rigtig" | "tempo" | "stagneret" | "forkert" | "kontekst" | "ingen";
+// "usikker" (fra nov. 2026): serien er lang nok til at teste (8+ år), men tallet svinger
+// for meget fra år til år til, at en tendens kan påvises (Mann-Kendall, build_trends_csv.py).
+export type TrendDirection = "rigtig" | "tempo" | "stagneret" | "forkert" | "usikker" | "kontekst" | "ingen";
+
+/** Ikonet for "usikker": en bølgelinje, så formen (ikke kun farven) adskiller den fra pil og streg. */
+export const TREND_BOELGE = "M1.5 6.5 C3 2.5 4.5 2.5 6 6 S9 9.5 10.5 5.5";
 
 export interface TrendPost {
   retning: TrendDirection;
@@ -399,6 +404,7 @@ export const TREND_LABEL: Record<TrendDirection, string> = {
   tempo: "Bevæger sig i positiv retning, men langsommere end de fleste kommuner",
   stagneret: "Stort set uændret",
   forkert: "Bevæger sig i forkert retning",
+  usikker: "Ingen klar tendens: tallet svinger for meget fra år til år",
   kontekst: "Ingen entydig positiv eller negativ retning",
   ingen: "Ingen tidsserie endnu",
 };
@@ -438,6 +444,7 @@ export function trendBeskrivelse(t: TrendPost, kontekst: TrendKontekst = "indika
   // "faldt" i stedet for "gik den forkerte vej". Skriv det ud i stedet.
   const stoerrelse = Math.abs(t.pct).toFixed(1);
   if (t.retning === "stagneret") return `${hoved}: stort set uændret`;
+  if (t.retning === "usikker") return `${hoved}: ingen klar tendens`;
   const vej = t.pct >= 0 ? "i positiv retning" : "i forkert retning";
   return `${hoved}: ${stoerrelse}% ${vej}`;
 }
