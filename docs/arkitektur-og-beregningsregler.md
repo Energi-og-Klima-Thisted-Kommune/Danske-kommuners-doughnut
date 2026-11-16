@@ -108,8 +108,9 @@ andet end økologiske indikatorer med `lower_is_better: false`.
 
 **R3 - Referencen.** Feltet `reference` i registret har tre typer:
 
-- `maal`: et fast mål (`value`). Uddannelse 95 procent, WHO's
-  luftkvalitetsgrænser, 2,5 ton CO2e (indtil sep. 2026 3 ton, uden kilde), EU's
+- `maal`: et fast mål (`value`). Højst 10 procent uden ungdomsuddannelse
+  (90-procentmålet, fra nov. 2026; før 95 procent, som blev afløst i 2017), WHO's
+  luftkvalitetsgrænser, 3 ton CO2e (fra nov. 2026, se afsnit 5), EU's
   65 procent genanvendelse og 30/10 procent natur, 6 mg/L nitrat, 0 procent
   fossil varme, kystvandenes målbelastning for kvælstof (100 procent),
   tålegrænsen for kvælstofnedfald (10 kg N/ha/år) og kommunens andel af den
@@ -199,6 +200,21 @@ areal).
 
 Reglerne herunder ligger i `webapp/lib/shared.ts` og udføres ved indlæsning i
 browseren, ikke i pipelinen.
+
+**R8a - Indikatorernes faktiske betydning beregnes og vises (fra nov. 2026).**
+En kategori er et simpelt gennemsnit (R8), så hver indikator indgår formelt med
+1/n. Hvor meget en indikator betyder for, hvordan kommunerne adskiller sig,
+følger dens spredning, og den er meget ulige: i Sundhed står middellevetiden for
+2 procent og daglig rygning for 29, i Mobilitet står kollektiv transport for 94.
+`_faktiske_vaegte()` i `build_master_csv.py` beregner hver indikators andel af
+variansen i kategoriens score (kovariansen med kategoriscoren delt med dens
+varians og med antal indikatorer), mod landsgennemsnittet og i
+kommunegruppe-visningen, og skriver den i `noegletal.json` (`vaegt`).
+Metodesiden viser tallet ved hver indikator og mærker en kategori, hvor én
+indikator står for mindst 67 procent. Ingen score ændres. En standardiseret
+skala, som ville gøre vægtene lige, er vurderet og udskudt, fordi tallet så ikke
+længere kan læses som procent af sammenligningsgrundlaget (se
+`docs/akademisk-gennemgang-nov-2026.md`, beslutninger 16. nov.).
 
 **R8 - Social kategoriscore.** `computeCategoryScores()` tager et simpelt,
 uvægtet gennemsnit af de ikke-`null` indikator-ratios i kategorien. Har ingen
@@ -321,6 +337,7 @@ og sidste `N_ENDEPUNKT` år, så et enkelt afvigende år ikke definerer retninge
 | `stagneret` | ændringen er ubetydelig, se T4 |
 | `kontekst` | indikatoren har ingen retning i registret (kontekst-indikator eller ukendt id), så retning kan ikke vurderes |
 | `forkert` | den målrettede ændring er nul eller negativ |
+| `usikker` | ville være `rigtig`, `tempo` eller `forkert`, men serien har ingen statistisk sikker tendens, se T11 |
 | `rigtig` | målrettet ændring mindst lige så god som medianen af alle 98 kommuner |
 | `tempo` | rigtig vej, men langsommere end medianen |
 
@@ -441,7 +458,7 @@ seneste ti.
 - **Serien ender i scorens landstal.** `tjek_konsistens.py` kræver, at landsserien
   for scorens år er `master.reference` (tolerance 0,5 %), og melder en fejl
   ellers. Indikatorer, der måles mod et fast mål, har ingen landsreference i
-  master. `education` og `vandindvinding` kontrolleres mod landstallet i deres
+  master. `low_education` og `vandindvinding` kontrolleres mod landstallet i deres
   egen CSV (`LAND_ANDEN_KILDE`), og `cirkularitet_recycling` står uden kontrol.
   En indikator, der ikke kan gengive sit landstal, får ingen landsserie, og
   grafen viser så kun kommunen.
@@ -460,6 +477,52 @@ seneste ti.
 - **Landsserierne kan hentes uden API-nøgler** med
   `python3 scripts/fetch_trend_history.py --kun-land`. Kommunernes serier og
   pilene røres ikke.
+
+---
+
+**T11 - En vurdering kræver en sikker tendens (fra nov. 2026).** Har serien
+mindst 8 år (`MK_MIN_AAR`), testes den med Mann-Kendalls test for en monoton
+tendens (Mann 1945; normalapproksimation med korrektion for ens værdier og
+kontinuitetskorrektion, `mann_kendall_p()` i `build_trends_csv.py`). Er
+p-værdien 0,10 eller højere, bliver `rigtig`, `tempo` og `forkert` til
+`usikker`. UI'et viser en bølgelinje og teksten "ingen klar tendens". Reglen kom
+til, fordi 18 procent af pilene med en vurdering ikke havde en påviselig tendens
+(for børnefattigdom fire ud af fem), mest i små kommuner.
+
+- Kortere serier (Sundhedsprofilens to bølger, fire-fem valg) kan ikke testes og
+  beholder vurderingen af forskellen mellem endepunkterne.
+- `stagneret` (T4) går forud: en ubetydelig ændring er ikke usikker.
+- Medianen bag "rigtig mod tempo" (T3) beregnes stadig over alle kommuner, også
+  dem der ender som `usikker`.
+- En worst-of-dimension arver klassen fra den afgørende sub-indikator (T6). Et
+  gennemsnit (Forurening og de sociale kategorier) bliver `usikker`, når ingen af
+  dets indikatorer har en vurdering, og mindst én er `usikker`; ellers vurderes
+  gennemsnittet som før.
+- Efter reglen er 496 af ca. 4.500 indikatorpile `usikker`, og 79 pile på
+  kategori- og dimensionsniveau.
+
+---
+
+**T12 - Mærket "inden for usikkerheden" (fra nov. 2026).** For hver indikator
+med mindst 6 år i tidsserien beregner `aarlig_stoej()` i `build_trends_csv.py`,
+hvor meget kommunens tal svinger fra år til år: for de seneste 8 år trækkes
+årets fælles niveau fra (medianen over kommunerne), og støjen er spredningen om
+kommunens egen lineære udvikling i resten. Tallet står i kolonnen `stoej` i
+`trend_indicators.csv`, i indikatorens egen enhed.
+
+- Webappen sammenligner i den valgte visning: er afstanden mellem kommunens
+  råværdi og sammenligningsværdien (landstal, gruppesnit, top 10 eller mål)
+  mindre end 1,96 gange støjen, vises indikatoren i gråt med mærket
+  (`indenForUsikkerhed()` i `shared.ts`). Samme kommune kan altså være mærket i
+  én visning og ikke i en anden.
+- Kategoriens og dimensionens farve ændres ikke. Mærket gælder indikatoren.
+- Uden tidsserie intet mærke: de 14 indikatorer uden historik og Sundhedsprofilens
+  otte (to bølger) er ikke dækket. Sundhedsprofilens usikkerhed er
+  stikprøveusikkerhed og kræver antal svar pr. kommune, som ikke hentes endnu.
+- Er scoren klippet ved loftet, kan sammenligningsværdien ikke udledes (R1), og
+  indikatoren mærkes ikke.
+- Støjen er en model: et reelt knæk i udviklingen tælles som støj, og
+  indikatorer, der er treårsgennemsnit, får for lav støj, fordi årene overlapper.
 
 ---
 
@@ -491,12 +554,21 @@ Reglen bag R12: **scor mod målet, hvor der findes en meningsfuld grænse pr.
 kommune.** Det gælder både biofysiske og juridiske grænser (WHO's
 luftkvalitetsretningslinjer, ekspertgruppens 6 mg/L for nitrat) og vedtagne
 politiske mål (EU's 30/10-procentmål for natur, EU's 65 procent genanvendelse,
-det nationale 95-procentmål for uddannelse, 0 procent fossil varme, 2,5 ton
-CO2e pr. person). Fra sep. 2026 også tre nedskalerede biofysiske grænser:
+det nationale mål om at 90 procent af de 25-årige har en ungdomsuddannelse i
+2030, 0 procent fossil varme, 3 ton CO2e pr. person). Fra sep. 2026 også tre nedskalerede biofysiske grænser:
 kystvandenes målbelastning for kvælstof fra vandområdeplanerne, tålegrænsen for
 kvælstofnedfald på følsom natur og Danmarks bæredygtige grundvandsressource
 (GEUS 2023), fordelt på kommunerne efter grundvandsdannelsen i DK-modellen.
 Findes ingen sådan grænse, bruges landsgennemsnittet.
+
+Klimagrænsen er 3 ton CO2e pr. person (fra nov. 2026). CONCITO (2023) angiver
+med henvisning til IPCC's 1,5-graders-scenarier, at forbrugsudledningen pr.
+verdensborger bør under 3 ton i 2030, og Klimarådet (2023) gengiver samme
+niveau som Klima- og Omstillingsrådets lavrisikomål. Tallet gælder det samlede
+forbrugsaftryk, som er det platformen måler. Fra 25. sep. til nov. 2026 var
+grænsen 2,5 ton (Hot or Cool Institute 2021), som kun gælder husholdningernes
+forbrug, ca. 60 procent af det danske aftryk. Det territoriale tal måles mod
+samme grænse, selv om afgrænsningen er en anden (produktion til eksport er med).
 
 Pesticider er scoret mod landsgennemsnittet. Indikatoren er andelen af aktive
 vandværker med fund, og målet ville være nul fund, som ikke kan bruges som
@@ -545,7 +617,7 @@ omskaleres på deres allerede vendte ratio, hvilket er en bevidst forenkling.
    (`kommuner.kode_for_navn()`), ikke i build-trinnet. Et ukendt navn stopper
    scriptet (R5). Christiansø er ikke blandt de 98.
 4. **`absoluteScore`-indikatorer må aldrig omskaleres af baseline-toggle**
-   (R9, R10, R15). I dag `education` og `bolig_fossil`.
+   (R9, R10, R15). I dag `low_education` og `bolig_fossil`.
 5. **`bolig_fossil` afhænger af fjernvarmedata, og rækkefølgen er bindende:**
    `fetch_fjernvarme_mix.py` skal køre før `fetch_bolig_fossil.py`, som læser
    fjernvarmens fossilandel fra førstnævntes CSV.

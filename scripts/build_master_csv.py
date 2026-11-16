@@ -523,6 +523,72 @@ def _faa_tilfaelde(output_rows):
     return ud
 
 
+def _faktiske_vaegte(output_rows):
+    """{indikator: {"landsgns": pct, "gruppe": pct}}: hvor stor en del af
+    forskellene mellem kommunerne i kategoriens score indikatoren står for.
+
+    En kategori er et simpelt gennemsnit, så hver indikator indgår med vægten
+    1/n. Men en indikators betydning for, hvordan kommunerne adskiller sig,
+    følger dens spredning: i Mobilitet står kollektiv transport for langt det
+    meste. Tallet er indikatorens andel af variansen i kategoriens score
+    (kovariansen med kategoriscoren delt med kategoriscorens varians og med
+    antal indikatorer); andelene summerer til ca. 100, og en negativ andel
+    betyder, at indikatoren trækker modsat resten (Paruolo m.fl. 2013).
+    "gruppe" er standardvisningen: scorerne delt med kommunegruppens snit, samme
+    regel som computeGroupRatios() i webapp/lib/shared.ts. Vises på metodesiden;
+    ændrer ingen score (docs/akademisk-gennemgang-nov-2026.md, afsnit 2.1)."""
+    from collections import defaultdict
+    from kommuner import GRUPPE
+    reg = ir.register()
+    ind = {i["id"]: i for i in reg["indikatorer"]}
+    ratio = defaultdict(dict)
+    for r in output_rows:
+        if r["category"] == "social" and r["ratio"] != "":
+            ratio[r["indicator_id"]][r["kommune_kode"]] = float(r["ratio"])
+
+    def i_gruppevisning(iid):
+        x = ratio[iid]
+        if ind[iid].get("absolute_score"):
+            return dict(x)
+        loft = min(ind[iid].get("cap", 150), 150)
+        snit = {}
+        for g in set(GRUPPE.values()):
+            v = [x[k] for k in x if GRUPPE.get(k) == g]
+            if v:
+                snit[g] = sum(v) / len(v)
+        return {k: min(round(v / snit[GRUPPE[k]] * 100, 2), loft)
+                for k, v in x.items() if snit.get(GRUPPE.get(k))}
+
+    def andele(ids, x):
+        koder = sorted({k for i in ids for k in x[i]})
+        score = {k: statistics.fmean([x[i][k] for i in ids if k in x[i]]) for k in koder}
+        ud = {}
+        for i in ids:
+            med = sorted(x[i])
+            if len(med) < 3:
+                continue
+            a, b = [x[i][k] for k in med], [score[k] for k in med]
+            ma, mb = statistics.fmean(a), statistics.fmean(b)
+            var = sum((v - mb) ** 2 for v in b)
+            if var == 0:
+                continue
+            kov = sum((u - ma) * (v - mb) for u, v in zip(a, b))
+            ud[i] = round(kov / var / len(ids) * 100)
+        return ud
+
+    ud = {}
+    for kat in reg["sociale_kategorier"]:
+        ids = [i for i in kat["indicators"] if ratio.get(i)]
+        if len(ids) < 2:
+            continue
+        lands = andele(ids, ratio)
+        gruppe = andele(ids, {i: i_gruppevisning(i) for i in ids})
+        for i in ids:
+            if i in lands and i in gruppe:
+                ud[i] = {"landsgns": lands[i], "gruppe": gruppe[i]}
+    return ud
+
+
 def _skriv_noegletal(output_rows, antal_kommuner):
     """data/noegletal.json: reference, dækning og dataår pr. indikator.
 
@@ -545,10 +611,14 @@ def _skriv_noegletal(output_rows, antal_kommuner):
             d["daekning"] += 1
     for iid, koder in _faa_tilfaelde(output_rows).items():
         pr_ind[iid]["faa_tilfaelde"] = koder
+    for iid, v in _faktiske_vaegte(output_rows).items():
+        pr_ind[iid]["vaegt"] = v
     ud = {
         "_om": "Genereres af scripts/build_master_csv.py sammen med master_indicators.csv. "
                "Ret den ikke i hånden. daekning = antal kommuner med en værdi. "
-               "faa_tilfaelde = kommuner hvor tallet bygger på under 20 tilfælde (registrets smaa_tal).",
+               "faa_tilfaelde = kommuner hvor tallet bygger på under 20 tilfælde (registrets smaa_tal). "
+               "vaegt = indikatorens andel i pct. af forskellene mellem kommunerne i kategoriens score "
+               "(landsgennemsnit og kommunegruppe-visningen).",
         "kommuner": antal_kommuner,
         "indikatorer": pr_ind,
     }

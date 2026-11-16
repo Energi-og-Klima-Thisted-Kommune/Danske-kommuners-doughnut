@@ -78,25 +78,93 @@ def write_csv(filename: str, headers: list[str], rows: list[list]) -> None:
 # SUNDHED: Sygehusbenyttelse
 # ---------------------------------------------------------------------------
 
+# Standardbefolkningen er landets aldersfordeling i dette år (SBR01's egne
+# persontal). Året er fast, så en kommunes tal for 2019 og 2025 er vejet ens og
+# kan sammenlignes over tid. Flyt det kun sammen med en genberegning af hele
+# tidsserien (fetch_trend_history.py --kun hospital_long).
+SBR_STANDARD_AAR = "2025"
+
+
+def serie_hospital_long(aar: list[str]) -> dict[tuple[str, str], float]:
+    """SBR01: aldersstandardiseret andel af befolkningen med sygehusophold på
+    12 timer eller derover, {(kommune_kode, år): pct} inkl. hele landet (000).
+
+    Direkte standardisering (Ahmad m.fl. 2001): kommunens andel i hver af
+    SBR01's 19 aldersgrupper vejes med landets aldersfordeling i
+    SBR_STANDARD_AAR. Tallet svarer på, hvor stor andelen ville være, hvis
+    kommunen havde landets alderssammensætning. Den rå andel (indtil nov. 2026)
+    målte i høj grad kommunens alder: andelen af borgere på 65 år og derover går
+    fra 11 % til 43 %, og aldersfordelingen alene forklarede 45 % af forskellene
+    mellem kommunerne (docs/akademisk-gennemgang-nov-2026.md, afsnit 2.3).
+
+    Diskretionerede celler (få personer i en aldersgruppe i en lille kommune)
+    får landets andel for aldersgruppen samme år, så de hverken trækker op eller
+    ned. Landstallet er landets egne aldersgrupper vejet på samme måde; i
+    standardåret er det landets rå andel. Bruges af både scoren og
+    retningspilen (fetch_trend_history.py)."""
+    hent = sorted(set(aar) | {SBR_STANDARD_AAR})
+    rows = api_post("SBR01", [
+        {"code": "KOMMUNEDK", "values": ["*"]},
+        {"code": "OPHOLD_PÅ_SYGEHUS", "values": ["200100", "200230"]},
+        {"code": "ALDER", "values": ["*"]},
+        {"code": "KØN", "values": ["00"]},
+        {"code": "Tid", "values": hent},
+    ], timeout=180)
+    pers: dict[tuple[str, str, str], float] = {}
+    lang: dict[tuple[str, str, str], float] = {}
+    for row in rows:
+        kode = row.get("KOMMUNEDK", "").strip()
+        alder = row.get("ALDER", "").strip()
+        if alder == "TOT" or (kode not in VALID_CODES and kode != "000"):
+            continue
+        val = parse_value(row.get("INDHOLD", ""))
+        if val is None:
+            continue
+        maal = pers if row.get("OPHOLD_PÅ_SYGEHUS", "").strip() == "200100" else lang
+        maal[(kode, row.get("TID", "").strip(), alder)] = val
+
+    aldre = sorted({a for (k, t, a) in pers if k == "000" and t == SBR_STANDARD_AAR})
+    std_ialt = sum(pers[("000", SBR_STANDARD_AAR, a)] for a in aldre)
+    if not aldre or not std_ialt:
+        raise RuntimeError(f"SBR01 har ingen landstal for standardåret {SBR_STANDARD_AAR}")
+    vaegt = {a: pers[("000", SBR_STANDARD_AAR, a)] / std_ialt for a in aldre}
+
+    ud: dict[tuple[str, str], float] = {}
+    for t in aar:
+        land = {a: lang[("000", t, a)] / pers[("000", t, a)]
+                for a in aldre if pers.get(("000", t, a)) and ("000", t, a) in lang}
+        if len(land) < len(aldre):
+            continue   # året mangler i tabellen
+        for kode in sorted(VALID_CODES) + ["000"]:
+            if not any((kode, t, a) in pers for a in aldre):
+                continue
+            andel = 0.0
+            for a in aldre:
+                p, l = pers.get((kode, t, a)), lang.get((kode, t, a))
+                andel += vaegt[a] * (l / p if p and l is not None else land[a])
+            ud[(kode, t)] = round(andel * 100, 2)
+    return ud
+
+
 def fetch_hospital_use() -> tuple[dict[str, float], float | None, dict[str, float], float | None]:
     """
     SBR01: Andel af befolkningen med sygehusophold opdelt på varighed.
-    - hospital_short: ophold under 12 timer (200220)
-    - hospital_long:  ophold 12 timer eller derover (200230)
-    Begge inverteret: lavere andel er bedre (sundere befolkning).
+    - hospital_short: ophold under 12 timer (200220), rå andel. Scores ikke.
+    - hospital_long:  ophold 12 timer eller derover (200230), aldersstandardiseret
+      (serie_hospital_long). Inverteret: lavere andel er bedre.
     """
     print("Henter sygehusbenyttelse opdelt på varighed (SBR01)...")
+    aar = seneste_aar("SBR01", fallback="2023")
     rows = api_post("SBR01", [
         {"code": "KOMMUNEDK", "values": ["*"]},
-        {"code": "OPHOLD_PÅ_SYGEHUS", "values": ["200100", "200220", "200230"]},
+        {"code": "OPHOLD_PÅ_SYGEHUS", "values": ["200100", "200220"]},
         {"code": "ALDER", "values": ["TOT"]},
         {"code": "KØN", "values": ["00"]},
-        {"code": "Tid", "values": [seneste_aar("SBR01", fallback="2023")]},
+        {"code": "Tid", "values": [aar]},
     ])
 
     total: dict[str, float] = {}
     short_stay: dict[str, float] = {}
-    long_stay: dict[str, float] = {}
     for row in rows:
         kode = row.get("KOMMUNEDK", "").strip()
         ophold = row.get("OPHOLD_PÅ_SYGEHUS", "").strip()
@@ -109,22 +177,14 @@ def fetch_hospital_use() -> tuple[dict[str, float], float | None, dict[str, floa
             total[kode] = val
         elif ophold == "200220":
             short_stay[kode] = val
-        elif ophold == "200230":
-            long_stay[kode] = val
 
-    short_result: dict[str, float] = {}
-    long_result: dict[str, float] = {}
-    for kode in total:
-        if total[kode] > 0:
-            if kode in short_stay:
-                short_result[kode] = round((short_stay[kode] / total[kode]) * 100, 2)
-            if kode in long_stay:
-                long_result[kode] = round((long_stay[kode] / total[kode]) * 100, 2)
-
+    short_result = {kode: round(short_stay[kode] / total[kode] * 100, 2)
+                    for kode in total if total[kode] > 0 and kode in short_stay}
     short_nat = short_result.pop("000", None)
-    long_nat = long_result.pop("000", None)
-    print(f"  {len(short_result)} kommuner (kort), landsgennemsnit: {short_nat}%")
-    print(f"  {len(long_result)} kommuner (lang), landsgennemsnit: {long_nat}%")
+
+    _, long_result, long_nat = seneste(serie_hospital_long([aar]), tabel="SBR01")
+    print(f"  {len(short_result)} kommuner (kort, rå andel), landsgennemsnit: {short_nat}%")
+    print(f"  {len(long_result)} kommuner (lang, aldersstandardiseret), landstal: {long_nat}%")
     return short_result, short_nat, long_result, long_nat
 
 
@@ -266,26 +326,36 @@ def fetch_housing_area() -> tuple[dict[str, float], float | None]:
 # SAMSKABELSE: Musikskoleelever
 # ---------------------------------------------------------------------------
 
+# Musikskolens elever er børn og unge. Elever og befolkning afgrænses begge til
+# 0-24 år: SKOLM02B's aldersgrupper til og med 20-24 år, FOLK1A's alder 0-24.
+MUSIK_ELEVALDRE = ["0003", "0406", "0709", "1014", "1519", "2024"]
+MUSIK_FOLKEALDRE = [str(a) for a in range(25)]
+
+
 def serie_music_school(perioder: list[str]) -> dict[tuple[str, str], float]:
-    """SKOLM02B: musikskoleelever pr. 1.000 indb., {(kommune_kode, år): værdi}
-    inkl. hele landet (000). Perioderne er skoleår ('2024:2025') og mærkes med
-    slutåret; folketallet er 1. januar samme år. Bruges af både scoren og
-    retningspilen (fetch_trend_history.py)."""
+    """SKOLM02B: musikskoleelever på 0-24 år pr. 1.000 indbyggere på 0-24 år,
+    {(kommune_kode, år): værdi} inkl. hele landet (000). Perioderne er skoleår
+    ('2024:2025') og mærkes med slutåret; folketallet er 1. januar samme år.
+
+    Indtil nov. 2026 blev alle elever delt med hele befolkningen. Så fik en
+    kommune med få børn et lavt tal, uanset hvor stor en del af børnene der gik
+    i musikskole (docs/akademisk-gennemgang-nov-2026.md, afsnit 2.4). Bruges af
+    både scoren og retningspilen (fetch_trend_history.py)."""
     rows = api_post("SKOLM02B", [
         {"code": "KOMK", "values": ["*"]},
-        {"code": "ALDER", "values": ["TOT"]},
+        {"code": "ALDER", "values": MUSIK_ELEVALDRE},
         {"code": "KØN", "values": ["TOT"]},
         {"code": "Tid", "values": perioder},
     ])
-    return pr_indbygger(pr_kommune_aar(rows, "KOMK"), 1000, 2)
+    return pr_indbygger(pr_kommune_aar(rows, "KOMK"), 1000, 2, alder=MUSIK_FOLKEALDRE)
 
 
 def fetch_music_school() -> tuple[dict[str, float], float | None]:
-    """Musikskoleelever pr. 1.000 indb. i nyeste skoleår, og landstallet."""
+    """Musikskoleelever pr. 1.000 børn og unge (0-24 år) i nyeste skoleår, og landstallet."""
     print("Henter musikskoleelever (SKOLM02B)...")
     aar, result, national = seneste(serie_music_school(
         [seneste_periode("SKOLM02B", fallback="2023:2024")]), tabel="SKOLM02B")
-    print(f"  {len(result)} kommuner ({aar}), landstal: {national} pr. 1.000")
+    print(f"  {len(result)} kommuner ({aar}), landstal: {national} pr. 1.000 børn og unge")
     return result, national
 
 
@@ -518,7 +588,7 @@ def main():
 
     # === SAMSKABELSE ===
     print("\n--- SAMSKABELSE ---")
-    # Allerede pr. 1.000 indb. (folketal 1. januar samme år, se serie_music_school)
+    # Allerede pr. 1.000 børn og unge 0-24 år (folketal 1. januar samme år, se serie_music_school)
     music_per_1k, music_nat_per_1k = fetch_music_school()
 
     samsk_rows = []

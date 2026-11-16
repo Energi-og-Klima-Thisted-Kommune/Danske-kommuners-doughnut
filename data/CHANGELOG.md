@@ -2,6 +2,35 @@
 
 Log over større ændringer i datapipeline og master-fil.
 
+## 2026-11-16 (vægte, usikkerhedsmærke og estimat-mærke)
+
+Ingen score er ændret i denne omgang.
+
+- **De faktiske vægte står på metodesiden.** `build_master_csv.py` beregner, hvor stor en del af forskellene mellem kommunerne i en kategoris score hver indikator står for, og skriver det i `noegletal.json` (`vaegt`). I standardvisningen: kollektiv transport 94 % af Mobilitet, Gini 77 % af Lighed, kommunalvalg 68 % af Demokrati; i Sundhed middellevetid 2 % og rygning 29 %. Kategorier, hvor én indikator står for mindst to tredjedele, er mærket.
+- **Mærket "inden for usikkerheden".** `trend_indicators.csv` har fået kolonnen `stoej`: kommunens udsving fra år til år omkring sin egen udvikling. Er afstanden til sammenligningsværdien mindre end 1,96 gange støjen, vises indikatoren i gråt (arkitekturdokumentet T12). I standardvisningen gælder det fx 16 sociale indikatorer i Thisted, 14 på Læsø og 5 i København.
+- **`forbrug_co2` er mærket "Estimat"** ved indikatoren (registrets nye felt `maerke`).
+- **Fravalgt:** en standardiseret skala for de sociale scorer, beskæftigelse målt mod 80 %-målet og partnerskabsmål for ensomhed og rygning. Begrundelserne står i indledningen til `docs/akademisk-gennemgang-nov-2026.md`.
+
+## 2026-11-16 (trin 2 efter gennemgangen: treårsgennemsnit og sikre pile)
+
+- **`crime_rate` og `neet` er treårige gennemsnit.** Værdien for år Y er gennemsnittet af Y-2, Y-1 og Y, som for trafikulykkerne. Ét års kriminalitetstal svingede så meget, at 86 af 98 Tryghedsfarver i standardvisningen lå inden for usikkerheden af en farvegrænse (`docs/akademisk-gennemgang-nov-2026.md` afsnit 2.5). Kriminalitet dækker nu 2023-2025 (landstal 66,4 pr. 1.000 mod 63,2 for 2025 alene, fordi niveauet falder), NEET 2022-2024 (9,41 % mod 9,14 %). Pilene er genberegnet med samme funktioner.
+- **Pilene kræver en sikker tendens (arkitekturdokumentet T11).** Serier på mindst otte år testes med Mann-Kendalls test. Uden en påviselig tendens (p ≥ 0,10) bliver vurderingen "ingen klar tendens" og vises som en bølgelinje. Det rammer 496 af ca. 4.500 indikatorpile, flest for børnefattigdom (75 kommuner), husholdningsaffald (50), kønsgab i middellevetid (43), udsatte børn (34) og grundvandsindvinding (33). På kategoriniveau: Bolig 20 kommuner, Forurening 19, Vand 33. Ingen score er ændret.
+- **Ikke med: `high_absence`.** Fravær burde have samme behandling, men hentes fra UVM's API, som kræver en nøgle, der ikke var til rådighed. Det står som åbent punkt.
+- **BU43 (`vulnerable_children`) har en nyere udgave hos DST,** som scriptet hentede med. Den er rullet tilbage til de committede tal, fordi pilen for indikatoren kun kan genberegnes med en fuld kørsel af `fetch_trend_history.py`. Den hører til næste almindelige dataopdatering.
+
+## 2026-11-16 (rettelser efter den akademiske gennemgang, trin 1)
+
+Baggrund og beregninger: `docs/akademisk-gennemgang-nov-2026.md`. Ingen beregningsregel er ændret; rettelserne gælder råværdier, nævnere, mål og hvilke indikatorer der er med. Antallet af scorede indikatorer går fra 62 til 60.
+
+- **Uddannelse: `education` er fjernet, og `low_education` måles mod 90 %-målet.** `education` (30-34-årige med mere end grundskole) og `low_education` (25-29-årige med kun grundskole) var hinandens komplement i to nabo-aldersgrupper (korrelation -0,85) og bar tilsammen 47 % af kategoriens variation. `education` hed "kompetencegivende", men talte gymnasial uddannelse med, og 95 %-målsætningen blev i 2017 afløst af målet om, at 90 % af de 25-årige har en ungdomsuddannelse i 2030. `low_education` hedder nu "25-29-årige uden ungdomsuddannelse" og scores absolut mod højst 10 % (ratio = 10 / andel × 100). Seks kommuner er under 10 %; scoren går fra 27 til 150 med median 47. Uddannelse har 7 indikatorer. Kategorien falder i gennemsnit fra 95,1 til 93,3 mod landsgennemsnittet (8 farveskift) og fra 98,5 til 93,4 i kommunegruppe-visningen (28 farveskift; grønne kommuner går fra 36 til 11), fordi niveauindikatoren nu måles mod målet og ikke mod gruppen.
+- **Sundhed: `hospital_long` er aldersstandardiseret, og `hjemsyg` er fjernet.** Sygehusophold på 12+ timer var en rå andel, og kommunens aldersfordeling forklarede 45 % af forskellene. Nu vejes andelen i hver af SBR01's 19 aldersgrupper med landets aldersfordeling i 2025 (direkte standardisering). Læsø går fra 10,8 til 8,4 %. Hjemmesygepleje målte mest alder (74 %), og når alderen er taget ud, er fortegnet tvivlsomt (sygelighed eller visitation); den er fjernet, ikke standardiseret. Sundhed har 8 indikatorer. 14 farveskift mod landsgennemsnittet, 7 i kommunegruppe-visningen.
+- **Kultur: `music_school` er elever på 0-24 år pr. 1.000 indbyggere på 0-24 år.** Før blev alle elever delt med hele befolkningen. Landstallet går fra 10,9 til 35,5. 16 farveskift på Kultur mod landsgennemsnittet, 15 i kommunegruppe-visningen.
+- **Klimatilpasning: `vejr_skader` er skader pr. 1.000 boliger og fritidshuse.** Før pr. 1.000 indbyggere, som fulgte andelen af fritidshuse. Odsherred går fra score 66 til 150, Fanø fra 33 til 91. Landstallet er 40,1. 11 farveskift mod landsgennemsnittet, 15 i kommunegruppe-visningen. Se `data/klimatilpasning.md` for sammenligningen af tre nævnere. `smaa_tal` er taget af indikatoren.
+- **Klimapåvirkning: `forbrug_co2` har Energistyrelsens niveau, og grænsen er 3 ton.** Kommunerne samlet lå 16 % over ENS' tal for 2024 (11,3 mod 9,73 ton), fordi 2011-studiets niveau blev bevaret. Nu skaleres mønsteret, så kommunerne samlet giver 9,73 (spænd 8,1-14,9 mod før 9,4-17,4). Grænsen går fra 2,5 til 3 ton for begge klimaindikatorer: 3 ton gælder det samlede forbrugsaftryk og har en kilde (CONCITO 2023; Klimarådet 2023), mens 2,5 ton kun gælder husholdningernes forbrug. Dimensionen er stadig rød i alle 98 kommuner (270-839 mod før 378-1.007). De territoriale udledninger afgør nu dimensionen i 17 kommuner mod 11, så 17 kommuner har en pil på Klimapåvirkning.
+- **Pilene er genberegnet** for `hospital_long` og `music_school` (`fetch_trend_history.py --kun`), og serierne for `education` og `hjemsyg` er fjernet. `hospital_long` hentes nu af scorens egen `serie_hospital_long()` (`SAMME_SOM_SCOREN`).
+- **Bygget på Python 3.9** (installeret med `uv python install 3.9`), som CI kræver.
+- Ikke gennemført: at score forbrugsaftrykket som ét landstal for alle kommuner. Gennemgangen anbefalede det, men konsekvensen var beskrevet forkert (se notatets afsnit 3.1, rettet 16. nov.), og valget afventer en beslutning.
+
 ## 2026-10-06 (dataopdatering: educated_staff til 2025)
 
 - **`educated_staff` (pædagoguddannede, DST BOERN1) er opdateret fra 2024 til 2025.** Landstallet går fra 46,94 til 47,1 %. Kommunernes råværdi flytter sig fra -10,0 til +4,0 procentpoint, median +0,3. Største fald er Læsø (50,0 til 40,0, en lille personalegruppe), største stigning Samsø (17,86 til 21,88). Pilen er genberegnet med `fetch_trend_history.py --kun educated_staff` og slutter nu også i 2025.

@@ -16,9 +16,12 @@ import {
   dimensionBaselineType,
   kommunegruppeNavn,
   TREND_LABEL,
+  TREND_BOELGE,
   trendBeskrivelse,
   trendPilOpad,
   faaTilfaelde,
+  indenForUsikkerhed,
+  USIKKERHED_TEKST,
   type TrendKontekst,
 } from "@/lib/shared";
 import { useBaseline } from "@/lib/baseline-context";
@@ -184,6 +187,9 @@ function TrendMarker({ trend, kontekst = "indikator" }: { trend?: TrendPost; kon
   } else if (trend.retning === "stagneret") {
     farve = "text-gray-400";
     inner = <line x1="1.5" y1="6" x2="10.5" y2="6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />;
+  } else if (trend.retning === "usikker") {
+    farve = "text-gray-400";
+    inner = <path d={TREND_BOELGE} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />;
   } else {
     farve =
       trend.retning === "rigtig" ? "text-emerald-600" :
@@ -613,6 +619,9 @@ export default function ScoreBars({
                           ? (score * rawVal) / 100
                           : (rawVal * 100) / score
                         : null;
+                      // Ligger kommunens tal tættere på sammenligningsgrundlaget, end det normalt
+                      // svinger fra år til år, vises scoren neutralt (grå) med et mærke (T12).
+                      const usikker = indenForUsikkerhed(rawVal, baselineAvg, kommune.trends?.[ind.id]?.stoej);
                       const formatRaw = (val: number, unit: string) => {
                         const num = unit.startsWith("kr.")
                           ? Math.round(val).toLocaleString("da-DK")
@@ -626,7 +635,7 @@ export default function ScoreBars({
                           <div className="flex items-center justify-between">
                             <span className="text-sm text-gray-700">{ind.name}</span>
                             <div className="flex items-center gap-2">
-                              <span className={`text-sm font-medium ${scoreColor(score)}`}>
+                              <span className={`text-sm font-medium ${usikker ? "text-gray-500" : scoreColor(score)}`}>
                                 {score !== null ? score.toFixed(1) : "–"}
                               </span>
                               <TrendMarker trend={kommune.trends?.[ind.id]} />
@@ -637,7 +646,7 @@ export default function ScoreBars({
                           </div>
                           <div className="mt-1 h-1.5 bg-gray-100 rounded-full overflow-hidden relative">
                             <div className="absolute top-0 bottom-0 w-px bg-gray-300" style={{ left: `${(100 / 150) * 100}%` }} />
-                            <div className={`h-full rounded-full ${scoreBarColor(score)} transition-all`}
+                            <div className={`h-full rounded-full ${usikker ? "bg-gray-400" : scoreBarColor(score)} transition-all`}
                               style={{ width: `${Math.min((score || 0) / 150, 1) * 100}%` }} />
                           </div>
                           {rawVal !== null && ind.rawUnit && (
@@ -672,6 +681,11 @@ export default function ScoreBars({
                                   title="Tallet bygger på færre end 20 tilfælde og kan svinge meget fra år til år. Forskellen til sammenligningsgrundlaget er derfor usikker."
                                 >
                                   Få tilfælde
+                                </span>
+                              )}
+                              {usikker && (
+                                <span className="px-1.5 py-0.5 bg-gray-200 text-gray-700 rounded text-[10px] font-medium" title={USIKKERHED_TEKST}>
+                                  Inden for usikkerheden
                                 </span>
                               )}
                               {!ind.absoluteTarget && (
@@ -838,6 +852,7 @@ export default function ScoreBars({
                       const subRatio = sub.ratioKey ? (kommune.rawValues?.[sub.ratioKey] ?? null) : null;
                       const cmpSubRatio = sub.ratioKey && compare ? (compare.rawValues?.[sub.ratioKey] ?? null) : null;
                       if (raw === null) return null;
+                      const usikker = indenForUsikkerhed(raw, sub.reference, kommune.trends?.[sub.rawKey]?.stoej);
                       return (
                         <div key={sub.rawKey} className="px-3 py-2.5 border-b border-gray-100 last:border-b-0">
                           <div className="flex items-center justify-between">
@@ -845,7 +860,7 @@ export default function ScoreBars({
                             <div className="flex items-center gap-2 ml-2 shrink-0">
                               {subRatio !== null && (
                                 <>
-                                  <span className={`text-sm font-medium ${ecoScoreColor(subRatio)}`}>
+                                  <span className={`text-sm font-medium ${usikker ? "text-gray-500" : ecoScoreColor(subRatio)}`}>
                                     {subRatio.toFixed(1)}
                                   </span>
                                   {compare && cmpSubRatio !== null && (
@@ -859,7 +874,7 @@ export default function ScoreBars({
                           {subRatio !== null && (
                             <div className="mt-1 h-1.5 bg-gray-100 rounded-full overflow-hidden relative">
                               <div className="absolute top-0 bottom-0 w-px bg-gray-300" style={{ left: "50%" }} />
-                              <div className={`h-full rounded-full ${ecoBarColor(subRatio)} transition-all`}
+                              <div className={`h-full rounded-full ${usikker ? "bg-gray-400" : ecoBarColor(subRatio)} transition-all`}
                                 style={{ width: `${Math.min((subRatio || 0) / 200, 1) * 100}%` }} />
                             </div>
                           )}
@@ -885,6 +900,16 @@ export default function ScoreBars({
                               {sub.baselineType && (
                                 <span className="text-gray-400 text-[10px]">
                                   {sub.baselineType === "absolut" ? "mod mål" : "mod landsgns"}
+                                </span>
+                              )}
+                              {sub.maerke && (
+                                <span className="px-1.5 py-0.5 bg-amber-50 text-amber-700 rounded text-[10px] font-medium" title={sub.maerke.forklaring}>
+                                  {sub.maerke.tekst}
+                                </span>
+                              )}
+                              {usikker && (
+                                <span className="px-1.5 py-0.5 bg-gray-200 text-gray-700 rounded text-[10px] font-medium" title={USIKKERHED_TEKST}>
+                                  Inden for usikkerheden
                                 </span>
                               )}
                             </div>

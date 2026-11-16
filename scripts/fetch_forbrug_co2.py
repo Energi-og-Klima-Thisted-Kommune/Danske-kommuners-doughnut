@@ -16,9 +16,15 @@ afrapportering", datafil bag PowerBI-figurerne "Forbrug", ark "2", rækken
 "Udledninger pr. indbygger (ton CO2e)".
   https://ens.dk/analyser-og-statistik/danmarks-globale-klimapaavirkning-global-afrapportering
 
-Faktoren = ENS pr. indbygger (seneste år) / ENS pr. indbygger (2011), begge
-fra samme tidsserie, så en metodeforskel mellem Osei-Owusu og ENS ikke
-forveksles med en reel reduktion (methodology_note.md afsnit 3.1).
+Fra nov. 2026 er niveauet Energistyrelsens: 2011-mønsteret skaleres, så de 98
+kommuner samlet (vægtet med folketallet 1. januar i estimatåret) giver ENS'
+tal pr. indbygger for året. Kun forskellene mellem kommunerne kommer fra
+Osei-Owusu. Indtil da blev 2011-tallene ganget med ENS' udvikling 2011 →
+seneste år. Det bevarede Osei-Owusus niveau (15,7 ton i 2011 mod ENS' 13,5),
+så kommunerne samlet lå på 11,3 ton i 2024, hvor ENS opgør 9,7 - 16 % over
+den kilde, tallet henviser til (docs/akademisk-gennemgang-nov-2026.md, afsnit
+3.1). Kolonnen `skaleringsfaktor` er estimat / 2011-baseline og er ens for
+alle kommuner.
 
 Brug (fra projektets rodmappe):
   python3 scripts/fetch_forbrug_co2.py
@@ -74,17 +80,29 @@ def main() -> int:
             f.write(r.read())
     serie = ens_pr_indbygger(xlsx)
     sidste = max(serie)
-    faktor = serie[sidste] / serie[BASISAAR]
     print(f"  ENS pr. indbygger: {BASISAAR} = {serie[BASISAAR]:.2f} t, {sidste} = {serie[sidste]:.2f} t")
-    print(f"  Skaleringsfaktor {BASISAAR}→{sidste}: {faktor:.4f}")
 
     with open(CSV_FIL, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
+
+    # Niveauet kalibreres til ENS: kommunernes 2011-tal vægtet med folketallet
+    # 1. januar i estimatåret skal give ENS' tal pr. indbygger for året.
+    from dst import folketal
+    folk = {k: v for (k, a), v in folketal([str(sidste)]).items() if k != "000"}
+    med = [r for r in rows if folk.get(r["kommune_kode"])]
+    if len(med) != len(rows):
+        raise SystemExit(f"FEJL: folketal mangler for {len(rows) - len(med)} kommuner i {sidste}")
+    moenster = (sum(float(r["cba_2011_baseline"]) * folk[r["kommune_kode"]] for r in med)
+                / sum(folk[r["kommune_kode"]] for r in med))
+    faktor = serie[sidste] / moenster
+    print(f"  2011-mønsteret vægtet med folketal {sidste}: {moenster:.2f} t")
+    print(f"  Skaleringsfaktor (ENS {sidste} / mønstrets niveau): {faktor:.4f}"
+          f"  (ENS' egen udvikling {BASISAAR}→{sidste}: {serie[sidste] / serie[BASISAAR]:.4f})")
     for r in rows:
         r["cba_estimate"] = round(float(r["cba_2011_baseline"]) * faktor, 2)
         r["estimat_aar"] = sidste
         r["skaleringsfaktor"] = round(faktor, 4)
-        r["delta_pct"] = round((faktor - 1) * 100, 1)   # ændring 2011 → estimat_aar
+        r["delta_pct"] = round((faktor - 1) * 100, 1)   # estimat mod 2011-baselinen (niveau og udvikling)
     felter = ["kommune_kode", "kommune", "cba_2011_baseline", "cba_2023_estimate", "cba_estimate",
               "estimat_aar", "skaleringsfaktor", "delta_pct", "confidence_flag"]
     with open(CSV_FIL, "w", newline="", encoding="utf-8") as f:
