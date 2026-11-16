@@ -2,6 +2,14 @@
 
 Log over større ændringer i datapipeline og master-fil.
 
+## 2026-11-16 (Arealanvendelse: intensivt landbrug mod trepartens arealmål)
+
+- **Ny indikator `areal_landbrug` afløser `areal_antropiseret`.** Dimensionen Arealanvendelse måler nu intensivt landbrug (AREALDK2 D1+D2+D4) i procent af kommunens ubebyggede areal (samlet areal minus søer, vandløb og bebygget/befæstet areal). Før: antropiseret areal (landbrug plus befæstet) i procent af landarealet. Begrundelse: i Danmark er arealpresset landbrugets (55 % af landet mod 14 % bebygget), og bebygget areal kan ikke blive til natur igen.
+- **Målt mod en grænse i stedet for landsgennemsnittet: højst 53,4 %.** Udledt af Aftale om Implementering af et Grønt Danmark (18. nov. 2024, s. 2), hvor ca. 10 % af Danmarks samlede areal omlægges til natur og skov frem mod 2045. Regnestykke: (23.324 - 4.266) / 35.672 km² = 53,4 %; Danmark samlet lå på 65,4 % i 2024. Omregningen og brugen af det nationale niveau pr. kommune er platformens valg og står på metodesiden. Den planetære grænse på 15 % (global) bruges ikke som mål.
+- **Konsekvens:** 26 kommuner grønne, 4 gule, 68 røde (før mod landsgennemsnittet: 16 grønne, 26 gule, 56 røde). Spænd 0-157. Bykommunerne går fra røde til grønne (København 114 til 0, Frederiksberg 127 til 0); landbrugskommuner står højest (Lolland 157, Morsø 152, Struer 152). Thisted: 53,5 % mod 53,4 %, score lige over 100 (før 82,6).
+- **Pilen** følger den nye indikator (`serie_areal_landbrug()` i `SAMME_SOM_SCOREN`, årene 2011, 2018, 2021, 2024). Danmark samlet: 68,3 % i 2011 til 65,4 % i 2024. Serien for `areal_antropiseret` er fjernet.
+- **Begrænsninger:** ny bebyggelse på landbrugsjord tæller ikke længere imod; målet er nationalt og ikke fordelt pr. kommune; omregningen antager, at hele omlægningen tages fra intensivt landbrug.
+
 ## 2026-11-16 (vægte, usikkerhedsmærke og estimat-mærke)
 
 Ingen score er ændret i denne omgang.

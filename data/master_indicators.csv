@@ -5734,104 +5734,104 @@ kommune_kode,kommune_navn,indicator_id,ratio,raw_value,unit,data_year,source,cat
 550,Tønder,vandindvinding,58.05,58.05,% af ressourcen,2022-2024,DST VANDIND + GEUS 2023 + HIP,ecological,vand,100.0
 360,Lolland,vandindvinding,37.63,37.63,% af ressourcen,2022-2024,DST VANDIND + GEUS 2023 + HIP,ecological,vand,100.0
 482,Langeland,vandindvinding,28.97,28.97,% af ressourcen,2022-2024,DST VANDIND + GEUS 2023 + HIP,ecological,vand,100.0
-201,Allerød,areal_antropiseret,368.4,55.26,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-153,Brøndby,areal_antropiseret,488.47,73.27,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-175,Rødovre,areal_antropiseret,589.53,88.43,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-155,Dragør,areal_antropiseret,417.6,62.64,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-190,Furesø,areal_antropiseret,350.27,52.54,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-167,Hvidovre,areal_antropiseret,548.13,82.22,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-230,Rudersdal,areal_antropiseret,359.0,53.85,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-746,Skanderborg,areal_antropiseret,428.27,64.24,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-269,Solrød,areal_antropiseret,534.67,80.2,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-265,Roskilde,areal_antropiseret,505.2,75.78,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-240,Egedal,areal_antropiseret,414.07,62.11,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-151,Ballerup,areal_antropiseret,485.8,72.87,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-223,Hørsholm,areal_antropiseret,358.47,53.77,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-185,Tårnby,areal_antropiseret,305.53,45.83,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-157,Gentofte,areal_antropiseret,571.4,85.71,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-350,Lejre,areal_antropiseret,459.4,68.91,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-163,Herlev,areal_antropiseret,560.2,84.03,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-173,Lyngby-Taarbæk,areal_antropiseret,386.2,57.93,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-210,Fredensborg,areal_antropiseret,341.4,51.21,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-183,Ishøj,areal_antropiseret,473.87,71.08,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-710,Favrskov,areal_antropiseret,478.87,71.83,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-530,Billund,areal_antropiseret,412.27,61.84,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-840,Rebild,areal_antropiseret,470.13,70.52,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-187,Vallensbæk,areal_antropiseret,439.4,65.91,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-253,Greve,areal_antropiseret,521.13,78.17,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-147,Frederiksberg,areal_antropiseret,597.73,89.66,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-259,Køge,areal_antropiseret,456.93,68.54,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-159,Gladsaxe,areal_antropiseret,560.2,84.03,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-217,Helsingør,areal_antropiseret,360.67,54.1,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-250,Frederikssund,areal_antropiseret,467.73,70.16,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-661,Holstebro,areal_antropiseret,448.6,67.29,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-825,Læsø,areal_antropiseret,156.2,23.43,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-657,Herning,areal_antropiseret,442.4,66.36,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-260,Halsnæs,areal_antropiseret,427.47,64.12,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-773,Morsø,areal_antropiseret,556.2,83.43,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-219,Hillerød,areal_antropiseret,363.47,54.52,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-340,Sorø,areal_antropiseret,439.2,65.88,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-492,Ærø,areal_antropiseret,505.13,75.77,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-561,Esbjerg,areal_antropiseret,503.33,75.5,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-740,Silkeborg,areal_antropiseret,368.6,55.29,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-615,Horsens,areal_antropiseret,461.67,69.25,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-563,Fanø,areal_antropiseret,107.53,16.13,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-316,Holbæk,areal_antropiseret,487.27,73.09,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-766,Hedensted,areal_antropiseret,506.67,76.0,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-607,Fredericia,areal_antropiseret,468.13,70.22,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-410,Middelfart,areal_antropiseret,507.53,76.13,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-329,Ringsted,areal_antropiseret,480.27,72.04,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-370,Næstved,areal_antropiseret,497.4,74.61,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-851,Aalborg,areal_antropiseret,467.87,70.18,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-810,Brønderslev,areal_antropiseret,503.0,75.45,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-727,Odder,areal_antropiseret,522.93,78.44,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-336,Stevns,areal_antropiseret,551.67,82.75,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-751,Aarhus,areal_antropiseret,506.8,76.02,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-813,Frederikshavn,areal_antropiseret,376.8,56.52,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-161,Glostrup,areal_antropiseret,514.0,77.1,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-270,Gribskov,areal_antropiseret,388.8,58.32,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-860,Hjørring,areal_antropiseret,472.4,70.86,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-165,Albertslund,areal_antropiseret,339.13,50.87,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-479,Svendborg,areal_antropiseret,492.87,73.93,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-791,Viborg,areal_antropiseret,424.93,63.74,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-480,Nordfyns,areal_antropiseret,538.33,80.75,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-706,Syddjurs,areal_antropiseret,408.13,61.22,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-440,Kerteminde,areal_antropiseret,543.73,81.56,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-630,Vejle,areal_antropiseret,432.93,64.94,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-101,København,areal_antropiseret,535.8,80.37,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-730,Randers,areal_antropiseret,511.33,76.7,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-760,Ringkøbing-Skjern,areal_antropiseret,455.8,68.37,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-430,Faaborg-Midtfyn,areal_antropiseret,481.4,72.21,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-320,Faxe,areal_antropiseret,467.0,70.05,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-169,Høje-Taastrup,areal_antropiseret,470.93,70.64,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-573,Varde,areal_antropiseret,416.87,62.53,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-621,Kolding,areal_antropiseret,502.93,75.44,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-420,Assens,areal_antropiseret,497.07,74.56,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-580,Aabenraa,areal_antropiseret,502.67,75.4,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-787,Thisted,areal_antropiseret,387.53,58.13,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-756,Ikast-Brande,areal_antropiseret,410.07,61.51,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-461,Odense,areal_antropiseret,486.07,72.91,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-779,Skive,areal_antropiseret,512.4,76.86,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-450,Nyborg,areal_antropiseret,528.07,79.21,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-846,Mariagerfjord,areal_antropiseret,447.07,67.06,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-820,Vesthimmerlands,areal_antropiseret,500.8,75.12,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-540,Sønderborg,areal_antropiseret,535.73,80.36,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-400,Bornholm,areal_antropiseret,452.6,67.89,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-510,Haderslev,areal_antropiseret,510.33,76.55,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-671,Struer,areal_antropiseret,557.87,83.68,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-665,Lemvig,areal_antropiseret,470.2,70.53,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-707,Norddjurs,areal_antropiseret,452.87,67.93,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-330,Slagelse,areal_antropiseret,522.6,78.39,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-306,Odsherred,areal_antropiseret,475.27,71.29,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-575,Vejen,areal_antropiseret,504.73,75.71,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-376,Guldborgsund,areal_antropiseret,533.33,80.0,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-849,Jammerbugt,areal_antropiseret,433.73,65.06,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-326,Kalundborg,areal_antropiseret,499.4,74.91,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-390,Vordingborg,areal_antropiseret,492.73,73.91,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-550,Tønder,areal_antropiseret,513.8,77.07,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-360,Lolland,areal_antropiseret,570.07,85.51,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-741,Samsø,areal_antropiseret,497.13,74.57,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
-482,Langeland,areal_antropiseret,512.73,76.91,%,2024,DST AREALDK2,ecological,arealanvendelse,15.0
+201,Allerød,areal_landbrug,67.27,35.92,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+153,Brøndby,areal_landbrug,3.41,1.82,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+175,Rødovre,areal_landbrug,0.0,0.0,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+155,Dragør,areal_landbrug,57.77,30.85,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+190,Furesø,areal_landbrug,32.42,17.31,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+167,Hvidovre,areal_landbrug,13.07,6.98,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+230,Rudersdal,areal_landbrug,18.73,10.0,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+746,Skanderborg,areal_landbrug,107.04,57.16,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+269,Solrød,areal_landbrug,132.77,70.9,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+265,Roskilde,areal_landbrug,123.39,65.89,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+240,Egedal,areal_landbrug,93.33,49.84,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+151,Ballerup,areal_landbrug,27.0,14.42,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+223,Hørsholm,areal_landbrug,28.26,15.09,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+185,Tårnby,areal_landbrug,10.17,5.43,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+157,Gentofte,areal_landbrug,0.0,0.0,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+350,Lejre,areal_landbrug,118.91,63.5,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+163,Herlev,areal_landbrug,17.83,9.52,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+173,Lyngby-Taarbæk,areal_landbrug,6.2,3.31,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+210,Fredensborg,areal_landbrug,63.8,34.07,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+183,Ishøj,areal_landbrug,100.84,53.85,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+710,Favrskov,areal_landbrug,126.59,67.6,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+530,Billund,areal_landbrug,107.19,57.24,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+840,Rebild,areal_landbrug,125.73,67.14,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+187,Vallensbæk,areal_landbrug,6.05,3.23,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+253,Greve,areal_landbrug,112.0,59.81,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+147,Frederiksberg,areal_landbrug,0.0,0.0,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+259,Køge,areal_landbrug,113.86,60.8,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+159,Gladsaxe,areal_landbrug,0.0,0.0,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+217,Helsingør,areal_landbrug,59.03,31.52,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+250,Frederikssund,areal_landbrug,117.12,62.54,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+661,Holstebro,areal_landbrug,116.85,62.4,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+825,Læsø,areal_landbrug,28.54,15.24,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+657,Herning,areal_landbrug,116.29,62.1,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+260,Halsnæs,areal_landbrug,81.2,43.36,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+773,Morsø,areal_landbrug,152.1,81.22,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+219,Hillerød,areal_landbrug,79.63,42.52,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+340,Sorø,areal_landbrug,112.96,60.32,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+492,Ærø,areal_landbrug,135.3,72.25,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+561,Esbjerg,areal_landbrug,133.18,71.12,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+740,Silkeborg,areal_landbrug,89.31,47.69,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+615,Horsens,areal_landbrug,117.55,62.77,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+563,Fanø,areal_landbrug,9.36,5.0,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+316,Holbæk,areal_landbrug,128.43,68.58,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+766,Hedensted,areal_landbrug,134.83,72.0,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+607,Fredericia,areal_landbrug,105.0,56.07,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+410,Middelfart,areal_landbrug,132.85,70.94,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+329,Ringsted,areal_landbrug,126.74,67.68,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+370,Næstved,areal_landbrug,132.19,70.59,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+851,Aalborg,areal_landbrug,120.49,64.34,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+810,Brønderslev,areal_landbrug,135.6,72.41,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+727,Odder,areal_landbrug,140.6,75.08,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+336,Stevns,areal_landbrug,150.24,80.23,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+751,Aarhus,areal_landbrug,119.81,63.98,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+813,Frederikshavn,areal_landbrug,92.3,49.29,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+161,Glostrup,areal_landbrug,6.05,3.23,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+270,Gribskov,areal_landbrug,81.97,43.77,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+860,Hjørring,areal_landbrug,124.63,66.55,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+165,Albertslund,areal_landbrug,3.26,1.74,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+479,Svendborg,areal_landbrug,129.57,69.19,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+791,Viborg,areal_landbrug,110.45,58.98,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+480,Nordfyns,areal_landbrug,146.2,78.07,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+706,Syddjurs,areal_landbrug,103.24,55.13,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+440,Kerteminde,areal_landbrug,146.12,78.03,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+630,Vejle,areal_landbrug,110.96,59.25,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+101,København,areal_landbrug,0.0,0.0,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+730,Randers,areal_landbrug,136.65,72.97,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+760,Ringkøbing-Skjern,areal_landbrug,121.4,64.83,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+430,Faaborg-Midtfyn,areal_landbrug,127.12,67.88,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+320,Faxe,areal_landbrug,123.0,65.68,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+169,Høje-Taastrup,areal_landbrug,98.2,52.44,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+573,Varde,areal_landbrug,108.88,58.14,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+621,Kolding,areal_landbrug,132.3,70.65,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+420,Assens,areal_landbrug,132.19,70.59,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+580,Aabenraa,areal_landbrug,135.0,72.09,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+787,Thisted,areal_landbrug,100.15,53.48,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+756,Ikast-Brande,areal_landbrug,105.69,56.44,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+461,Odense,areal_landbrug,107.49,57.4,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+779,Skive,areal_landbrug,137.3,73.32,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+450,Nyborg,areal_landbrug,141.85,75.75,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+846,Mariagerfjord,areal_landbrug,117.51,62.75,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+820,Vesthimmerlands,areal_landbrug,134.87,72.02,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+540,Sønderborg,areal_landbrug,143.07,76.4,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+400,Bornholm,areal_landbrug,118.41,63.23,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+510,Haderslev,areal_landbrug,137.83,73.6,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+671,Struer,areal_landbrug,151.65,80.98,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+665,Lemvig,areal_landbrug,125.56,67.05,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+707,Norddjurs,areal_landbrug,119.61,63.87,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+330,Slagelse,areal_landbrug,139.51,74.5,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+306,Odsherred,areal_landbrug,116.31,62.11,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+575,Vejen,areal_landbrug,136.22,72.74,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+376,Guldborgsund,areal_landbrug,144.72,77.28,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+849,Jammerbugt,areal_landbrug,113.56,60.64,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+326,Kalundborg,areal_landbrug,131.76,70.36,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+390,Vordingborg,areal_landbrug,131.31,70.12,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+550,Tønder,areal_landbrug,140.36,74.95,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+360,Lolland,areal_landbrug,157.17,83.93,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+741,Samsø,areal_landbrug,133.48,71.28,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
+482,Langeland,areal_landbrug,138.52,73.97,%,2024,DST AREALDK2,ecological,arealanvendelse,53.4
 201,Allerød,ctx_fjv_biomasse,,69.6,%,2024,Energistyrelsen EPT,context,energi,
 153,Brøndby,ctx_fjv_biomasse,,60.5,%,2024,Energistyrelsen EPT,context,energi,
 175,Rødovre,ctx_fjv_biomasse,,60.5,%,2024,Energistyrelsen EPT,context,energi,
@@ -6912,681 +6912,681 @@ kommune_kode,kommune_navn,indicator_id,ratio,raw_value,unit,data_year,source,cat
 201,Allerød,_dim_naeringsstoffer,150.1,,,,,ecological_dimension,naeringsstoffer,
 201,Allerød,_dim_biodiversitet,120.84,,,,,ecological_dimension,biodiversitet,
 201,Allerød,_dim_vand,184.94,,,,,ecological_dimension,vand,
-201,Allerød,_dim_arealanvendelse,368.4,,,,,ecological_dimension,arealanvendelse,
+201,Allerød,_dim_arealanvendelse,67.27,,,,,ecological_dimension,arealanvendelse,
 153,Brøndby,_dim_klimapaavirkning,285.0,,,,,ecological_dimension,klimapaavirkning,
 153,Brøndby,_dim_luftkvalitet,138.8,,,,,ecological_dimension,luftkvalitet,
 153,Brøndby,_dim_forurening,113.5,,,,,ecological_dimension,forurening,
 153,Brøndby,_dim_naeringsstoffer,104.7,,,,,ecological_dimension,naeringsstoffer,
 153,Brøndby,_dim_biodiversitet,139.43,,,,,ecological_dimension,biodiversitet,
 153,Brøndby,_dim_vand,181.4,,,,,ecological_dimension,vand,
-153,Brøndby,_dim_arealanvendelse,488.47,,,,,ecological_dimension,arealanvendelse,
+153,Brøndby,_dim_arealanvendelse,3.41,,,,,ecological_dimension,arealanvendelse,
 175,Rødovre,_dim_klimapaavirkning,308.33,,,,,ecological_dimension,klimapaavirkning,
 175,Rødovre,_dim_luftkvalitet,141.4,,,,,ecological_dimension,luftkvalitet,
 175,Rødovre,_dim_forurening,100.0,,,,,ecological_dimension,forurening,
 175,Rødovre,_dim_naeringsstoffer,106.2,,,,,ecological_dimension,naeringsstoffer,
 175,Rødovre,_dim_biodiversitet,142.39,,,,,ecological_dimension,biodiversitet,
 175,Rødovre,_dim_vand,292.95,,,,,ecological_dimension,vand,
-175,Rødovre,_dim_arealanvendelse,589.53,,,,,ecological_dimension,arealanvendelse,
+175,Rødovre,_dim_arealanvendelse,0.0,,,,,ecological_dimension,arealanvendelse,
 155,Dragør,_dim_klimapaavirkning,410.67,,,,,ecological_dimension,klimapaavirkning,
 155,Dragør,_dim_luftkvalitet,136.8,,,,,ecological_dimension,luftkvalitet,
 155,Dragør,_dim_forurening,137.01,,,,,ecological_dimension,forurening,
 155,Dragør,_dim_naeringsstoffer,106.2,,,,,ecological_dimension,naeringsstoffer,
 155,Dragør,_dim_biodiversitet,120.01,,,,,ecological_dimension,biodiversitet,
 155,Dragør,_dim_vand,24.78,,,,,ecological_dimension,vand,
-155,Dragør,_dim_arealanvendelse,417.6,,,,,ecological_dimension,arealanvendelse,
+155,Dragør,_dim_arealanvendelse,57.77,,,,,ecological_dimension,arealanvendelse,
 190,Furesø,_dim_klimapaavirkning,379.67,,,,,ecological_dimension,klimapaavirkning,
 190,Furesø,_dim_luftkvalitet,138.2,,,,,ecological_dimension,luftkvalitet,
 190,Furesø,_dim_forurening,85.91,,,,,ecological_dimension,forurening,
 190,Furesø,_dim_naeringsstoffer,136.5,,,,,ecological_dimension,naeringsstoffer,
 190,Furesø,_dim_biodiversitet,95.23,,,,,ecological_dimension,biodiversitet,
 190,Furesø,_dim_vand,1037.07,,,,,ecological_dimension,vand,
-190,Furesø,_dim_arealanvendelse,350.27,,,,,ecological_dimension,arealanvendelse,
+190,Furesø,_dim_arealanvendelse,32.42,,,,,ecological_dimension,arealanvendelse,
 167,Hvidovre,_dim_klimapaavirkning,304.67,,,,,ecological_dimension,klimapaavirkning,
 167,Hvidovre,_dim_luftkvalitet,139.6,,,,,ecological_dimension,luftkvalitet,
 167,Hvidovre,_dim_forurening,103.15,,,,,ecological_dimension,forurening,
 167,Hvidovre,_dim_naeringsstoffer,106.2,,,,,ecological_dimension,naeringsstoffer,
 167,Hvidovre,_dim_biodiversitet,142.44,,,,,ecological_dimension,biodiversitet,
 167,Hvidovre,_dim_vand,31.82,,,,,ecological_dimension,vand,
-167,Hvidovre,_dim_arealanvendelse,548.13,,,,,ecological_dimension,arealanvendelse,
+167,Hvidovre,_dim_arealanvendelse,13.07,,,,,ecological_dimension,arealanvendelse,
 230,Rudersdal,_dim_klimapaavirkning,477.0,,,,,ecological_dimension,klimapaavirkning,
 230,Rudersdal,_dim_luftkvalitet,137.4,,,,,ecological_dimension,luftkvalitet,
 230,Rudersdal,_dim_forurening,114.53,,,,,ecological_dimension,forurening,
 230,Rudersdal,_dim_naeringsstoffer,103.7,,,,,ecological_dimension,naeringsstoffer,
 230,Rudersdal,_dim_biodiversitet,104.7,,,,,ecological_dimension,biodiversitet,
 230,Rudersdal,_dim_vand,283.07,,,,,ecological_dimension,vand,
-230,Rudersdal,_dim_arealanvendelse,359.0,,,,,ecological_dimension,arealanvendelse,
+230,Rudersdal,_dim_arealanvendelse,18.73,,,,,ecological_dimension,arealanvendelse,
 746,Skanderborg,_dim_klimapaavirkning,333.33,,,,,ecological_dimension,klimapaavirkning,
 746,Skanderborg,_dim_luftkvalitet,137.8,,,,,ecological_dimension,luftkvalitet,
 746,Skanderborg,_dim_forurening,112.98,,,,,ecological_dimension,forurening,
 746,Skanderborg,_dim_naeringsstoffer,118.8,,,,,ecological_dimension,naeringsstoffer,
 746,Skanderborg,_dim_biodiversitet,127.39,,,,,ecological_dimension,biodiversitet,
 746,Skanderborg,_dim_vand,41.1,,,,,ecological_dimension,vand,
-746,Skanderborg,_dim_arealanvendelse,428.27,,,,,ecological_dimension,arealanvendelse,
+746,Skanderborg,_dim_arealanvendelse,107.04,,,,,ecological_dimension,arealanvendelse,
 269,Solrød,_dim_klimapaavirkning,389.67,,,,,ecological_dimension,klimapaavirkning,
 269,Solrød,_dim_luftkvalitet,141.8,,,,,ecological_dimension,luftkvalitet,
 269,Solrød,_dim_forurening,79.85,,,,,ecological_dimension,forurening,
 269,Solrød,_dim_naeringsstoffer,105.0,,,,,ecological_dimension,naeringsstoffer,
 269,Solrød,_dim_biodiversitet,138.11,,,,,ecological_dimension,biodiversitet,
 269,Solrød,_dim_vand,528.84,,,,,ecological_dimension,vand,
-269,Solrød,_dim_arealanvendelse,534.67,,,,,ecological_dimension,arealanvendelse,
+269,Solrød,_dim_arealanvendelse,132.77,,,,,ecological_dimension,arealanvendelse,
 265,Roskilde,_dim_klimapaavirkning,368.33,,,,,ecological_dimension,klimapaavirkning,
 265,Roskilde,_dim_luftkvalitet,143.0,,,,,ecological_dimension,luftkvalitet,
 265,Roskilde,_dim_forurening,91.23,,,,,ecological_dimension,forurening,
 265,Roskilde,_dim_naeringsstoffer,175.6,,,,,ecological_dimension,naeringsstoffer,
 265,Roskilde,_dim_biodiversitet,137.01,,,,,ecological_dimension,biodiversitet,
 265,Roskilde,_dim_vand,302.51,,,,,ecological_dimension,vand,
-265,Roskilde,_dim_arealanvendelse,505.2,,,,,ecological_dimension,arealanvendelse,
+265,Roskilde,_dim_arealanvendelse,123.39,,,,,ecological_dimension,arealanvendelse,
 240,Egedal,_dim_klimapaavirkning,354.33,,,,,ecological_dimension,klimapaavirkning,
 240,Egedal,_dim_luftkvalitet,139.6,,,,,ecological_dimension,luftkvalitet,
 240,Egedal,_dim_forurening,88.78,,,,,ecological_dimension,forurening,
 240,Egedal,_dim_naeringsstoffer,180.0,,,,,ecological_dimension,naeringsstoffer,
 240,Egedal,_dim_biodiversitet,129.11,,,,,ecological_dimension,biodiversitet,
 240,Egedal,_dim_vand,311.39,,,,,ecological_dimension,vand,
-240,Egedal,_dim_arealanvendelse,414.07,,,,,ecological_dimension,arealanvendelse,
+240,Egedal,_dim_arealanvendelse,93.33,,,,,ecological_dimension,arealanvendelse,
 151,Ballerup,_dim_klimapaavirkning,315.0,,,,,ecological_dimension,klimapaavirkning,
 151,Ballerup,_dim_luftkvalitet,139.4,,,,,ecological_dimension,luftkvalitet,
 151,Ballerup,_dim_forurening,86.85,,,,,ecological_dimension,forurening,
 151,Ballerup,_dim_naeringsstoffer,150.6,,,,,ecological_dimension,naeringsstoffer,
 151,Ballerup,_dim_biodiversitet,140.96,,,,,ecological_dimension,biodiversitet,
 151,Ballerup,_dim_vand,379.36,,,,,ecological_dimension,vand,
-151,Ballerup,_dim_arealanvendelse,485.8,,,,,ecological_dimension,arealanvendelse,
+151,Ballerup,_dim_arealanvendelse,27.0,,,,,ecological_dimension,arealanvendelse,
 223,Hørsholm,_dim_klimapaavirkning,479.33,,,,,ecological_dimension,klimapaavirkning,
 223,Hørsholm,_dim_luftkvalitet,134.2,,,,,ecological_dimension,luftkvalitet,
 223,Hørsholm,_dim_forurening,95.13,,,,,ecological_dimension,forurening,
 223,Hørsholm,_dim_naeringsstoffer,106.2,,,,,ecological_dimension,naeringsstoffer,
 223,Hørsholm,_dim_biodiversitet,135.73,,,,,ecological_dimension,biodiversitet,
 223,Hørsholm,_dim_vand,297.12,,,,,ecological_dimension,vand,
-223,Hørsholm,_dim_arealanvendelse,358.47,,,,,ecological_dimension,arealanvendelse,
+223,Hørsholm,_dim_arealanvendelse,28.26,,,,,ecological_dimension,arealanvendelse,
 185,Tårnby,_dim_klimapaavirkning,324.67,,,,,ecological_dimension,klimapaavirkning,
 185,Tårnby,_dim_luftkvalitet,136.6,,,,,ecological_dimension,luftkvalitet,
 185,Tårnby,_dim_forurening,103.19,,,,,ecological_dimension,forurening,
 185,Tårnby,_dim_naeringsstoffer,104.1,,,,,ecological_dimension,naeringsstoffer,
 185,Tårnby,_dim_biodiversitet,72.57,,,,,ecological_dimension,biodiversitet,
 185,Tårnby,_dim_vand,33.1,,,,,ecological_dimension,vand,
-185,Tårnby,_dim_arealanvendelse,305.53,,,,,ecological_dimension,arealanvendelse,
+185,Tårnby,_dim_arealanvendelse,10.17,,,,,ecological_dimension,arealanvendelse,
 157,Gentofte,_dim_klimapaavirkning,497.33,,,,,ecological_dimension,klimapaavirkning,
 157,Gentofte,_dim_luftkvalitet,137.4,,,,,ecological_dimension,luftkvalitet,
 157,Gentofte,_dim_forurening,87.98,,,,,ecological_dimension,forurening,
 157,Gentofte,_dim_naeringsstoffer,106.2,,,,,ecological_dimension,naeringsstoffer,
 157,Gentofte,_dim_biodiversitet,132.63,,,,,ecological_dimension,biodiversitet,
 157,Gentofte,_dim_vand,626.53,,,,,ecological_dimension,vand,
-157,Gentofte,_dim_arealanvendelse,571.4,,,,,ecological_dimension,arealanvendelse,
+157,Gentofte,_dim_arealanvendelse,0.0,,,,,ecological_dimension,arealanvendelse,
 350,Lejre,_dim_klimapaavirkning,370.0,,,,,ecological_dimension,klimapaavirkning,
 350,Lejre,_dim_luftkvalitet,142.0,,,,,ecological_dimension,luftkvalitet,
 350,Lejre,_dim_forurening,86.28,,,,,ecological_dimension,forurening,
 350,Lejre,_dim_naeringsstoffer,183.0,,,,,ecological_dimension,naeringsstoffer,
 350,Lejre,_dim_biodiversitet,135.69,,,,,ecological_dimension,biodiversitet,
 350,Lejre,_dim_vand,148.23,,,,,ecological_dimension,vand,
-350,Lejre,_dim_arealanvendelse,459.4,,,,,ecological_dimension,arealanvendelse,
+350,Lejre,_dim_arealanvendelse,118.91,,,,,ecological_dimension,arealanvendelse,
 163,Herlev,_dim_klimapaavirkning,317.0,,,,,ecological_dimension,klimapaavirkning,
 163,Herlev,_dim_luftkvalitet,141.2,,,,,ecological_dimension,luftkvalitet,
 163,Herlev,_dim_forurening,110.45,,,,,ecological_dimension,forurening,
 163,Herlev,_dim_naeringsstoffer,127.1,,,,,ecological_dimension,naeringsstoffer,
 163,Herlev,_dim_biodiversitet,141.46,,,,,ecological_dimension,biodiversitet,
 163,Herlev,_dim_vand,0.0,,,,,ecological_dimension,vand,
-163,Herlev,_dim_arealanvendelse,560.2,,,,,ecological_dimension,arealanvendelse,
+163,Herlev,_dim_arealanvendelse,17.83,,,,,ecological_dimension,arealanvendelse,
 173,Lyngby-Taarbæk,_dim_klimapaavirkning,400.33,,,,,ecological_dimension,klimapaavirkning,
 173,Lyngby-Taarbæk,_dim_luftkvalitet,139.4,,,,,ecological_dimension,luftkvalitet,
 173,Lyngby-Taarbæk,_dim_forurening,86.67,,,,,ecological_dimension,forurening,
 173,Lyngby-Taarbæk,_dim_naeringsstoffer,106.2,,,,,ecological_dimension,naeringsstoffer,
 173,Lyngby-Taarbæk,_dim_biodiversitet,79.87,,,,,ecological_dimension,biodiversitet,
 173,Lyngby-Taarbæk,_dim_vand,252.08,,,,,ecological_dimension,vand,
-173,Lyngby-Taarbæk,_dim_arealanvendelse,386.2,,,,,ecological_dimension,arealanvendelse,
+173,Lyngby-Taarbæk,_dim_arealanvendelse,6.2,,,,,ecological_dimension,arealanvendelse,
 210,Fredensborg,_dim_klimapaavirkning,364.67,,,,,ecological_dimension,klimapaavirkning,
 210,Fredensborg,_dim_luftkvalitet,133.0,,,,,ecological_dimension,luftkvalitet,
 210,Fredensborg,_dim_forurening,113.54,,,,,ecological_dimension,forurening,
 210,Fredensborg,_dim_naeringsstoffer,121.7,,,,,ecological_dimension,naeringsstoffer,
 210,Fredensborg,_dim_biodiversitet,128.8,,,,,ecological_dimension,biodiversitet,
 210,Fredensborg,_dim_vand,175.66,,,,,ecological_dimension,vand,
-210,Fredensborg,_dim_arealanvendelse,341.4,,,,,ecological_dimension,arealanvendelse,
+210,Fredensborg,_dim_arealanvendelse,63.8,,,,,ecological_dimension,arealanvendelse,
 183,Ishøj,_dim_klimapaavirkning,275.33,,,,,ecological_dimension,klimapaavirkning,
 183,Ishøj,_dim_luftkvalitet,139.0,,,,,ecological_dimension,luftkvalitet,
 183,Ishøj,_dim_forurening,107.99,,,,,ecological_dimension,forurening,
 183,Ishøj,_dim_naeringsstoffer,105.0,,,,,ecological_dimension,naeringsstoffer,
 183,Ishøj,_dim_biodiversitet,137.7,,,,,ecological_dimension,biodiversitet,
 183,Ishøj,_dim_vand,1427.85,,,,,ecological_dimension,vand,
-183,Ishøj,_dim_arealanvendelse,473.87,,,,,ecological_dimension,arealanvendelse,
+183,Ishøj,_dim_arealanvendelse,100.84,,,,,ecological_dimension,arealanvendelse,
 710,Favrskov,_dim_klimapaavirkning,319.33,,,,,ecological_dimension,klimapaavirkning,
 710,Favrskov,_dim_luftkvalitet,134.2,,,,,ecological_dimension,luftkvalitet,
 710,Favrskov,_dim_forurening,107.3,,,,,ecological_dimension,forurening,
 710,Favrskov,_dim_naeringsstoffer,125.0,,,,,ecological_dimension,naeringsstoffer,
 710,Favrskov,_dim_biodiversitet,140.37,,,,,ecological_dimension,biodiversitet,
 710,Favrskov,_dim_vand,24.62,,,,,ecological_dimension,vand,
-710,Favrskov,_dim_arealanvendelse,478.87,,,,,ecological_dimension,arealanvendelse,
+710,Favrskov,_dim_arealanvendelse,126.59,,,,,ecological_dimension,arealanvendelse,
 530,Billund,_dim_klimapaavirkning,311.0,,,,,ecological_dimension,klimapaavirkning,
 530,Billund,_dim_luftkvalitet,139.4,,,,,ecological_dimension,luftkvalitet,
 530,Billund,_dim_forurening,63.62,,,,,ecological_dimension,forurening,
 530,Billund,_dim_naeringsstoffer,153.0,,,,,ecological_dimension,naeringsstoffer,
 530,Billund,_dim_biodiversitet,135.97,,,,,ecological_dimension,biodiversitet,
 530,Billund,_dim_vand,93.36,,,,,ecological_dimension,vand,
-530,Billund,_dim_arealanvendelse,412.27,,,,,ecological_dimension,arealanvendelse,
+530,Billund,_dim_arealanvendelse,107.19,,,,,ecological_dimension,arealanvendelse,
 840,Rebild,_dim_klimapaavirkning,562.1,,,,,ecological_dimension,klimapaavirkning,
 840,Rebild,_dim_luftkvalitet,129.2,,,,,ecological_dimension,luftkvalitet,
 840,Rebild,_dim_forurening,117.72,,,,,ecological_dimension,forurening,
 840,Rebild,_dim_naeringsstoffer,163.1,,,,,ecological_dimension,naeringsstoffer,
 840,Rebild,_dim_biodiversitet,135.64,,,,,ecological_dimension,biodiversitet,
 840,Rebild,_dim_vand,24.59,,,,,ecological_dimension,vand,
-840,Rebild,_dim_arealanvendelse,470.13,,,,,ecological_dimension,arealanvendelse,
+840,Rebild,_dim_arealanvendelse,125.73,,,,,ecological_dimension,arealanvendelse,
 187,Vallensbæk,_dim_klimapaavirkning,332.67,,,,,ecological_dimension,klimapaavirkning,
 187,Vallensbæk,_dim_luftkvalitet,138.8,,,,,ecological_dimension,luftkvalitet,
 187,Vallensbæk,_dim_forurening,88.44,,,,,ecological_dimension,forurening,
 187,Vallensbæk,_dim_naeringsstoffer,106.2,,,,,ecological_dimension,naeringsstoffer,
 187,Vallensbæk,_dim_biodiversitet,139.24,,,,,ecological_dimension,biodiversitet,
 187,Vallensbæk,_dim_vand,325.45,,,,,ecological_dimension,vand,
-187,Vallensbæk,_dim_arealanvendelse,439.4,,,,,ecological_dimension,arealanvendelse,
+187,Vallensbæk,_dim_arealanvendelse,6.05,,,,,ecological_dimension,arealanvendelse,
 253,Greve,_dim_klimapaavirkning,378.33,,,,,ecological_dimension,klimapaavirkning,
 253,Greve,_dim_luftkvalitet,139.8,,,,,ecological_dimension,luftkvalitet,
 253,Greve,_dim_forurening,81.46,,,,,ecological_dimension,forurening,
 253,Greve,_dim_naeringsstoffer,112.0,,,,,ecological_dimension,naeringsstoffer,
 253,Greve,_dim_biodiversitet,141.81,,,,,ecological_dimension,biodiversitet,
 253,Greve,_dim_vand,307.13,,,,,ecological_dimension,vand,
-253,Greve,_dim_arealanvendelse,521.13,,,,,ecological_dimension,arealanvendelse,
+253,Greve,_dim_arealanvendelse,112.0,,,,,ecological_dimension,arealanvendelse,
 147,Frederiksberg,_dim_klimapaavirkning,332.33,,,,,ecological_dimension,klimapaavirkning,
 147,Frederiksberg,_dim_luftkvalitet,141.8,,,,,ecological_dimension,luftkvalitet,
 147,Frederiksberg,_dim_forurening,108.11,,,,,ecological_dimension,forurening,
 147,Frederiksberg,_dim_naeringsstoffer,106.2,,,,,ecological_dimension,naeringsstoffer,
 147,Frederiksberg,_dim_biodiversitet,141.99,,,,,ecological_dimension,biodiversitet,
 147,Frederiksberg,_dim_vand,1306.78,,,,,ecological_dimension,vand,
-147,Frederiksberg,_dim_arealanvendelse,597.73,,,,,ecological_dimension,arealanvendelse,
+147,Frederiksberg,_dim_arealanvendelse,0.0,,,,,ecological_dimension,arealanvendelse,
 259,Køge,_dim_klimapaavirkning,352.33,,,,,ecological_dimension,klimapaavirkning,
 259,Køge,_dim_luftkvalitet,143.2,,,,,ecological_dimension,luftkvalitet,
 259,Køge,_dim_forurening,98.88,,,,,ecological_dimension,forurening,
 259,Køge,_dim_naeringsstoffer,107.8,,,,,ecological_dimension,naeringsstoffer,
 259,Køge,_dim_biodiversitet,132.83,,,,,ecological_dimension,biodiversitet,
 259,Køge,_dim_vand,339.67,,,,,ecological_dimension,vand,
-259,Køge,_dim_arealanvendelse,456.93,,,,,ecological_dimension,arealanvendelse,
+259,Køge,_dim_arealanvendelse,113.86,,,,,ecological_dimension,arealanvendelse,
 159,Gladsaxe,_dim_klimapaavirkning,328.67,,,,,ecological_dimension,klimapaavirkning,
 159,Gladsaxe,_dim_luftkvalitet,141.0,,,,,ecological_dimension,luftkvalitet,
 159,Gladsaxe,_dim_forurening,84.19,,,,,ecological_dimension,forurening,
 159,Gladsaxe,_dim_naeringsstoffer,114.3,,,,,ecological_dimension,naeringsstoffer,
 159,Gladsaxe,_dim_biodiversitet,126.93,,,,,ecological_dimension,biodiversitet,
 159,Gladsaxe,_dim_vand,532.77,,,,,ecological_dimension,vand,
-159,Gladsaxe,_dim_arealanvendelse,560.2,,,,,ecological_dimension,arealanvendelse,
+159,Gladsaxe,_dim_arealanvendelse,0.0,,,,,ecological_dimension,arealanvendelse,
 217,Helsingør,_dim_klimapaavirkning,337.0,,,,,ecological_dimension,klimapaavirkning,
 217,Helsingør,_dim_luftkvalitet,133.2,,,,,ecological_dimension,luftkvalitet,
 217,Helsingør,_dim_forurening,85.15,,,,,ecological_dimension,forurening,
 217,Helsingør,_dim_naeringsstoffer,165.6,,,,,ecological_dimension,naeringsstoffer,
 217,Helsingør,_dim_biodiversitet,116.76,,,,,ecological_dimension,biodiversitet,
 217,Helsingør,_dim_vand,164.1,,,,,ecological_dimension,vand,
-217,Helsingør,_dim_arealanvendelse,360.67,,,,,ecological_dimension,arealanvendelse,
+217,Helsingør,_dim_arealanvendelse,59.03,,,,,ecological_dimension,arealanvendelse,
 250,Frederikssund,_dim_klimapaavirkning,328.33,,,,,ecological_dimension,klimapaavirkning,
 250,Frederikssund,_dim_luftkvalitet,138.8,,,,,ecological_dimension,luftkvalitet,
 250,Frederikssund,_dim_forurening,116.96,,,,,ecological_dimension,forurening,
 250,Frederikssund,_dim_naeringsstoffer,183.3,,,,,ecological_dimension,naeringsstoffer,
 250,Frederikssund,_dim_biodiversitet,126.34,,,,,ecological_dimension,biodiversitet,
 250,Frederikssund,_dim_vand,160.34,,,,,ecological_dimension,vand,
-250,Frederikssund,_dim_arealanvendelse,467.73,,,,,ecological_dimension,arealanvendelse,
+250,Frederikssund,_dim_arealanvendelse,117.12,,,,,ecological_dimension,arealanvendelse,
 661,Holstebro,_dim_klimapaavirkning,310.67,,,,,ecological_dimension,klimapaavirkning,
 661,Holstebro,_dim_luftkvalitet,132.8,,,,,ecological_dimension,luftkvalitet,
 661,Holstebro,_dim_forurening,86.7,,,,,ecological_dimension,forurening,
 661,Holstebro,_dim_naeringsstoffer,177.4,,,,,ecological_dimension,naeringsstoffer,
 661,Holstebro,_dim_biodiversitet,135.56,,,,,ecological_dimension,biodiversitet,
 661,Holstebro,_dim_vand,77.51,,,,,ecological_dimension,vand,
-661,Holstebro,_dim_arealanvendelse,448.6,,,,,ecological_dimension,arealanvendelse,
+661,Holstebro,_dim_arealanvendelse,116.85,,,,,ecological_dimension,arealanvendelse,
 825,Læsø,_dim_klimapaavirkning,378.67,,,,,ecological_dimension,klimapaavirkning,
 825,Læsø,_dim_luftkvalitet,112.8,,,,,ecological_dimension,luftkvalitet,
 825,Læsø,_dim_forurening,150.75,,,,,ecological_dimension,forurening,
 825,Læsø,_dim_naeringsstoffer,106.2,,,,,ecological_dimension,naeringsstoffer,
 825,Læsø,_dim_biodiversitet,75.82,,,,,ecological_dimension,biodiversitet,
-825,Læsø,_dim_arealanvendelse,156.2,,,,,ecological_dimension,arealanvendelse,
+825,Læsø,_dim_arealanvendelse,28.54,,,,,ecological_dimension,arealanvendelse,
 657,Herning,_dim_klimapaavirkning,313.0,,,,,ecological_dimension,klimapaavirkning,
 657,Herning,_dim_luftkvalitet,136.2,,,,,ecological_dimension,luftkvalitet,
 657,Herning,_dim_forurening,71.98,,,,,ecological_dimension,forurening,
 657,Herning,_dim_naeringsstoffer,169.9,,,,,ecological_dimension,naeringsstoffer,
 657,Herning,_dim_biodiversitet,137.43,,,,,ecological_dimension,biodiversitet,
 657,Herning,_dim_vand,81.22,,,,,ecological_dimension,vand,
-657,Herning,_dim_arealanvendelse,442.4,,,,,ecological_dimension,arealanvendelse,
+657,Herning,_dim_arealanvendelse,116.29,,,,,ecological_dimension,arealanvendelse,
 260,Halsnæs,_dim_klimapaavirkning,301.33,,,,,ecological_dimension,klimapaavirkning,
 260,Halsnæs,_dim_luftkvalitet,134.2,,,,,ecological_dimension,luftkvalitet,
 260,Halsnæs,_dim_forurening,128.12,,,,,ecological_dimension,forurening,
 260,Halsnæs,_dim_naeringsstoffer,183.3,,,,,ecological_dimension,naeringsstoffer,
 260,Halsnæs,_dim_biodiversitet,104.63,,,,,ecological_dimension,biodiversitet,
 260,Halsnæs,_dim_vand,111.78,,,,,ecological_dimension,vand,
-260,Halsnæs,_dim_arealanvendelse,427.47,,,,,ecological_dimension,arealanvendelse,
+260,Halsnæs,_dim_arealanvendelse,81.2,,,,,ecological_dimension,arealanvendelse,
 773,Morsø,_dim_klimapaavirkning,353.0,,,,,ecological_dimension,klimapaavirkning,
 773,Morsø,_dim_luftkvalitet,129.0,,,,,ecological_dimension,luftkvalitet,
 773,Morsø,_dim_forurening,97.75,,,,,ecological_dimension,forurening,
 773,Morsø,_dim_naeringsstoffer,231.6,,,,,ecological_dimension,naeringsstoffer,
 773,Morsø,_dim_biodiversitet,140.64,,,,,ecological_dimension,biodiversitet,
 773,Morsø,_dim_vand,17.86,,,,,ecological_dimension,vand,
-773,Morsø,_dim_arealanvendelse,556.2,,,,,ecological_dimension,arealanvendelse,
+773,Morsø,_dim_arealanvendelse,152.1,,,,,ecological_dimension,arealanvendelse,
 219,Hillerød,_dim_klimapaavirkning,334.67,,,,,ecological_dimension,klimapaavirkning,
 219,Hillerød,_dim_luftkvalitet,136.2,,,,,ecological_dimension,luftkvalitet,
 219,Hillerød,_dim_forurening,78.83,,,,,ecological_dimension,forurening,
 219,Hillerød,_dim_naeringsstoffer,179.4,,,,,ecological_dimension,naeringsstoffer,
 219,Hillerød,_dim_biodiversitet,102.9,,,,,ecological_dimension,biodiversitet,
 219,Hillerød,_dim_vand,231.76,,,,,ecological_dimension,vand,
-219,Hillerød,_dim_arealanvendelse,363.47,,,,,ecological_dimension,arealanvendelse,
+219,Hillerød,_dim_arealanvendelse,79.63,,,,,ecological_dimension,arealanvendelse,
 340,Sorø,_dim_klimapaavirkning,345.33,,,,,ecological_dimension,klimapaavirkning,
 340,Sorø,_dim_luftkvalitet,143.4,,,,,ecological_dimension,luftkvalitet,
 340,Sorø,_dim_forurening,88.56,,,,,ecological_dimension,forurening,
 340,Sorø,_dim_naeringsstoffer,147.7,,,,,ecological_dimension,naeringsstoffer,
 340,Sorø,_dim_biodiversitet,134.69,,,,,ecological_dimension,biodiversitet,
 340,Sorø,_dim_vand,39.92,,,,,ecological_dimension,vand,
-340,Sorø,_dim_arealanvendelse,439.2,,,,,ecological_dimension,arealanvendelse,
+340,Sorø,_dim_arealanvendelse,112.96,,,,,ecological_dimension,arealanvendelse,
 492,Ærø,_dim_klimapaavirkning,305.67,,,,,ecological_dimension,klimapaavirkning,
 492,Ærø,_dim_luftkvalitet,146.6,,,,,ecological_dimension,luftkvalitet,
 492,Ærø,_dim_forurening,158.95,,,,,ecological_dimension,forurening,
 492,Ærø,_dim_naeringsstoffer,164.1,,,,,ecological_dimension,naeringsstoffer,
 492,Ærø,_dim_biodiversitet,135.87,,,,,ecological_dimension,biodiversitet,
 492,Ærø,_dim_vand,16.16,,,,,ecological_dimension,vand,
-492,Ærø,_dim_arealanvendelse,505.13,,,,,ecological_dimension,arealanvendelse,
+492,Ærø,_dim_arealanvendelse,135.3,,,,,ecological_dimension,arealanvendelse,
 561,Esbjerg,_dim_klimapaavirkning,308.0,,,,,ecological_dimension,klimapaavirkning,
 561,Esbjerg,_dim_luftkvalitet,142.6,,,,,ecological_dimension,luftkvalitet,
 561,Esbjerg,_dim_forurening,82.13,,,,,ecological_dimension,forurening,
 561,Esbjerg,_dim_naeringsstoffer,214.0,,,,,ecological_dimension,naeringsstoffer,
 561,Esbjerg,_dim_biodiversitet,137.56,,,,,ecological_dimension,biodiversitet,
 561,Esbjerg,_dim_vand,68.98,,,,,ecological_dimension,vand,
-561,Esbjerg,_dim_arealanvendelse,503.33,,,,,ecological_dimension,arealanvendelse,
+561,Esbjerg,_dim_arealanvendelse,133.18,,,,,ecological_dimension,arealanvendelse,
 740,Silkeborg,_dim_klimapaavirkning,317.67,,,,,ecological_dimension,klimapaavirkning,
 740,Silkeborg,_dim_luftkvalitet,135.2,,,,,ecological_dimension,luftkvalitet,
 740,Silkeborg,_dim_forurening,82.95,,,,,ecological_dimension,forurening,
 740,Silkeborg,_dim_naeringsstoffer,141.1,,,,,ecological_dimension,naeringsstoffer,
 740,Silkeborg,_dim_biodiversitet,129.77,,,,,ecological_dimension,biodiversitet,
 740,Silkeborg,_dim_vand,31.29,,,,,ecological_dimension,vand,
-740,Silkeborg,_dim_arealanvendelse,368.6,,,,,ecological_dimension,arealanvendelse,
+740,Silkeborg,_dim_arealanvendelse,89.31,,,,,ecological_dimension,arealanvendelse,
 615,Horsens,_dim_klimapaavirkning,315.33,,,,,ecological_dimension,klimapaavirkning,
 615,Horsens,_dim_luftkvalitet,141.0,,,,,ecological_dimension,luftkvalitet,
 615,Horsens,_dim_forurening,95.42,,,,,ecological_dimension,forurening,
 615,Horsens,_dim_naeringsstoffer,146.4,,,,,ecological_dimension,naeringsstoffer,
 615,Horsens,_dim_biodiversitet,136.03,,,,,ecological_dimension,biodiversitet,
 615,Horsens,_dim_vand,64.68,,,,,ecological_dimension,vand,
-615,Horsens,_dim_arealanvendelse,461.67,,,,,ecological_dimension,arealanvendelse,
+615,Horsens,_dim_arealanvendelse,117.55,,,,,ecological_dimension,arealanvendelse,
 563,Fanø,_dim_klimapaavirkning,349.0,,,,,ecological_dimension,klimapaavirkning,
 563,Fanø,_dim_luftkvalitet,141.8,,,,,ecological_dimension,luftkvalitet,
 563,Fanø,_dim_forurening,122.42,,,,,ecological_dimension,forurening,
 563,Fanø,_dim_naeringsstoffer,187.7,,,,,ecological_dimension,naeringsstoffer,
 563,Fanø,_dim_biodiversitet,75.28,,,,,ecological_dimension,biodiversitet,
 563,Fanø,_dim_vand,12.35,,,,,ecological_dimension,vand,
-563,Fanø,_dim_arealanvendelse,107.53,,,,,ecological_dimension,arealanvendelse,
+563,Fanø,_dim_arealanvendelse,9.36,,,,,ecological_dimension,arealanvendelse,
 316,Holbæk,_dim_klimapaavirkning,346.0,,,,,ecological_dimension,klimapaavirkning,
 316,Holbæk,_dim_luftkvalitet,141.4,,,,,ecological_dimension,luftkvalitet,
 316,Holbæk,_dim_forurening,84.28,,,,,ecological_dimension,forurening,
 316,Holbæk,_dim_naeringsstoffer,175.3,,,,,ecological_dimension,naeringsstoffer,
 316,Holbæk,_dim_biodiversitet,141.79,,,,,ecological_dimension,biodiversitet,
 316,Holbæk,_dim_vand,70.5,,,,,ecological_dimension,vand,
-316,Holbæk,_dim_arealanvendelse,487.27,,,,,ecological_dimension,arealanvendelse,
+316,Holbæk,_dim_arealanvendelse,128.43,,,,,ecological_dimension,arealanvendelse,
 766,Hedensted,_dim_klimapaavirkning,320.67,,,,,ecological_dimension,klimapaavirkning,
 766,Hedensted,_dim_luftkvalitet,140.8,,,,,ecological_dimension,luftkvalitet,
 766,Hedensted,_dim_forurening,98.73,,,,,ecological_dimension,forurening,
 766,Hedensted,_dim_naeringsstoffer,146.2,,,,,ecological_dimension,naeringsstoffer,
 766,Hedensted,_dim_biodiversitet,138.81,,,,,ecological_dimension,biodiversitet,
 766,Hedensted,_dim_vand,37.31,,,,,ecological_dimension,vand,
-766,Hedensted,_dim_arealanvendelse,506.67,,,,,ecological_dimension,arealanvendelse,
+766,Hedensted,_dim_arealanvendelse,134.83,,,,,ecological_dimension,arealanvendelse,
 607,Fredericia,_dim_klimapaavirkning,367.63,,,,,ecological_dimension,klimapaavirkning,
 607,Fredericia,_dim_luftkvalitet,146.6,,,,,ecological_dimension,luftkvalitet,
 607,Fredericia,_dim_forurening,76.86,,,,,ecological_dimension,forurening,
 607,Fredericia,_dim_naeringsstoffer,187.1,,,,,ecological_dimension,naeringsstoffer,
 607,Fredericia,_dim_biodiversitet,133.56,,,,,ecological_dimension,biodiversitet,
 607,Fredericia,_dim_vand,96.09,,,,,ecological_dimension,vand,
-607,Fredericia,_dim_arealanvendelse,468.13,,,,,ecological_dimension,arealanvendelse,
+607,Fredericia,_dim_arealanvendelse,105.0,,,,,ecological_dimension,arealanvendelse,
 410,Middelfart,_dim_klimapaavirkning,324.33,,,,,ecological_dimension,klimapaavirkning,
 410,Middelfart,_dim_luftkvalitet,145.2,,,,,ecological_dimension,luftkvalitet,
 410,Middelfart,_dim_forurening,95.51,,,,,ecological_dimension,forurening,
 410,Middelfart,_dim_naeringsstoffer,185.6,,,,,ecological_dimension,naeringsstoffer,
 410,Middelfart,_dim_biodiversitet,140.14,,,,,ecological_dimension,biodiversitet,
 410,Middelfart,_dim_vand,35.93,,,,,ecological_dimension,vand,
-410,Middelfart,_dim_arealanvendelse,507.53,,,,,ecological_dimension,arealanvendelse,
+410,Middelfart,_dim_arealanvendelse,132.85,,,,,ecological_dimension,arealanvendelse,
 329,Ringsted,_dim_klimapaavirkning,337.67,,,,,ecological_dimension,klimapaavirkning,
 329,Ringsted,_dim_luftkvalitet,144.8,,,,,ecological_dimension,luftkvalitet,
 329,Ringsted,_dim_forurening,82.12,,,,,ecological_dimension,forurening,
 329,Ringsted,_dim_naeringsstoffer,131.4,,,,,ecological_dimension,naeringsstoffer,
 329,Ringsted,_dim_biodiversitet,137.74,,,,,ecological_dimension,biodiversitet,
 329,Ringsted,_dim_vand,163.88,,,,,ecological_dimension,vand,
-329,Ringsted,_dim_arealanvendelse,480.27,,,,,ecological_dimension,arealanvendelse,
+329,Ringsted,_dim_arealanvendelse,126.74,,,,,ecological_dimension,arealanvendelse,
 370,Næstved,_dim_klimapaavirkning,340.0,,,,,ecological_dimension,klimapaavirkning,
 370,Næstved,_dim_luftkvalitet,143.4,,,,,ecological_dimension,luftkvalitet,
 370,Næstved,_dim_forurening,71.92,,,,,ecological_dimension,forurening,
 370,Næstved,_dim_naeringsstoffer,131.9,,,,,ecological_dimension,naeringsstoffer,
 370,Næstved,_dim_biodiversitet,134.41,,,,,ecological_dimension,biodiversitet,
 370,Næstved,_dim_vand,34.72,,,,,ecological_dimension,vand,
-370,Næstved,_dim_arealanvendelse,497.4,,,,,ecological_dimension,arealanvendelse,
+370,Næstved,_dim_arealanvendelse,132.19,,,,,ecological_dimension,arealanvendelse,
 851,Aalborg,_dim_klimapaavirkning,521.23,,,,,ecological_dimension,klimapaavirkning,
 851,Aalborg,_dim_luftkvalitet,126.2,,,,,ecological_dimension,luftkvalitet,
 851,Aalborg,_dim_forurening,180.78,,,,,ecological_dimension,forurening,
 851,Aalborg,_dim_naeringsstoffer,120.3,,,,,ecological_dimension,naeringsstoffer,
 851,Aalborg,_dim_biodiversitet,132.93,,,,,ecological_dimension,biodiversitet,
 851,Aalborg,_dim_vand,88.1,,,,,ecological_dimension,vand,
-851,Aalborg,_dim_arealanvendelse,467.87,,,,,ecological_dimension,arealanvendelse,
+851,Aalborg,_dim_arealanvendelse,120.49,,,,,ecological_dimension,arealanvendelse,
 810,Brønderslev,_dim_klimapaavirkning,361.93,,,,,ecological_dimension,klimapaavirkning,
 810,Brønderslev,_dim_luftkvalitet,124.0,,,,,ecological_dimension,luftkvalitet,
 810,Brønderslev,_dim_forurening,114.87,,,,,ecological_dimension,forurening,
 810,Brønderslev,_dim_naeringsstoffer,119.3,,,,,ecological_dimension,naeringsstoffer,
 810,Brønderslev,_dim_biodiversitet,139.63,,,,,ecological_dimension,biodiversitet,
 810,Brønderslev,_dim_vand,19.81,,,,,ecological_dimension,vand,
-810,Brønderslev,_dim_arealanvendelse,503.0,,,,,ecological_dimension,arealanvendelse,
+810,Brønderslev,_dim_arealanvendelse,135.6,,,,,ecological_dimension,arealanvendelse,
 727,Odder,_dim_klimapaavirkning,324.0,,,,,ecological_dimension,klimapaavirkning,
 727,Odder,_dim_luftkvalitet,136.2,,,,,ecological_dimension,luftkvalitet,
 727,Odder,_dim_forurening,101.2,,,,,ecological_dimension,forurening,
 727,Odder,_dim_naeringsstoffer,155.9,,,,,ecological_dimension,naeringsstoffer,
 727,Odder,_dim_biodiversitet,140.03,,,,,ecological_dimension,biodiversitet,
 727,Odder,_dim_vand,36.13,,,,,ecological_dimension,vand,
-727,Odder,_dim_arealanvendelse,522.93,,,,,ecological_dimension,arealanvendelse,
+727,Odder,_dim_arealanvendelse,140.6,,,,,ecological_dimension,arealanvendelse,
 336,Stevns,_dim_klimapaavirkning,358.0,,,,,ecological_dimension,klimapaavirkning,
 336,Stevns,_dim_luftkvalitet,141.0,,,,,ecological_dimension,luftkvalitet,
 336,Stevns,_dim_forurening,97.11,,,,,ecological_dimension,forurening,
 336,Stevns,_dim_naeringsstoffer,107.7,,,,,ecological_dimension,naeringsstoffer,
 336,Stevns,_dim_biodiversitet,132.83,,,,,ecological_dimension,biodiversitet,
 336,Stevns,_dim_vand,49.4,,,,,ecological_dimension,vand,
-336,Stevns,_dim_arealanvendelse,551.67,,,,,ecological_dimension,arealanvendelse,
+336,Stevns,_dim_arealanvendelse,150.24,,,,,ecological_dimension,arealanvendelse,
 751,Aarhus,_dim_klimapaavirkning,308.0,,,,,ecological_dimension,klimapaavirkning,
 751,Aarhus,_dim_luftkvalitet,135.2,,,,,ecological_dimension,luftkvalitet,
 751,Aarhus,_dim_forurening,87.72,,,,,ecological_dimension,forurening,
 751,Aarhus,_dim_naeringsstoffer,115.2,,,,,ecological_dimension,naeringsstoffer,
 751,Aarhus,_dim_biodiversitet,137.64,,,,,ecological_dimension,biodiversitet,
 751,Aarhus,_dim_vand,190.69,,,,,ecological_dimension,vand,
-751,Aarhus,_dim_arealanvendelse,506.8,,,,,ecological_dimension,arealanvendelse,
+751,Aarhus,_dim_arealanvendelse,119.81,,,,,ecological_dimension,arealanvendelse,
 813,Frederikshavn,_dim_klimapaavirkning,361.0,,,,,ecological_dimension,klimapaavirkning,
 813,Frederikshavn,_dim_luftkvalitet,116.4,,,,,ecological_dimension,luftkvalitet,
 813,Frederikshavn,_dim_forurening,116.67,,,,,ecological_dimension,forurening,
 813,Frederikshavn,_dim_naeringsstoffer,103.67,,,,,ecological_dimension,naeringsstoffer,
 813,Frederikshavn,_dim_biodiversitet,124.99,,,,,ecological_dimension,biodiversitet,
 813,Frederikshavn,_dim_vand,23.63,,,,,ecological_dimension,vand,
-813,Frederikshavn,_dim_arealanvendelse,376.8,,,,,ecological_dimension,arealanvendelse,
+813,Frederikshavn,_dim_arealanvendelse,92.3,,,,,ecological_dimension,arealanvendelse,
 161,Glostrup,_dim_klimapaavirkning,321.33,,,,,ecological_dimension,klimapaavirkning,
 161,Glostrup,_dim_luftkvalitet,139.4,,,,,ecological_dimension,luftkvalitet,
 161,Glostrup,_dim_forurening,99.94,,,,,ecological_dimension,forurening,
 161,Glostrup,_dim_naeringsstoffer,108.4,,,,,ecological_dimension,naeringsstoffer,
 161,Glostrup,_dim_biodiversitet,142.8,,,,,ecological_dimension,biodiversitet,
 161,Glostrup,_dim_vand,667.76,,,,,ecological_dimension,vand,
-161,Glostrup,_dim_arealanvendelse,514.0,,,,,ecological_dimension,arealanvendelse,
+161,Glostrup,_dim_arealanvendelse,6.05,,,,,ecological_dimension,arealanvendelse,
 270,Gribskov,_dim_klimapaavirkning,337.0,,,,,ecological_dimension,klimapaavirkning,
 270,Gribskov,_dim_luftkvalitet,133.2,,,,,ecological_dimension,luftkvalitet,
 270,Gribskov,_dim_forurening,120.74,,,,,ecological_dimension,forurening,
 270,Gribskov,_dim_naeringsstoffer,183.3,,,,,ecological_dimension,naeringsstoffer,
 270,Gribskov,_dim_biodiversitet,106.73,,,,,ecological_dimension,biodiversitet,
 270,Gribskov,_dim_vand,51.36,,,,,ecological_dimension,vand,
-270,Gribskov,_dim_arealanvendelse,388.8,,,,,ecological_dimension,arealanvendelse,
+270,Gribskov,_dim_arealanvendelse,81.97,,,,,ecological_dimension,arealanvendelse,
 860,Hjørring,_dim_klimapaavirkning,372.53,,,,,ecological_dimension,klimapaavirkning,
 860,Hjørring,_dim_luftkvalitet,121.6,,,,,ecological_dimension,luftkvalitet,
 860,Hjørring,_dim_forurening,130.41,,,,,ecological_dimension,forurening,
 860,Hjørring,_dim_naeringsstoffer,111.6,,,,,ecological_dimension,naeringsstoffer,
 860,Hjørring,_dim_biodiversitet,138.5,,,,,ecological_dimension,biodiversitet,
 860,Hjørring,_dim_vand,32.73,,,,,ecological_dimension,vand,
-860,Hjørring,_dim_arealanvendelse,472.4,,,,,ecological_dimension,arealanvendelse,
+860,Hjørring,_dim_arealanvendelse,124.63,,,,,ecological_dimension,arealanvendelse,
 165,Albertslund,_dim_klimapaavirkning,270.33,,,,,ecological_dimension,klimapaavirkning,
 165,Albertslund,_dim_luftkvalitet,137.8,,,,,ecological_dimension,luftkvalitet,
 165,Albertslund,_dim_forurening,88.64,,,,,ecological_dimension,forurening,
 165,Albertslund,_dim_naeringsstoffer,113.8,,,,,ecological_dimension,naeringsstoffer,
 165,Albertslund,_dim_biodiversitet,139.8,,,,,ecological_dimension,biodiversitet,
 165,Albertslund,_dim_vand,8.93,,,,,ecological_dimension,vand,
-165,Albertslund,_dim_arealanvendelse,339.13,,,,,ecological_dimension,arealanvendelse,
+165,Albertslund,_dim_arealanvendelse,3.26,,,,,ecological_dimension,arealanvendelse,
 479,Svendborg,_dim_klimapaavirkning,317.0,,,,,ecological_dimension,klimapaavirkning,
 479,Svendborg,_dim_luftkvalitet,147.8,,,,,ecological_dimension,luftkvalitet,
 479,Svendborg,_dim_forurening,110.01,,,,,ecological_dimension,forurening,
 479,Svendborg,_dim_naeringsstoffer,156.8,,,,,ecological_dimension,naeringsstoffer,
 479,Svendborg,_dim_biodiversitet,138.97,,,,,ecological_dimension,biodiversitet,
 479,Svendborg,_dim_vand,47.76,,,,,ecological_dimension,vand,
-479,Svendborg,_dim_arealanvendelse,492.87,,,,,ecological_dimension,arealanvendelse,
+479,Svendborg,_dim_arealanvendelse,129.57,,,,,ecological_dimension,arealanvendelse,
 791,Viborg,_dim_klimapaavirkning,316.0,,,,,ecological_dimension,klimapaavirkning,
 791,Viborg,_dim_luftkvalitet,133.4,,,,,ecological_dimension,luftkvalitet,
 791,Viborg,_dim_forurening,79.16,,,,,ecological_dimension,forurening,
 791,Viborg,_dim_naeringsstoffer,215.7,,,,,ecological_dimension,naeringsstoffer,
 791,Viborg,_dim_biodiversitet,135.47,,,,,ecological_dimension,biodiversitet,
 791,Viborg,_dim_vand,47.53,,,,,ecological_dimension,vand,
-791,Viborg,_dim_arealanvendelse,424.93,,,,,ecological_dimension,arealanvendelse,
+791,Viborg,_dim_arealanvendelse,110.45,,,,,ecological_dimension,arealanvendelse,
 480,Nordfyns,_dim_klimapaavirkning,311.33,,,,,ecological_dimension,klimapaavirkning,
 480,Nordfyns,_dim_luftkvalitet,142.8,,,,,ecological_dimension,luftkvalitet,
 480,Nordfyns,_dim_forurening,84.47,,,,,ecological_dimension,forurening,
 480,Nordfyns,_dim_naeringsstoffer,181.4,,,,,ecological_dimension,naeringsstoffer,
 480,Nordfyns,_dim_biodiversitet,139.21,,,,,ecological_dimension,biodiversitet,
 480,Nordfyns,_dim_vand,38.72,,,,,ecological_dimension,vand,
-480,Nordfyns,_dim_arealanvendelse,538.33,,,,,ecological_dimension,arealanvendelse,
+480,Nordfyns,_dim_arealanvendelse,146.2,,,,,ecological_dimension,arealanvendelse,
 706,Syddjurs,_dim_klimapaavirkning,319.67,,,,,ecological_dimension,klimapaavirkning,
 706,Syddjurs,_dim_luftkvalitet,129.6,,,,,ecological_dimension,luftkvalitet,
 706,Syddjurs,_dim_forurening,98.05,,,,,ecological_dimension,forurening,
 706,Syddjurs,_dim_naeringsstoffer,122.6,,,,,ecological_dimension,naeringsstoffer,
 706,Syddjurs,_dim_biodiversitet,128.54,,,,,ecological_dimension,biodiversitet,
 706,Syddjurs,_dim_vand,35.9,,,,,ecological_dimension,vand,
-706,Syddjurs,_dim_arealanvendelse,408.13,,,,,ecological_dimension,arealanvendelse,
+706,Syddjurs,_dim_arealanvendelse,103.24,,,,,ecological_dimension,arealanvendelse,
 440,Kerteminde,_dim_klimapaavirkning,313.33,,,,,ecological_dimension,klimapaavirkning,
 440,Kerteminde,_dim_luftkvalitet,142.8,,,,,ecological_dimension,luftkvalitet,
 440,Kerteminde,_dim_forurening,83.31,,,,,ecological_dimension,forurening,
 440,Kerteminde,_dim_naeringsstoffer,179.3,,,,,ecological_dimension,naeringsstoffer,
 440,Kerteminde,_dim_biodiversitet,139.97,,,,,ecological_dimension,biodiversitet,
 440,Kerteminde,_dim_vand,48.12,,,,,ecological_dimension,vand,
-440,Kerteminde,_dim_arealanvendelse,543.73,,,,,ecological_dimension,arealanvendelse,
+440,Kerteminde,_dim_arealanvendelse,146.12,,,,,ecological_dimension,arealanvendelse,
 630,Vejle,_dim_klimapaavirkning,322.67,,,,,ecological_dimension,klimapaavirkning,
 630,Vejle,_dim_luftkvalitet,142.6,,,,,ecological_dimension,luftkvalitet,
 630,Vejle,_dim_forurening,103.94,,,,,ecological_dimension,forurening,
 630,Vejle,_dim_naeringsstoffer,156.4,,,,,ecological_dimension,naeringsstoffer,
 630,Vejle,_dim_biodiversitet,138.86,,,,,ecological_dimension,biodiversitet,
 630,Vejle,_dim_vand,57.35,,,,,ecological_dimension,vand,
-630,Vejle,_dim_arealanvendelse,432.93,,,,,ecological_dimension,arealanvendelse,
+630,Vejle,_dim_arealanvendelse,110.96,,,,,ecological_dimension,arealanvendelse,
 101,København,_dim_klimapaavirkning,280.33,,,,,ecological_dimension,klimapaavirkning,
 101,København,_dim_luftkvalitet,141.0,,,,,ecological_dimension,luftkvalitet,
 101,København,_dim_forurening,120.64,,,,,ecological_dimension,forurening,
 101,København,_dim_naeringsstoffer,103.8,,,,,ecological_dimension,naeringsstoffer,
 101,København,_dim_biodiversitet,132.59,,,,,ecological_dimension,biodiversitet,
 101,København,_dim_vand,264.28,,,,,ecological_dimension,vand,
-101,København,_dim_arealanvendelse,535.8,,,,,ecological_dimension,arealanvendelse,
+101,København,_dim_arealanvendelse,0.0,,,,,ecological_dimension,arealanvendelse,
 730,Randers,_dim_klimapaavirkning,304.0,,,,,ecological_dimension,klimapaavirkning,
 730,Randers,_dim_luftkvalitet,133.0,,,,,ecological_dimension,luftkvalitet,
 730,Randers,_dim_forurening,104.25,,,,,ecological_dimension,forurening,
 730,Randers,_dim_naeringsstoffer,156.3,,,,,ecological_dimension,naeringsstoffer,
 730,Randers,_dim_biodiversitet,138.59,,,,,ecological_dimension,biodiversitet,
 730,Randers,_dim_vand,29.15,,,,,ecological_dimension,vand,
-730,Randers,_dim_arealanvendelse,511.33,,,,,ecological_dimension,arealanvendelse,
+730,Randers,_dim_arealanvendelse,136.65,,,,,ecological_dimension,arealanvendelse,
 760,Ringkøbing-Skjern,_dim_klimapaavirkning,464.23,,,,,ecological_dimension,klimapaavirkning,
 760,Ringkøbing-Skjern,_dim_luftkvalitet,136.2,,,,,ecological_dimension,luftkvalitet,
 760,Ringkøbing-Skjern,_dim_forurening,75.53,,,,,ecological_dimension,forurening,
 760,Ringkøbing-Skjern,_dim_naeringsstoffer,165.5,,,,,ecological_dimension,naeringsstoffer,
 760,Ringkøbing-Skjern,_dim_biodiversitet,129.09,,,,,ecological_dimension,biodiversitet,
 760,Ringkøbing-Skjern,_dim_vand,87.36,,,,,ecological_dimension,vand,
-760,Ringkøbing-Skjern,_dim_arealanvendelse,455.8,,,,,ecological_dimension,arealanvendelse,
+760,Ringkøbing-Skjern,_dim_arealanvendelse,121.4,,,,,ecological_dimension,arealanvendelse,
 430,Faaborg-Midtfyn,_dim_klimapaavirkning,315.0,,,,,ecological_dimension,klimapaavirkning,
 430,Faaborg-Midtfyn,_dim_luftkvalitet,146.4,,,,,ecological_dimension,luftkvalitet,
 430,Faaborg-Midtfyn,_dim_forurening,88.97,,,,,ecological_dimension,forurening,
 430,Faaborg-Midtfyn,_dim_naeringsstoffer,175.4,,,,,ecological_dimension,naeringsstoffer,
 430,Faaborg-Midtfyn,_dim_biodiversitet,138.23,,,,,ecological_dimension,biodiversitet,
 430,Faaborg-Midtfyn,_dim_vand,31.9,,,,,ecological_dimension,vand,
-430,Faaborg-Midtfyn,_dim_arealanvendelse,481.4,,,,,ecological_dimension,arealanvendelse,
+430,Faaborg-Midtfyn,_dim_arealanvendelse,127.12,,,,,ecological_dimension,arealanvendelse,
 320,Faxe,_dim_klimapaavirkning,337.33,,,,,ecological_dimension,klimapaavirkning,
 320,Faxe,_dim_luftkvalitet,142.8,,,,,ecological_dimension,luftkvalitet,
 320,Faxe,_dim_forurening,80.02,,,,,ecological_dimension,forurening,
 320,Faxe,_dim_naeringsstoffer,121.7,,,,,ecological_dimension,naeringsstoffer,
 320,Faxe,_dim_biodiversitet,132.93,,,,,ecological_dimension,biodiversitet,
 320,Faxe,_dim_vand,74.08,,,,,ecological_dimension,vand,
-320,Faxe,_dim_arealanvendelse,467.0,,,,,ecological_dimension,arealanvendelse,
+320,Faxe,_dim_arealanvendelse,123.0,,,,,ecological_dimension,arealanvendelse,
 169,Høje-Taastrup,_dim_klimapaavirkning,300.67,,,,,ecological_dimension,klimapaavirkning,
 169,Høje-Taastrup,_dim_luftkvalitet,140.2,,,,,ecological_dimension,luftkvalitet,
 169,Høje-Taastrup,_dim_forurening,89.42,,,,,ecological_dimension,forurening,
 169,Høje-Taastrup,_dim_naeringsstoffer,144.2,,,,,ecological_dimension,naeringsstoffer,
 169,Høje-Taastrup,_dim_biodiversitet,139.81,,,,,ecological_dimension,biodiversitet,
 169,Høje-Taastrup,_dim_vand,202.25,,,,,ecological_dimension,vand,
-169,Høje-Taastrup,_dim_arealanvendelse,470.93,,,,,ecological_dimension,arealanvendelse,
+169,Høje-Taastrup,_dim_arealanvendelse,98.2,,,,,ecological_dimension,arealanvendelse,
 573,Varde,_dim_klimapaavirkning,502.53,,,,,ecological_dimension,klimapaavirkning,
 573,Varde,_dim_luftkvalitet,140.4,,,,,ecological_dimension,luftkvalitet,
 573,Varde,_dim_forurening,99.35,,,,,ecological_dimension,forurening,
 573,Varde,_dim_naeringsstoffer,150.7,,,,,ecological_dimension,naeringsstoffer,
 573,Varde,_dim_biodiversitet,124.94,,,,,ecological_dimension,biodiversitet,
 573,Varde,_dim_vand,36.96,,,,,ecological_dimension,vand,
-573,Varde,_dim_arealanvendelse,416.87,,,,,ecological_dimension,arealanvendelse,
+573,Varde,_dim_arealanvendelse,108.88,,,,,ecological_dimension,arealanvendelse,
 621,Kolding,_dim_klimapaavirkning,315.0,,,,,ecological_dimension,klimapaavirkning,
 621,Kolding,_dim_luftkvalitet,144.2,,,,,ecological_dimension,luftkvalitet,
 621,Kolding,_dim_forurening,68.88,,,,,ecological_dimension,forurening,
 621,Kolding,_dim_naeringsstoffer,254.9,,,,,ecological_dimension,naeringsstoffer,
 621,Kolding,_dim_biodiversitet,139.76,,,,,ecological_dimension,biodiversitet,
 621,Kolding,_dim_vand,39.67,,,,,ecological_dimension,vand,
-621,Kolding,_dim_arealanvendelse,502.93,,,,,ecological_dimension,arealanvendelse,
+621,Kolding,_dim_arealanvendelse,132.3,,,,,ecological_dimension,arealanvendelse,
 420,Assens,_dim_klimapaavirkning,310.0,,,,,ecological_dimension,klimapaavirkning,
 420,Assens,_dim_luftkvalitet,145.8,,,,,ecological_dimension,luftkvalitet,
 420,Assens,_dim_forurening,96.42,,,,,ecological_dimension,forurening,
 420,Assens,_dim_naeringsstoffer,192.4,,,,,ecological_dimension,naeringsstoffer,
 420,Assens,_dim_biodiversitet,141.4,,,,,ecological_dimension,biodiversitet,
 420,Assens,_dim_vand,38.97,,,,,ecological_dimension,vand,
-420,Assens,_dim_arealanvendelse,497.07,,,,,ecological_dimension,arealanvendelse,
+420,Assens,_dim_arealanvendelse,132.19,,,,,ecological_dimension,arealanvendelse,
 580,Aabenraa,_dim_klimapaavirkning,345.93,,,,,ecological_dimension,klimapaavirkning,
 580,Aabenraa,_dim_luftkvalitet,151.0,,,,,ecological_dimension,luftkvalitet,
 580,Aabenraa,_dim_forurening,95.72,,,,,ecological_dimension,forurening,
 580,Aabenraa,_dim_naeringsstoffer,161.4,,,,,ecological_dimension,naeringsstoffer,
 580,Aabenraa,_dim_biodiversitet,136.79,,,,,ecological_dimension,biodiversitet,
 580,Aabenraa,_dim_vand,57.86,,,,,ecological_dimension,vand,
-580,Aabenraa,_dim_arealanvendelse,502.67,,,,,ecological_dimension,arealanvendelse,
+580,Aabenraa,_dim_arealanvendelse,135.0,,,,,ecological_dimension,arealanvendelse,
 787,Thisted,_dim_klimapaavirkning,371.57,,,,,ecological_dimension,klimapaavirkning,
 787,Thisted,_dim_luftkvalitet,125.0,,,,,ecological_dimension,luftkvalitet,
 787,Thisted,_dim_forurening,154.91,,,,,ecological_dimension,forurening,
 787,Thisted,_dim_naeringsstoffer,202.7,,,,,ecological_dimension,naeringsstoffer,
 787,Thisted,_dim_biodiversitet,110.76,,,,,ecological_dimension,biodiversitet,
 787,Thisted,_dim_vand,16.84,,,,,ecological_dimension,vand,
-787,Thisted,_dim_arealanvendelse,387.53,,,,,ecological_dimension,arealanvendelse,
+787,Thisted,_dim_arealanvendelse,100.15,,,,,ecological_dimension,arealanvendelse,
 756,Ikast-Brande,_dim_klimapaavirkning,303.33,,,,,ecological_dimension,klimapaavirkning,
 756,Ikast-Brande,_dim_luftkvalitet,136.8,,,,,ecological_dimension,luftkvalitet,
 756,Ikast-Brande,_dim_forurening,73.79,,,,,ecological_dimension,forurening,
 756,Ikast-Brande,_dim_naeringsstoffer,170.6,,,,,ecological_dimension,naeringsstoffer,
 756,Ikast-Brande,_dim_biodiversitet,134.67,,,,,ecological_dimension,biodiversitet,
 756,Ikast-Brande,_dim_vand,99.21,,,,,ecological_dimension,vand,
-756,Ikast-Brande,_dim_arealanvendelse,410.07,,,,,ecological_dimension,arealanvendelse,
+756,Ikast-Brande,_dim_arealanvendelse,105.69,,,,,ecological_dimension,arealanvendelse,
 461,Odense,_dim_klimapaavirkning,290.33,,,,,ecological_dimension,klimapaavirkning,
 461,Odense,_dim_luftkvalitet,144.4,,,,,ecological_dimension,luftkvalitet,
 461,Odense,_dim_forurening,92.28,,,,,ecological_dimension,forurening,
 461,Odense,_dim_naeringsstoffer,172.5,,,,,ecological_dimension,naeringsstoffer,
 461,Odense,_dim_biodiversitet,141.71,,,,,ecological_dimension,biodiversitet,
 461,Odense,_dim_vand,205.05,,,,,ecological_dimension,vand,
-461,Odense,_dim_arealanvendelse,486.07,,,,,ecological_dimension,arealanvendelse,
+461,Odense,_dim_arealanvendelse,107.49,,,,,ecological_dimension,arealanvendelse,
 779,Skive,_dim_klimapaavirkning,313.0,,,,,ecological_dimension,klimapaavirkning,
 779,Skive,_dim_luftkvalitet,131.6,,,,,ecological_dimension,luftkvalitet,
 779,Skive,_dim_forurening,75.66,,,,,ecological_dimension,forurening,
 779,Skive,_dim_naeringsstoffer,220.2,,,,,ecological_dimension,naeringsstoffer,
 779,Skive,_dim_biodiversitet,138.47,,,,,ecological_dimension,biodiversitet,
 779,Skive,_dim_vand,23.65,,,,,ecological_dimension,vand,
-779,Skive,_dim_arealanvendelse,512.4,,,,,ecological_dimension,arealanvendelse,
+779,Skive,_dim_arealanvendelse,137.3,,,,,ecological_dimension,arealanvendelse,
 450,Nyborg,_dim_klimapaavirkning,400.23,,,,,ecological_dimension,klimapaavirkning,
 450,Nyborg,_dim_luftkvalitet,143.6,,,,,ecological_dimension,luftkvalitet,
 450,Nyborg,_dim_forurening,115.03,,,,,ecological_dimension,forurening,
 450,Nyborg,_dim_naeringsstoffer,195.3,,,,,ecological_dimension,naeringsstoffer,
 450,Nyborg,_dim_biodiversitet,141.69,,,,,ecological_dimension,biodiversitet,
 450,Nyborg,_dim_vand,59.79,,,,,ecological_dimension,vand,
-450,Nyborg,_dim_arealanvendelse,528.07,,,,,ecological_dimension,arealanvendelse,
+450,Nyborg,_dim_arealanvendelse,141.85,,,,,ecological_dimension,arealanvendelse,
 846,Mariagerfjord,_dim_klimapaavirkning,402.13,,,,,ecological_dimension,klimapaavirkning,
 846,Mariagerfjord,_dim_luftkvalitet,130.6,,,,,ecological_dimension,luftkvalitet,
 846,Mariagerfjord,_dim_forurening,104.7,,,,,ecological_dimension,forurening,
 846,Mariagerfjord,_dim_naeringsstoffer,194.2,,,,,ecological_dimension,naeringsstoffer,
 846,Mariagerfjord,_dim_biodiversitet,134.37,,,,,ecological_dimension,biodiversitet,
 846,Mariagerfjord,_dim_vand,26.84,,,,,ecological_dimension,vand,
-846,Mariagerfjord,_dim_arealanvendelse,447.07,,,,,ecological_dimension,arealanvendelse,
+846,Mariagerfjord,_dim_arealanvendelse,117.51,,,,,ecological_dimension,arealanvendelse,
 820,Vesthimmerlands,_dim_klimapaavirkning,574.3,,,,,ecological_dimension,klimapaavirkning,
 820,Vesthimmerlands,_dim_luftkvalitet,130.4,,,,,ecological_dimension,luftkvalitet,
 820,Vesthimmerlands,_dim_forurening,108.23,,,,,ecological_dimension,forurening,
 820,Vesthimmerlands,_dim_naeringsstoffer,223.4,,,,,ecological_dimension,naeringsstoffer,
 820,Vesthimmerlands,_dim_biodiversitet,139.5,,,,,ecological_dimension,biodiversitet,
 820,Vesthimmerlands,_dim_vand,87.86,,,,,ecological_dimension,vand,
-820,Vesthimmerlands,_dim_arealanvendelse,500.8,,,,,ecological_dimension,arealanvendelse,
+820,Vesthimmerlands,_dim_arealanvendelse,134.87,,,,,ecological_dimension,arealanvendelse,
 540,Sønderborg,_dim_klimapaavirkning,304.0,,,,,ecological_dimension,klimapaavirkning,
 540,Sønderborg,_dim_luftkvalitet,151.0,,,,,ecological_dimension,luftkvalitet,
 540,Sønderborg,_dim_forurening,74.44,,,,,ecological_dimension,forurening,
 540,Sønderborg,_dim_naeringsstoffer,144.8,,,,,ecological_dimension,naeringsstoffer,
 540,Sønderborg,_dim_biodiversitet,139.94,,,,,ecological_dimension,biodiversitet,
 540,Sønderborg,_dim_vand,54.57,,,,,ecological_dimension,vand,
-540,Sønderborg,_dim_arealanvendelse,535.73,,,,,ecological_dimension,arealanvendelse,
+540,Sønderborg,_dim_arealanvendelse,143.07,,,,,ecological_dimension,arealanvendelse,
 400,Bornholm,_dim_klimapaavirkning,294.33,,,,,ecological_dimension,klimapaavirkning,
 400,Bornholm,_dim_luftkvalitet,136.6,,,,,ecological_dimension,luftkvalitet,
 400,Bornholm,_dim_forurening,116.46,,,,,ecological_dimension,forurening,
 400,Bornholm,_dim_naeringsstoffer,109.7,,,,,ecological_dimension,naeringsstoffer,
 400,Bornholm,_dim_biodiversitet,123.69,,,,,ecological_dimension,biodiversitet,
 400,Bornholm,_dim_vand,23.91,,,,,ecological_dimension,vand,
-400,Bornholm,_dim_arealanvendelse,452.6,,,,,ecological_dimension,arealanvendelse,
+400,Bornholm,_dim_arealanvendelse,118.41,,,,,ecological_dimension,arealanvendelse,
 510,Haderslev,_dim_klimapaavirkning,308.0,,,,,ecological_dimension,klimapaavirkning,
 510,Haderslev,_dim_luftkvalitet,147.6,,,,,ecological_dimension,luftkvalitet,
 510,Haderslev,_dim_forurening,90.51,,,,,ecological_dimension,forurening,
 510,Haderslev,_dim_naeringsstoffer,256.0,,,,,ecological_dimension,naeringsstoffer,
 510,Haderslev,_dim_biodiversitet,139.13,,,,,ecological_dimension,biodiversitet,
 510,Haderslev,_dim_vand,44.1,,,,,ecological_dimension,vand,
-510,Haderslev,_dim_arealanvendelse,510.33,,,,,ecological_dimension,arealanvendelse,
+510,Haderslev,_dim_arealanvendelse,137.83,,,,,ecological_dimension,arealanvendelse,
 671,Struer,_dim_klimapaavirkning,306.67,,,,,ecological_dimension,klimapaavirkning,
 671,Struer,_dim_luftkvalitet,133.0,,,,,ecological_dimension,luftkvalitet,
 671,Struer,_dim_forurening,112.66,,,,,ecological_dimension,forurening,
 671,Struer,_dim_naeringsstoffer,198.4,,,,,ecological_dimension,naeringsstoffer,
 671,Struer,_dim_biodiversitet,139.54,,,,,ecological_dimension,biodiversitet,
 671,Struer,_dim_vand,25.92,,,,,ecological_dimension,vand,
-671,Struer,_dim_arealanvendelse,557.87,,,,,ecological_dimension,arealanvendelse,
+671,Struer,_dim_arealanvendelse,151.65,,,,,ecological_dimension,arealanvendelse,
 665,Lemvig,_dim_klimapaavirkning,579.63,,,,,ecological_dimension,klimapaavirkning,
 665,Lemvig,_dim_luftkvalitet,131.0,,,,,ecological_dimension,luftkvalitet,
 665,Lemvig,_dim_forurening,69.08,,,,,ecological_dimension,forurening,
 665,Lemvig,_dim_naeringsstoffer,173.4,,,,,ecological_dimension,naeringsstoffer,
 665,Lemvig,_dim_biodiversitet,132.01,,,,,ecological_dimension,biodiversitet,
 665,Lemvig,_dim_vand,44.23,,,,,ecological_dimension,vand,
-665,Lemvig,_dim_arealanvendelse,470.2,,,,,ecological_dimension,arealanvendelse,
+665,Lemvig,_dim_arealanvendelse,125.56,,,,,ecological_dimension,arealanvendelse,
 707,Norddjurs,_dim_klimapaavirkning,303.67,,,,,ecological_dimension,klimapaavirkning,
 707,Norddjurs,_dim_luftkvalitet,127.4,,,,,ecological_dimension,luftkvalitet,
 707,Norddjurs,_dim_forurening,128.59,,,,,ecological_dimension,forurening,
 707,Norddjurs,_dim_naeringsstoffer,117.9,,,,,ecological_dimension,naeringsstoffer,
 707,Norddjurs,_dim_biodiversitet,133.71,,,,,ecological_dimension,biodiversitet,
 707,Norddjurs,_dim_vand,54.46,,,,,ecological_dimension,vand,
-707,Norddjurs,_dim_arealanvendelse,452.87,,,,,ecological_dimension,arealanvendelse,
+707,Norddjurs,_dim_arealanvendelse,119.61,,,,,ecological_dimension,arealanvendelse,
 330,Slagelse,_dim_klimapaavirkning,333.0,,,,,ecological_dimension,klimapaavirkning,
 330,Slagelse,_dim_luftkvalitet,144.4,,,,,ecological_dimension,luftkvalitet,
 330,Slagelse,_dim_forurening,95.45,,,,,ecological_dimension,forurening,
 330,Slagelse,_dim_naeringsstoffer,149.2,,,,,ecological_dimension,naeringsstoffer,
 330,Slagelse,_dim_biodiversitet,140.11,,,,,ecological_dimension,biodiversitet,
 330,Slagelse,_dim_vand,91.9,,,,,ecological_dimension,vand,
-330,Slagelse,_dim_arealanvendelse,522.6,,,,,ecological_dimension,arealanvendelse,
+330,Slagelse,_dim_arealanvendelse,139.51,,,,,ecological_dimension,arealanvendelse,
 306,Odsherred,_dim_klimapaavirkning,331.33,,,,,ecological_dimension,klimapaavirkning,
 306,Odsherred,_dim_luftkvalitet,136.0,,,,,ecological_dimension,luftkvalitet,
 306,Odsherred,_dim_forurening,100.8,,,,,ecological_dimension,forurening,
 306,Odsherred,_dim_naeringsstoffer,163.4,,,,,ecological_dimension,naeringsstoffer,
 306,Odsherred,_dim_biodiversitet,136.91,,,,,ecological_dimension,biodiversitet,
 306,Odsherred,_dim_vand,55.13,,,,,ecological_dimension,vand,
-306,Odsherred,_dim_arealanvendelse,475.27,,,,,ecological_dimension,arealanvendelse,
+306,Odsherred,_dim_arealanvendelse,116.31,,,,,ecological_dimension,arealanvendelse,
 575,Vejen,_dim_klimapaavirkning,380.47,,,,,ecological_dimension,klimapaavirkning,
 575,Vejen,_dim_luftkvalitet,145.2,,,,,ecological_dimension,luftkvalitet,
 575,Vejen,_dim_forurening,68.96,,,,,ecological_dimension,forurening,
 575,Vejen,_dim_naeringsstoffer,254.8,,,,,ecological_dimension,naeringsstoffer,
 575,Vejen,_dim_biodiversitet,139.8,,,,,ecological_dimension,biodiversitet,
 575,Vejen,_dim_vand,61.53,,,,,ecological_dimension,vand,
-575,Vejen,_dim_arealanvendelse,504.73,,,,,ecological_dimension,arealanvendelse,
+575,Vejen,_dim_arealanvendelse,136.22,,,,,ecological_dimension,arealanvendelse,
 376,Guldborgsund,_dim_klimapaavirkning,314.0,,,,,ecological_dimension,klimapaavirkning,
 376,Guldborgsund,_dim_luftkvalitet,146.0,,,,,ecological_dimension,luftkvalitet,
 376,Guldborgsund,_dim_forurening,128.95,,,,,ecological_dimension,forurening,
 376,Guldborgsund,_dim_naeringsstoffer,158.1,,,,,ecological_dimension,naeringsstoffer,
 376,Guldborgsund,_dim_biodiversitet,135.04,,,,,ecological_dimension,biodiversitet,
 376,Guldborgsund,_dim_vand,37.69,,,,,ecological_dimension,vand,
-376,Guldborgsund,_dim_arealanvendelse,533.33,,,,,ecological_dimension,arealanvendelse,
+376,Guldborgsund,_dim_arealanvendelse,144.72,,,,,ecological_dimension,arealanvendelse,
 849,Jammerbugt,_dim_klimapaavirkning,358.0,,,,,ecological_dimension,klimapaavirkning,
 849,Jammerbugt,_dim_luftkvalitet,123.8,,,,,ecological_dimension,luftkvalitet,
 849,Jammerbugt,_dim_forurening,140.68,,,,,ecological_dimension,forurening,
 849,Jammerbugt,_dim_naeringsstoffer,126.7,,,,,ecological_dimension,naeringsstoffer,
 849,Jammerbugt,_dim_biodiversitet,128.36,,,,,ecological_dimension,biodiversitet,
 849,Jammerbugt,_dim_vand,16.18,,,,,ecological_dimension,vand,
-849,Jammerbugt,_dim_arealanvendelse,433.73,,,,,ecological_dimension,arealanvendelse,
+849,Jammerbugt,_dim_arealanvendelse,113.56,,,,,ecological_dimension,arealanvendelse,
 326,Kalundborg,_dim_klimapaavirkning,513.47,,,,,ecological_dimension,klimapaavirkning,
 326,Kalundborg,_dim_luftkvalitet,141.0,,,,,ecological_dimension,luftkvalitet,
 326,Kalundborg,_dim_forurening,92.35,,,,,ecological_dimension,forurening,
 326,Kalundborg,_dim_naeringsstoffer,144.0,,,,,ecological_dimension,naeringsstoffer,
 326,Kalundborg,_dim_biodiversitet,129.67,,,,,ecological_dimension,biodiversitet,
 326,Kalundborg,_dim_vand,58.08,,,,,ecological_dimension,vand,
-326,Kalundborg,_dim_arealanvendelse,499.4,,,,,ecological_dimension,arealanvendelse,
+326,Kalundborg,_dim_arealanvendelse,131.76,,,,,ecological_dimension,arealanvendelse,
 390,Vordingborg,_dim_klimapaavirkning,329.67,,,,,ecological_dimension,klimapaavirkning,
 390,Vordingborg,_dim_luftkvalitet,141.8,,,,,ecological_dimension,luftkvalitet,
 390,Vordingborg,_dim_forurening,98.84,,,,,ecological_dimension,forurening,
 390,Vordingborg,_dim_naeringsstoffer,143.4,,,,,ecological_dimension,naeringsstoffer,
 390,Vordingborg,_dim_biodiversitet,133.53,,,,,ecological_dimension,biodiversitet,
 390,Vordingborg,_dim_vand,34.03,,,,,ecological_dimension,vand,
-390,Vordingborg,_dim_arealanvendelse,492.73,,,,,ecological_dimension,arealanvendelse,
+390,Vordingborg,_dim_arealanvendelse,131.31,,,,,ecological_dimension,arealanvendelse,
 550,Tønder,_dim_klimapaavirkning,838.83,,,,,ecological_dimension,klimapaavirkning,
 550,Tønder,_dim_luftkvalitet,150.6,,,,,ecological_dimension,luftkvalitet,
 550,Tønder,_dim_forurening,97.29,,,,,ecological_dimension,forurening,
 550,Tønder,_dim_naeringsstoffer,148.0,,,,,ecological_dimension,naeringsstoffer,
 550,Tønder,_dim_biodiversitet,129.74,,,,,ecological_dimension,biodiversitet,
 550,Tønder,_dim_vand,58.05,,,,,ecological_dimension,vand,
-550,Tønder,_dim_arealanvendelse,513.8,,,,,ecological_dimension,arealanvendelse,
+550,Tønder,_dim_arealanvendelse,140.36,,,,,ecological_dimension,arealanvendelse,
 360,Lolland,_dim_klimapaavirkning,309.67,,,,,ecological_dimension,klimapaavirkning,
 360,Lolland,_dim_luftkvalitet,146.6,,,,,ecological_dimension,luftkvalitet,
 360,Lolland,_dim_forurening,118.42,,,,,ecological_dimension,forurening,
 360,Lolland,_dim_naeringsstoffer,149.6,,,,,ecological_dimension,naeringsstoffer,
 360,Lolland,_dim_biodiversitet,138.14,,,,,ecological_dimension,biodiversitet,
 360,Lolland,_dim_vand,37.63,,,,,ecological_dimension,vand,
-360,Lolland,_dim_arealanvendelse,570.07,,,,,ecological_dimension,arealanvendelse,
+360,Lolland,_dim_arealanvendelse,157.17,,,,,ecological_dimension,arealanvendelse,
 741,Samsø,_dim_klimapaavirkning,315.33,,,,,ecological_dimension,klimapaavirkning,
 741,Samsø,_dim_luftkvalitet,133.8,,,,,ecological_dimension,luftkvalitet,
 741,Samsø,_dim_forurening,75.73,,,,,ecological_dimension,forurening,
 741,Samsø,_dim_naeringsstoffer,156.2,,,,,ecological_dimension,naeringsstoffer,
 741,Samsø,_dim_biodiversitet,128.26,,,,,ecological_dimension,biodiversitet,
-741,Samsø,_dim_arealanvendelse,497.13,,,,,ecological_dimension,arealanvendelse,
+741,Samsø,_dim_arealanvendelse,133.48,,,,,ecological_dimension,arealanvendelse,
 482,Langeland,_dim_klimapaavirkning,314.93,,,,,ecological_dimension,klimapaavirkning,
 482,Langeland,_dim_luftkvalitet,145.4,,,,,ecological_dimension,luftkvalitet,
 482,Langeland,_dim_forurening,116.3,,,,,ecological_dimension,forurening,
 482,Langeland,_dim_naeringsstoffer,145.5,,,,,ecological_dimension,naeringsstoffer,
 482,Langeland,_dim_biodiversitet,138.56,,,,,ecological_dimension,biodiversitet,
 482,Langeland,_dim_vand,28.97,,,,,ecological_dimension,vand,
-482,Langeland,_dim_arealanvendelse,512.73,,,,,ecological_dimension,arealanvendelse,
+482,Langeland,_dim_arealanvendelse,138.52,,,,,ecological_dimension,arealanvendelse,

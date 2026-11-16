@@ -100,10 +100,11 @@ export default function PlanetaereGraenserPage() {
             en femdobbelt overskridelse og en af de mest markante i hele rapporten.
           </p>
           <p className="text-sm text-gray-700 leading-relaxed mt-2">
-            Vores arealdimension måler netop antropiseret areal - intensivt landbrug og befæstet areal
-            tilsammen - for hver kommune, med samme definition som rapporten. Vi måler den mod
-            landsgennemsnittet, så man kan se forskel på kommunerne, men 15%-grænsen er den biofysiske
-            virkelighed bag tallene.
+            Vi bruger ikke de 15% som mål for den enkelte kommune: grænsen er sat for kloden som
+            helhed, og ingen dansk kommune kan nå den. Vores arealdimension måler i stedet, hvor stor
+            en del af kommunens ubebyggede areal der dyrkes intensivt, mod det niveau Danmark når,
+            når ca. 10% af landets areal er omlagt til natur og skov frem mod 2045, som aftalt i den
+            grønne trepart. Se metodesiden.
           </p>
         </section>
 
