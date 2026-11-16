@@ -188,7 +188,7 @@
       "source": "https://www.statistikbanken.dk/AREALDK2",
       "source_label": "DST AREALDK2 ({aar:areal_antropiseret})",
       "unit": "% af landareal",
-      "boundary": "Danmark samlet ({ref:areal_antropiseret:0}% af landarealet, {aar:areal_antropiseret}) som reference. Til kontekst: den planetære grænse for arealsystemet er højst 15% antropiseret areal (Dao m.fl. 2015; CONCITO 2025). Danmark ligger næsten fem gange over. Vi scorer mod landsgennemsnittet for at vise forskel mellem kommuner.",
+      "boundary": "Den planetære grænse for arealsystemet: højst 15% antropiseret areal (Dao m.fl. 2015; CONCITO 2025). Danmark samlet ligger på ca. 70% ({aar:areal_antropiseret}), næsten fem gange over, og alle 98 kommuner overskrider grænsen.",
       "aggregation": "worst-of",
       "indicators": ["areal_antropiseret"]
     },
@@ -1347,13 +1347,13 @@
       "csv": "arealanvendelse_scores.csv",
       "ratio_col": "antropiseret_ratio",
       "raw_col": "antropiseret_pct",
-      "reference": {"type": "landstal", "col": "areal_antropiseret_ref", "definition": "de 98 kommuner samlet: antropiseret areal / landareal (AREALDK2); fetch_dst_arealanvendelse.py"},
+      "reference": {"type": "maal", "value": 15, "label": "Højst 15% antropiseret areal (planetær grænse for arealsystemet)"},
       "lower_is_better": true,
-      "baseline_type": "relativ",
-      "boundary": "Danmark samlet: {ref:areal_antropiseret:0}% (planetær grænse: 15%)",
+      "baseline_type": "absolut",
+      "boundary": "Planetær grænse: højst 15% (Danmark samlet: ca. 70%)",
       "raw_key": "eco_areal_antropiseret_raw",
       "ratio_key": "areal_antropiseret_ratio",
-      "note": "Intensivt landbrug (D1+D2+D4) + befæstet og bebygget (A1+A2+B1+B2+C1) i pct. af landarealet uden søer og vandløb (Dao m.fl. 2015; EEA 2020; CONCITO 2025)."
+      "note": "Intensivt landbrug (D1+D2+D4) + befæstet og bebygget (A1+A2+B1+B2+C1) i pct. af landarealet uden søer og vandløb (Dao m.fl. 2015; EEA 2020; CONCITO 2025). Fra nov. 2026 målt mod den planetære grænse på 15% i stedet for mod Danmark samlet (70,4%): med landsgennemsnittet stod 16 kommuner grønne på et loft, alle 98 overskrider, og det var den eneste dimension uden en grænse. Argumentet fra sep. 2026 (alle bliver røde, og en bykommune kan ikke blive 85% natur) gælder lige så meget Klima, Luftkvalitet og Næringsstoffer, som måles mod deres grænse. Landstallet står stadig i areal_antropiseret_ref i CSV'en og bruges af grafen ved pilen (tjek_konsistens.py LAND_ANDEN_KILDE)."
     },
     {
       "id": "ctx_fjv_biomasse",

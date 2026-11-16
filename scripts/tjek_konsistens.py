@@ -209,6 +209,7 @@ LAND_MIN_TOLERANCE = 0.006
 LAND_ANDEN_KILDE = {
     "low_education": ("uddannelse_extra_scores.csv", "low_education_ref"),
     "vandindvinding": ("vandindvinding_scores.csv", "udnyttelse_dk_pct"),
+    "areal_antropiseret": ("arealanvendelse_scores.csv", "areal_antropiseret_ref"),
 }
 
 
