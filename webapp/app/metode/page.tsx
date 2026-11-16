@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { SOCIAL_CATEGORIES, INDICATORS, ECOLOGICAL_DIMENSIONS, INDICATOR_RATIONALES, dimensionCsvFiles, udfyldTal } from "@/lib/shared";
+import { SOCIAL_CATEGORIES, INDICATORS, ECOLOGICAL_DIMENSIONS, INDICATOR_RATIONALES, NOEGLETAL, dimensionCsvFiles, udfyldTal } from "@/lib/shared";
 import { getDimensionDataYears } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -194,15 +194,32 @@ const ECO_METHODS: Record<string, MethodInfo> = {
   },
 };
 
-function IndicatorCard({ id }: { id: string }) {
+/** Den indikator, der står for mindst to tredjedele af forskellene mellem kommunerne i
+ *  kategoriens score i standardvisningen, hvis der er en. Tallene kommer fra noegletal.json. */
+function dominerendeIndikator(indicatorIds: string[]): { navn: string; andel: number } | null {
+  for (const id of indicatorIds) {
+    const andel = NOEGLETAL.indikatorer[id]?.vaegt?.gruppe;
+    const navn = INDICATORS.find((i) => i.id === id)?.name;
+    if (andel !== undefined && andel >= 67 && navn) return { navn, andel };
+  }
+  return null;
+}
+
+function IndicatorCard({ id, antalIKategori }: { id: string; antalIKategori?: number }) {
   const ind = INDICATORS.find((i) => i.id === id);
   if (!ind) return null;
   const rationale = INDICATOR_RATIONALES[id];
+  const vaegt = NOEGLETAL.indikatorer[id]?.vaegt;
   return (
     <div className="py-2 px-3 bg-gray-50 rounded text-sm">
       <div className="flex items-center justify-between">
         <span className="text-gray-700 font-medium">{ind.name}</span>
         <div className="flex items-center gap-3 text-xs text-gray-400">
+          {vaegt && antalIKategori && (
+            <span title={`Indgår formelt med ${Math.round(100 / antalIKategori)} % i gennemsnittet. Står for ${vaegt.gruppe} % af forskellene mellem kommunerne i kategoriens score i standardvisningen (${vaegt.landsgns} % mod landsgennemsnittet).`}>
+              betydning {vaegt.gruppe} %
+            </span>
+          )}
           <span>{ind.inverse ? "inverteret" : "direkte"}</span>
           <a href={ind.source} target="_blank" rel="noopener" className="text-blue-600 hover:underline">
             {ind.table} ↗
@@ -335,6 +352,21 @@ export default function MetodePage() {
           Røde segmenter i den ydre ring viser overskridelse af grænsen. Det økologiske loft påvirkes ikke af valget af sammenligningsgrundlag.
         </p>
         <p className="text-sm text-gray-700 leading-relaxed mt-2">
+          <strong>Vægte:</strong> En kategoris score er et simpelt gennemsnit af dens indikatorer. Formelt vejer de lige meget, men en
+          indikator, der varierer meget mellem kommunerne, betyder mere for, hvordan kommunerne adskiller sig. Ved hver indikator nedenfor står
+          dens &quot;betydning&quot;: den andel af forskellene mellem kommunerne i kategoriens score, indikatoren står for i standardvisningen.
+          Tallene er meget ulige. I Sundhed står middellevetiden for {NOEGLETAL.indikatorer.life_expectancy?.vaegt?.gruppe} % og daglig rygning
+          for {NOEGLETAL.indikatorer.rygning?.vaegt?.gruppe} %. Det skyldes, at scoren måler afstanden til sammenligningsgrundlaget i procent,
+          og at nogle tal varierer langt mere i procent end andre. En negativ betydning betyder, at indikatoren trækker modsat resten af kategorien.
+        </p>
+        <p className="text-sm text-gray-700 leading-relaxed mt-2">
+          <strong>Usikkerhed:</strong> For indikatorer med en tidsserie på mindst seks år beregner platformen, hvor meget kommunens tal normalt
+          svinger fra år til år omkring sin egen udvikling. Er afstanden til sammenligningsgrundlaget mindre end 1,96 gange det udsving, vises
+          indikatoren i gråt med mærket &quot;inden for usikkerheden&quot;, fordi forskellen ikke kan skelnes fra tilfældig variation.
+          Kategoriens samlede farve ændres ikke af mærket. Sundhedsprofilens tal har en stikprøveusikkerhed, som platformen endnu ikke viser:
+          i en kommune med omkring 900 svar er den typisk ±1,5 til 2,5 procentpoint (95 %-interval).
+        </p>
+        <p className="text-sm text-gray-700 leading-relaxed mt-2">
           <strong>Retningspile:</strong> Pilen ved en indikator viser udviklingen i selve tallet over de år, kilden dækker, og om den går i positiv
           eller forkert retning. For serier på mindst otte år kræver en vurdering, at der er en statistisk sikker tendens (Mann-Kendalls test, 10 %-niveau).
           Svinger tallet for meget fra år til år til det, vises en bølgelinje og teksten &quot;ingen klar tendens&quot;. Det gælder især små kommuner og tal
@@ -453,9 +485,18 @@ export default function MetodePage() {
                     </p>
                     <div className="space-y-1">
                       {cat.indicatorIds.map((id) => (
-                        <IndicatorCard key={id} id={id} />
+                        <IndicatorCard key={id} id={id} antalIKategori={cat.indicatorIds.length} />
                       ))}
                     </div>
+                    {(() => {
+                      const d = dominerendeIndikator(cat.indicatorIds);
+                      return d ? (
+                        <p className="mt-2 text-xs text-gray-500 leading-relaxed">
+                          Én indikator afgør det meste af kategorien: {d.navn.toLowerCase()} står for {d.andel} % af forskellene
+                          mellem kommunerne i standardvisningen. Læs derfor kategoriens farve sammen med de enkelte indikatorer.
+                        </p>
+                      ) : null;
+                    })()}
                   </div>
                 )}
               </section>

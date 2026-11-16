@@ -2,6 +2,15 @@
 
 Log over større ændringer i datapipeline og master-fil.
 
+## 2026-11-16 (vægte, usikkerhedsmærke og estimat-mærke)
+
+Ingen score er ændret i denne omgang.
+
+- **De faktiske vægte står på metodesiden.** `build_master_csv.py` beregner, hvor stor en del af forskellene mellem kommunerne i en kategoris score hver indikator står for, og skriver det i `noegletal.json` (`vaegt`). I standardvisningen: kollektiv transport 94 % af Mobilitet, Gini 77 % af Lighed, kommunalvalg 68 % af Demokrati; i Sundhed middellevetid 2 % og rygning 29 %. Kategorier, hvor én indikator står for mindst to tredjedele, er mærket.
+- **Mærket "inden for usikkerheden".** `trend_indicators.csv` har fået kolonnen `stoej`: kommunens udsving fra år til år omkring sin egen udvikling. Er afstanden til sammenligningsværdien mindre end 1,96 gange støjen, vises indikatoren i gråt (arkitekturdokumentet T12). I standardvisningen gælder det fx 16 sociale indikatorer i Thisted, 14 på Læsø og 5 i København.
+- **`forbrug_co2` er mærket "Estimat"** ved indikatoren (registrets nye felt `maerke`).
+- **Fravalgt:** en standardiseret skala for de sociale scorer, beskæftigelse målt mod 80 %-målet og partnerskabsmål for ensomhed og rygning. Begrundelserne står i indledningen til `docs/akademisk-gennemgang-nov-2026.md`.
+
 ## 2026-11-16 (trin 2 efter gennemgangen: treårsgennemsnit og sikre pile)
 
 - **`crime_rate` og `neet` er treårige gennemsnit.** Værdien for år Y er gennemsnittet af Y-2, Y-1 og Y, som for trafikulykkerne. Ét års kriminalitetstal svingede så meget, at 86 af 98 Tryghedsfarver i standardvisningen lå inden for usikkerheden af en farvegrænse (`docs/akademisk-gennemgang-nov-2026.md` afsnit 2.5). Kriminalitet dækker nu 2023-2025 (landstal 66,4 pr. 1.000 mod 63,2 for 2025 alene, fordi niveauet falder), NEET 2022-2024 (9,41 % mod 9,14 %). Pilene er genberegnet med samme funktioner.

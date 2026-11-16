@@ -31,6 +31,8 @@ interface RegisterIndikator {
   rationale?: string;
   cap?: number;
   formula?: "100_minus_raw" | "komplement";
+  // Mærke ved indikatoren, fx "Estimat" for et modelberegnet tal. forklaring vises som tooltip.
+  maerke?: { tekst: string; forklaring: string };
 }
 
 interface Register {
@@ -66,7 +68,11 @@ const REGISTER = registerJson as unknown as Register;
 interface Noegletal {
   kommuner: number;
   // faa_tilfaelde: kommuner hvor tallet bygger på under 20 tilfælde (registrets smaa_tal)
-  indikatorer: Record<string, { reference: number | null; daekning: number; data_year: string; faa_tilfaelde?: string[] }>;
+  // vaegt: indikatorens andel i pct. af forskellene mellem kommunerne i kategoriens score
+  indikatorer: Record<string, {
+    reference: number | null; daekning: number; data_year: string; faa_tilfaelde?: string[];
+    vaegt?: { landsgns: number; gruppe: number };
+  }>;
 }
 export const NOEGLETAL = noegletalJson as unknown as Noegletal;
 
@@ -75,6 +81,20 @@ export const NOEGLETAL = noegletalJson as unknown as Noegletal;
 export function faaTilfaelde(indikatorId: string, kommuneKode: string): boolean {
   return NOEGLETAL.indikatorer[indikatorId]?.faa_tilfaelde?.includes(kommuneKode) ?? false;
 }
+
+// Er afstanden mellem kommunens tal og sammenligningsgrundlaget mindre end det, tallet
+// normalt svinger fra år til år? Så kan forskellen ikke skelnes fra tilfældig variation
+// (arkitekturdokumentet T12). 1,96 gange støjen svarer til et 95 %-interval.
+export const USIKKERHED_FAKTOR = 1.96;
+export function indenForUsikkerhed(
+  raavaerdi: number | null, sammenligning: number | null, stoej: number | null | undefined,
+): boolean {
+  if (raavaerdi === null || sammenligning === null || stoej === null || stoej === undefined || stoej <= 0) return false;
+  return Math.abs(raavaerdi - sammenligning) < USIKKERHED_FAKTOR * stoej;
+}
+export const USIKKERHED_TEKST =
+  "Forskellen til sammenligningsgrundlaget er mindre, end kommunens tal normalt svinger fra år til år. " +
+  "Den kan derfor ikke skelnes fra tilfældig variation.";
 
 export function formatTal(x: number, decimaler: number): string {
   const [hel, brok] = Math.abs(x).toFixed(decimaler).split(".");
@@ -205,7 +225,10 @@ export interface EcologicalDimension {
   boundary?: string; // Description of the planetary boundary
   // Sub-indikatorer til visning i ScoreBars (rawValues-nøgle + label + enhed)
   subIndicators?: {
+    id: string;           // registrets indikator-id
     rawKey: string;       // nøgle i kommune.rawValues for råværdi (µg/m³, %, kg, ...)
+    reference: number | null; // grænsen eller landstallet i råværdiens enhed (noegletal.json)
+    maerke?: { tekst: string; forklaring: string };
     ratioKey?: string;    // nøgle i kommune.rawValues for sub-ratio (0-200) til at tegne bar
     label: string;        // visningsnavn
     unit: string;         // enhed
@@ -227,7 +250,10 @@ export const ECOLOGICAL_DIMENSIONS: EcologicalDimension[] = REGISTER.oekologiske
   subIndicators: d.indicators.map((id) => {
     const i = REGISTER_BY_ID.get(id)!;
     return {
+      id,
       rawKey: i.raw_key!,
+      reference: NOEGLETAL.indikatorer[id]?.reference ?? null,
+      maerke: i.maerke,
       ratioKey: i.ratio_key,
       label: udfyldTal(i.name!),
       unit: i.raw_unit ?? i.unit,
@@ -356,6 +382,9 @@ export interface TrendPost {
   vaerdiStart: number | null;  // null for _dim_*-aggregater (ingen fælles enhed)
   vaerdiSlut: number | null;
   nAar: number;
+  // Støj fra år til år i indikatorens egen enhed (build_trends_csv.py, T12). null for korte
+  // serier og for _dim_*-aggregater.
+  stoej: number | null;
   kilde: string;
   // Kun sat på _dim_*-aggregater: hvilken sub-indikator retningen kommer fra
   // (worst-of), eller "gennemsnit af N indikatorer". Vises i tooltip, så

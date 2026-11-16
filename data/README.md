@@ -92,6 +92,7 @@ Viser hvilken **vej** en kommune bevæger sig, ikke kun hvor den ligger. Én ræ
 | `retning` | Se klasser nedenfor | `forkert` |
 | `n_aar` | Antal år i serien | `15` |
 | `noegle_indikator` | Kun på `_dim_*`: hvilken sub-indikator retningen kommer fra | `n_deposition` |
+| `stoej` | Kommunens udsving fra år til år om sin egen udvikling, i indikatorens enhed. Tom for serier under 6 år og for `_dim_*`. Bruges til mærket "inden for usikkerheden" (arkitekturdokumentet T12) | `1.337` |
 
 ### Retningsklasser
 
@@ -101,6 +102,7 @@ Viser hvilken **vej** en kommune bevæger sig, ikke kun hvor den ligger. Én ræ
 | `tempo` | Mod målet, men langsommere end medianen |
 | `stagneret` | Under 1 % ændring, eller under 1 procentpoint når niveauet er over 10 % |
 | `forkert` | Væk fra målet |
+| `usikker` | Serien har mindst 8 år, men ingen statistisk sikker tendens (Mann-Kendall, p ≥ 0,10). Vises som en bølgelinje (arkitekturdokumentet T11) |
 | `kontekst` | Måles, men har ingen ønsket retning |
 | `ingen` | Ingen tidsserie - kan ikke vurderes |
 

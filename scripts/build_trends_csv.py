@@ -195,6 +195,53 @@ def uden_sikker_tendens(serie: dict) -> bool:
     return mann_kendall_p([serie[a] for a in sorted(serie)]) >= MK_P_GRAENSE
 
 
+# Støj fra år til år (T12): hvor meget kommunens tal svinger om sin egen
+# udvikling. Bruges af webappen til mærket "inden for usikkerheden", når
+# afstanden til sammenligningsgrundlaget er mindre end 1,96 gange støjen.
+STOEJ_MIN_AAR = 6
+STOEJ_VINDUE = 8
+
+
+def aarlig_stoej(per_kommune: dict[str, dict[str, float]]) -> dict[str, float]:
+    """{kommune_kode: støj} i indikatorens egen enhed.
+
+    For de seneste STOEJ_VINDUE år trækkes årets fælles niveau fra (medianen
+    over kommunerne), så en landsdækkende bevægelse som coronaårenes fravær
+    ikke tælles som støj. Støjen er spredningen om kommunens egen lineære
+    udvikling i det, der er tilbage (to frihedsgrader til linjen). Kommuner med
+    under STOEJ_MIN_AAR år får intet tal. Indikatorer, der allerede er
+    treårsgennemsnit, får for lav støj, fordi årene overlapper."""
+    alle_aar = sorted({a for serie in per_kommune.values() for a in serie})[-STOEJ_VINDUE:]
+    if len(alle_aar) < STOEJ_MIN_AAR:
+        return {}
+    faelles = {}
+    for a in alle_aar:
+        v = [serie[a] for serie in per_kommune.values() if a in serie]
+        if v:
+            faelles[a] = statistics.median(v)
+    ud = {}
+    for kode, serie in per_kommune.items():
+        punkter = []
+        for a in alle_aar:
+            if a in serie and a in faelles:
+                try:
+                    punkter.append((float(a), serie[a] - faelles[a]))
+                except ValueError:
+                    continue
+        n = len(punkter)
+        if n < STOEJ_MIN_AAR:
+            continue
+        mx = sum(x for x, _ in punkter) / n
+        my = sum(y for _, y in punkter) / n
+        sxx = sum((x - mx) ** 2 for x, _ in punkter)
+        if sxx == 0:
+            continue
+        b = sum((x - mx) * (y - my) for x, y in punkter) / sxx
+        rest = sum((y - my - b * (x - mx)) ** 2 for x, y in punkter)
+        ud[kode] = math.sqrt(rest / (n - 2))
+    return ud
+
+
 VURDERET = ("rigtig", "tempo", "forkert")
 
 
@@ -310,6 +357,7 @@ def aggreger_dimensioner(poster, eco_struktur, social_struktur):
                     "pct": round(m, 2),
                     "vaerdi_start": "",   # ingen fælles enhed på dimensionsniveau
                     "vaerdi_slut": "",
+                    "stoej": "",
                     "noegle_indikator": afgorende_id,
                 })
 
@@ -460,6 +508,7 @@ def build_trends():
         if not pr_kommune_pct:
             continue
         ref_pct = statistics.median(pr_kommune_pct.values())
+        stoej = aarlig_stoej(per_kommune)
 
         n_rigtig = n_tempo = n_stagneret = n_forkert = n_usikker = 0
         for kode, (f_lab, s_lab, start, slut, n_aar, pct) in pr_kommune_data.items():
@@ -488,6 +537,7 @@ def build_trends():
                 "n_aar": n_aar,
                 "kilde": KILDE.get(iid, KILDE_DEFAULT),
                 "noegle_indikator": "",
+                "stoej": f"{stoej[kode]:.4g}" if kode in stoej else "",
             })
 
         print(f"  {iid:28} {len(pr_kommune_data):3}/98 kommuner  "
@@ -516,7 +566,7 @@ def build_trends():
     DATA_DIR.mkdir(exist_ok=True)
     fieldnames = ["kommune_kode", "indicator_id", "periode_start", "periode_slut",
                   "vaerdi_start", "vaerdi_slut", "pct", "retning", "n_aar", "kilde",
-                  "noegle_indikator"]
+                  "noegle_indikator", "stoej"]
     with open(OUTPUT, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()

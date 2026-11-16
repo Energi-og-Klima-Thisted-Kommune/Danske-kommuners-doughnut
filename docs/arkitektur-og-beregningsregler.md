@@ -201,6 +201,21 @@ areal).
 Reglerne herunder ligger i `webapp/lib/shared.ts` og udføres ved indlæsning i
 browseren, ikke i pipelinen.
 
+**R8a - Indikatorernes faktiske betydning beregnes og vises (fra nov. 2026).**
+En kategori er et simpelt gennemsnit (R8), så hver indikator indgår formelt med
+1/n. Hvor meget en indikator betyder for, hvordan kommunerne adskiller sig,
+følger dens spredning, og den er meget ulige: i Sundhed står middellevetiden for
+2 procent og daglig rygning for 29, i Mobilitet står kollektiv transport for 94.
+`_faktiske_vaegte()` i `build_master_csv.py` beregner hver indikators andel af
+variansen i kategoriens score (kovariansen med kategoriscoren delt med dens
+varians og med antal indikatorer), mod landsgennemsnittet og i
+kommunegruppe-visningen, og skriver den i `noegletal.json` (`vaegt`).
+Metodesiden viser tallet ved hver indikator og mærker en kategori, hvor én
+indikator står for mindst 67 procent. Ingen score ændres. En standardiseret
+skala, som ville gøre vægtene lige, er vurderet og udskudt, fordi tallet så ikke
+længere kan læses som procent af sammenligningsgrundlaget (se
+`docs/akademisk-gennemgang-nov-2026.md`, beslutninger 16. nov.).
+
 **R8 - Social kategoriscore.** `computeCategoryScores()` tager et simpelt,
 uvægtet gennemsnit af de ikke-`null` indikator-ratios i kategorien. Har ingen
 indikator data, er scoren `null`, og `hasData` bliver `false`.
@@ -485,6 +500,29 @@ til, fordi 18 procent af pilene med en vurdering ikke havde en påviselig tenden
   gennemsnittet som før.
 - Efter reglen er 496 af ca. 4.500 indikatorpile `usikker`, og 79 pile på
   kategori- og dimensionsniveau.
+
+---
+
+**T12 - Mærket "inden for usikkerheden" (fra nov. 2026).** For hver indikator
+med mindst 6 år i tidsserien beregner `aarlig_stoej()` i `build_trends_csv.py`,
+hvor meget kommunens tal svinger fra år til år: for de seneste 8 år trækkes
+årets fælles niveau fra (medianen over kommunerne), og støjen er spredningen om
+kommunens egen lineære udvikling i resten. Tallet står i kolonnen `stoej` i
+`trend_indicators.csv`, i indikatorens egen enhed.
+
+- Webappen sammenligner i den valgte visning: er afstanden mellem kommunens
+  råværdi og sammenligningsværdien (landstal, gruppesnit, top 10 eller mål)
+  mindre end 1,96 gange støjen, vises indikatoren i gråt med mærket
+  (`indenForUsikkerhed()` i `shared.ts`). Samme kommune kan altså være mærket i
+  én visning og ikke i en anden.
+- Kategoriens og dimensionens farve ændres ikke. Mærket gælder indikatoren.
+- Uden tidsserie intet mærke: de 14 indikatorer uden historik og Sundhedsprofilens
+  otte (to bølger) er ikke dækket. Sundhedsprofilens usikkerhed er
+  stikprøveusikkerhed og kræver antal svar pr. kommune, som ikke hentes endnu.
+- Er scoren klippet ved loftet, kan sammenligningsværdien ikke udledes (R1), og
+  indikatoren mærkes ikke.
+- Støjen er en model: et reelt knæk i udviklingen tælles som støj, og
+  indikatorer, der er treårsgennemsnit, får for lav støj, fordi årene overlapper.
 
 ---
 

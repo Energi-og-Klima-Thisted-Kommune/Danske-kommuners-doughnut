@@ -287,6 +287,7 @@ interface TrendRow {
   n_aar: string;
   kilde: string;
   noegle_indikator: string;
+  stoej?: string;
 }
 
 function parseTrendsCsv(): TrendRow[] {
@@ -350,6 +351,7 @@ function loadTrendsByKommune(): Map<string, Record<string, TrendPost>> {
       vaerdiStart: parseFloatOrNull(r.vaerdi_start),
       vaerdiSlut: parseFloatOrNull(r.vaerdi_slut),
       nAar: parseInt(r.n_aar, 10) || 0,
+      stoej: parseFloatOrNull(r.stoej ?? ""),
       kilde: r.kilde,
       noegleIndikator: LABEL_BY_INDICATOR_ID[noegle] ?? noegle,
       // Kun en worst-of-dimension peger på ÉN indikator (id'et står i CSV'en); "gennemsnit af N

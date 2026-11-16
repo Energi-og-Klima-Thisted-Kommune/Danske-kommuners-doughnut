@@ -4,6 +4,7 @@
     "Læses af scripts/indikatorregister.py (build_master_csv.py, build_trends_csv.py, tjek_konsistens.py) og af webapp/lib/shared.ts (INDICATORS, SOCIAL_CATEGORIES, ECOLOGICAL_DIMENSIONS) og webapp/lib/data.ts.",
     "En ny indikator er én post her + et fetch-script der skriver dens CSV. Rækkefølgen af indikatorer er rækkefølgen i master_indicators.csv; rækkefølgen i en kategoris eller dimensions 'indicators' er visningsrækkefølgen.",
     "Nøgler der begynder med '_' er dokumentation og ignoreres. 'note' er udviklernoter og vises ikke; 'rationale' vises på metodesiden.",
+    "maerke: {tekst, forklaring} giver et mærke ved indikatoren på kommunesiden, fx 'Estimat' for et modelberegnet tal (forbrug_co2); forklaringen vises, når man peger på mærket.",
     "Felter: category (social/ecological/context), dimension (kategori- eller dimensions-id), name (visningsnavn), table og source_url (kildelink på metodesiden), source (kort kildetekst i master), unit (enhed i master), raw_unit (enhed i UI, hvis den afviger fra unit), data_year (bruges kun hvis data/data_years.json ikke kender DST-tabellen), csv/ratio_col/raw_col (hvor build_master_csv.py læser tallet).",
     "Retning: sociale har 'inverse' (true = lavere råværdi er bedre), økologiske har 'lower_is_better'. Retningspilene (build_trends_csv.py) udleder deres op_er_godt af de to felter.",
     "period_years: tallet dækker en periode, ikke ét år (HISBK er femårige intervaller, trafikulykker et treårigt gennemsnit). data_year i master skrives så som 'start-slut' ud fra slutåret, fx 2021-2025.",
@@ -1271,6 +1272,7 @@
       "boundary": "Mål: 3 ton CO₂e/person/år (forbrugsbaseret)",
       "raw_key": "forbrug_co2",
       "ratio_key": "forbrug_co2_self",
+      "maerke": {"tekst": "Estimat", "forklaring": "Modelberegnet: forskellene mellem kommunerne er fra 2011 og følger især indkomsten dengang. Niveauet er Energistyrelsens for seneste år. Der findes ingen nyere opgørelse pr. kommune."},
       "note": "Tier 1-estimat: forskellene mellem kommunerne er Osei-Owusu et al. (2020) for 2011; niveauet er Energistyrelsens for seneste år. Fra nov. 2026 skaleres 2011-mønsteret, så de 98 kommuner samlet giver ENS' tal pr. indbygger (fetch_forbrug_co2.py). Indtil da lå kommunerne samlet 16 % over ENS, fordi Osei-Owusus niveau blev bevaret. Ratio = estimat / 3 ton × 100. Se data/methodology_note.md og klimapaavirkning for grænsen.",
       "table": "ENS Global Afrapportering"
     },
