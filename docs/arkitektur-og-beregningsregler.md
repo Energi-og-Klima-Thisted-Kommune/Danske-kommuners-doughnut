@@ -576,9 +576,19 @@ nævner i en ratio, så `baselineType` er `relativ`. Det samme gælder
 vandområdernes tilstand (målet er 100 procent i god tilstand, altså nul der
 mangler).
 
-For areal findes en grænse (15 procent antropiseret areal), men ikke pr.
-kommune: en bykommune kan ikke være 85 procent natur. Arealet måles derfor mod
-landsgennemsnittet, og grænsen står som kontekst.
+Areal måles fra nov. 2026 mod et vedtaget nationalt mål (`areal_landbrug`):
+intensivt landbrug i procent af kommunens ubebyggede areal, mod 53,4 procent.
+Grænsen er udledt af Aftale om Implementering af et Grønt Danmark (2024, s. 2:
+ca. 10 procent af Danmarks samlede areal omlægges til natur og skov frem mod
+2045): 10 procent af landets areal trukket fra det intensive landbrugsareal i
+2024 og delt med det ubebyggede areal. Omregningen og brugen af det nationale
+niveau som grænse i hver kommune er platformens valg; aftalen fordeler ikke
+arealet pr. kommune. Bebygget areal er ude af både tæller og nævner, fordi det
+ikke kan ændres, så en bykommune uden marker står på 0. Den planetære grænse
+(15 procent antropiseret areal, Dao m.fl. 2015) bruges ikke som mål: den er sat
+for kloden som helhed og kan ikke nås i nogen dansk kommune. Indtil nov. 2026
+blev antropiseret areal målt mod landsgennemsnittet, og 16 kommuner stod
+grønne uden at der var en grænse bag.
 
 Vand blev målt på samme måde indtil 25. sep. 2026. Nu fordeles GEUS' nationale
 ressource (1.104 mio. m³/år) efter DK-modellens infiltration til mættet zone

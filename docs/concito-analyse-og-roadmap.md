@@ -56,6 +56,9 @@ separate dimensioner. Det er begrundelsen bag begge ovenstående sammenlægninge
   **Sep. 2026:** dimensionen scorer nu netop antropiseret areal (intensiv + bebygget, Dao-definitionen)
   som ét tal mod Danmark samlet (70,4% af landarealet), i stedet for worst-of af de to andele hver for
   sig. 15%-grænsen er stadig kontekst; mod den ville alle kommuner være dybrøde.
+  **Nov. 2026:** afløst af intensivt landbrug i pct. af det ubebyggede areal mod 53,4% (udledt af den
+  grønne treparts mål om ca. 10% af Danmarks areal omlagt frem mod 2045). 15%-grænsen er global og
+  bruges ikke som mål pr. kommune; se registrets note ved `areal_landbrug`.
 - **§3 beskyttet natur via WFS**: laget dai:bes_naturtyper findes på
   https://arealeditering-dist-geo.miljoeportal.dk/geoserver/wfs (GetCapabilities verificeret).
   Pt. fravalgt som redundant (se nedenfor), men datakilden er kortlagt hvis det ønskes senere.

@@ -1,6 +1,6 @@
 indicator_id,periode_start,periode_slut,vaerdi_start,vaerdi_slut,pct,n_aar
 alkohol,2017,2025,18.0195,14.3766,-20.22,2
-areal_antropiseret,2011,2024,72.67,70.39,-3.14,4
+areal_landbrug,2011,2024,68.34,65.38,-4.33,4
 child_notifications,2015-2017,2023-2025,55.44,87.87,58.5,11
 child_poverty,2015-2017,2022-2024,4.6667,4.3333,-7.14,10
 cirkularitet_recycling,2015-2017,2021-2023,45.0,54.0,20.0,9

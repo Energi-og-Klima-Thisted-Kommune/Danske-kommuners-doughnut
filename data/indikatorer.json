@@ -36,6 +36,7 @@
     "naer_phosphorus": "Fjernet sep. 2026: som naer_nitrogen. Fosfor har ingen målbelastning for kystvandene (sat lig baseline i vandområdeplanerne), så der findes ingen grænse at måle det mod. Søernes fosformålbelastning er en kandidat til en senere indikator.",
     "areal_intensiv": "Slået sammen sep. 2026 med areal_bebygget til areal_antropiseret (Dao m.fl. 2015). De to andele er hinandens spejlbillede (by mod land), så worst-of af to relative andele gjorde 82 af 98 kommuner røde af konstruktionsmæssige grunde. Andelene står stadig i arealanvendelse_scores.csv.",
     "areal_bebygget": "Slået sammen sep. 2026 med areal_intensiv til areal_antropiseret, se dér.",
+    "areal_antropiseret": "Afløst nov. 2026 af areal_landbrug. Antropiseret areal (landbrug + befæstet, Dao m.fl. 2015) blev målt mod Danmark samlet, fordi den planetære grænse på 15% er sat for kloden som helhed og ikke kan nås i nogen dansk kommune. Uden en grænse stod 16 kommuner grønne på en dimension, hvor Danmark er blandt klodens mest opdyrkede lande, og bykommuner stod værst på grund af bebyggelse, der ikke kan ændres. Rådata ligger stadig i arealanvendelse_scores.csv (antropiseret_pct).",
     "education": "Fjernet nov. 2026: andelen af 30-34-årige med mere end grundskole var komplementet til low_education i nabo-aldersgruppen (korrelation -0,85, summen af de to andele 104,6 med spredning 3,0), så uddannelsesniveauet talte to gange. Navnet 'kompetencegivende' passede heller ikke: gymnasial uddannelse var talt med. Målet på 95 % blev i 2017 afløst af 90 % af de 25-årige, som low_education nu måles mod. Se docs/akademisk-gennemgang-nov-2026.md afsnit 2.2. Rådata ligger stadig i doughnut_scores.csv.",
     "hjemsyg": "Fjernet nov. 2026: antal modtagere af hjemmesygepleje pr. 1.000 indbyggere målte mest kommunens alder (aldersfordelingen forklarede 74 % af forskellene). Aldersstandardiseret er det, der står tilbage, en blanding af sygelighed og kommunens visitationspraksis, og det er ikke klart, at færre modtagere er bedre. Samme tvivl om fortegnet som fik medicin fjernet. Se docs/akademisk-gennemgang-nov-2026.md afsnit 2.3. Rådata ligger stadig i hjemsyg_scores.csv."
   },
@@ -184,13 +185,13 @@
       "id": "arealanvendelse",
       "name": "Arealanvendelse",
       "short_name": "AREAL",
-      "description": "Andelen af kommunens landareal der er omlagt til intensivt landbrug eller befæstet og bebygget areal - antropiseret areal (Dao m.fl. 2015). Arealgrænsen handler om hvor meget land der er taget fra naturen, uanset om det er til mark eller by. Naturkvalitet måles separat i biodiversitetsdimensionen.",
+      "description": "Andelen af kommunens ubebyggede areal der dyrkes intensivt. I Danmark er presset på arealet først og fremmest landbrugets: over halvdelen af landet er intensivt dyrket. Bebygget areal er holdt ude af både tæller og nævner, fordi det ikke kan blive til natur igen. Naturkvalitet måles separat i biodiversitetsdimensionen.",
       "source": "https://www.statistikbanken.dk/AREALDK2",
-      "source_label": "DST AREALDK2 ({aar:areal_antropiseret})",
-      "unit": "% af landareal",
-      "boundary": "Danmark samlet ({ref:areal_antropiseret:0}% af landarealet, {aar:areal_antropiseret}) som reference. Til kontekst: den planetære grænse for arealsystemet er højst 15% antropiseret areal (Dao m.fl. 2015; CONCITO 2025). Danmark ligger næsten fem gange over. Vi scorer mod landsgennemsnittet for at vise forskel mellem kommuner.",
+      "source_label": "DST AREALDK2 ({aar:areal_landbrug})",
+      "unit": "% af ubebygget areal",
+      "boundary": "Højst 53,4% intensivt landbrug af det ubebyggede areal. Det er det niveau Danmark når, når ca. 10% af landets areal er omlagt til natur og skov frem mod 2045, som aftalt i Aftale om Implementering af et Grønt Danmark (2024). Danmark samlet lå på 65,4% i 2024.",
       "aggregation": "worst-of",
-      "indicators": ["areal_antropiseret"]
+      "indicators": ["areal_landbrug"]
     },
     {
       "id": "biodiversitet",
@@ -1336,24 +1337,23 @@
       "note": "Fra 25. sep. 2026: grundvandsindvinding (VANDIND GVAND, alle tre kategorier, treårsgennemsnit) i procent af kommunens andel af GEUS' bæredygtige grundvandsressource (1.104 mio. m³/år, GEUS 2023/08 bilag 2, HELE, ALT), fordelt efter DK-modellens infiltration til mættet zone × landareal (HIP 1991-2020, fetch_grundvandsdannelse.py). Kontrol mod GEUS' egne tal pr. modelområde: fordelingen rammer ressourcen på Sjælland (110 mod 113 mio. m³), Fyn og Jylland inden for ca. 20%; Lolland-Falster og Bornholm overvurderes, men får samme farve. DST's grundvandsindvinding 2017-2021 (737 mio. m³) rammer GEUS' (734). Samsø og Læsø er uden for DK-modellen og har ingen værdi. Historik: indtil sep. 2026 almene vandværker pr. indbygger (viste hvor HOFOR har kildepladser); kort derefter al indvinding inkl. overfladevand pr. areal mod landsgennemsnittet (besluttet 25. sep. 2026: pr. areal frem for pr. indbygger, fordi presset sker hvor vandet tages). Kendt pris ved begge areal-varianter: små bykommuner med kildepladser (Ishøj, Frederiksberg, Furesø) får ekstreme tal, og Herlev uden indvinding får 0."
     },
     {
-      "id": "areal_antropiseret",
+      "id": "areal_landbrug",
       "category": "ecological",
       "dimension": "arealanvendelse",
-      "name": "Antropiseret areal (landbrug og befæstet)",
+      "name": "Intensivt landbrug (andel af ubebygget areal)",
       "source": "DST AREALDK2",
       "unit": "%",
-      "raw_unit": "% af landareal",
+      "raw_unit": "% af ubebygget areal",
       "data_year": "2024",
       "csv": "arealanvendelse_scores.csv",
-      "ratio_col": "antropiseret_ratio",
-      "raw_col": "antropiseret_pct",
-      "reference": {"type": "landstal", "col": "areal_antropiseret_ref", "definition": "de 98 kommuner samlet: antropiseret areal / landareal (AREALDK2); fetch_dst_arealanvendelse.py"},
+      "raw_col": "landbrug_aabent_pct",
+      "reference": {"type": "maal", "value": 53.4, "label": "Højst 53,4% intensivt landbrug af det ubebyggede areal (ca. 10% af Danmarks areal omlagt til natur og skov frem mod 2045)"},
       "lower_is_better": true,
-      "baseline_type": "relativ",
-      "boundary": "Danmark samlet: {ref:areal_antropiseret:0}% (planetær grænse: 15%)",
-      "raw_key": "eco_areal_antropiseret_raw",
-      "ratio_key": "areal_antropiseret_ratio",
-      "note": "Intensivt landbrug (D1+D2+D4) + befæstet og bebygget (A1+A2+B1+B2+C1) i pct. af landarealet uden søer og vandløb (Dao m.fl. 2015; EEA 2020; CONCITO 2025)."
+      "baseline_type": "absolut",
+      "boundary": "Højst 53,4% (Danmark samlet: 65,4% i 2024)",
+      "raw_key": "eco_areal_landbrug_raw",
+      "ratio_key": "areal_landbrug_ratio",
+      "note": "Fra nov. 2026. Intensivt landbrug (AREALDK2 D1+D2+D4) i pct. af det ubebyggede landareal: samlet areal minus søer og vandløb (G1+G2) og bebygget og befæstet areal (A1+A2+B1+B2+C1). Afløser areal_antropiseret. Målet er udledt af Aftale om Implementering af et Grønt Danmark (18. nov. 2024, s. 2): 'ca. 10 procent af Danmarks samlede areal omlægges til natur og skov frem mod 2045'. Omregningen er platformens: 10% af de 98 kommuners samlede areal i 2024 (4.266 km2 af 42.662) trukket fra det intensive landbrugsareal (23.324 km2) og sat i forhold til det ubebyggede areal (35.672 km2) giver 53,4%; i 2024 er andelen 65,4%. Antagelser: hele omlægningen tages fra det intensive landbrug, og det nationale niveau bruges som samme grænse i alle kommuner (aftalen fordeler ikke arealet pr. kommune). Målet er fast og flytter sig ikke med nye arealtal. Landstallet står i areal_landbrug_ref og bruges af grafen ved pilen (tjek_konsistens.py LAND_ANDEN_KILDE)."
     },
     {
       "id": "ctx_fjv_biomasse",
